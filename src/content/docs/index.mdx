@@ -1,40 +1,30 @@
 ---
-title: Welcome to Starlight
-description: Get started building your docs site with Starlight.
-template: splash # Remove or comment out this line to display the site sidebar on this page.
+title: 具身智能数据学习
+description: 整理具身智能数据采集、处理、标注和评估相关技术。
+template: splash
 hero:
-  tagline: Congrats on setting up a new Starlight project!
-  image:
-    file: ../../assets/houston.webp
+  tagline: 围绕机器人和智能体的数据，从采集、对齐、标注到评估，建立清晰、可靠的技术资料。
   actions:
-    - text: Example Guide
-      link: /guides/example/
+    - text: 视觉惯性 SLAM 数据
+      link: /guides/visual-inertial-slam/
       icon: right-arrow
-    - text: Read the Starlight docs
-      link: https://starlight.astro.build
-      icon: external
+    - text: 术语表
+      link: /reference/terms/
+      icon: document
       variant: minimal
 ---
 
 import { Card, CardGrid } from '@astrojs/starlight/components';
 
-## Next steps
+![具身智能数据采集与空间建图概览](/images/docs/embodied-ai-data-overview.webp)
 
-<CardGrid stagger>
-	<Card title="Update content" icon="pencil">
-		Edit `src/content/docs/index.mdx` to see this page change.
+## 已整理主题
+
+<CardGrid>
+	<Card title="视觉惯性 SLAM 数据" icon="seti:folder">
+		从具身智能数据角度，讲清楚摄像头、运动传感器、轨迹和地图数据如何连在一起。
 	</Card>
-	<Card title="Change page layout" icon="document">
-		Delete `template: splash` in `src/content/docs/index.mdx` to display a
-		sidebar on this page.
-	</Card>
-	<Card title="Add new content" icon="add-document">
-		Add Markdown or MDX files to `src/content/docs` to create new pages.
-	</Card>
-	<Card title="Configure your site" icon="setting">
-		Edit your `sidebar` and other config in `astro.config.mjs`.
-	</Card>
-	<Card title="Read the docs" icon="open-book">
-		Learn more in [the Starlight Docs](https://starlight.astro.build/).
+	<Card title="术语说明" icon="seti:document">
+		解释数据文档里不得不用的技术词，降低阅读门槛。
 	</Card>
 </CardGrid>

@@ -6,19 +6,17 @@ import starlight from '@astrojs/starlight';
 export default defineConfig({
 	integrations: [
 		starlight({
-			title: 'My Docs',
-			social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/withastro/starlight' }],
+			title: '具身智能数据学习',
 			sidebar: [
 				{
-					label: 'Guides',
+					label: '数据技术整理',
 					items: [
-						// Each item here is one entry in the navigation menu.
-						{ label: 'Example Guide', slug: 'guides/example' },
+						{ label: '视觉惯性 SLAM 数据', slug: 'guides/visual-inertial-slam' },
 					],
 				},
 				{
-					label: 'Reference',
-					items: [{ autogenerate: { directory: 'reference' } }],
+					label: '参考',
+					items: [{ label: '具身智能数据术语表', slug: 'reference/terms' }],
 				},
 			],
 		}),
