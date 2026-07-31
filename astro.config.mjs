@@ -12,6 +12,7 @@ export default defineConfig({
 					label: '数据技术整理',
 					items: [
 						{ label: '视觉惯性 SLAM 数据', slug: 'guides/visual-inertial-slam' },
+						{ label: 'Ego 数据与 UMI 视频采集', slug: 'guides/ego-world-operation-umi-video' },
 					],
 				},
 				{
