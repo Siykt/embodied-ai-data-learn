@@ -13,6 +13,8 @@ export default defineConfig({
 					items: [
 						{ label: '视觉惯性 SLAM 数据', slug: 'guides/visual-inertial-slam' },
 						{ label: 'Ego 数据与 UMI 视频采集', slug: 'guides/ego-world-operation-umi-video' },
+						{ label: 'Episode 与 Trajectory 数据设计', slug: 'guides/episode-trajectory-design' },
+						{ label: 'Aria、Ego4D 与 Ego-Exo4D 数据格式', slug: 'guides/aria-ego4d-egoexo4d-formats' },
 					],
 				},
 				{

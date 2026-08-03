@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="640" viewBox="0 0 1200 640" role="img" aria-labelledby="title desc">
+  <title id="title">Project Aria 数据格式：VRS 原始数据与 MPS 派生数据</title>
+  <desc id="desc">图示 Project Aria 以 VRS 保存多传感器原始流，并通过 MPS 输出轨迹、点云、眼动、手部跟踪和标定文件。</desc>
+  <defs>
+    <style>
+      .bg{fill:#f8fafc}.panel{fill:#fff;stroke:#cbd5e1;stroke-width:2}.source{fill:#e0f2fe;stroke:#0284c7;stroke-width:2}.derived{fill:#ecfdf5;stroke:#059669;stroke-width:2}.warn{fill:#fff7ed;stroke:#ea580c;stroke-width:2}.title{font:700 30px Arial,"Noto Sans SC",sans-serif;fill:#0f172a}.h{font:700 22px Arial,"Noto Sans SC",sans-serif;fill:#0f172a}.t{font:18px Arial,"Noto Sans SC",sans-serif;fill:#334155}.small{font:15px Arial,"Noto Sans SC",sans-serif;fill:#475569}.arrow{stroke:#64748b;stroke-width:3;fill:none;marker-end:url(#arrow)}
+    </style>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#64748b"/>
+    </marker>
+  </defs>
+  <rect class="bg" width="1200" height="640"/>
+  <text class="title" x="60" y="62">Project Aria：设备级原始记录 + 机器感知派生数据</text>
+  <rect class="panel" x="60" y="105" width="250" height="430" rx="8"/>
+  <text class="h" x="90" y="150">Aria 眼镜采集</text>
+  <rect class="source" x="90" y="180" width="180" height="48" rx="6"/>
+  <text class="t" x="112" y="211">RGB / SLAM 相机</text>
+  <rect class="source" x="90" y="248" width="180" height="48" rx="6"/>
+  <text class="t" x="126" y="279">IMU / 音频</text>
+  <rect class="source" x="90" y="316" width="180" height="48" rx="6"/>
+  <text class="t" x="122" y="347">眼动 / 时间戳</text>
+  <rect class="source" x="90" y="384" width="180" height="48" rx="6"/>
+  <text class="t" x="119" y="415">设备标定记录</text>
+  <rect class="panel" x="460" y="130" width="280" height="140" rx="8"/>
+  <text class="h" x="535" y="176">VRS 文件</text>
+  <text class="t" x="501" y="212">多路传感器流容器</text>
+  <text class="small" x="492" y="242">保留 stream id、时间戳与校准信息</text>
+  <rect class="panel" x="460" y="370" width="280" height="140" rx="8"/>
+  <text class="h" x="532" y="416">Project Aria Tools</text>
+  <text class="t" x="511" y="452">读取、同步、解码、投影</text>
+  <text class="small" x="503" y="482">训练前通常先转成数组、帧或表格</text>
+  <rect class="panel" x="890" y="105" width="250" height="430" rx="8"/>
+  <text class="h" x="925" y="150">MPS 输出</text>
+  <rect class="derived" x="920" y="180" width="180" height="48" rx="6"/>
+  <text class="t" x="958" y="211">6DoF 轨迹</text>
+  <rect class="derived" x="920" y="248" width="180" height="48" rx="6"/>
+  <text class="t" x="959" y="279">半稠密点云</text>
+  <rect class="derived" x="920" y="316" width="180" height="48" rx="6"/>
+  <text class="t" x="964" y="347">在线标定</text>
+  <rect class="derived" x="920" y="384" width="180" height="48" rx="6"/>
+  <text class="t" x="960" y="415">眼动 / 手部</text>
+  <path class="arrow" d="M310 205 C365 205 395 200 456 200"/>
+  <path class="arrow" d="M740 200 C805 200 835 200 886 200"/>
+  <path class="arrow" d="M600 270 L600 366"/>
+  <path class="arrow" d="M740 440 C815 440 830 440 886 440"/>
+  <rect class="warn" x="140" y="560" width="920" height="52" rx="8"/>
+  <text class="t" x="176" y="594">数据质检重点：VRS 时间戳、坐标系约定、MPS 版本、轨迹置信度、标定是否与当前设备匹配。</text>
+</svg>

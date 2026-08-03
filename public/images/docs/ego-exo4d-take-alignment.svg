@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="640" viewBox="0 0 1200 640" role="img" aria-labelledby="title desc">
+  <title id="title">Ego-Exo4D 数据格式：take 级多视角同步与标定</title>
+  <desc id="desc">图示 Ego-Exo4D 在一个 take 中组织 Aria egocentric 视角、多个 GoPro exocentric 视角、frame aligned videos、MPS 轨迹和注释文件。</desc>
+  <defs>
+    <style>
+      .bg{fill:#f8fafc}.panel{fill:#fff;stroke:#cbd5e1;stroke-width:2}.ego{fill:#e0f2fe;stroke:#0284c7;stroke-width:2}.exo{fill:#fae8ff;stroke:#c026d3;stroke-width:2}.sync{fill:#ecfdf5;stroke:#059669;stroke-width:2}.ann{fill:#fef3c7;stroke:#d97706;stroke-width:2}.title{font:700 30px Arial,"Noto Sans SC",sans-serif;fill:#0f172a}.h{font:700 22px Arial,"Noto Sans SC",sans-serif;fill:#0f172a}.t{font:18px Arial,"Noto Sans SC",sans-serif;fill:#334155}.small{font:15px Arial,"Noto Sans SC",sans-serif;fill:#475569}.arrow{stroke:#64748b;stroke-width:3;fill:none;marker-end:url(#arrow)}
+    </style>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#64748b"/>
+    </marker>
+  </defs>
+  <rect class="bg" width="1200" height="640"/>
+  <text class="title" x="60" y="62">Ego-Exo4D：一个 take 里同时管理 ego、exo、同步、标定和标注</text>
+  <rect class="panel" x="60" y="110" width="260" height="410" rx="8"/>
+  <text class="h" x="117" y="154">Capture</text>
+  <text class="t" x="92" y="194">一次录制会话</text>
+  <rect class="ego" x="92" y="232" width="196" height="58" rx="6"/>
+  <text class="t" x="125" y="268">Aria VRS ego</text>
+  <rect class="exo" x="92" y="314" width="196" height="58" rx="6"/>
+  <text class="t" x="128" y="350">GoPro exo 1..5</text>
+  <rect class="sync" x="92" y="396" width="196" height="58" rx="6"/>
+  <text class="t" x="137" y="432">timesync.csv</text>
+  <rect class="panel" x="455" y="105" width="290" height="420" rx="8"/>
+  <text class="h" x="560" y="150">Take</text>
+  <text class="t" x="502" y="190">任务片段与统一索引</text>
+  <rect class="sync" x="492" y="232" width="216" height="52" rx="6"/>
+  <text class="t" x="526" y="265">frame_aligned_videos</text>
+  <rect class="ego" x="492" y="306" width="216" height="52" rx="6"/>
+  <text class="t" x="548" y="339">trajectory / MPS</text>
+  <rect class="exo" x="492" y="380" width="216" height="52" rx="6"/>
+  <text class="t" x="535" y="413">gopro_calibs.csv</text>
+  <rect class="panel" x="890" y="110" width="250" height="410" rx="8"/>
+  <text class="h" x="950" y="154">下游数据</text>
+  <rect class="ann" x="920" y="210" width="180" height="52" rx="6"/>
+  <text class="t" x="949" y="243">annotations</text>
+  <rect class="ann" x="920" y="286" width="180" height="52" rx="6"/>
+  <text class="t" x="963" y="319">features</text>
+  <rect class="ann" x="920" y="362" width="180" height="52" rx="6"/>
+  <text class="t" x="951" y="395">benchmarks</text>
+  <path class="arrow" d="M320 314 C380 314 395 315 451 315"/>
+  <path class="arrow" d="M745 315 C805 315 830 315 886 315"/>
+  <text class="small" x="70" y="576">数据质检重点：同一 frame_idx 在不同相机是否对齐，Aria 轨迹与 GoPro 外参是否落在同一世界坐标系，annotation 的 take_uid 是否能追溯到原始 take。</text>
+</svg>
