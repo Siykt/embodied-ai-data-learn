@@ -8,6 +8,9 @@ hero:
     - text: 视觉惯性 SLAM 数据
       link: /guides/visual-inertial-slam/
       icon: right-arrow
+    - text: YUV 算法与 Android 使用
+      link: /guides/yuv-algorithms-android/
+      icon: right-arrow
     - text: Ego 与 UMI 视频采集
       link: /guides/ego-world-operation-umi-video/
       icon: right-arrow
@@ -32,6 +35,9 @@ import { Card, CardGrid } from '@astrojs/starlight/components';
 <CardGrid>
 	<Card title="视觉惯性 SLAM 数据" icon="seti:folder">
 		从具身智能数据角度，讲清楚摄像头、运动传感器、轨迹和地图数据如何连在一起。
+	</Card>
+	<Card title="YUV 算法与 Android 使用" icon="seti:folder">
+		整理 YUV420、I420、NV21、stride 安全读取、颜色转换，以及 Android 端采集到模型输入的注意事项。
 	</Card>
 	<Card title="Ego 数据与 UMI 视频采集" icon="seti:folder">
 		整理第一人称操作数据、世界模式、操作模式，以及 UMI 如何把拍摄视频处理成可训练数据。

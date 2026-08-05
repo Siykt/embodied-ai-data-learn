@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="360" viewBox="0 0 1080 360" role="img" aria-labelledby="title desc">
+  <title id="title">YUV processing pipeline</title>
+  <desc id="desc">A YUV frame can be copied with stride handling, converted between layouts, rotated or cropped, converted to RGB, then normalized for annotation, quality control, or model input.</desc>
+  <defs>
+    <style>
+      .bg{fill:#f8fafc}.box{fill:#fff;stroke:#94a3b8;stroke-width:2}.hot{fill:#fff7ed;stroke:#f97316}.ok{fill:#f0fdf4;stroke:#22c55e}.txt{font-family:Arial,Helvetica,sans-serif;fill:#0f172a}.title{font-size:25px;font-weight:700}.small{font-size:17px}.muted{fill:#475569}.arrow{stroke:#334155;stroke-width:3;marker-end:url(#arrow)}
+    </style>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L0,6 L8,3 z" fill="#334155"/></marker>
+  </defs>
+  <rect class="bg" width="1080" height="360"/>
+  <text class="txt title" x="44" y="52">YUV frame algorithm path</text>
+  <g transform="translate(44 92)">
+    <rect class="box" width="150" height="120" rx="8"/><text class="txt title" x="24" y="44">Capture</text><text class="txt small muted" x="20" y="78">YUV_420_888</text><text class="txt small muted" x="20" y="102">timestamp</text>
+    <line class="arrow" x1="158" y1="60" x2="212" y2="60"/>
+    <rect class="hot" x="220" width="150" height="120" rx="8"/><text class="txt title" x="244" y="44">Unpack</text><text class="txt small muted" x="240" y="78">rowStride</text><text class="txt small muted" x="240" y="102">pixelStride</text>
+    <line class="arrow" x1="378" y1="60" x2="432" y2="60"/>
+    <rect class="box" x="440" width="150" height="120" rx="8"/><text class="txt title" x="470" y="44">Layout</text><text class="txt small muted" x="462" y="78">I420 / NV21</text><text class="txt small muted" x="462" y="102">crop / rotate</text>
+    <line class="arrow" x1="598" y1="60" x2="652" y2="60"/>
+    <rect class="box" x="660" width="150" height="120" rx="8"/><text class="txt title" x="692" y="44">Color</text><text class="txt small muted" x="684" y="78">BT.601/709</text><text class="txt small muted" x="684" y="102">range</text>
+    <line class="arrow" x1="818" y1="60" x2="872" y2="60"/>
+    <rect class="ok" x="880" width="150" height="120" rx="8"/><text class="txt title" x="918" y="44">Use</text><text class="txt small muted" x="904" y="78">QC / label</text><text class="txt small muted" x="904" y="102">model input</text>
+  </g>
+  <text class="txt small muted" x="56" y="276">Data rule: store original YUV frame metadata beside derived RGB previews so training and debugging can reproduce the exact preprocessing path.</text>
+  <text class="txt small muted" x="56" y="306">Implementation rule: conversion bugs usually come from treating padded rows as dense rows, or from swapping U and V.</text>
+</svg>

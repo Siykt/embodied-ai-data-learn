@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="420" viewBox="0 0 1080 420" role="img" aria-labelledby="title desc">
+  <title id="title">Android YUV frame flow</title>
+  <desc id="desc">Android camera frames flow from Camera2 or CameraX to Image, ImageProxy, conversion code, model input, and dataset records. Each frame must be closed after analysis.</desc>
+  <defs>
+    <style>
+      .bg{fill:#f8fafc}.box{fill:#fff;stroke:#94a3b8;stroke-width:2}.warn{fill:#fef2f2;stroke:#ef4444}.data{fill:#eff6ff;stroke:#2563eb}.txt{font-family:Arial,Helvetica,sans-serif;fill:#0f172a}.title{font-size:25px;font-weight:700}.small{font-size:17px}.muted{fill:#475569}.arrow{stroke:#334155;stroke-width:3;marker-end:url(#arrow)}
+    </style>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L0,6 L8,3 z" fill="#334155"/></marker>
+  </defs>
+  <rect class="bg" width="1080" height="420"/>
+  <text class="txt title" x="44" y="54">Android side: camera frame to embodied AI data</text>
+  <g transform="translate(52 100)">
+    <rect class="box" width="180" height="96" rx="8"/><text class="txt title" x="36" y="38">Camera2</text><text class="txt small muted" x="26" y="68">ImageReader</text>
+    <rect class="box" y="150" width="180" height="96" rx="8"/><text class="txt title" x="42" y="188">CameraX</text><text class="txt small muted" x="22" y="218">ImageAnalysis</text>
+    <line class="arrow" x1="190" y1="48" x2="274" y2="110"/><line class="arrow" x1="190" y1="198" x2="274" y2="146"/>
+    <rect class="data" x="286" y="68" width="190" height="120" rx="8"/><text class="txt title" x="316" y="108">YUV planes</text><text class="txt small muted" x="312" y="140">Y, U, V buffers</text><text class="txt small muted" x="312" y="166">stride metadata</text>
+    <line class="arrow" x1="486" y1="128" x2="570" y2="128"/>
+    <rect class="box" x="582" y="68" width="184" height="120" rx="8"/><text class="txt title" x="622" y="108">Convert</text><text class="txt small muted" x="610" y="140">RGB / tensor</text><text class="txt small muted" x="610" y="166">or luma only</text>
+    <line class="arrow" x1="776" y1="128" x2="860" y2="128"/>
+    <rect class="data" x="872" y="68" width="160" height="120" rx="8"/><text class="txt title" x="920" y="108">Store</text><text class="txt small muted" x="902" y="140">frame id</text><text class="txt small muted" x="902" y="166">timestamp</text>
+    <rect class="warn" x="304" y="250" width="440" height="84" rx="8"/><text class="txt title" x="330" y="286">Analyzer contract</text><text class="txt small muted" x="330" y="316">finish quickly, close Image/ImageProxy, reuse buffers</text>
+  </g>
+</svg>
