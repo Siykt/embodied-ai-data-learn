@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="420" viewBox="0 0 1080 420" role="img" aria-labelledby="title desc">
+  <title id="title">移动设备 IMU 数据质量检查</title>
+  <desc id="desc">图示移动设备 IMU 数据在时间完整性、静止偏置、动态范围、视频对齐和元数据完整性五个维度上的质量检查。</desc>
+  <defs>
+    <style>.bg{fill:#f8fafc}.box{fill:#fff;stroke:#94a3b8;stroke-width:2}.ok{fill:#ecfdf5;stroke:#059669;stroke-width:2}.bad{fill:#fef2f2;stroke:#dc2626;stroke-width:2}.txt{font-family:Arial,'Noto Sans CJK SC',sans-serif;fill:#0f172a}.title{font-size:25px;font-weight:700}.label{font-size:20px;font-weight:700}.small{font-size:16px;fill:#475569}.arrow{stroke:#334155;stroke-width:3;marker-end:url(#arrow)}</style>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L0,6 L8,3 z" fill="#334155"/></marker>
+  </defs>
+  <rect class="bg" width="1080" height="420"/>
+  <text class="txt title" x="42" y="52">移动设备 IMU 数据：采集后先检查，再进入对齐与训练</text>
+  <g transform="translate(44 94)">
+    <rect class="box" width="175" height="202" rx="8"/><text class="txt label" x="42" y="45">原始 IMU</text><text class="txt small" x="24" y="80">t, ax, ay, az</text><text class="txt small" x="24" y="108">gx, gy, gz</text><text class="txt small" x="24" y="148">设备与会话元数据</text>
+    <line class="arrow" x1="188" y1="102" x2="268" y2="102"/>
+    <rect class="ok" x="280" width="214" height="88" rx="8"/><text class="txt label" x="306" y="35">时间完整性</text><text class="txt small" x="306" y="64">间隔、倒退、重复、缺口</text>
+    <rect class="ok" x="280" y="114" width="214" height="88" rx="8"/><text class="txt label" x="306" y="149">静止段</text><text class="txt small" x="306" y="178">偏置、噪声、重力方向</text>
+    <line class="arrow" x1="506" y1="44" x2="586" y2="44"/><line class="arrow" x1="506" y1="158" x2="586" y2="158"/>
+    <rect class="ok" x="598" width="214" height="88" rx="8"/><text class="txt label" x="624" y="35">动态检查</text><text class="txt small" x="624" y="64">饱和、异常峰值、量程</text>
+    <rect class="ok" x="598" y="114" width="214" height="88" rx="8"/><text class="txt label" x="624" y="149">跨模态对齐</text><text class="txt small" x="624" y="178">视频转动与陀螺仪对应</text>
+    <line class="arrow" x1="824" y1="102" x2="904" y2="102"/>
+    <rect class="bad" x="916" width="120" height="202" rx="8"/><text class="txt label" x="940" y="45">判定</text><text class="txt small" x="934" y="92">通过</text><text class="txt small" x="934" y="122">复采</text><text class="txt small" x="934" y="152">降级</text><text class="txt small" x="934" y="182">剔除</text>
+  </g>
+</svg>
