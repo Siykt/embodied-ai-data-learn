@@ -6,7 +6,8 @@ import starlight from '@astrojs/starlight';
 export default defineConfig({
 	integrations: [
 		starlight({
-			title: '具身智能数据学习',
+			title: '具身智能数据',
+			customCss: ['./src/styles/custom.css'],
 			sidebar: [
 				{
 					label: '数据技术整理',

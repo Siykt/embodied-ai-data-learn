@@ -1,60 +1,17 @@
 ---
-title: 具身智能数据学习
-description: 整理具身智能数据采集、处理、标注和评估相关技术。
+title: 具身数据
+description: 围绕具身智能数据的采集、对齐、处理、标注与评估，建立可检索、可复用的技术资料。
 template: splash
 hero:
-  tagline: 围绕机器人和智能体的数据，从采集、对齐、标注到评估，建立清晰、可靠的技术资料。
+  tagline: 面向真实世界数据的工程笔记
+  image:
+    html: '<img src="/images/docs/embodied-ai-data-overview.webp" alt="具身智能数据采集、对齐与空间建图概览">'
   actions:
-    - text: 视觉惯性 SLAM 数据
-      link: /guides/visual-inertial-slam/
+    - text: 浏览文档
+      link: '#文档目录'
       icon: right-arrow
-    - text: 移动设备 IMU 数据采集
-      link: /guides/mobile-imu-data-collection/
-      icon: right-arrow
-    - text: YUV 算法与 Android 使用
-      link: /guides/yuv-algorithms-android/
-      icon: right-arrow
-    - text: Ego 与 UMI 视频采集
-      link: /guides/ego-world-operation-umi-video/
-      icon: right-arrow
-    - text: Episode 与 Trajectory
-      link: /guides/episode-trajectory-design/
-      icon: right-arrow
-    - text: Aria、Ego4D 与 Ego-Exo4D
-      link: /guides/aria-ego4d-egoexo4d-formats/
-      icon: right-arrow
-    - text: 术语表
-      link: /reference/terms/
-      icon: document
-      variant: minimal
 ---
 
-import { Card, CardGrid } from '@astrojs/starlight/components';
+import HomeIndex from '../../components/HomeIndex.astro';
 
-![具身智能数据采集与空间建图概览](/images/docs/embodied-ai-data-overview.webp)
-
-## 已整理主题
-
-<CardGrid>
-	<Card title="视觉惯性 SLAM 数据" icon="seti:folder">
-		从具身智能数据角度，讲清楚摄像头、运动传感器、轨迹和地图数据如何连在一起。
-	</Card>
-	<Card title="移动设备 IMU 数据采集" icon="seti:folder">
-		整理手机和平板 IMU 的原始记录、时间对齐、跨设备差异、质量控制和数据交付规范。
-	</Card>
-	<Card title="YUV 算法与 Android 使用" icon="seti:folder">
-		整理 YUV420、I420、NV21、stride 安全读取、颜色转换，以及 Android 端采集到模型输入的注意事项。
-	</Card>
-	<Card title="Ego 数据与 UMI 视频采集" icon="seti:folder">
-		整理第一人称操作数据、世界模式、操作模式，以及 UMI 如何把拍摄视频处理成可训练数据。
-	</Card>
-	<Card title="Episode 与 Trajectory 数据设计" icon="seti:folder">
-		整理具身智能数据集中 episode、trajectory、step、transition、窗口采样和元数据索引的常见组织方式。
-	</Card>
-	<Card title="Aria、Ego4D 与 Ego-Exo4D 数据格式" icon="seti:folder">
-		整理 Project Aria、Ego4D 和 Ego-Exo4D 的数据容器、时间轴、标定、标注组织和训练使用差异。
-	</Card>
-	<Card title="术语说明" icon="seti:document">
-		解释数据文档里不得不用的技术词，降低阅读门槛。
-	</Card>
-</CardGrid>
+<HomeIndex />

@@ -1,0 +1,62 @@
+---
+import { getCollection } from 'astro:content';
+
+const pages = (await getCollection('docs'))
+	.filter((page) => page.id !== 'index')
+	.sort((a, b) => a.id.localeCompare(b.id));
+
+const categories = [
+	{
+		key: 'guides',
+		title: '数据工程',
+		intro: '从传感器采集到训练交付，关注真实设备上的数据质量。',
+	},
+	{
+		key: 'reference',
+		title: '参考资料',
+		intro: '统一术语、格式和常用概念，便于跨主题阅读。',
+	},
+];
+
+type Page = typeof pages[number];
+const getCategory = (page: Page) => page.id.split('/')[0] === 'reference' ? 'reference' : 'guides';
+const getHref = (page: Page) => `/${page.id}/`;
+---
+
+<div class="home-intro" id="文档目录">
+	<div>
+		<p class="home-kicker">DOCUMENTATION INDEX</p>
+		<h2>按主题查找</h2>
+		<p>每个页面都从数据采集、时间空间对齐、标注、质量控制和下游使用出发，适合按任务直接进入。</p>
+	</div>
+	<div class="home-stats" aria-label="文档统计">
+		<strong>{pages.length}</strong>
+		<span>篇文档</span>
+	</div>
+</div>
+
+<div class="home-categories">
+	{categories.map((category) => {
+		const categoryPages = pages.filter((page) => getCategory(page) === category.key);
+		return (
+			<section class="home-section" aria-labelledby={`category-${category.key}`}>
+				<div class="home-section-heading">
+					<div>
+						<p class="home-section-index">{String(categories.indexOf(category) + 1).padStart(2, '0')}</p>
+						<h2 id={`category-${category.key}`}>{category.title}</h2>
+					</div>
+					<p>{category.intro}</p>
+				</div>
+				<div class="home-doc-grid">
+					{categoryPages.map((page) => (
+						<a class="home-doc" href={getHref(page)}>
+							<span class="home-doc-arrow" aria-hidden="true">↗</span>
+							<h3>{page.data.title}</h3>
+							<p>{page.data.description}</p>
+						</a>
+					))}
+				</div>
+			</section>
+		);
+	})}
+</div>
