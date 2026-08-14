@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="620" viewBox="0 0 1200 620" role="img" aria-labelledby="title desc">
+  <title id="title">相机内参中的投影关系</title><desc id="desc">三维点经过相机光心投影到成像平面；焦距、主点和畸变模型共同决定像素位置。</desc>
+  <style>.bg{fill:#f8fafc}.card{fill:#fff;stroke:#cbd5e1;stroke-width:2}.camera{fill:#dbeafe;stroke:#2563eb;stroke-width:3}.plane{fill:#fef3c7;stroke:#d97706;stroke-width:3}.ray{stroke:#475569;stroke-width:3}.dash{stroke:#94a3b8;stroke-width:2;stroke-dasharray:8 8}.point{fill:#dc2626}.h{font:700 27px system-ui,sans-serif;fill:#0f172a}.t{font:500 19px system-ui,sans-serif;fill:#334155}.s{font:500 16px system-ui,sans-serif;fill:#475569}</style>
+  <rect class="bg" width="1200" height="620"/><text class="h" x="60" y="60">相机内参：把相机前方的三维方向解释为图像像素</text>
+  <rect class="card" x="55" y="105" width="470" height="400" rx="16"/><text class="t" x="88" y="151">相机坐标与成像平面</text>
+  <circle class="camera" cx="165" cy="315" r="36"/><text class="s" x="118" y="380">光心</text><line class="dash" x1="165" y1="315" x2="465" y2="315"/>
+  <line class="plane" x1="400" y1="190" x2="400" y2="438"/><text class="s" x="352" y="470">像素平面</text><circle class="point" cx="400" cy="248" r="8"/><text class="s" x="412" y="242">(u, v)</text>
+  <circle class="point" cx="300" cy="197" r="10"/><text class="s" x="220" y="180">三维点 (X, Y, Z)</text><line class="ray" x1="165" y1="315" x2="300" y2="197"/><line class="ray" x1="165" y1="315" x2="400" y2="248"/>
+  <text class="s" x="188" y="344">Z 轴</text><text class="s" x="309" y="300">fx、fy 控制视角</text><text class="s" x="405" y="280">cx、cy 为主点</text>
+  <rect class="card" x="570" y="105" width="570" height="400" rx="16"/><text class="t" x="605" y="151">数据中必须共同声明的部分</text>
+  <rect class="camera" x="610" y="190" width="210" height="105" rx="12"/><text class="t" x="650" y="232">投影内参 K</text><text class="s" x="638" y="265">fx, fy, cx, cy</text>
+  <rect class="plane" x="880" y="190" width="210" height="105" rx="12"/><text class="t" x="923" y="232">畸变模型</text><text class="s" x="906" y="265">名称、参数、顺序</text>
+  <rect class="card" x="610" y="345" width="480" height="105" rx="12"/><text class="t" x="652" y="386">图像适用状态</text><text class="s" x="652" y="420">实际宽高 · 裁剪/缩放/旋转 · 原始或去畸变</text>
+  <line class="ray" x1="820" y1="243" x2="880" y2="243"/><line class="ray" x1="850" y1="295" x2="850" y2="345"/>
+  <text class="s" x="62" y="565">同一空间点在不同镜头或不同预处理图像中的像素位置不同；内参使这个差异可计算、可复查。</text>
+</svg>

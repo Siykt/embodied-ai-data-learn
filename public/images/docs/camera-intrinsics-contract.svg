@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="500" viewBox="0 0 1200 500" role="img" aria-labelledby="title desc">
+ <title id="title">相机内参数据契约</title><desc id="desc">一条相机图像流需要用身份、图像状态、投影模型、标定版本和质量记录共同解释。</desc>
+ <style>.bg{fill:#f8fafc}.a{fill:#e0f2fe;stroke:#0284c7;stroke-width:2}.b{fill:#ecfccb;stroke:#65a30d;stroke-width:2}.c{fill:#fef3c7;stroke:#d97706;stroke-width:2}.d{fill:#fae8ff;stroke:#a21caf;stroke-width:2}.h{font:700 25px system-ui,sans-serif;fill:#0f172a}.t{font:700 19px system-ui,sans-serif;fill:#1e293b}.s{font:500 16px system-ui,sans-serif;fill:#334155}.arrow{stroke:#64748b;stroke-width:3;marker-end:url(#m)}</style><defs><marker id="m" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="#64748b"/></marker></defs>
+ <rect class="bg" width="1200" height="500"/><text class="h" x="55" y="55">可用的内参记录：参数必须与它所解释的图像和质量证据绑定</text>
+ <rect class="a" x="70" y="120" width="220" height="210" rx="14"/><text class="t" x="122" y="163">相机身份</text><text class="s" x="97" y="205">camera_id / 序列号</text><text class="s" x="97" y="239">硬件配置</text><text class="s" x="97" y="273">相机流角色</text>
+ <rect class="b" x="350" y="120" width="220" height="210" rx="14"/><text class="t" x="404" y="163">图像状态</text><text class="s" x="376" y="205">实际宽 × 高</text><text class="s" x="376" y="239">裁剪 / 缩放 / 旋转</text><text class="s" x="376" y="273">原始或去畸变</text>
+ <rect class="c" x="630" y="120" width="220" height="210" rx="14"/><text class="t" x="678" y="163">投影模型</text><text class="s" x="656" y="205">K: fx, fy, cx, cy</text><text class="s" x="656" y="239">模型名称</text><text class="s" x="656" y="273">畸变参数及顺序</text>
+ <rect class="d" x="910" y="120" width="220" height="210" rx="14"/><text class="t" x="958" y="163">可追溯性</text><text class="s" x="936" y="205">标定版本与日期</text><text class="s" x="936" y="239">工具与配置版本</text><text class="s" x="936" y="273">残差与验收结论</text>
+ <line class="arrow" x1="290" y1="225" x2="350" y2="225"/><line class="arrow" x1="570" y1="225" x2="630" y2="225"/><line class="arrow" x1="850" y1="225" x2="910" y2="225"/>
+ <rect fill="#fff" stroke="#94a3b8" stroke-width="2" x="190" y="385" width="820" height="65" rx="12"/><text class="t" x="300" y="426">缺少任一部分时：参数可能数值正确，却不再适用于当前训练或标注图像。</text>
+</svg>
