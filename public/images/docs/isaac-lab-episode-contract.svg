@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 560" role="img" aria-labelledby="title desc">
+  <title id="title">Isaac Lab episode 数据契约</title>
+  <desc id="desc">一个 episode 由元数据、每步观测、动作状态、边界和质量字段构成。</desc>
+  <defs><style>text{font-family:Arial,'Noto Sans SC',sans-serif;fill:#173042}.root{fill:#e3f1f7;stroke:#2f7294;stroke-width:3}.branch{fill:#f8fbfc;stroke:#8aaebe;stroke-width:2}.title{font-size:27px;font-weight:700}.body{font-size:21px}</style></defs>
+  <rect width="1200" height="560" rx="24" fill="#fffdf8"/>
+  <text x="60" y="58" class="title">不要只保存 rollout 文件：把 episode 做成可追溯数据对象</text>
+  <rect x="470" y="100" width="260" height="82" rx="16" class="root"/><text x="600" y="150" text-anchor="middle" class="title">episode_id</text>
+  <path d="M600 182v48M600 230H190v55M600 230H430v55M600 230H770v55M600 230h410v55" fill="none" stroke="#6d9db7" stroke-width="2"/>
+  <rect x="70" y="285" width="240" height="145" rx="14" class="branch"/><text x="190" y="328" text-anchor="middle" class="title">元数据</text><text x="190" y="365" text-anchor="middle" class="body">任务、场景、机器人</text><text x="190" y="397" text-anchor="middle" class="body">随机种子、版本</text>
+  <rect x="330" y="285" width="240" height="145" rx="14" class="branch"/><text x="450" y="328" text-anchor="middle" class="title">观测</text><text x="450" y="365" text-anchor="middle" class="body">RGB / 深度 / 分割</text><text x="450" y="397" text-anchor="middle" class="body">关节、IMU、接触</text>
+  <rect x="590" y="285" width="240" height="145" rx="14" class="branch"/><text x="710" y="328" text-anchor="middle" class="title">动作与状态</text><text x="710" y="365" text-anchor="middle" class="body">action、state、reward</text><text x="710" y="397" text-anchor="middle" class="body">控制频率、延迟</text>
+  <rect x="850" y="285" width="280" height="145" rx="14" class="branch"/><text x="990" y="328" text-anchor="middle" class="title">边界与质量</text><text x="990" y="365" text-anchor="middle" class="body">is_first / is_last</text><text x="990" y="397" text-anchor="middle" class="body">终止原因、质量标记</text>
+  <text x="600" y="500" text-anchor="middle" class="body">仿真来源、配置与生成脚本必须可追溯，才能支持复现和 sim-to-real 对照。</text>
+</svg>
