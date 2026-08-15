@@ -22,6 +22,7 @@ export default defineConfig({
 						{ label: 'Meta VRS 多传感器数据规范', slug: 'guides/meta-vrs-data-standard' },
 						{ label: 'TURN 与具身数据实时采集', slug: 'guides/turn-for-embodied-data' },
 						{ label: 'Isaac Lab 与具身数据', slug: 'guides/isaac-lab-embodied-data' },
+						{ label: 'VLA 模型与主流验证方法', slug: 'guides/vla-models-and-evaluation' },
 					],
 				},
 				{

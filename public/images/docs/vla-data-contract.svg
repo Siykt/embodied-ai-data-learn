@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 560" role="img" aria-labelledby="title desc">
+  <title id="title">VLA episode 数据契约</title>
+  <desc id="desc">VLA 样本把语言任务、观测、动作、状态、边界和质量信息绑定到同一时间轴。</desc>
+  <rect width="1200" height="560" rx="28" fill="#f8fafc"/>
+  <g font-family="Arial, sans-serif" fill="#0f172a"><text x="60" y="60" font-size="28" font-weight="700">VLA 样本不是一张图：它是一条可重放的时间链</text>
+    <rect x="70" y="125" width="1060" height="85" rx="14" fill="#ede9fe" stroke="#7c3aed" stroke-width="3"/><text x="100" y="158" font-size="20" font-weight="700">episode 元数据</text><text x="100" y="188" font-size="17">task_id · language_instruction · scene_id · robot_id · schema_version · split</text>
+    <rect x="70" y="250" width="245" height="190" rx="14" fill="#dbeafe" stroke="#2563eb" stroke-width="3"/><text x="100" y="290" font-size="21" font-weight="700">观测</text><text x="100" y="325" font-size="17">RGB / depth</text><text x="100" y="355" font-size="17">proprioception</text><text x="100" y="385" font-size="17">空间提示 / 语言</text><text x="100" y="415" font-size="17">timestamp</text>
+    <rect x="355" y="250" width="245" height="190" rx="14" fill="#dcfce7" stroke="#16a34a" stroke-width="3"/><text x="385" y="290" font-size="21" font-weight="700">动作</text><text x="385" y="325" font-size="17">action_type</text><text x="385" y="355" font-size="17">pose / joint / gripper</text><text x="385" y="385" font-size="17">control_hz</text><text x="385" y="415" font-size="17">latency / horizon</text>
+    <rect x="640" y="250" width="210" height="190" rx="14" fill="#ffedd5" stroke="#ea580c" stroke-width="3"/><text x="670" y="290" font-size="21" font-weight="700">结果</text><text x="670" y="325" font-size="17">success</text><text x="670" y="355" font-size="17">progress</text><text x="670" y="385" font-size="17">failure_reason</text><text x="670" y="415" font-size="17">safety_event</text>
+    <rect x="890" y="250" width="240" height="190" rx="14" fill="#f1f5f9" stroke="#64748b" stroke-width="3"/><text x="920" y="290" font-size="21" font-weight="700">质量与追溯</text><text x="920" y="325" font-size="17">alignment_error</text><text x="920" y="355" font-size="17">occlusion / dropped</text><text x="920" y="385" font-size="17">calibration_version</text><text x="920" y="415" font-size="17">review_status</text>
+    <path d="M315 345H350M600 345H635M850 345H885" stroke="#64748b" stroke-width="4"/>
+    <text x="70" y="500" font-size="18" fill="#475569">训练、回放和评测必须使用同一套时间轴；否则动作误差与成功率都可能被错位数据污染。</text></g>
+</svg>

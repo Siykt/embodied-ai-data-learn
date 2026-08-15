@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 620" role="img" aria-labelledby="title desc">
+  <title id="title">VLA 四级验证矩阵</title>
+  <desc id="desc">从数据契约、离线动作、闭环任务到跨本体与安全验证逐级增加真实度。</desc>
+  <rect width="1200" height="620" rx="28" fill="#f8fafc"/>
+  <g font-family="Arial, sans-serif" fill="#0f172a">
+    <text x="60" y="58" font-size="28" font-weight="700">VLA 验证矩阵：从可读到可部署</text>
+    <text x="60" y="90" font-size="17" fill="#475569">每一级都回答不同问题；离线分数高，不能替代真实闭环成功率。</text>
+    <g font-size="18" font-weight="700"><text x="80" y="145">层级</text><text x="300" y="145">核心问题</text><text x="715" y="145">典型指标</text><text x="970" y="145">数据证据</text></g>
+    <g stroke="#cbd5e1" stroke-width="2"><path d="M60 165H1140M60 265H1140M60 365H1140M60 465H1140M60 565H1140"/><path d="M260 115V565M680 115V565M945 115V565"/></g>
+    <g font-size="17"><text x="80" y="210" font-weight="700" fill="#2563eb">1 数据契约</text><text x="300" y="205">时间、坐标、动作语义</text><text x="300" y="232">是否能无歧义重放？</text><text x="715" y="205">缺失率、对齐误差</text><text x="715" y="232">单位/边界/版本一致性</text><text x="970" y="205">schema、质检报告</text>
+    <text x="80" y="310" font-weight="700" fill="#16a34a">2 离线动作</text><text x="300" y="305">模型是否学到动作映射？</text><text x="300" y="332">不接触真实机器人能否比较？</text><text x="715" y="305">action error、NLL</text><text x="715" y="332">成功分类、校准误差</text><text x="970" y="305">留出 episode、回放</text>
+    <text x="80" y="410" font-weight="700" fill="#ca8a04">3 闭环任务</text><text x="300" y="405">遇到误差和扰动能否完成？</text><text x="300" y="432">动作是否真的改变环境？</text><text x="715" y="405">success、progress</text><text x="715" y="432">重规划、接触/碰撞</text><text x="970" y="405">仿真、真实硬件</text>
+    <text x="80" y="510" font-weight="700" fill="#dc2626">4 泛化与安全</text><text x="300" y="505">换物体、场景、本体仍安全吗？</text><text x="300" y="532">失败是否可解释可恢复？</text><text x="715" y="505">跨任务/本体成功率</text><text x="715" y="532">风险事件、尾部失败</text><text x="970" y="505">新场景、对抗扰动</text></g>
+  </g>
+</svg>
