@@ -20,6 +20,7 @@ export default defineConfig({
 						{ label: 'Episode 与 Trajectory 数据设计', slug: 'guides/episode-trajectory-design' },
 						{ label: 'Aria、Ego4D 与 Ego-Exo4D 数据格式', slug: 'guides/aria-ego4d-egoexo4d-formats' },
 						{ label: 'Meta VRS 多传感器数据规范', slug: 'guides/meta-vrs-data-standard' },
+						{ label: 'TURN 与具身数据实时采集', slug: 'guides/turn-for-embodied-data' },
 					],
 				},
 				{

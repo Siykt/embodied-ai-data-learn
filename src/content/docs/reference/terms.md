@@ -395,6 +395,20 @@ Replay buffer 是按时间顺序保存 episode 数据的训练数据容器。
 
 摄像头说“这张图是 10:00:00.100 拍的”，运动传感器也要能对应到同一瞬间的运动。如果时间差一点点，高速运动时就会造成明显错误。
 
+## TURN
+
+TURN（Traversal Using Relays around NAT）是 WebRTC 的中继协议。控制端和机器人端无法通过 NAT 或防火墙直连时，双方都向公网 TURN 服务器建立出站连接，再由它转发加密的媒体和数据通道。
+
+在具身数据采集里，TURN 属于网络连接层：它可以支撑远程视频、机器人状态和遥操作控制到达，但不负责传感器时间同步、相机标定、动作标签或 episode 划分。中继可能增加延迟、抖动、丢包和重连，因此应把连接路径与质量指标写入 session 或 episode 的质量字段。
+
+## STUN
+
+STUN（Session Traversal Utilities for NAT）帮助设备发现自己在公网 NAT 之后的映射地址。WebRTC 通常先用 STUN 发现可直连的候选路径，失败后再考虑 TURN 中继。STUN 主要发现地址，不负责像 TURN 那样长期转发媒体流。
+
+## ICE
+
+ICE（Interactive Connectivity Establishment）是 WebRTC 测试和选择连接路径的机制。它会比较本地地址、STUN 得到的公网映射地址和 TURN 中继地址，选择当前可用的路径。对具身数据，最终选中的路径和网络质量应作为采集上下文记录。
+
 ## 双目摄像头
 
 双目摄像头就是两个摄像头并排看世界。

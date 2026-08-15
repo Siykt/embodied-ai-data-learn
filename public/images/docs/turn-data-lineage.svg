@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 430" role="img" aria-labelledby="title desc">
+  <title id="title">TURN 连接事件与具身数据血缘</title>
+  <desc id="desc">TURN 影响连接质量与事件记录，最终作为质量字段进入 episode 数据集，而不改变传感器语义。</desc>
+  <defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0 0L10 5L0 10Z" fill="#356ae6"/></marker><style>text{font-family:Arial,"Noto Sans SC",sans-serif;fill:#172033}.h{font-size:23px;font-weight:700}.s{font-size:17px}.b{fill:#f7f9fc;stroke:#aebbd2;stroke-width:3}.a{fill:#eaf1ff;stroke:#356ae6;stroke-width:3}.q{fill:#fff7e6;stroke:#d28b24;stroke-width:3}</style></defs>
+  <rect width="1200" height="430" fill="#fff"/>
+  <rect x="35" y="80" width="220" height="200" rx="16" class="b"/><text x="145" y="130" text-anchor="middle" class="h">连接层</text><text x="145" y="175" text-anchor="middle" class="s">ICE / STUN / TURN</text><text x="145" y="212" text-anchor="middle" class="s">连接建立、重连</text><text x="145" y="249" text-anchor="middle" class="s">中继字节流</text>
+  <rect x="330" y="80" width="220" height="200" rx="16" class="a"/><text x="440" y="130" text-anchor="middle" class="h">质量观测</text><text x="440" y="175" text-anchor="middle" class="s">RTT、抖动、丢包</text><text x="440" y="212" text-anchor="middle" class="s">断连、重连、时间窗</text><text x="440" y="249" text-anchor="middle" class="s">TURN 使用与费用</text>
+  <rect x="625" y="80" width="220" height="200" rx="16" class="q"/><text x="735" y="130" text-anchor="middle" class="h">数据质检</text><text x="735" y="175" text-anchor="middle" class="s">帧缺失、动作延迟</text><text x="735" y="212" text-anchor="middle" class="s">episode 边界</text><text x="735" y="249" text-anchor="middle" class="s">有效性标记</text>
+  <rect x="920" y="80" width="220" height="200" rx="16" class="b"/><text x="1030" y="130" text-anchor="middle" class="h">数据集层</text><text x="1030" y="175" text-anchor="middle" class="s">原始流 + 派生流</text><text x="1030" y="212" text-anchor="middle" class="s">质量字段与血缘</text><text x="1030" y="249" text-anchor="middle" class="s">训练 / 评估切分</text>
+  <path d="M255 180H320M550 180H615M845 180H910" stroke="#356ae6" stroke-width="5" marker-end="url(#arrow)"/>
+  <text x="600" y="355" text-anchor="middle" class="s">TURN 不创造观测、动作或标注；它提供“数据能否可靠到达”的传输条件</text>
+</svg>
