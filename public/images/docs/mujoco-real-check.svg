@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 520" role="img" aria-labelledby="title desc">
+  <title id="title">MuJoCo 仿真到真实数据的差异检查</title>
+  <desc id="desc">比较 MuJoCo 仿真和真实设备在接触参数、控制、观测噪声与任务分布上的差异，并把结果回写数据策略。</desc>
+  <defs><style>text{font-family:Arial,'Noto Sans SC',sans-serif;fill:#173042}.box{fill:#f8fbfc;stroke:#8aaebe;stroke-width:2}.head{font-size:26px;font-weight:700}.body{font-size:20px}.line{stroke:#356b8c;stroke-width:3;fill:none;marker-end:url(#a)}</style><marker id="a" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0 0L10 5L0 10z" fill="#356b8c"/></marker></defs>
+  <rect width="1200" height="520" rx="24" fill="#fffdf8"/>
+  <rect x="80" y="145" width="260" height="165" rx="16" class="box"/><text x="210" y="192" text-anchor="middle" class="head">MuJoCo 仿真数据</text><text x="210" y="230" text-anchor="middle" class="body">可控、快、状态标签全</text><text x="210" y="265" text-anchor="middle" class="body">接触参数偏理想化</text>
+  <rect x="470" y="95" width="260" height="265" rx="16" fill="#e3f1f7" stroke="#2f7294" stroke-width="3"/><text x="600" y="145" text-anchor="middle" class="head">差异检查</text><text x="600" y="190" text-anchor="middle" class="body">接触刚度与阻尼</text><text x="600" y="225" text-anchor="middle" class="body">摩擦系数与关节阻尼</text><text x="600" y="260" text-anchor="middle" class="body">控制频率与动作延迟</text><text x="600" y="295" text-anchor="middle" class="body">执行器、限位与观测噪声</text>
+  <rect x="860" y="145" width="260" height="165" rx="16" class="box"/><text x="990" y="192" text-anchor="middle" class="head">真实设备数据</text><text x="990" y="230" text-anchor="middle" class="body">少量、含回差与延迟</text><text x="990" y="265" text-anchor="middle" class="body">用于标定与最终验证</text>
+  <path d="M340 225h120M740 225h120" class="line"/>
+  <path d="M990 310v80H210v-80" class="line" stroke-dasharray="8 8"/>
+  <text x="600" y="455" text-anchor="middle" class="body">真实回放结果应反馈到 MJCF 参数、传感器噪声与任务采样，并用于筛选仿真轨迹。</text>
+</svg>

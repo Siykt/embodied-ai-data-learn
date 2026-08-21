@@ -21,6 +21,8 @@ export default defineConfig({
 						{ label: 'Aria、Ego4D 与 Ego-Exo4D 数据格式', slug: 'guides/aria-ego4d-egoexo4d-formats' },
 						{ label: 'Meta VRS 多传感器数据规范', slug: 'guides/meta-vrs-data-standard' },
 						{ label: 'TURN 与具身数据实时采集', slug: 'guides/turn-for-embodied-data' },
+						{ label: '仿真器与具身数据', slug: 'guides/simulators-embodied-data' },
+						{ label: 'MuJoCo 与具身数据', slug: 'guides/mujoco-embodied-data' },
 						{ label: 'Isaac Lab 与具身数据', slug: 'guides/isaac-lab-embodied-data' },
 						{ label: 'VLA 模型与主流验证方法', slug: 'guides/vla-models-and-evaluation' },
 					],

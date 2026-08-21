@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 560" role="img" aria-labelledby="title desc">
+  <title id="title">MuJoCo 数据生成链路</title>
+  <desc id="desc">MJCF 场景与资产进入 MuJoCo 引擎，每步产出时间、状态、控制、传感器与渲染数据，组装成 episode 后形成数据集并做质量检查。</desc>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0 0L10 5L0 10z" fill="#356b8c"/></marker>
+    <style>text{font-family:Arial,'Noto Sans SC',sans-serif;fill:#173042} .box{fill:#f5fafc;stroke:#6d9db7;stroke-width:2} .main{fill:#e3f1f7;stroke:#2f7294;stroke-width:3} .small{font-size:19px} .label{font-size:24px;font-weight:700} .line{stroke:#356b8c;stroke-width:3;fill:none;marker-end:url(#arrow)}</style>
+  </defs>
+  <rect width="1200" height="560" rx="24" fill="#fffdf8"/>
+  <text x="60" y="58" class="label">MuJoCo：从 MJCF 场景到可复用的轨迹数据</text>
+  <rect x="65" y="120" width="220" height="125" rx="16" class="box"/><text x="175" y="164" text-anchor="middle" class="label">MJCF 场景与资产</text><text x="175" y="202" text-anchor="middle" class="small">机器人、物体、传感器、执行器、相机</text>
+  <rect x="340" y="120" width="220" height="125" rx="16" class="main"/><text x="450" y="164" text-anchor="middle" class="label">MuJoCo 引擎</text><text x="450" y="202" text-anchor="middle" class="small">物理 + 控制 + 传感器 + 渲染</text>
+  <rect x="615" y="120" width="220" height="125" rx="16" class="box"/><text x="725" y="164" text-anchor="middle" class="label">每步数据</text><text x="725" y="202" text-anchor="middle" class="small">time、qpos/qvel、ctrl、sensordata、图像</text>
+  <rect x="890" y="120" width="245" height="125" rx="16" class="box"/><text x="1012" y="164" text-anchor="middle" class="label">Episode 组装</text><text x="1012" y="202" text-anchor="middle" class="small">trajectory、边界与终止标记</text>
+  <path d="M285 182h45M560 182h55M835 182h55" class="line"/>
+  <rect x="190" y="350" width="240" height="125" rx="16" class="box"/><text x="310" y="394" text-anchor="middle" class="label">数据集与元数据</text><text x="310" y="432" text-anchor="middle" class="small">引擎版本、MJCF、seed、控制频率</text>
+  <rect x="480" y="350" width="240" height="125" rx="16" class="box"/><text x="600" y="394" text-anchor="middle" class="label">质量检查</text><text x="600" y="432" text-anchor="middle" class="small">时间轴、接触事件、物理合理性</text>
+  <rect x="770" y="350" width="240" height="125" rx="16" class="box"/><text x="890" y="394" text-anchor="middle" class="label">真实世界对照</text><text x="890" y="432" text-anchor="middle" class="small">摩擦与阻尼标定、sim-to-real 差异</text>
+  <path d="M1012 245v55H310v50M430 412h50M720 412h50" class="line"/>
+  <path d="M890 350V285H175V245" class="line" stroke-dasharray="8 8"/>
+</svg>

@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 700" role="img" aria-labelledby="title desc">
+  <title id="title">主流机器人仿真器全景定位</title>
+  <desc id="desc">按速度与并行规模、视觉与传感器保真度两个维度定位 MuJoCo、Genesis、Isaac Sim、Gazebo、PyBullet、SAPIEN、Habitat 等仿真器。</desc>
+  <defs><style>text{font-family:Arial,'Noto Sans SC',sans-serif;fill:#173042}.head{font-size:26px;font-weight:700}.body{font-size:19px}.small{font-size:17px}.pt{fill:#2f7294}.grid{stroke:#dce8ee;stroke-width:1.5}.axis{stroke:#6d9db7;stroke-width:2.5;fill:none;marker-end:url(#a)}.quad{fill:#eef5f8}</style><marker id="a" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0 0L10 5L0 10z" fill="#6d9db7"/></marker></defs>
+  <rect width="1200" height="700" rx="24" fill="#fffdf8"/>
+  <text x="60" y="62" class="head">仿真器全景：速度与规模 × 视觉保真度</text>
+  <!-- axes -->
+  <path d="M130 545V160" class="axis"/>
+  <path d="M130 545h930" class="axis"/>
+  <text x="600" y="600" text-anchor="middle" class="body">视觉与传感器保真度（图像、材质、传感器仿真）→</text>
+  <text x="66" y="360" text-anchor="middle" class="body" transform="rotate(-90 66 360)">速度与并行规模 →</text>
+  <text x="150" y="200" class="small">快</text><text x="150" y="525" class="small">慢</text>
+  <text x="180" y="570" class="small">低</text><text x="990" y="570" class="small">高</text>
+  <!-- quadrant dividers -->
+  <path d="M600 160v385" class="grid" stroke-dasharray="8 8"/>
+  <path d="M130 355h930" class="grid" stroke-dasharray="8 8"/>
+  <!-- quadrant labels -->
+  <rect x="150" y="172" width="210" height="52" rx="12" class="quad"/><text x="255" y="205" text-anchor="middle" class="small">高速、规模型数据生产</text>
+  <rect x="640" y="172" width="250" height="52" rx="12" class="quad"/><text x="765" y="205" text-anchor="middle" class="small">高保真 + 规模化合成数据</text>
+  <rect x="150" y="370" width="210" height="52" rx="12" class="quad"/><text x="255" y="403" text-anchor="middle" class="small">传统仿真生态</text>
+  <rect x="640" y="370" width="250" height="52" rx="12" class="quad"/><text x="765" y="403" text-anchor="middle" class="small">高保真视觉 / Benchmark</text>
+  <!-- points -->
+  <circle cx="300" cy="255" r="11" class="pt"/><text x="322" y="246" class="body">MuJoCo / MJX</text><text x="322" y="271" class="small">接触稳定、轻量、GPU 并行</text>
+  <circle cx="480" cy="268" r="11" class="pt"/><text x="502" y="259" class="body">Genesis</text><text x="502" y="284" class="small">生成式物理 + 语言生成场景</text>
+  <circle cx="840" cy="255" r="11" class="pt"/><text x="862" y="246" class="body">Isaac Sim / Isaac Lab</text><text x="862" y="271" class="small">USD + PhysX、合成数据、Mimic</text>
+  <circle cx="300" cy="445" r="11" class="pt"/><text x="322" y="436" class="body">Gazebo</text><text x="322" y="461" class="small">ROS 生态、移动机器人</text>
+  <circle cx="480" cy="460" r="11" class="pt"/><text x="502" y="451" class="body">PyBullet / Bullet</text><text x="502" y="476" class="small">轻量、教学、URDF</text>
+  <circle cx="845" cy="445" r="11" class="pt"/><text x="867" y="436" class="body">SAPIEN / ManiSkill</text><text x="867" y="461" class="small">部件级操作 benchmark</text>
+  <circle cx="950" cy="470" r="11" class="pt"/><text x="655" y="515" class="body">Habitat（photo-real 导航 / 多智能体）</text>
+  <text x="600" y="655" text-anchor="middle" class="small">定位是相对的：同一引擎可通过渲染、物理与传感器开关在不同保真度之间移动，选型应以“要生产什么数据”为准。</text>
+</svg>

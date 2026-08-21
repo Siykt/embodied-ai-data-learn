@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 660" role="img" aria-labelledby="title desc">
+  <title id="title">仿真器选型决策流程</title>
+  <desc id="desc">从数据目标出发，按任务类型、视觉保真、并行规模与生态依赖逐步选择仿真器，最后统一数据契约。</desc>
+  <defs><style>text{font-family:Arial,'Noto Sans SC',sans-serif;fill:#173042}.head{font-size:25px;font-weight:700}.body{font-size:18px}.small{font-size:16px}.start{fill:#e3f1f7;stroke:#2f7294;stroke-width:3}.dec{fill:#f8fbfc;stroke:#8aaebe;stroke-width:2}.res{fill:#eef5f8;stroke:#6d9db7;stroke-width:2}.line{stroke:#356b8c;stroke-width:3;fill:none;marker-end:url(#a)}</style><marker id="a" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0 0L10 5L0 10z" fill="#356b8c"/></marker></defs>
+  <rect width="1200" height="660" rx="24" fill="#fffdf8"/>
+  <text x="60" y="58" class="head">选型不是选“最好的仿真器”，而是匹配数据目标</text>
+  <rect x="330" y="88" width="540" height="78" rx="16" class="start"/><text x="600" y="123" text-anchor="middle" class="head">数据目标</text><text x="600" y="152" text-anchor="middle" class="body">仿真数据用于 训练 / 评估 / 合成数据集？</text>
+  <path d="M600 166v40" class="line"/>
+  <!-- decision row -->
+  <rect x="40" y="225" width="265" height="170" rx="14" class="dec"/><text x="172" y="262" text-anchor="middle" class="head">① 任务类型</text><text x="172" y="298" text-anchor="middle" class="small">导航 / 移动 → Habitat、Gazebo</text><text x="172" y="328" text-anchor="middle" class="small">桌面操作 → MuJoCo、Isaac</text><text x="172" y="358" text-anchor="middle" class="small">灵巧手 → MuJoCo、Isaac + Mimic</text>
+  <rect x="335" y="225" width="265" height="170" rx="14" class="dec"/><text x="467" y="262" text-anchor="middle" class="head">② 视觉保真</text><text x="467" y="298" text-anchor="middle" class="small">相机图像关键 → Isaac Sim、Habitat</text><text x="467" y="328" text-anchor="middle" class="small">关节状态足够 → MuJoCo、PyBullet</text>
+  <rect x="630" y="225" width="265" height="170" rx="14" class="dec"/><text x="762" y="262" text-anchor="middle" class="head">③ 并行规模</text><text x="762" y="298" text-anchor="middle" class="small">万级 GPU 并行 → MJX、Genesis、Isaac</text><text x="762" y="328" text-anchor="middle" class="small">单机快速迭代 → MuJoCo、PyBullet</text>
+  <rect x="925" y="225" width="245" height="170" rx="14" class="dec"/><text x="1047" y="262" text-anchor="middle" class="head">④ 生态依赖</text><text x="1047" y="298" text-anchor="middle" class="small">ROS 工具链 → Gazebo</text><text x="1047" y="328" text-anchor="middle" class="small">RL 框架 → Isaac Lab、robosuite</text><text x="1047" y="358" text-anchor="middle" class="small">开源轻量 → MuJoCo</text>
+  <path d="M172 395v35M467 395v35M762 395v35M1047 395v35" class="line"/>
+  <!-- result row -->
+  <rect x="40" y="450" width="215" height="120" rx="14" class="res"/><text x="147" y="488" text-anchor="middle" class="head">MuJoCo 系</text><text x="147" y="520" text-anchor="middle" class="small">轻量、状态与接触数据</text><text x="147" y="548" text-anchor="middle" class="small">robosuite / D4RL 生态</text>
+  <rect x="275" y="450" width="215" height="120" rx="14" class="res"/><text x="382" y="488" text-anchor="middle" class="head">Isaac 系</text><text x="382" y="520" text-anchor="middle" class="small">高保真、合成数据</text><text x="382" y="548" text-anchor="middle" class="small">Mimic / DexMimicGen</text>
+  <rect x="510" y="450" width="215" height="120" rx="14" class="res"/><text x="617" y="488" text-anchor="middle" class="head">Gazebo</text><text x="617" y="520" text-anchor="middle" class="small">ROS、移动机器人</text><text x="617" y="548" text-anchor="middle" class="small">传感器与真机一致</text>
+  <rect x="745" y="450" width="215" height="120" rx="14" class="res"/><text x="852" y="488" text-anchor="middle" class="head">Habitat / SAPIEN</text><text x="852" y="520" text-anchor="middle" class="small">导航与操作 benchmark</text><text x="852" y="548" text-anchor="middle" class="small">标准化评测数据</text>
+  <rect x="980" y="450" width="190" height="120" rx="14" class="res"/><text x="1075" y="488" text-anchor="middle" class="head">Genesis</text><text x="1075" y="520" text-anchor="middle" class="small">生成式场景</text><text x="1075" y="548" text-anchor="middle" class="small">自动探索与扩增</text>
+  <rect x="180" y="595" width="840" height="50" rx="12" class="start"/><text x="600" y="627" text-anchor="middle" class="body">无论选择哪个：统一记录 引擎与资产版本 · seed · 时间轴 · 坐标系 · 传感器模型 · schema 版本</text>
+</svg>

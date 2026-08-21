@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 560" role="img" aria-labelledby="title desc">
+  <title id="title">仿真数据契约</title>
+  <desc id="desc">一个仿真 episode 由元数据、观测、动作状态、真值来源和边界质量字段构成，任何仿真器的输出都应整理成这个结构。</desc>
+  <defs><style>text{font-family:Arial,'Noto Sans SC',sans-serif;fill:#173042}.root{fill:#e3f1f7;stroke:#2f7294;stroke-width:3}.branch{fill:#f8fbfc;stroke:#8aaebe;stroke-width:2}.title{font-size:25px;font-weight:700}.body{font-size:18px}.small{font-size:15px}</style></defs>
+  <rect width="1200" height="560" rx="24" fill="#fffdf8"/>
+  <text x="60" y="56" class="title">仿真数据契约：任何引擎的输出都要整理成可追溯数据对象</text>
+  <rect x="430" y="95" width="340" height="80" rx="16" class="root"/><text x="600" y="142" text-anchor="middle" class="title">episode_id / trajectory_id</text>
+  <path d="M600 175v40M600 215H190v50M600 215H430v50M600 215H770v50M600 215H1010v50" fill="none" stroke="#6d9db7" stroke-width="2"/>
+  <rect x="70" y="265" width="240" height="130" rx="14" class="branch"/><text x="190" y="300" text-anchor="middle" class="title">元数据</text><text x="190" y="332" text-anchor="middle" class="small">任务、场景、机器人</text><text x="190" y="356" text-anchor="middle" class="small">引擎与资产版本、seed</text>
+  <rect x="330" y="265" width="240" height="130" rx="14" class="branch"/><text x="450" y="300" text-anchor="middle" class="title">观测</text><text x="450" y="332" text-anchor="middle" class="small">RGB / 深度 / 分割</text><text x="450" y="356" text-anchor="middle" class="small">关节、IMU、接触</text>
+  <rect x="590" y="265" width="240" height="130" rx="14" class="branch"/><text x="710" y="300" text-anchor="middle" class="title">动作与状态</text><text x="710" y="332" text-anchor="middle" class="small">action、state、reward</text><text x="710" y="356" text-anchor="middle" class="small">控制频率、动作延迟</text>
+  <rect x="850" y="265" width="280" height="130" rx="14" class="branch"/><text x="990" y="300" text-anchor="middle" class="title">真值与来源</text><text x="990" y="332" text-anchor="middle" class="small">物体位姿、接触、分割 ID</text><text x="990" y="356" text-anchor="middle" class="small">区分引擎真值与推断标签</text>
+  <rect x="430" y="420" width="340" height="80" rx="14" class="branch"/><text x="600" y="458" text-anchor="middle" class="title">边界与质量</text><text x="600" y="484" text-anchor="middle" class="small">is_first / is_last、终止原因、成功与质检标记</text>
+  <text x="600" y="535" text-anchor="middle" class="body">仿真真值必须标注来源，并记录生成脚本与配置，才能支持复现和 sim-to-real 对照。</text>
+</svg>
