@@ -16,6 +16,7 @@
   <rect x="590" y="420" width="270" height="135" rx="16" class="main"/><text x="725" y="465" text-anchor="middle" class="label">人类采集</text><text x="725" y="505" text-anchor="middle" class="small">真实噪声与接触恢复</text><text x="725" y="532" text-anchor="middle" class="small">接管边界与操作者版本</text>
   <rect x="965" y="420" width="270" height="135" rx="16" class="box"/><text x="1100" y="465" text-anchor="middle" class="label">验证与入库</text><text x="1100" y="505" text-anchor="middle" class="small">对齐、回放、质量门</text><text x="1100" y="532" text-anchor="middle" class="small">血缘、授权、数据集版本</text>
   <path d="M1097 260v100H350v60M1097 260v100H725v60" class="line"/>
-  <path d="M485 487h480M860 487h105" class="line"/>
+  <path d="M485 487v98h445v-45h35" class="line"/>
+  <path d="M860 487h105" class="line"/>
   <text x="60" y="610" class="small">排序依据：失败价值 + 不确定性 + 分布漂移 + 物理风险 + 覆盖缺口 − 采集成本；单一成功率不直接决定任务价值。</text>
 </svg>
