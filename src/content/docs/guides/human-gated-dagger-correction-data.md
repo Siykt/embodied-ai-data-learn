@@ -97,6 +97,8 @@ policy_vN rollout
 
 DAgger 的价值在于补足策略访问到的状态分布：策略会把自己带到示范数据没有覆盖的偏离状态，人类纠正提供从这些状态恢复的动作。这样可以缓解共变量偏移（covariate shift），但只有当失败原因、状态上下文和修正窗口被保留时，数据才真正包含“如何恢复”的信息。
 
+聚合器应先按 `action_source=human`、`label_mask=trainable`、接管区间完整、质量检查通过和 `replay_training_authorized` 筛选纠正动作，再按任务、失败类型和操作者做去重、配额或分层采样。`[handover_start, handover_end)` 之外的 `policy_action` 即使所在 rollout 最终成功，也必须保持 `context_only` / `excluded`，永远不能合并为模仿学习目标，除非另有独立的专家性认证记录。
+
 聚合时要控制几个风险：
 
 - 同一个 episode 的相邻窗口不能跨越接管边界或混淆 `action_source`；

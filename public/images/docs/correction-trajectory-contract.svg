@@ -6,7 +6,7 @@
   </defs>
   <rect width="1200" height="650" rx="26" fill="#fffdf8"/>
   <text x="55" y="58" class="label">纠错轨迹契约：保留上下文，区分每一种动作来源</text>
-  <rect x="55" y="105" width="1090" height="75" rx="14" class="meta box"/><text x="85" y="138" class="label">身份与版本</text><text x="85" y="165" class="small">episode_id · parent_episode_id · parent_step_id · policy_version · schema_version · task_id</text>
+  <rect x="55" y="105" width="1090" height="75" rx="14" class="meta box"/><text x="85" y="138" class="label">身份与版本</text><text x="85" y="165" class="small">episode_id · parent_episode_id · parent_step_id · policy_version · schema_version · task_id · scene_id</text>
   <text x="75" y="245" class="label">统一设备时间轴</text>
   <line x1="75" y1="300" x2="1125" y2="300" class="axis"/>
   <line x1="140" y1="288" x2="140" y2="312" class="tick"/><line x1="305" y1="288" x2="305" y2="312" class="tick"/><line x1="470" y1="288" x2="470" y2="312" class="tick"/><line x1="635" y1="288" x2="635" y2="312" class="tick"/><line x1="835" y1="288" x2="835" y2="312" class="tick"/><line x1="1045" y1="288" x2="1045" y2="312" class="tick"/>
