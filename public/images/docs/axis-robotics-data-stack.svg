@@ -7,8 +7,9 @@
   </defs>
   <rect width="1280" height="760" rx="26" fill="#fffdf8"/>
   <text x="58" y="58" class="title">Axis Robotics 数据栈：官方披露的闭环应落为可审计的数据对象</text>
+  <path d="M60 88h52" class="arrow"/><text x="122" y="94" class="small">实线：主数据流</text><path d="M275 88h52" class="dash"/><text x="337" y="94" class="small">虚线：反馈到下一轮候选任务</text>
   <rect x="55" y="120" width="250" height="132" rx="16" class="source card"/>
-  <text x="180" y="162" text-anchor="middle" class="label">任务生成</text><text x="180" y="194" text-anchor="middle" class="small">资产 · 场景 · 技能 · 布局</text><text x="180" y="220" text-anchor="middle" class="small">参数 · seed · 成功条件</text>
+  <text x="180" y="162" text-anchor="middle" class="label">任务生成</text><text x="180" y="194" text-anchor="middle" class="small">资产 · 场景 · 技能 · 布局</text><text x="180" y="220" text-anchor="middle" class="small">参数 · seed · 下一轮候选任务</text>
   <rect x="375" y="105" width="250" height="162" rx="16" class="source card"/>
   <text x="500" y="147" text-anchor="middle" class="label">行为采集</text><text x="500" y="179" text-anchor="middle" class="small">浏览器 MuJoCo WASM 遥操作</text><text x="500" y="205" text-anchor="middle" class="small">全球贡献者 · 仿真时钟</text><text x="500" y="231" text-anchor="middle" class="small">第一视角采集：规划中</text>
   <rect x="695" y="120" width="250" height="132" rx="16" class="process card"/>
@@ -23,9 +24,9 @@
   <rect x="864" y="385" width="255" height="132" rx="16" class="feedback card"/>
   <text x="992" y="427" text-anchor="middle" class="label">部署与反馈</text><text x="992" y="459" text-anchor="middle" class="small">rollout · 失败簇 · 漂移</text><text x="992" y="485" text-anchor="middle" class="small">新任务优先级</text>
   <path d="M1120 252v66H287v67M1120 252v66H639v52M1120 252v66H992v67M415 451h97M767 451h97" class="arrow"/>
-  <path d="M864 451H805C805 585 500 585 500 267" class="dash"/>
+  <path d="M864 451H815V575H350V240H305" class="dash"/>
   <text x="650" y="604" text-anchor="middle" class="small">虚线：模型失败与部署反馈只生成下一轮候选任务；正式评估集须保持隔离。</text>
-  <rect x="165" y="650" width="950" height="66" rx="15" class="record card"/>
-  <text x="640" y="680" text-anchor="middle" class="label">贡献记录与 provenance</text><text x="640" y="706" text-anchor="middle" class="small">链上：Data ID、贡献者、时间、质量分、任务引用；链下：完整轨迹、资产、处理运行、授权与模型血缘</text>
-  <path d="M500 267v78M820 252v93M1120 252v378M639 532v108" class="arrow"/>
+  <rect x="165" y="625" width="950" height="100" rx="15" class="record card"/>
+  <text x="640" y="654" text-anchor="middle" class="label">贡献记录与 provenance</text><text x="640" y="685" text-anchor="middle" class="small">链上：Data ID · 贡献者 · 时间 · 质量分 · 任务引用 · TXID</text><text x="640" y="711" text-anchor="middle" class="small">链下：完整轨迹 · 资产/场景 · 处理运行 · 授权 · 数据集与模型血缘</text>
+  <path d="M500 267v356M820 252v371M1120 252v371M639 532v91" class="arrow"/>
 </svg>

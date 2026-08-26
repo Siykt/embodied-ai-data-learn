@@ -11,7 +11,7 @@ Axis Robotics 将自己定位为面向 Physical AI 的“复利式数据引擎�
 
 官网称 Axis Robotics 正在建设由全球贡献者支持的机器人数据基础设施；文档则把它拆为 Web 仿真采集、开发中的移动端第一视角采集，以及 Data-to-Model 处理层。其公开架构强调“全球数据基础设施 → 混合数据引擎 → 3D 感知模型 → 部署 rollout”的闭环。[官网](https://axisrobotics.ai/)与[架构文档](https://docs.axisrobotics.ai/technology/architecture.md)是这一定位的一手来源。
 
-关于公司起点，**第三方报道/公司资料将其背景放在 2025 年前后**；本页仅将其作为背景线索，而不将其等同于经注册记录、融资公告或审计材料独立核验的“成立事实”。官方公开文档以 2026 年产品与路线图为主，未在此处提供可供本页复核的公司登记证据。因此，任何“2025 创立”的叙述都应保留第三方来源属性，而不能用来推导平台成熟度或数据规模。
+关于公司起点，[Dealroom 的 Axis Robotics 公司资料](https://dealroom.co/companies/axis-robotics/)在公司描述中写有“Founded in 2025”，但同一页面的摘要和主事实又标注“Founded 2026”。这既提供了可追踪的第三方来源，也显示出来源内部不一致；本页仅将“2025”作为第三方背景线索，不把它当作经注册记录、融资公告或审计材料独立核验的成立事实。官方公开文档以 2026 年产品与路线图为主，不能据此推导平台成熟度或数据规模。
 
 ![Axis Robotics 从任务生成、浏览器与移动端采集，到统一处理、训练部署和可验证贡献记录的分层数据闭环](/images/docs/axis-robotics-data-stack.svg)
 
@@ -76,21 +76,21 @@ Axis Robotics 将自己定位为面向 Physical AI 的“复利式数据引擎�
 
 ## 五、官网 Academic 页的研究参考
 
-Axis Robotics [Academic：Research & References](https://axisrobotics.ai/academic) 将下列工作列为研究参考。**它们是官网列出的参考文献，不应自动理解为 Axis 作者署名、Axis 自研成果或对平台能力的背书。**链接直接指向论文/原始公开页面，便于读者自行核对题名、作者、实验条件和许可。
+Axis Robotics [Academic：Research & References](https://axisrobotics.ai/academic) 将下列工作列为研究参考。**官方页面标签不一定是论文正式题名，也不应自动理解为 Axis 作者署名、Axis 自研成果或对平台能力的背书。**下表保留官方页面标签，同时只补充链接来源明确给出的精确题名和首位作者/组织；完整作者、实验条件与许可请以原始页面为准。
 
-| 官方页面列名 | 原始链接 | 与数据工程的关联 |
-| --- | --- | --- |
-| RoboVerse | [arXiv:2504.18904](https://arxiv.org/abs/2504.18904) | 跨仿真器的任务、资产和数据接口。 |
-| MimicLabs | [arXiv:2506.13536](https://arxiv.org/abs/2506.13536) | 桌面操作的任务配置、示范采集与程序化扩增。 |
-| GraspVLA | [arXiv:2505.03233](https://arxiv.org/abs/2505.03233) | 大规模合成动作数据与抓取策略预训练。 |
-| Sim-and-Real Co-Training | [arXiv:2503.24361](https://arxiv.org/abs/2503.24361) | 仿真和真实数据协同训练的实验设计。 |
-| InternData-A1 | [arXiv:2511.16651](https://arxiv.org/abs/2511.16651) | 高保真合成数据与通用策略预训练。 |
-| AgentWorld | [arXiv:2508.07770](https://arxiv.org/abs/2508.07770) | 场景构建、规模化生成与 sim-to-real。 |
-| GENMANIP | [arXiv:2506.10966](https://arxiv.org/abs/2506.10966) | LLM 驱动的指令跟随操作仿真。 |
-| RoboGen | [arXiv:2311.01455](https://arxiv.org/abs/2311.01455) | 生成式仿真任务与自动化机器人学习。 |
-| Proc4Gem | [arXiv:2503.08593](https://arxiv.org/abs/2503.08593) | 程序化生成支撑的具身基础模型数据。 |
-| GR00T N1 | [arXiv:2503.14734](https://arxiv.org/abs/2503.14734) | 通用人形机器人基础模型的训练与评测背景。 |
-| Cosmos | [arXiv:2501.03575](https://arxiv.org/abs/2501.03575) | Physical AI 世界模型与生成/验证基础设施。 |
+| 官方页面列名 | 链接来源给出的精确题名 | 作者/组织（来源明确时） | 原始链接 | 与数据工程的关联 |
+| --- | --- | --- | --- | --- |
+| RoboVerse | *RoboVerse: Towards a Unified Platform, Dataset and Benchmark for Scalable and Generalizable Robot Learning* | Haoran Geng 等 | [arXiv:2504.18904](https://arxiv.org/abs/2504.18904) | 跨仿真器的任务、资产和数据接口。 |
+| MimicLabs | *What Matters in Learning from Large-Scale Datasets for Robot Manipulation* | Vaibhav Saxena 等 | [arXiv:2506.13536](https://arxiv.org/abs/2506.13536) | 桌面操作的任务配置、示范采集与程序化扩增。 |
+| GraspVLA | *GraspVLA: a Grasping Foundation Model Pre-trained on Billion-scale Synthetic Action Data* | Shengliang Deng 等 | [arXiv:2505.03233](https://arxiv.org/abs/2505.03233) | 大规模合成动作数据与抓取策略预训练。 |
+| Sim-and-Real Co-Training | *Sim-and-Real Co-Training: A Simple Recipe for Vision-Based Robotic Manipulation* | Abhiram Maddukuri 等 | [arXiv:2503.24361](https://arxiv.org/abs/2503.24361) | 仿真和真实数据协同训练的实验设计。 |
+| InternData-A1 | *InternData-A1: Pioneering High-Fidelity Synthetic Data for Pre-training Generalist Policy* | Yang Tian 等 | [arXiv:2511.16651](https://arxiv.org/abs/2511.16651) | 高保真合成数据与通用策略预训练。 |
+| AgentWorld | *AgentWorld: An Interactive Simulation Platform for Scene Construction and Mobile Robotic Manipulation* | Yizheng Zhang 等 | [arXiv:2508.07770](https://arxiv.org/abs/2508.07770) | 场景构建、规模化生成与 sim-to-real。 |
+| GENMANIP | *GENMANIP: LLM-driven Simulation for Generalizable Instruction-Following Manipulation* | Ning Gao 等 | [arXiv:2506.10966](https://arxiv.org/abs/2506.10966) | LLM 驱动的指令跟随操作仿真。 |
+| RoboGen | *RoboGen: Towards Unleashing Infinite Data for Automated Robot Learning via Generative Simulation* | Yufei Wang 等 | [arXiv:2311.01455](https://arxiv.org/abs/2311.01455) | 生成式仿真任务与自动化机器人学习。 |
+| Proc4Gem | *Proc4Gem: Foundation models for physical agency through procedural generation* | Yixin Lin 等 | [arXiv:2503.08593](https://arxiv.org/abs/2503.08593) | 程序化生成支撑的具身基础模型数据。 |
+| GR00T N1 | *GR00T N1: An Open Foundation Model for Generalist Humanoid Robots* | NVIDIA | [arXiv:2503.14734](https://arxiv.org/abs/2503.14734) | 通用人形机器人基础模型的训练与评测背景。 |
+| Cosmos | *Cosmos World Foundation Model Platform for Physical AI* | NVIDIA | [arXiv:2501.03575](https://arxiv.org/abs/2501.03575) | Physical AI 世界模型与生成/验证基础设施。 |
 
 除这些参考外，AXIS V1 是应单独归因给其论文作者列表的公开研究成果，见上文 [arXiv:2607.21588](https://arxiv.org/abs/2607.21588)。将“官网参考论文”“平台开源组件”“官方产品披露”和“已发表的实验结果”混为同一证据等级，会高估任何一方的结论。
 
