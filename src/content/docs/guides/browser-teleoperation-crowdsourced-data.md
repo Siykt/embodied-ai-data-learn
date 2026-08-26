@@ -20,7 +20,7 @@ description: 从浏览器控制链路、时间对齐、轨迹 schema 和质量�
 5. **动作确认**：记录器将“请求动作”和“实际应用动作”分开保存，并关联确认状态。延迟、丢弃、覆盖、限幅或断连期间的动作不能静默当作已执行。
 6. **episode 落盘与验收**：原始输入、执行日志、观测和质量事件先落盘，再根据任务结果和准入规则生成候选 episode。派生标签必须关联处理版本，不能覆盖原始记录。
 
-客户端时间不能替代设备或仿真时钟。浏览器时钟适合回答“操作者何时看到界面、何时发出输入”，设备或仿真时钟才适合回答“动作何时作用于环境、观测何时产生”。两者都应保存，并通过同步事件或估计的传输延迟建立关系；没有可靠同步时，应标记 `alignment_status: unknown`，而不是把接收时间当成采样时间。
+客户端时间不能替代设备或仿真时钟。浏览器时钟适合回答“操作者何时看到界面、何时发出输入”，设备或仿真时钟才适合回答“动作何时作用于环境、观测何时产生”。两者都应保存，并通过 `clock_sync` 中声明的参考时钟、同步方法、偏移、不确定度和同步事件建立关系。schema 中的 `receive_time_ms` 明确属于 `server_receive` 时钟域，只用于描述服务端收到输入的时间，不能当作设备采样时间；没有可靠同步时，应标记 `alignment_status: unknown`。
 
 ## 浏览器端轨迹 schema
 
@@ -42,19 +42,42 @@ episode:
     client: string
     device_or_sim: string
     server_receive: string
+  clock_sync:
+    reference_domain: device_or_sim
+    method: ntp | ptp | sync_event | estimated_offset | unknown
+    offset_client_to_reference_ms: number
+    offset_server_to_reference_ms: number
+    uncertainty_ms: number
+    sync_event_ids: [string]
   started_at_device_ns: integer
   ended_at_device_ns: integer
   outcome: success | failure | timeout | interrupted | unknown
-  acceptance: pending | accepted | rejected
+  admission_status: pending | accepted | rejected | accepted_for_evaluation_only | needs_review
   rejection_reasons: [string]
+  training_context:
+    stage: pre_training | post_training
+    policy_version: string | null
+    parent_episode_id: string | null
+    correction:
+      takeover_start_time_device_ns: integer | null
+      takeover_end_time_device_ns: integer | null
+      takeover_reason: string | null
+      error_type: string | null
+      correction_linkage:
+        relation: none | corrects | derived_from
+        source_episode_id: string | null
+        corrected_episode_id: string | null
+      authorization:
+        consent_status: granted | revoked | pending | not_applicable
+        replay_training_authorized: boolean
   lineage:
     raw_inputs: [uri]
     raw_observations: [uri]
     processing_run_id: string
   steps:
     - step_id: integer
-      client_event_time_ms: integer
-      receive_time_ms: integer
+      client_event_time_ms: {value: integer, clock_domain: client}
+      receive_time_ms: {value: integer, clock_domain: server_receive}
       observation_time_device_ns: integer
       applied_time_device_ns: integer
       observation:
@@ -93,7 +116,7 @@ episode:
 
 ### 分层结果
 
-将结果分为 `accepted`、`accepted_for_evaluation_only`、`needs_review` 和 `rejected`。例如，任务失败但时间和动作完整的 episode 可以作为失败评估集；存在不可解释时间缺口的 episode 不应进入训练集；隐私暴露、身份异常或无法确认数据来源的记录应直接拒绝并保留拒绝原因。
+将 `admission_status` 分为 `pending`、`accepted`、`rejected`、`accepted_for_evaluation_only` 和 `needs_review`。例如，任务失败但时间和动作完整的 episode 可以标记为 `accepted_for_evaluation_only`；存在不可解释时间缺口的 episode 标记为 `needs_review`，不应进入训练集；隐私暴露、身份异常或无法确认数据来源的记录标记为 `rejected` 并保留拒绝原因。
 
 ![众包轨迹从身份与版本检查开始，经时间同步、物理回放和质量评分筛选为可训练或评估数据](/images/docs/crowdsourced-trajectory-quality.svg)
 
@@ -143,7 +166,7 @@ episode:
 - 原始尝试与纠错尝试的 `parent_episode_id`，以及对应的场景和物体状态；
 - 安全停止、碰撞风险、隐私审核和是否允许回放训练的授权标记。
 
-这样可以将纠错样本用于行为克隆、偏好比较或失败恢复训练，同时避免把人工介入后的动作误标成原策略自主完成。VLA 的数据契约和分层评估还可参考 [VLA 模型与主流验证方法](/guides/vla-models-and-evaluation/)。
+schema 中的 `training_context.correction` 应与接管时间段和 `correction_linkage` 同时填写；`authorization.consent_status` 与 `replay_training_authorized` 则决定样本能否用于回放训练。这样可以将纠错样本用于行为克隆、偏好比较或失败恢复训练，同时避免把人工介入后的动作误标成原策略自主完成。VLA 的数据契约和分层评估还可参考 [VLA 模型与主流验证方法](/guides/vla-models-and-evaluation/)。
 
 ## 交付前检查清单
 
