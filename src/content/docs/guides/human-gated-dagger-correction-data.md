@@ -50,7 +50,9 @@ Human-gated DAgger（Dataset Aggregation）是一种让策略先自主执行、�
 
 ### 4. 回填纠正动作
 
-在 `[handover_start, handover_end)` 内，训练标签通常使用人工实际生效的动作；区间外仍保留原策略动作。建议以 `action_source` 或 `label_mask` 显式区分：
+在 `[handover_start, handover_end)` 内，训练标签通常使用人工实际生效的动作；区间外仍保留原策略动作作为失败上下文，但默认**不作为模仿学习监督**。除非经过独立人工审核、可执行性验证和明确的专家标签认证，接管区间外的策略动作应标为 `context_only` 或 `excluded`。这样，已通过任务验收的 policy rollout 也不会被数据集消费者误读为专家目标。
+
+建议以 `action_source` 或 `label_mask` 显式区分：
 
 ```text
 action_source[t] = policy | human | safety_controller | unknown
@@ -69,10 +71,11 @@ label_mask[t]    = trainable | context_only | excluded
 
 | 层级 | 建议字段 | 数据用途 |
 | --- | --- | --- |
-| 身份与版本 | `episode_id`、`parent_episode_id`、`policy_version`、`schema_version` | 追溯来源，区分不同策略轮次 |
-| 观测 | RGB / 深度、本体状态、语言指令、`t_obs` | 重建策略当时看到的状态 |
+| 身份与版本 | `episode_id`、`parent_episode_id`、`parent_step_id`、`policy_version`、`schema_version` | 将纠错片段绑定到原 episode 和触发前的父 step，区分策略轮次 |
+| 观测与策略时序 | RGB / 深度、本体状态、语言指令、`t_obs`、`t_policy` | `t_obs` 是观测采样 / 曝光结束时间，`t_policy` 是策略读取该观测并生成动作的时间 |
 | 动作 | `policy_action`、`human_command`、`applied_action`、`action_source` | 对比错误动作与纠正动作 |
-| 原因与边界 | `gate_reason`、`failure_type`、`handover_start/end`、`end_reason` | 切出有效纠错窗口 |
+| 动作执行时序 | `t_action_apply`、`t_handover` | `t_action_apply` 是控制器实际应用动作的时间；`t_handover` 是人工控制真正生效的时间，不能用界面点击时间替代 |
+| 原因与边界 | `gate_reason`、`t_gate`、`failure_type`、`handover_start/end`、`end_reason` | `t_gate` 标记门控触发；结合父 step 和接管边界切出有效纠错窗口 |
 | 回放状态 | `replay_status`、控制器 / 环境版本、初始状态 | 检查纠正是否可复现 |
 | 质量与授权 | 对齐误差、丢帧、碰撞风险、`quality_flags`、训练授权 | 决定是否准入及如何使用 |
 
@@ -118,7 +121,7 @@ DAgger 的价值在于补足策略访问到的状态分布：策略会把自己�
 
 ### 训练可以使用什么
 
-训练集可以使用通过准入的策略 rollout、人工接管片段和验证过的纠正动作，但必须带来源和标签掩码。后训练报告至少拆分：自主动作比例、人工动作比例、按失败类型的纠正数量、恢复成功率和各轮新增数据的贡献。数据集消费者不应假设所有 action 都来自同一策略或同一控制器。
+训练集可以使用通过准入的人工接管片段和验证过的纠正动作，但必须带来源和标签掩码。接管区间外的 `policy_action` 默认只能作为 `context_only` / `excluded` 的失败上下文，除非它有独立的专家性审核与可执行性验证；即使该 rollout 最终成功，也不能把它解释为专家目标。后训练报告至少拆分：可用于模仿监督的人工动作比例、仅作上下文的策略动作比例、按失败类型的纠正数量、恢复成功率和各轮新增数据的贡献。数据集消费者不应假设所有 action 都来自同一策略或同一控制器。
 
 ### 评估必须隔离什么
 
