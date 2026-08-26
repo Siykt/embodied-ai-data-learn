@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 620" role="img" aria-labelledby="title desc">
+  <title id="title">Human-gated DAgger 人类门控纠错闭环</title>
+  <desc id="desc">策略执行后在失败或低置信度时触发人类纠正，经过验证进入再训练并产生新策略。</desc>
+  <defs>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M0 0L12 6L0 12z" fill="#356b8c"/></marker>
+    <style>text{font-family:Arial,'Noto Sans SC',sans-serif;fill:#173042}.box{fill:#f5fafc;stroke:#6d9db7;stroke-width:2}.main{fill:#e3f1f7;stroke:#2f7294;stroke-width:3}.gate{fill:#fff4db;stroke:#d08a22;stroke-width:3}.small{font-size:20px}.label{font-size:25px;font-weight:700}.line{stroke:#356b8c;stroke-width:3;fill:none;marker-end:url(#arrow)}.dash{stroke:#b06b17;stroke-width:3;fill:none;stroke-dasharray:9 8;marker-end:url(#arrow)}</style>
+  </defs>
+  <rect width="1200" height="620" rx="26" fill="#fffdf8"/>
+  <text x="60" y="58" class="label">Human-gated DAgger：从策略失败到可验证纠错</text>
+  <rect x="55" y="150" width="205" height="130" rx="16" class="box"/><text x="157" y="195" text-anchor="middle" class="label">策略执行</text><text x="157" y="235" text-anchor="middle" class="small">观测 → 原策略动作</text>
+  <rect x="330" y="150" width="205" height="130" rx="16" class="gate"/><text x="432" y="195" text-anchor="middle" class="label">门控触发</text><text x="432" y="235" text-anchor="middle" class="small">失败风险 / 低置信度</text>
+  <rect x="605" y="150" width="205" height="130" rx="16" class="main"/><text x="707" y="195" text-anchor="middle" class="label">人类纠正</text><text x="707" y="235" text-anchor="middle" class="small">接管片段 + 恢复动作</text>
+  <rect x="880" y="150" width="255" height="130" rx="16" class="box"/><text x="1007" y="195" text-anchor="middle" class="label">验证与聚合</text><text x="1007" y="235" text-anchor="middle" class="small">回放、质检、split</text>
+  <path d="M260 215h65M535 215h65M810 215h65" class="line"/>
+  <rect x="425" y="405" width="205" height="130" rx="16" class="box"/><text x="527" y="450" text-anchor="middle" class="label">再训练</text><text x="527" y="490" text-anchor="middle" class="small">post-training</text>
+  <rect x="700" y="405" width="205" height="130" rx="16" class="main"/><text x="802" y="450" text-anchor="middle" class="label">新策略</text><text x="802" y="490" text-anchor="middle" class="small">policy version + 1</text>
+  <path d="M1007 280v65H527v55M630 470h65" class="line"/>
+  <path d="M700 405V345H157V280" class="dash"/>
+  <text x="73" y="590" class="small" fill="#475569">保留原策略动作、人工动作、接管边界和验证结果，才能解释每轮数据如何改变策略。</text>
+</svg>

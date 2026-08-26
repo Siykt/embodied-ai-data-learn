@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 650" role="img" aria-labelledby="title desc">
+  <title id="title">纠错轨迹数据契约</title>
+  <desc id="desc">纠错轨迹契约包含策略版本、观测、原动作、人类动作、接管原因、时间边界、回放状态和质量标记。</desc>
+  <defs>
+    <style>text{font-family:Arial,'Noto Sans SC',sans-serif;fill:#173042}.box{stroke-width:2}.label{font-size:25px;font-weight:700}.small{font-size:19px}.axis{stroke:#356b8c;stroke-width:4}.tick{stroke:#6d9db7;stroke-width:3}.policy{fill:#e3f1f7;stroke:#2f7294}.human{fill:#fff0d2;stroke:#d08a22}.meta{fill:#f2f5f7;stroke:#647b88}</style>
+  </defs>
+  <rect width="1200" height="650" rx="26" fill="#fffdf8"/>
+  <text x="55" y="58" class="label">纠错轨迹契约：保留上下文，区分每一种动作来源</text>
+  <rect x="55" y="105" width="1090" height="75" rx="14" class="meta box"/><text x="85" y="138" class="label">身份与版本</text><text x="85" y="165" class="small">episode_id · parent_episode_id · policy_version · schema_version · task_id · scene_id</text>
+  <text x="75" y="245" class="label">统一设备时间轴</text>
+  <line x1="75" y1="300" x2="1125" y2="300" class="axis"/>
+  <line x1="170" y1="288" x2="170" y2="312" class="tick"/><line x1="390" y1="288" x2="390" y2="312" class="tick"/><line x1="610" y1="288" x2="610" y2="312" class="tick"/><line x1="850" y1="288" x2="850" y2="312" class="tick"/><line x1="1050" y1="288" x2="1050" y2="312" class="tick"/>
+  <text x="170" y="335" text-anchor="middle" class="small">t_obs</text><text x="390" y="335" text-anchor="middle" class="small">t_policy</text><text x="610" y="335" text-anchor="middle" class="small">t_gate</text><text x="850" y="335" text-anchor="middle" class="small">接管开始</text><text x="1050" y="335" text-anchor="middle" class="small">接管结束</text>
+  <rect x="105" y="385" width="250" height="125" rx="14" class="policy box"/><text x="230" y="425" text-anchor="middle" class="label">观测 + 原动作</text><text x="230" y="462" text-anchor="middle" class="small">RGB / 状态 / policy_action</text><text x="230" y="490" text-anchor="middle" class="small">confidence · latency</text>
+  <rect x="475" y="385" width="250" height="125" rx="14" class="human box"/><text x="600" y="425" text-anchor="middle" class="label">人类接管片段</text><text x="600" y="462" text-anchor="middle" class="small">human_command · applied_action</text><text x="600" y="490" text-anchor="middle" class="small">gate_reason · failure_type</text>
+  <rect x="845" y="385" width="250" height="125" rx="14" class="meta box"/><text x="970" y="425" text-anchor="middle" class="label">回放与质量</text><text x="970" y="462" text-anchor="middle" class="small">replay_status · end_reason</text><text x="970" y="490" text-anchor="middle" class="small">alignment · quality_flags</text>
+  <path d="M355 448h110M725 448h110" class="axis"/>
+  <rect x="190" y="555" width="820" height="45" rx="12" class="meta box"/><text x="600" y="584" text-anchor="middle" class="small">label_mask：trainable · context_only · excluded　|　action_source：policy · human · safety_controller</text>
+</svg>
