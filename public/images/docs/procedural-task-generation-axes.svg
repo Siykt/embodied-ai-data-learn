@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" role="img" aria-labelledby="title desc">
+  <title id="title">程序化任务生成的五类输入维度</title>
+  <desc id="desc">场景、资产、空间布局、视觉和机器人本体五类输入汇入任务实例，再导出场景配置、示范和质量元数据。</desc>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0 0L10 5L0 10z" fill="#356b8c"/></marker>
+    <style>text{font-family:Arial,'Noto Sans SC',sans-serif;fill:#173042}.box{fill:#f5fafc;stroke:#6d9db7;stroke-width:2}.main{fill:#e3f1f7;stroke:#2f7294;stroke-width:3}.output{fill:#fff6e4;stroke:#c79a4b;stroke-width:2}.label{font-size:25px;font-weight:700}.small{font-size:19px}.line{stroke:#356b8c;stroke-width:3;fill:none;marker-end:url(#arrow)}</style>
+  </defs>
+  <rect width="1200" height="760" rx="24" fill="#fffdf8"/>
+  <text x="60" y="58" class="label">程序化任务生成：从输入维度到可追溯产物</text>
+  <rect x="65" y="105" width="210" height="100" rx="16" class="box"/><text x="170" y="145" text-anchor="middle" class="label">场景</text><text x="170" y="178" text-anchor="middle" class="small">房间、桌面、障碍物</text>
+  <rect x="310" y="105" width="210" height="100" rx="16" class="box"/><text x="415" y="145" text-anchor="middle" class="label">资产</text><text x="415" y="178" text-anchor="middle" class="small">物体、材质、版本</text>
+  <rect x="555" y="105" width="210" height="100" rx="16" class="box"/><text x="660" y="145" text-anchor="middle" class="label">空间布局</text><text x="660" y="178" text-anchor="middle" class="small">位姿、目标、可达性</text>
+  <rect x="800" y="105" width="150" height="100" rx="16" class="box"/><text x="875" y="145" text-anchor="middle" class="label">视觉</text><text x="875" y="178" text-anchor="middle" class="small">光照、相机、噪声</text>
+  <rect x="985" y="105" width="150" height="100" rx="16" class="box"/><text x="1060" y="145" text-anchor="middle" class="label">机器人本体</text><text x="1060" y="178" text-anchor="middle" class="small">关节、夹爪、延迟</text>
+  <rect x="380" y="315" width="440" height="140" rx="20" class="main"/><text x="600" y="370" text-anchor="middle" class="label">任务实例</text><text x="600" y="407" text-anchor="middle" class="small">任务规格 + seed + 约束检查</text>
+  <path d="M170 205v70h430v40M415 205v70h185v40M660 205v110M875 205v70H600v40M1060 205v70H600v40" class="line"/>
+  <rect x="75" y="560" width="300" height="105" rx="16" class="output"/><text x="225" y="603" text-anchor="middle" class="label">场景配置</text><text x="225" y="635" text-anchor="middle" class="small">资产、布局、传感器参数</text>
+  <rect x="450" y="560" width="300" height="105" rx="16" class="output"/><text x="600" y="603" text-anchor="middle" class="label">示范与轨迹</text><text x="600" y="635" text-anchor="middle" class="small">观测、动作、状态、事件</text>
+  <rect x="825" y="560" width="300" height="105" rx="16" class="output"/><text x="975" y="603" text-anchor="middle" class="label">质量元数据</text><text x="975" y="635" text-anchor="middle" class="small">验证结果、失败原因、split</text>
+  <path d="M500 455v55H225v50M600 455v105M700 455v55h275v50" class="line"/>
+</svg>

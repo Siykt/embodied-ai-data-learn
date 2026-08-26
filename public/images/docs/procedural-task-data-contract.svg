@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 680" role="img" aria-labelledby="title desc">
+  <title id="title">程序化任务数据契约关系</title>
+  <desc id="desc">任务规格与随机化配置生成 episode，episode 经过验证后绑定到数据集 split，并保留版本和追溯信息。</desc>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0 0L10 5L0 10z" fill="#356b8c"/></marker>
+    <style>text{font-family:Arial,'Noto Sans SC',sans-serif;fill:#173042}.box{fill:#f5fafc;stroke:#6d9db7;stroke-width:2}.main{fill:#e3f1f7;stroke:#2f7294;stroke-width:3}.check{fill:#eef7ed;stroke:#6d9d72;stroke-width:2}.split{fill:#fff6e4;stroke:#c79a4b;stroke-width:2}.label{font-size:25px;font-weight:700}.small{font-size:18px}.line{stroke:#356b8c;stroke-width:3;fill:none;marker-end:url(#arrow)}.dash{stroke:#7c8b93;stroke-width:2;fill:none;stroke-dasharray:8 8}</style>
+  </defs>
+  <rect width="1200" height="680" rx="24" fill="#fffdf8"/>
+  <text x="60" y="58" class="label">任务数据契约：规格、验证与 split 共同决定可用性</text>
+  <rect x="70" y="125" width="245" height="145" rx="16" class="box"/><text x="192" y="170" text-anchor="middle" class="label">任务规格</text><text x="192" y="205" text-anchor="middle" class="small">task_id · 机器人 · 观察/动作</text><text x="192" y="236" text-anchor="middle" class="small">成功条件 · 版本</text>
+  <rect x="355" y="125" width="245" height="145" rx="16" class="box"/><text x="477" y="170" text-anchor="middle" class="label">随机化配置</text><text x="477" y="205" text-anchor="middle" class="small">seed · 参数范围 · 哈希</text><text x="477" y="236" text-anchor="middle" class="small">约束与初始状态</text>
+  <rect x="670" y="125" width="245" height="145" rx="16" class="main"/><text x="792" y="170" text-anchor="middle" class="label">Episode</text><text x="792" y="205" text-anchor="middle" class="small">观测 · 动作 · 状态 · 时间轴</text><text x="792" y="236" text-anchor="middle" class="small">边界 · 成功 · 失败原因</text>
+  <path d="M315 197h40M600 197h70" class="line"/>
+  <rect x="670" y="380" width="245" height="145" rx="16" class="check"/><text x="792" y="425" text-anchor="middle" class="label">验证结果</text><text x="792" y="460" text-anchor="middle" class="small">时间、坐标、物理、字段</text><text x="792" y="491" text-anchor="middle" class="small">质量标记 · 抽检状态</text>
+  <path d="M792 270v110" class="line"/>
+  <rect x="960" y="380" width="170" height="145" rx="16" class="split"/><text x="1045" y="425" text-anchor="middle" class="label">数据集 split</text><text x="1045" y="460" text-anchor="middle" class="small">train</text><text x="1045" y="488" text-anchor="middle" class="small">validation / test</text>
+  <path d="M915 452h45" class="line"/>
+  <path d="M192 270v225h478" class="dash"/>
+  <text x="120" y="555" class="small">追溯键：规格版本、资产版本、生成器版本、seed、配置哈希</text>
+  <text x="120" y="595" class="small">隔离键：场景、资产实例、布局或任务变体（按评估目标选择）</text>
+</svg>
