@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 650" role="img" aria-labelledby="title desc">
+  <title id="title">模型条件化任务选择流程</title>
+  <desc id="desc">策略评估日志经过失败聚类和任务参数搜索，形成候选任务队列，再分发到仿真采集或人类采集。</desc>
+  <defs>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M0 0L12 6L0 12z" fill="#356b8c"/></marker>
+    <style>text{font-family:Arial,'Noto Sans SC',sans-serif;fill:#173042}.box{fill:#f5fafc;stroke:#6d9db7;stroke-width:2}.main{fill:#e3f1f7;stroke:#2f7294;stroke-width:3}.gate{fill:#fff4db;stroke:#d08a22;stroke-width:3}.small{font-size:19px}.label{font-size:24px;font-weight:700}.line{stroke:#356b8c;stroke-width:3;fill:none;marker-end:url(#arrow)}.dash{stroke:#b06b17;stroke-width:3;fill:none;stroke-dasharray:9 8;marker-end:url(#arrow)}</style>
+  </defs>
+  <rect width="1280" height="650" rx="26" fill="#fffdf8"/>
+  <text x="58" y="58" class="label">模型条件化任务选择：从失败证据到采集队列</text>
+  <rect x="55" y="125" width="225" height="135" rx="16" class="box"/><text x="167" y="170" text-anchor="middle" class="label">策略评估日志</text><text x="167" y="210" text-anchor="middle" class="small">成功、置信度、延迟</text><text x="167" y="237" text-anchor="middle" class="small">失败原因、物理事件</text>
+  <rect x="350" y="125" width="225" height="135" rx="16" class="gate"/><text x="462" y="170" text-anchor="middle" class="label">失败聚类</text><text x="462" y="210" text-anchor="middle" class="small">原因、漂移、覆盖缺口</text><text x="462" y="237" text-anchor="middle" class="small">质量门与评估隔离</text>
+  <rect x="645" y="125" width="255" height="135" rx="16" class="main"/><text x="772" y="170" text-anchor="middle" class="label">任务参数搜索</text><text x="772" y="210" text-anchor="middle" class="small">布局、遮挡、延迟、摩擦</text><text x="772" y="237" text-anchor="middle" class="small">可达性与安全约束</text>
+  <rect x="970" y="125" width="255" height="135" rx="16" class="box"/><text x="1097" y="170" text-anchor="middle" class="label">候选任务队列</text><text x="1097" y="210" text-anchor="middle" class="small">优先级、原因、成本</text><text x="1097" y="237" text-anchor="middle" class="small">版本、目标 split</text>
+  <path d="M280 192h70M575 192h70M900 192h70" class="line"/>
+  <rect x="215" y="420" width="270" height="135" rx="16" class="main"/><text x="350" y="465" text-anchor="middle" class="label">仿真采集</text><text x="350" y="505" text-anchor="middle" class="small">规模化覆盖与真值</text><text x="350" y="532" text-anchor="middle" class="small">场景 / 参数可复现</text>
+  <rect x="590" y="420" width="270" height="135" rx="16" class="main"/><text x="725" y="465" text-anchor="middle" class="label">人类采集</text><text x="725" y="505" text-anchor="middle" class="small">真实噪声与接触恢复</text><text x="725" y="532" text-anchor="middle" class="small">接管边界与操作者版本</text>
+  <rect x="965" y="420" width="270" height="135" rx="16" class="box"/><text x="1100" y="465" text-anchor="middle" class="label">验证与入库</text><text x="1100" y="505" text-anchor="middle" class="small">对齐、回放、质量门</text><text x="1100" y="532" text-anchor="middle" class="small">血缘、授权、数据集版本</text>
+  <path d="M1097 260v92H350v68M1097 260v160M1097 260v92H725v68" class="line"/>
+  <path d="M350 420V360H462V260M725 420V360H772V260" class="dash"/>
+  <text x="60" y="610" class="small">排序依据：失败价值 + 不确定性 + 分布漂移 + 物理风险 + 覆盖缺口 − 采集成本；单一成功率不直接决定任务价值。</text>
+</svg>
