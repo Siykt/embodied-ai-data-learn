@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 760" role="img" aria-labelledby="title desc">
+  <title id="title">Axis Robotics 数据栈与反馈闭环</title>
+  <desc id="desc">图示从任务生成、浏览器仿真和规划中的第一视角采集，经统一数据 schema、自动和人工验证，进入预训练、人工门控纠错后训练与部署反馈；贡献记录将链上索引和链下数据血缘连接起来。</desc>
+  <defs>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M0 0L12 6L0 12z" fill="#356b8c"/></marker>
+    <style>text{font-family:Arial,'Noto Sans SC',sans-serif;fill:#173042}.title{font-size:28px;font-weight:700}.label{font-size:23px;font-weight:700}.small{font-size:17px}.card{stroke-width:3}.source{fill:#e3f1f7;stroke:#2f7294}.process{fill:#f5fafc;stroke:#6d9db7}.gate{fill:#fff4db;stroke:#d08a22}.feedback{fill:#edf7ef;stroke:#3b8b5a}.record{fill:#f3ecfb;stroke:#8661a5}.arrow{stroke:#356b8c;stroke-width:3;fill:none;marker-end:url(#arrow)}.dash{stroke:#b06b17;stroke-width:3;fill:none;stroke-dasharray:9 7;marker-end:url(#arrow)}</style>
+  </defs>
+  <rect width="1280" height="760" rx="26" fill="#fffdf8"/>
+  <text x="58" y="58" class="title">Axis Robotics 数据栈：官方披露的闭环应落为可审计的数据对象</text>
+  <rect x="55" y="120" width="250" height="132" rx="16" class="source card"/>
+  <text x="180" y="162" text-anchor="middle" class="label">任务生成</text><text x="180" y="194" text-anchor="middle" class="small">资产 · 场景 · 技能 · 布局</text><text x="180" y="220" text-anchor="middle" class="small">参数 · seed · 成功条件</text>
+  <rect x="375" y="105" width="250" height="162" rx="16" class="source card"/>
+  <text x="500" y="147" text-anchor="middle" class="label">行为采集</text><text x="500" y="179" text-anchor="middle" class="small">浏览器 MuJoCo WASM 遥操作</text><text x="500" y="205" text-anchor="middle" class="small">全球贡献者 · 仿真时钟</text><text x="500" y="231" text-anchor="middle" class="small">第一视角采集：规划中</text>
+  <rect x="695" y="120" width="250" height="132" rx="16" class="process card"/>
+  <text x="820" y="162" text-anchor="middle" class="label">统一 embodied schema</text><text x="820" y="194" text-anchor="middle" class="small">观测 · 状态 · 动作 · 事件</text><text x="820" y="220" text-anchor="middle" class="small">时空对齐 · 版本 · 来源</text>
+  <rect x="1015" y="120" width="210" height="132" rx="16" class="gate card"/>
+  <text x="1120" y="162" text-anchor="middle" class="label">验证与精炼</text><text x="1120" y="194" text-anchor="middle" class="small">自动检查 + 人工审核</text><text x="1120" y="220" text-anchor="middle" class="small">回放 · 清洗 · 增强</text>
+  <path d="M305 186h70M625 186h70M945 186h70" class="arrow"/>
+  <rect x="160" y="385" width="255" height="132" rx="16" class="process card"/>
+  <text x="287" y="427" text-anchor="middle" class="label">预训练</text><text x="287" y="459" text-anchor="middle" class="small">离线示范 · 数据快照</text><text x="287" y="485" text-anchor="middle" class="small">固定评估协议</text>
+  <rect x="512" y="370" width="255" height="162" rx="16" class="gate card"/>
+  <text x="639" y="412" text-anchor="middle" class="label">Human-gated DAgger</text><text x="639" y="444" text-anchor="middle" class="small">策略 rollout → 人工接管</text><text x="639" y="470" text-anchor="middle" class="small">纠正动作 · 接管边界 · 回放</text><text x="639" y="496" text-anchor="middle" class="small">后训练数据</text>
+  <rect x="864" y="385" width="255" height="132" rx="16" class="feedback card"/>
+  <text x="992" y="427" text-anchor="middle" class="label">部署与反馈</text><text x="992" y="459" text-anchor="middle" class="small">rollout · 失败簇 · 漂移</text><text x="992" y="485" text-anchor="middle" class="small">新任务优先级</text>
+  <path d="M1120 252v66H287v67M1120 252v66H639v52M1120 252v66H992v67M415 451h97M767 451h97" class="arrow"/>
+  <path d="M864 451H805C805 585 500 585 500 267" class="dash"/>
+  <text x="650" y="604" text-anchor="middle" class="small">虚线：模型失败与部署反馈只生成下一轮候选任务；正式评估集须保持隔离。</text>
+  <rect x="165" y="650" width="950" height="66" rx="15" class="record card"/>
+  <text x="640" y="680" text-anchor="middle" class="label">贡献记录与 provenance</text><text x="640" y="706" text-anchor="middle" class="small">链上：Data ID、贡献者、时间、质量分、任务引用；链下：完整轨迹、资产、处理运行、授权与模型血缘</text>
+  <path d="M500 267v78M820 252v93M1120 252v378M639 532v108" class="arrow"/>
+</svg>

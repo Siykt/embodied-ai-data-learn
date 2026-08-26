@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 660" role="img" aria-labelledby="title desc">
+  <title id="title">Axis Robotics 官方路线图与证据状态</title>
+  <desc id="desc">时间线将 2026 年 Q1 和 Q2 的官方完成阶段、Q3 的进行中阶段、2026 年 8 月到 2027 年中期的规划目标分开显示，并提醒 2025 年背景仅来自第三方说法。</desc>
+  <defs>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M0 0L12 6L0 12z" fill="#356b8c"/></marker>
+    <style>text{font-family:Arial,'Noto Sans SC',sans-serif;fill:#173042}.title{font-size:28px;font-weight:700}.label{font-size:23px;font-weight:700}.small{font-size:17px}.card{stroke-width:3}.done{fill:#edf7ef;stroke:#3b8b5a}.progress{fill:#fff4db;stroke:#d08a22}.planned{fill:#eaf0fb;stroke:#536fa6;stroke-dasharray:10 7}.third{fill:#f4f4f4;stroke:#77818a;stroke-dasharray:6 6}.axis{stroke:#356b8c;stroke-width:4;fill:none;marker-end:url(#arrow)}</style>
+  </defs>
+  <rect width="1280" height="660" rx="26" fill="#fffdf8"/>
+  <text x="55" y="58" class="title">Axis Robotics 路线图：官方完成、进行中与规划目标分栏呈现</text>
+  <rect x="55" y="92" width="24" height="24" rx="5" class="done card"/><text x="90" y="111" class="small">官方路线图标为完成</text>
+  <rect x="325" y="92" width="24" height="24" rx="5" class="progress card"/><text x="360" y="111" class="small">官方披露为进行中</text>
+  <rect x="600" y="92" width="24" height="24" rx="5" class="planned card"/><text x="635" y="111" class="small">官方规划目标，尚待验收</text>
+  <rect x="940" y="92" width="24" height="24" rx="5" class="third card"/><text x="975" y="111" class="small">第三方背景，非独立核验</text>
+  <path d="M90 330H1190" class="axis"/>
+  <circle cx="155" cy="330" r="10" fill="#77818a"/><circle cx="390" cy="330" r="10" fill="#3b8b5a"/><circle cx="630" cy="330" r="10" fill="#3b8b5a"/><circle cx="870" cy="330" r="10" fill="#d08a22"/><circle cx="1110" cy="330" r="10" fill="#536fa6"/>
+  <rect x="58" y="410" width="195" height="140" rx="16" class="third card"/>
+  <text x="155" y="450" text-anchor="middle" class="label">2025</text><text x="155" y="482" text-anchor="middle" class="small">第三方资料所述背景</text><text x="155" y="508" text-anchor="middle" class="small">不可据此推导成熟度</text>
+  <rect x="293" y="170" width="195" height="140" rx="16" class="done card"/>
+  <text x="390" y="210" text-anchor="middle" class="label">2026 Q1 ✓</text><text x="390" y="242" text-anchor="middle" class="small">浏览器遥操作 → 清洗 → 训练</text><text x="390" y="268" text-anchor="middle" class="small">基础 schema 与 provenance</text>
+  <rect x="533" y="410" width="195" height="140" rx="16" class="done card"/>
+  <text x="630" y="450" text-anchor="middle" class="label">2026 Q2 ✓</text><text x="630" y="482" text-anchor="middle" class="small">Task Generation Engine</text><text x="630" y="508" text-anchor="middle" class="small">Franka Sim Dataset V1</text>
+  <rect x="773" y="170" width="195" height="140" rx="16" class="progress card"/>
+  <text x="870" y="210" text-anchor="middle" class="label">2026 Q3 🚧</text><text x="870" y="242" text-anchor="middle" class="small">V2 的 post-training 任务已披露</text><text x="870" y="268" text-anchor="middle" class="small">自动训练/验证仍在建设</text>
+  <rect x="1013" y="410" width="195" height="140" rx="16" class="planned card"/>
+  <text x="1110" y="450" text-anchor="middle" class="label">2026.08—2027 中</text><text x="1110" y="482" text-anchor="middle" class="small">第一视角、Sim V2、DAgger</text><text x="1110" y="508" text-anchor="middle" class="small">规模/商业指标均为目标</text>
+  <path d="M155 340v62M390 320v-8M630 340v62M870 320v-8M1110 340v62" stroke="#6d9db7" stroke-width="3" stroke-dasharray="7 7"/>
+  <rect x="55" y="585" width="1150" height="40" rx="12" fill="#f8efe0" stroke="#d08a22" stroke-width="2"/>
+  <text x="630" y="611" text-anchor="middle" class="small">注：官方 Roadmap 标注的状态截至 2026 年 7 月；未来日期、产量、用户、收入与“首个”措辞均只能按目标验收。</text>
+</svg>
