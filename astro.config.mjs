@@ -25,6 +25,11 @@ export default defineConfig({
 						{ label: 'MuJoCo 与具身数据', slug: 'guides/mujoco-embodied-data' },
 						{ label: 'Isaac Lab 与具身数据', slug: 'guides/isaac-lab-embodied-data' },
 						{ label: 'VLA 模型与主流验证方法', slug: 'guides/vla-models-and-evaluation' },
+						{ label: '程序化任务生成与具身数据', slug: 'guides/procedural-task-generation-embodied-data' },
+						{ label: '浏览器遥操作与众包数据采集', slug: 'guides/browser-teleoperation-crowdsourced-data' },
+						{ label: 'Human-gated DAgger 与纠错数据', slug: 'guides/human-gated-dagger-correction-data' },
+						{ label: '模型条件化数据引擎', slug: 'guides/model-conditioned-data-engine' },
+						{ label: 'Axis Robotics：具身数据引擎案例', slug: 'guides/axis-robotics-case-study' },
 					],
 				},
 				{
