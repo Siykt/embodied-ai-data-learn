@@ -15,8 +15,12 @@
   <rect x="495" y="560" width="290" height="105" rx="16" class="stage"/><text x="640" y="602" text-anchor="middle" class="label">4 训练与评估</text><text x="640" y="636" text-anchor="middle" class="small">数据快照、指标、失败模式</text>
   <rect x="125" y="440" width="290" height="105" rx="16" class="stage"/><text x="270" y="482" text-anchor="middle" class="label">5 部署</text><text x="270" y="516" text-anchor="middle" class="small">现场 rollout、安全与延迟</text>
   <rect x="125" y="220" width="290" height="105" rx="16" class="stage"/><text x="270" y="262" text-anchor="middle" class="label">6 反馈</text><text x="270" y="296" text-anchor="middle" class="small">分布、接管、下一轮队列</text>
-  <path d="M785 153h75M1155 325v105M865 545H785M495 612H415M125 425V325" class="line"/>
-  <path d="M415 220h80M785 665h80" class="line"/>
+  <path d="M785 153H825V272H865" class="line"/>
+  <path d="M1010 325V440" class="line"/>
+  <path d="M865 492H820V560H700" class="line"/>
+  <path d="M495 612H455V492H415" class="line"/>
+  <path d="M270 440V325" class="line"/>
+  <path d="M415 272H455V153H495" class="line"/>
   <path d="M640 205v85M865 272H785M865 492H785M640 560v-135M495 612H415M415 272H495" class="trace" marker-end="url(#arrow)"/>
   <text x="60" y="695" class="small">每阶段输出：原始数据或日志 + 质量结论 + 版本 / 哈希 + 来源与 split；反馈只能进入下一轮队列，不能绕过评估隔离。</text>
 </svg>

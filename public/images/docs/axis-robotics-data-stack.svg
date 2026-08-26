@@ -24,7 +24,7 @@
   <rect x="864" y="385" width="255" height="132" rx="16" class="feedback card"/>
   <text x="992" y="427" text-anchor="middle" class="label">部署与反馈</text><text x="992" y="459" text-anchor="middle" class="small">rollout · 失败簇 · 漂移</text><text x="992" y="485" text-anchor="middle" class="small">新任务优先级</text>
   <path d="M1120 252v66H287v67M1120 252v66H639v52M1120 252v66H992v67M415 451h97M767 451h97" class="arrow"/>
-  <path d="M864 451H815V575H350V240H305" class="dash"/>
+  <path d="M992 517V565H1240V285H40V252H180" class="dash"/>
   <text x="650" y="604" text-anchor="middle" class="small">虚线：模型失败与部署反馈只生成下一轮候选任务；正式评估集须保持隔离。</text>
   <rect x="165" y="625" width="950" height="100" rx="15" class="record card"/>
   <text x="640" y="654" text-anchor="middle" class="label">贡献记录与 provenance</text><text x="640" y="685" text-anchor="middle" class="small">链上：Data ID · 贡献者 · 时间 · 质量分 · 任务引用 · TXID</text><text x="640" y="711" text-anchor="middle" class="small">链下：完整轨迹 · 资产/场景 · 处理运行 · 授权 · 数据集与模型血缘</text>
