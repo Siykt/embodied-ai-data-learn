@@ -65,7 +65,10 @@ export default defineConfig({
 				},
 				{
 					label: '参考',
-					items: [{ label: '具身智能数据术语表', slug: 'reference/terms' }],
+					items: [
+						{ label: '2026 年 9 月论文知识点索引', slug: 'reference/2026-09-paper-knowledge-map' },
+						{ label: '具身智能数据术语表', slug: 'reference/terms' },
+					],
 				},
 			],
 		}),
