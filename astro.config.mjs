@@ -58,6 +58,7 @@ export default defineConfig({
 						{ label: '导航、语义地图与可通行性数据', slug: 'guides/navigation-traversability-data' },
 						{ label: '机器人安全与鲁棒性数据', slug: 'guides/robot-safety-robustness-data' },
 						{ label: '具身数据质量与基准评估', slug: 'guides/embodied-evaluation-data-quality' },
+						{ label: '奖励、价值函数与反馈数据', slug: 'guides/reward-value-feedback-data' },
 					],
 				},
 				{
