@@ -56,6 +56,7 @@ export default defineConfig({
 						{ label: '灵巧操作与双臂装配数据', slug: 'guides/dexterous-manipulation-data' },
 						{ label: '人形与足式全身运动数据', slug: 'guides/humanoid-locomotion-data' },
 						{ label: '导航、语义地图与可通行性数据', slug: 'guides/navigation-traversability-data' },
+						{ label: '机器人安全与鲁棒性数据', slug: 'guides/robot-safety-robustness-data' },
 					],
 				},
 				{
