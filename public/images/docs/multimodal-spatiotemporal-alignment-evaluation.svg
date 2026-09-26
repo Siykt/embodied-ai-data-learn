@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="430" viewBox="0 0 1120 430" role="img" aria-labelledby="title desc">
+<title id="title">多模态时空对齐数据：评估维度</title>
+<desc id="desc">对齐评估分别量化设备时钟残差、RGB 深度空间配准误差和错配对控制任务的影响。</desc>
+<rect width="1120" height="430" rx="26" fill="#f5f8fc"/>
+<rect x="24" y="24" width="1072" height="382" rx="20" fill="#ffffff" stroke="#d9e5f0"/>
+<text x="55" y="76" text-anchor="start" fill="#17344d" font-size="30" font-weight="700" font-family="Inter, PingFang SC, Noto Sans CJK SC, sans-serif">多模态时空对齐数据：评估维度</text>
+<text x="55" y="109" text-anchor="start" fill="#597083" font-size="17" font-weight="400" font-family="Inter, PingFang SC, Noto Sans CJK SC, sans-serif">同步误差要与控制影响一起衡量</text>
+<rect x="48" y="151" width="325" height="205" rx="17" fill="#dceefe" stroke="#cddde9"/>
+<text x="69" y="196" text-anchor="start" fill="#213548" font-size="25" font-weight="700" font-family="Inter, PingFang SC, Noto Sans CJK SC, sans-serif">同步</text>
+<text x="69" y="247" text-anchor="start" fill="#425d71" font-size="18" font-weight="500" font-family="Inter, PingFang SC, Noto Sans CJK SC, sans-serif">时钟残差</text>
+<text x="69" y="302" text-anchor="start" fill="#5b7083" font-size="17" font-weight="400" font-family="Inter, PingFang SC, Noto Sans CJK SC, sans-serif">迟到帧单列</text>
+<rect x="394" y="151" width="325" height="205" rx="17" fill="#e4f3e9" stroke="#cddde9"/>
+<text x="415" y="196" text-anchor="start" fill="#213548" font-size="25" font-weight="700" font-family="Inter, PingFang SC, Noto Sans CJK SC, sans-serif">配准</text>
+<text x="415" y="247" text-anchor="start" fill="#425d71" font-size="18" font-weight="500" font-family="Inter, PingFang SC, Noto Sans CJK SC, sans-serif">边界重投影误差</text>
+<text x="415" y="302" text-anchor="start" fill="#5b7083" font-size="17" font-weight="400" font-family="Inter, PingFang SC, Noto Sans CJK SC, sans-serif">距离/遮挡分层</text>
+<rect x="740" y="151" width="325" height="205" rx="17" fill="#fff0db" stroke="#cddde9"/>
+<text x="761" y="196" text-anchor="start" fill="#213548" font-size="25" font-weight="700" font-family="Inter, PingFang SC, Noto Sans CJK SC, sans-serif">控制</text>
+<text x="761" y="247" text-anchor="start" fill="#425d71" font-size="18" font-weight="500" font-family="Inter, PingFang SC, Noto Sans CJK SC, sans-serif">闭环任务差异</text>
+<text x="761" y="302" text-anchor="start" fill="#5b7083" font-size="17" font-weight="400" font-family="Inter, PingFang SC, Noto Sans CJK SC, sans-serif">错配消融对照</text>
+<text x="56" y="385" text-anchor="start" fill="#667e91" font-size="16" font-weight="400" font-family="Inter, PingFang SC, Noto Sans CJK SC, sans-serif">关键：同一数组下标不等于同一时空事件。</text>
+</svg>

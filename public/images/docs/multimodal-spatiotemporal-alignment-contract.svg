@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="430" viewBox="0 0 1120 430" role="img" aria-labelledby="title desc">
+<title id="title">多模态时空对齐数据：最小契约</title>
+<desc id="desc">多模态契约记录采样接收生效时刻、相机与机器人坐标变换，以及插值缺失掩码。</desc>
+<rect width="1120" height="430" rx="26" fill="#f5f8fc"/>
+<rect x="24" y="24" width="1072" height="382" rx="20" fill="#ffffff" stroke="#d9e5f0"/>
+<text x="55" y="76" text-anchor="start" fill="#17344d" font-size="30" font-weight="700" font-family="Inter, PingFang SC, Noto Sans CJK SC, sans-serif">多模态时空对齐数据：最小契约</text>
+<text x="55" y="109" text-anchor="start" fill="#597083" font-size="17" font-weight="400" font-family="Inter, PingFang SC, Noto Sans CJK SC, sans-serif">时间戳、标定和缺失掩码共同定义样本</text>
+<rect x="48" y="151" width="325" height="205" rx="17" fill="#dceefe" stroke="#cddde9"/>
+<text x="69" y="197" text-anchor="start" fill="#213548" font-size="23" font-weight="700" font-family="Inter, PingFang SC, Noto Sans CJK SC, sans-serif">事件时钟</text>
+<text x="69" y="241" text-anchor="start" fill="#425d71" font-size="17" font-weight="400" font-family="Inter, PingFang SC, Noto Sans CJK SC, sans-serif">• 采样/接收/生效</text>
+<text x="69" y="274" text-anchor="start" fill="#425d71" font-size="17" font-weight="400" font-family="Inter, PingFang SC, Noto Sans CJK SC, sans-serif">• clock_id 与漂移</text>
+<text x="69" y="307" text-anchor="start" fill="#425d71" font-size="17" font-weight="400" font-family="Inter, PingFang SC, Noto Sans CJK SC, sans-serif">• 历史窗口规则</text>
+<rect x="394" y="151" width="325" height="205" rx="17" fill="#e4f3e9" stroke="#cddde9"/>
+<text x="415" y="197" text-anchor="start" fill="#213548" font-size="23" font-weight="700" font-family="Inter, PingFang SC, Noto Sans CJK SC, sans-serif">空间关系</text>
+<text x="415" y="241" text-anchor="start" fill="#425d71" font-size="17" font-weight="400" font-family="Inter, PingFang SC, Noto Sans CJK SC, sans-serif">• 相机内外参</text>
+<text x="415" y="274" text-anchor="start" fill="#425d71" font-size="17" font-weight="400" font-family="Inter, PingFang SC, Noto Sans CJK SC, sans-serif">• 深度注册状态</text>
+<text x="415" y="307" text-anchor="start" fill="#425d71" font-size="17" font-weight="400" font-family="Inter, PingFang SC, Noto Sans CJK SC, sans-serif">• frame_id 与单位</text>
+<rect x="740" y="151" width="325" height="205" rx="17" fill="#fff0db" stroke="#cddde9"/>
+<text x="761" y="197" text-anchor="start" fill="#213548" font-size="23" font-weight="700" font-family="Inter, PingFang SC, Noto Sans CJK SC, sans-serif">可用性</text>
+<text x="761" y="241" text-anchor="start" fill="#425d71" font-size="17" font-weight="400" font-family="Inter, PingFang SC, Noto Sans CJK SC, sans-serif">• 缺失/插值掩码</text>
+<text x="761" y="274" text-anchor="start" fill="#425d71" font-size="17" font-weight="400" font-family="Inter, PingFang SC, Noto Sans CJK SC, sans-serif">• 配准误差</text>
+<text x="761" y="307" text-anchor="start" fill="#425d71" font-size="17" font-weight="400" font-family="Inter, PingFang SC, Noto Sans CJK SC, sans-serif">• 部署可见模态</text>
+<text x="56" y="385" text-anchor="start" fill="#667e91" font-size="16" font-weight="400" font-family="Inter, PingFang SC, Noto Sans CJK SC, sans-serif">关键：同一数组下标不等于同一时空事件。</text>
+</svg>
