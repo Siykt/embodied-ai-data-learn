@@ -60,6 +60,7 @@ export default defineConfig({
 						{ label: '具身数据质量与基准评估', slug: 'guides/embodied-evaluation-data-quality' },
 						{ label: '奖励、价值函数与反馈数据', slug: 'guides/reward-value-feedback-data' },
 						{ label: '轨迹规划、控制与物理约束数据', slug: 'guides/trajectory-control-constraint-data' },
+						{ label: '特定行业具身数据设计', slug: 'guides/domain-specific-embodied-data' },
 					],
 				},
 				{
