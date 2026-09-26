@@ -47,6 +47,7 @@ export default defineConfig({
 						{ label: '世界模型训练数据与物理表征', slug: 'guides/world-model-training-data' },
 						{ label: '世界模型规划与决策评估', slug: 'guides/world-model-planning-evaluation' },
 						{ label: '具身记忆与经验检索数据', slug: 'guides/embodied-memory-experience-data' },
+						{ label: '语言指令与机器人动作对齐数据', slug: 'guides/language-action-grounding-data' },
 					],
 				},
 				{
