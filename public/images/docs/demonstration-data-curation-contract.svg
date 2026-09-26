@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="430" viewBox="0 0 1120 430" role="img" aria-labelledby="title desc">
+<title id="title">示教数据筛选与再利用：最小契约</title>
+<desc id="desc">示教整理契约连接原始来源、分布与精度特征、检索权重版本和训练用途。</desc>
+<rect width="1120" height="430" rx="26" fill="#f5f8fc"/>
+<rect x="24" y="24" width="1072" height="382" rx="20" fill="#ffffff" stroke="#d9e5f0"/>
+<text x="55" y="76" text-anchor="start" fill="#17344d" font-size="30" font-weight="700" font-family="Inter, PingFang SC, Noto Sans CJK SC, sans-serif">示教数据筛选与再利用：最小契约</text>
+<text x="55" y="109" text-anchor="start" fill="#597083" font-size="17" font-weight="400" font-family="Inter, PingFang SC, Noto Sans CJK SC, sans-serif">原始来源与筛选视图保持独立</text>
+<rect x="48" y="151" width="325" height="205" rx="17" fill="#dceefe" stroke="#cddde9"/>
+<text x="69" y="197" text-anchor="start" fill="#213548" font-size="23" font-weight="700" font-family="Inter, PingFang SC, Noto Sans CJK SC, sans-serif">原始来源</text>
+<text x="69" y="241" text-anchor="start" fill="#425d71" font-size="17" font-weight="400" font-family="Inter, PingFang SC, Noto Sans CJK SC, sans-serif">• episode / operator</text>
+<text x="69" y="274" text-anchor="start" fill="#425d71" font-size="17" font-weight="400" font-family="Inter, PingFang SC, Noto Sans CJK SC, sans-serif">• 人/机器人/规划器</text>
+<text x="69" y="307" text-anchor="start" fill="#425d71" font-size="17" font-weight="400" font-family="Inter, PingFang SC, Noto Sans CJK SC, sans-serif">• 授权与原始链接</text>
+<rect x="394" y="151" width="325" height="205" rx="17" fill="#e4f3e9" stroke="#cddde9"/>
+<text x="415" y="197" text-anchor="start" fill="#213548" font-size="23" font-weight="700" font-family="Inter, PingFang SC, Noto Sans CJK SC, sans-serif">筛选依据</text>
+<text x="415" y="241" text-anchor="start" fill="#425d71" font-size="17" font-weight="400" font-family="Inter, PingFang SC, Noto Sans CJK SC, sans-serif">• 任务/本体/容差</text>
+<text x="415" y="274" text-anchor="start" fill="#425d71" font-size="17" font-weight="400" font-family="Inter, PingFang SC, Noto Sans CJK SC, sans-serif">• 分布特征/缺失</text>
+<text x="415" y="307" text-anchor="start" fill="#425d71" font-size="17" font-weight="400" font-family="Inter, PingFang SC, Noto Sans CJK SC, sans-serif">• 检索与权重版本</text>
+<rect x="740" y="151" width="325" height="205" rx="17" fill="#fff0db" stroke="#cddde9"/>
+<text x="761" y="197" text-anchor="start" fill="#213548" font-size="23" font-weight="700" font-family="Inter, PingFang SC, Noto Sans CJK SC, sans-serif">数据用途</text>
+<text x="761" y="241" text-anchor="start" fill="#425d71" font-size="17" font-weight="400" font-family="Inter, PingFang SC, Noto Sans CJK SC, sans-serif">• trainable/context</text>
+<text x="761" y="274" text-anchor="start" fill="#425d71" font-size="17" font-weight="400" font-family="Inter, PingFang SC, Noto Sans CJK SC, sans-serif">• 排除原因</text>
+<text x="761" y="307" text-anchor="start" fill="#425d71" font-size="17" font-weight="400" font-family="Inter, PingFang SC, Noto Sans CJK SC, sans-serif">• split 与训练轮次</text>
+<text x="56" y="385" text-anchor="start" fill="#667e91" font-size="16" font-weight="400" font-family="Inter, PingFang SC, Noto Sans CJK SC, sans-serif">关键：样本权重随目标策略变化。</text>
+</svg>
