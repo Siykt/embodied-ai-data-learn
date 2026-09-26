@@ -50,6 +50,7 @@ export default defineConfig({
 						{ label: '语言指令与机器人动作对齐数据', slug: 'guides/language-action-grounding-data' },
 						{ label: '机器人技能组合与任务过程数据', slug: 'guides/robot-skill-composition-data' },
 						{ label: 'VLA 实时执行与动作分块数据', slug: 'guides/vla-realtime-execution-data' },
+						{ label: '闭环纠错与失败经验数据', slug: 'guides/closed-loop-correction-data' },
 					],
 				},
 				{
