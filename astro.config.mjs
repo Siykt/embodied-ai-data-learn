@@ -41,6 +41,7 @@ export default defineConfig({
 						{ label: '多模态时空对齐数据', slug: 'guides/multimodal-spatiotemporal-alignment' },
 						{ label: '三维空间表征与部件数据', slug: 'guides/3d-spatial-representation-data' },
 						{ label: '主动感知与任务化测量数据', slug: 'guides/active-perception-data' },
+						{ label: '潜在动作与跨本体对齐', slug: 'guides/latent-action-cross-embodiment' },
 					],
 				},
 				{

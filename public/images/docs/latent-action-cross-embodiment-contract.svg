@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="430" viewBox="0 0 1120 430" role="img" aria-labelledby="title desc">
+<title id="title">潜在动作与跨本体对齐：最小契约</title>
+<desc id="desc">跨本体数据契约包含视频窗口与本体来源、几何潜在编码及其版本、目标控制和结果。</desc>
+<rect width="1120" height="430" rx="26" fill="#f5f8fc"/>
+<rect x="24" y="24" width="1072" height="382" rx="20" fill="#ffffff" stroke="#d9e5f0"/>
+<text x="55" y="76" text-anchor="start" fill="#17344d" font-size="30" font-weight="700" font-family="Inter, PingFang SC, Noto Sans CJK SC, sans-serif">潜在动作与跨本体对齐：最小契约</text>
+<text x="55" y="109" text-anchor="start" fill="#597083" font-size="17" font-weight="400" font-family="Inter, PingFang SC, Noto Sans CJK SC, sans-serif">共享潜在码与本体解码分别版本化</text>
+<rect x="48" y="151" width="325" height="205" rx="17" fill="#dceefe" stroke="#cddde9"/>
+<text x="69" y="197" text-anchor="start" fill="#213548" font-size="23" font-weight="700" font-family="Inter, PingFang SC, Noto Sans CJK SC, sans-serif">来源与时间</text>
+<text x="69" y="241" text-anchor="start" fill="#425d71" font-size="17" font-weight="400" font-family="Inter, PingFang SC, Noto Sans CJK SC, sans-serif">• clip / task / body</text>
+<text x="69" y="274" text-anchor="start" fill="#425d71" font-size="17" font-weight="400" font-family="Inter, PingFang SC, Noto Sans CJK SC, sans-serif">• 窗口起止与相机</text>
+<text x="69" y="307" text-anchor="start" fill="#425d71" font-size="17" font-weight="400" font-family="Inter, PingFang SC, Noto Sans CJK SC, sans-serif">• 标签可用性</text>
+<rect x="394" y="151" width="325" height="205" rx="17" fill="#e4f3e9" stroke="#cddde9"/>
+<text x="415" y="197" text-anchor="start" fill="#213548" font-size="23" font-weight="700" font-family="Inter, PingFang SC, Noto Sans CJK SC, sans-serif">共享表示</text>
+<text x="415" y="241" text-anchor="start" fill="#425d71" font-size="17" font-weight="400" font-family="Inter, PingFang SC, Noto Sans CJK SC, sans-serif">• 几何运动/置信</text>
+<text x="415" y="274" text-anchor="start" fill="#425d71" font-size="17" font-weight="400" font-family="Inter, PingFang SC, Noto Sans CJK SC, sans-serif">• 潜在编码版本</text>
+<text x="415" y="307" text-anchor="start" fill="#425d71" font-size="17" font-weight="400" font-family="Inter, PingFang SC, Noto Sans CJK SC, sans-serif">• 工具位姿与单位</text>
+<rect x="740" y="151" width="325" height="205" rx="17" fill="#fff0db" stroke="#cddde9"/>
+<text x="761" y="197" text-anchor="start" fill="#213548" font-size="23" font-weight="700" font-family="Inter, PingFang SC, Noto Sans CJK SC, sans-serif">目标执行</text>
+<text x="761" y="241" text-anchor="start" fill="#425d71" font-size="17" font-weight="400" font-family="Inter, PingFang SC, Noto Sans CJK SC, sans-serif">• 本体解码器版本</text>
+<text x="761" y="274" text-anchor="start" fill="#425d71" font-size="17" font-weight="400" font-family="Inter, PingFang SC, Noto Sans CJK SC, sans-serif">• 关节动作/限制</text>
+<text x="761" y="307" text-anchor="start" fill="#425d71" font-size="17" font-weight="400" font-family="Inter, PingFang SC, Noto Sans CJK SC, sans-serif">• 真实效果与 split</text>
+<text x="56" y="385" text-anchor="start" fill="#667e91" font-size="16" font-weight="400" font-family="Inter, PingFang SC, Noto Sans CJK SC, sans-serif">关键：潜在动作不是关节命令。</text>
+</svg>
