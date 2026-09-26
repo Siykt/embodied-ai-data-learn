@@ -45,6 +45,7 @@ export default defineConfig({
 						{ label: '示教数据筛选与再利用', slug: 'guides/demonstration-data-curation' },
 						{ label: '模仿学习动作数据与轨迹表示', slug: 'guides/imitation-learning-action-data' },
 						{ label: '世界模型训练数据与物理表征', slug: 'guides/world-model-training-data' },
+						{ label: '世界模型规划与决策评估', slug: 'guides/world-model-planning-evaluation' },
 					],
 				},
 				{
