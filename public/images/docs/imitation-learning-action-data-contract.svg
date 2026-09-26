@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="430" viewBox="0 0 1120 430" role="img" aria-labelledby="title desc">
+<title id="title">模仿学习动作数据与轨迹表示：最小契约</title>
+<desc id="desc">模仿学习动作契约记录动作空间坐标与频率、动作窗口及转换版本、实际执行和质量掩码。</desc>
+<rect width="1120" height="430" rx="26" fill="#f5f8fc"/>
+<rect x="24" y="24" width="1072" height="382" rx="20" fill="#ffffff" stroke="#d9e5f0"/>
+<text x="55" y="76" text-anchor="start" fill="#17344d" font-size="30" font-weight="700" font-family="Inter, PingFang SC, Noto Sans CJK SC, sans-serif">模仿学习动作数据与轨迹表示：最小契约</text>
+<text x="55" y="109" text-anchor="start" fill="#597083" font-size="17" font-weight="400" font-family="Inter, PingFang SC, Noto Sans CJK SC, sans-serif">控制空间、窗口和转换版本同存</text>
+<rect x="48" y="151" width="325" height="205" rx="17" fill="#dceefe" stroke="#cddde9"/>
+<text x="69" y="197" text-anchor="start" fill="#213548" font-size="23" font-weight="700" font-family="Inter, PingFang SC, Noto Sans CJK SC, sans-serif">动作定义</text>
+<text x="69" y="241" text-anchor="start" fill="#425d71" font-size="17" font-weight="400" font-family="Inter, PingFang SC, Noto Sans CJK SC, sans-serif">• 关节或末端位姿</text>
+<text x="69" y="274" text-anchor="start" fill="#425d71" font-size="17" font-weight="400" font-family="Inter, PingFang SC, Noto Sans CJK SC, sans-serif">• 单位/坐标/频率</text>
+<text x="69" y="307" text-anchor="start" fill="#425d71" font-size="17" font-weight="400" font-family="Inter, PingFang SC, Noto Sans CJK SC, sans-serif">• 控制器限制</text>
+<rect x="394" y="151" width="325" height="205" rx="17" fill="#e4f3e9" stroke="#cddde9"/>
+<text x="415" y="197" text-anchor="start" fill="#213548" font-size="23" font-weight="700" font-family="Inter, PingFang SC, Noto Sans CJK SC, sans-serif">窗口构造</text>
+<text x="415" y="241" text-anchor="start" fill="#425d71" font-size="17" font-weight="400" font-family="Inter, PingFang SC, Noto Sans CJK SC, sans-serif">• t_obs / t_apply</text>
+<text x="415" y="274" text-anchor="start" fill="#425d71" font-size="17" font-weight="400" font-family="Inter, PingFang SC, Noto Sans CJK SC, sans-serif">• chunk 与重叠</text>
+<text x="415" y="307" text-anchor="start" fill="#425d71" font-size="17" font-weight="400" font-family="Inter, PingFang SC, Noto Sans CJK SC, sans-serif">• 表示转换版本</text>
+<rect x="740" y="151" width="325" height="205" rx="17" fill="#fff0db" stroke="#cddde9"/>
+<text x="761" y="197" text-anchor="start" fill="#213548" font-size="23" font-weight="700" font-family="Inter, PingFang SC, Noto Sans CJK SC, sans-serif">执行证据</text>
+<text x="761" y="241" text-anchor="start" fill="#425d71" font-size="17" font-weight="400" font-family="Inter, PingFang SC, Noto Sans CJK SC, sans-serif">• 命令/实际动作</text>
+<text x="761" y="274" text-anchor="start" fill="#425d71" font-size="17" font-weight="400" font-family="Inter, PingFang SC, Noto Sans CJK SC, sans-serif">• jerk/限位/结果</text>
+<text x="761" y="307" text-anchor="start" fill="#425d71" font-size="17" font-weight="400" font-family="Inter, PingFang SC, Noto Sans CJK SC, sans-serif">• 质量掩码与 split</text>
+<text x="56" y="385" text-anchor="start" fill="#667e91" font-size="16" font-weight="400" font-family="Inter, PingFang SC, Noto Sans CJK SC, sans-serif">关键：动作块边界也属于质量检查。</text>
+</svg>
