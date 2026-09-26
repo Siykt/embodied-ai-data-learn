@@ -57,6 +57,7 @@ export default defineConfig({
 						{ label: '人形与足式全身运动数据', slug: 'guides/humanoid-locomotion-data' },
 						{ label: '导航、语义地图与可通行性数据', slug: 'guides/navigation-traversability-data' },
 						{ label: '机器人安全与鲁棒性数据', slug: 'guides/robot-safety-robustness-data' },
+						{ label: '具身数据质量与基准评估', slug: 'guides/embodied-evaluation-data-quality' },
 					],
 				},
 				{
