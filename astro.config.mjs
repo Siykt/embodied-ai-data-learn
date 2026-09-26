@@ -52,6 +52,7 @@ export default defineConfig({
 						{ label: 'VLA 实时执行与动作分块数据', slug: 'guides/vla-realtime-execution-data' },
 						{ label: '闭环纠错与失败经验数据', slug: 'guides/closed-loop-correction-data' },
 						{ label: '触觉、力觉与接触数据', slug: 'guides/tactile-force-contact-data' },
+						{ label: '可变形物体与材质状态数据', slug: 'guides/deformable-material-state-data' },
 					],
 				},
 				{
