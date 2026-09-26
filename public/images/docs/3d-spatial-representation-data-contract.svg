@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="430" viewBox="0 0 1120 430" role="img" aria-labelledby="title desc">
+<title id="title">三维空间表征与部件数据：最小契约</title>
+<desc id="desc">三维数据契约连接场景物体部件身份、点云位姿和轨迹可见性，以及尺度和参考误差。</desc>
+<rect width="1120" height="430" rx="26" fill="#f5f8fc"/>
+<rect x="24" y="24" width="1072" height="382" rx="20" fill="#ffffff" stroke="#d9e5f0"/>
+<text x="55" y="76" text-anchor="start" fill="#17344d" font-size="30" font-weight="700" font-family="Inter, PingFang SC, Noto Sans CJK SC, sans-serif">三维空间表征与部件数据：最小契约</text>
+<text x="55" y="109" text-anchor="start" fill="#597083" font-size="17" font-weight="400" font-family="Inter, PingFang SC, Noto Sans CJK SC, sans-serif">语义身份、米制轨迹与尺度依据同存</text>
+<rect x="48" y="151" width="325" height="205" rx="17" fill="#dceefe" stroke="#cddde9"/>
+<text x="69" y="197" text-anchor="start" fill="#213548" font-size="23" font-weight="700" font-family="Inter, PingFang SC, Noto Sans CJK SC, sans-serif">空间身份</text>
+<text x="69" y="241" text-anchor="start" fill="#425d71" font-size="17" font-weight="400" font-family="Inter, PingFang SC, Noto Sans CJK SC, sans-serif">• scene/object/part</text>
+<text x="69" y="274" text-anchor="start" fill="#425d71" font-size="17" font-weight="400" font-family="Inter, PingFang SC, Noto Sans CJK SC, sans-serif">• 文本指称与层级</text>
+<text x="69" y="307" text-anchor="start" fill="#425d71" font-size="17" font-weight="400" font-family="Inter, PingFang SC, Noto Sans CJK SC, sans-serif">• 稳定跨视角 ID</text>
+<rect x="394" y="151" width="325" height="205" rx="17" fill="#e4f3e9" stroke="#cddde9"/>
+<text x="415" y="197" text-anchor="start" fill="#213548" font-size="23" font-weight="700" font-family="Inter, PingFang SC, Noto Sans CJK SC, sans-serif">几何动态</text>
+<text x="415" y="241" text-anchor="start" fill="#425d71" font-size="17" font-weight="400" font-family="Inter, PingFang SC, Noto Sans CJK SC, sans-serif">• 点云/网格/位姿</text>
+<text x="415" y="274" text-anchor="start" fill="#425d71" font-size="17" font-weight="400" font-family="Inter, PingFang SC, Noto Sans CJK SC, sans-serif">• 时间与可见性</text>
+<text x="415" y="307" text-anchor="start" fill="#425d71" font-size="17" font-weight="400" font-family="Inter, PingFang SC, Noto Sans CJK SC, sans-serif">• 观测/预测标记</text>
+<rect x="740" y="151" width="325" height="205" rx="17" fill="#fff0db" stroke="#cddde9"/>
+<text x="761" y="197" text-anchor="start" fill="#213548" font-size="23" font-weight="700" font-family="Inter, PingFang SC, Noto Sans CJK SC, sans-serif">质量依据</text>
+<text x="761" y="241" text-anchor="start" fill="#425d71" font-size="17" font-weight="400" font-family="Inter, PingFang SC, Noto Sans CJK SC, sans-serif">• 尺度来源与单位</text>
+<text x="761" y="274" text-anchor="start" fill="#425d71" font-size="17" font-weight="400" font-family="Inter, PingFang SC, Noto Sans CJK SC, sans-serif">• 重投影/参考误差</text>
+<text x="761" y="307" text-anchor="start" fill="#425d71" font-size="17" font-weight="400" font-family="Inter, PingFang SC, Noto Sans CJK SC, sans-serif">• 可达与碰撞检查</text>
+<text x="56" y="385" text-anchor="start" fill="#667e91" font-size="16" font-weight="400" font-family="Inter, PingFang SC, Noto Sans CJK SC, sans-serif">关键：补全点与观测点应分开标注。</text>
+</svg>

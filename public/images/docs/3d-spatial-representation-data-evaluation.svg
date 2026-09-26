@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="430" viewBox="0 0 1120 430" role="img" aria-labelledby="title desc">
+<title id="title">三维空间表征与部件数据：评估维度</title>
+<desc id="desc">三维表征评估分别衡量部件语义定位、米制几何误差与抓取规划中的实际效果。</desc>
+<rect width="1120" height="430" rx="26" fill="#f5f8fc"/>
+<rect x="24" y="24" width="1072" height="382" rx="20" fill="#ffffff" stroke="#d9e5f0"/>
+<text x="55" y="76" text-anchor="start" fill="#17344d" font-size="30" font-weight="700" font-family="Inter, PingFang SC, Noto Sans CJK SC, sans-serif">三维空间表征与部件数据：评估维度</text>
+<text x="55" y="109" text-anchor="start" fill="#597083" font-size="17" font-weight="400" font-family="Inter, PingFang SC, Noto Sans CJK SC, sans-serif">部件定位需落到实际抓取与规划</text>
+<rect x="48" y="151" width="325" height="205" rx="17" fill="#dceefe" stroke="#cddde9"/>
+<text x="69" y="196" text-anchor="start" fill="#213548" font-size="25" font-weight="700" font-family="Inter, PingFang SC, Noto Sans CJK SC, sans-serif">标注</text>
+<text x="69" y="247" text-anchor="start" fill="#425d71" font-size="18" font-weight="500" font-family="Inter, PingFang SC, Noto Sans CJK SC, sans-serif">部件定位与一致性</text>
+<text x="69" y="302" text-anchor="start" fill="#5b7083" font-size="17" font-weight="400" font-family="Inter, PingFang SC, Noto Sans CJK SC, sans-serif">开放词汇切片</text>
+<rect x="394" y="151" width="325" height="205" rx="17" fill="#e4f3e9" stroke="#cddde9"/>
+<text x="415" y="196" text-anchor="start" fill="#213548" font-size="25" font-weight="700" font-family="Inter, PingFang SC, Noto Sans CJK SC, sans-serif">几何</text>
+<text x="415" y="247" text-anchor="start" fill="#425d71" font-size="18" font-weight="500" font-family="Inter, PingFang SC, Noto Sans CJK SC, sans-serif">米制位置误差</text>
+<text x="415" y="302" text-anchor="start" fill="#5b7083" font-size="17" font-weight="400" font-family="Inter, PingFang SC, Noto Sans CJK SC, sans-serif">遮挡区单列</text>
+<rect x="740" y="151" width="325" height="205" rx="17" fill="#fff0db" stroke="#cddde9"/>
+<text x="761" y="196" text-anchor="start" fill="#213548" font-size="25" font-weight="700" font-family="Inter, PingFang SC, Noto Sans CJK SC, sans-serif">任务</text>
+<text x="761" y="247" text-anchor="start" fill="#425d71" font-size="18" font-weight="500" font-family="Inter, PingFang SC, Noto Sans CJK SC, sans-serif">抓取/规划成功</text>
+<text x="761" y="302" text-anchor="start" fill="#5b7083" font-size="17" font-weight="400" font-family="Inter, PingFang SC, Noto Sans CJK SC, sans-serif">按余量与距离分层</text>
+<text x="56" y="385" text-anchor="start" fill="#667e91" font-size="16" font-weight="400" font-family="Inter, PingFang SC, Noto Sans CJK SC, sans-serif">关键：补全点与观测点应分开标注。</text>
+</svg>
