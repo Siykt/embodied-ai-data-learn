@@ -51,6 +51,7 @@ export default defineConfig({
 						{ label: '机器人技能组合与任务过程数据', slug: 'guides/robot-skill-composition-data' },
 						{ label: 'VLA 实时执行与动作分块数据', slug: 'guides/vla-realtime-execution-data' },
 						{ label: '闭环纠错与失败经验数据', slug: 'guides/closed-loop-correction-data' },
+						{ label: '触觉、力觉与接触数据', slug: 'guides/tactile-force-contact-data' },
 					],
 				},
 				{
