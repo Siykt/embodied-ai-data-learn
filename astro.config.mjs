@@ -33,6 +33,12 @@ export default defineConfig({
 					],
 				},
 				{
+					label: '2026 年 9 月论文知识点',
+					items: [
+						{ label: '示教采集与动作重定向', slug: 'guides/demonstration-collection-retargeting' },
+					],
+				},
+				{
 					label: '参考',
 					items: [{ label: '具身智能数据术语表', slug: 'reference/terms' }],
 				},

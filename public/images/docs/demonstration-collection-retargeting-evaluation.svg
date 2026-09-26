@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="430" viewBox="0 0 1120 430" role="img" aria-labelledby="title desc">
+<title id="title">示教采集与动作重定向：评估维度</title>
+<desc id="desc">示教评估分别核验任务可复现性、目标本体动作可执行性和未见操作者场景的迁移表现。</desc>
+<rect width="1120" height="430" rx="26" fill="#f5f8fc"/>
+<rect x="24" y="24" width="1072" height="382" rx="20" fill="#ffffff" stroke="#d9e5f0"/>
+<text x="55" y="76" text-anchor="start" fill="#17344d" font-size="30" font-weight="700" font-family="Inter, PingFang SC, Noto Sans CJK SC, sans-serif">示教采集与动作重定向：评估维度</text>
+<text x="55" y="109" text-anchor="start" fill="#597083" font-size="17" font-weight="400" font-family="Inter, PingFang SC, Noto Sans CJK SC, sans-serif">分开核验示教完整性与迁移表现</text>
+<rect x="48" y="151" width="325" height="205" rx="17" fill="#dceefe" stroke="#cddde9"/>
+<text x="69" y="196" text-anchor="start" fill="#213548" font-size="25" font-weight="700" font-family="Inter, PingFang SC, Noto Sans CJK SC, sans-serif">可复现</text>
+<text x="69" y="247" text-anchor="start" fill="#425d71" font-size="18" font-weight="500" font-family="Inter, PingFang SC, Noto Sans CJK SC, sans-serif">任务条件与原始流</text>
+<text x="69" y="302" text-anchor="start" fill="#5b7083" font-size="17" font-weight="400" font-family="Inter, PingFang SC, Noto Sans CJK SC, sans-serif">重放同一动作链</text>
+<rect x="394" y="151" width="325" height="205" rx="17" fill="#e4f3e9" stroke="#cddde9"/>
+<text x="415" y="196" text-anchor="start" fill="#213548" font-size="25" font-weight="700" font-family="Inter, PingFang SC, Noto Sans CJK SC, sans-serif">可执行</text>
+<text x="415" y="247" text-anchor="start" fill="#425d71" font-size="18" font-weight="500" font-family="Inter, PingFang SC, Noto Sans CJK SC, sans-serif">限位、接触与时延</text>
+<text x="415" y="302" text-anchor="start" fill="#5b7083" font-size="17" font-weight="400" font-family="Inter, PingFang SC, Noto Sans CJK SC, sans-serif">按本体统计失败</text>
+<rect x="740" y="151" width="325" height="205" rx="17" fill="#fff0db" stroke="#cddde9"/>
+<text x="761" y="196" text-anchor="start" fill="#213548" font-size="25" font-weight="700" font-family="Inter, PingFang SC, Noto Sans CJK SC, sans-serif">可迁移</text>
+<text x="761" y="247" text-anchor="start" fill="#425d71" font-size="18" font-weight="500" font-family="Inter, PingFang SC, Noto Sans CJK SC, sans-serif">未见操作者与场景</text>
+<text x="761" y="302" text-anchor="start" fill="#5b7083" font-size="17" font-weight="400" font-family="Inter, PingFang SC, Noto Sans CJK SC, sans-serif">目标机器人闭环验证</text>
+<text x="56" y="385" text-anchor="start" fill="#667e91" font-size="16" font-weight="400" font-family="Inter, PingFang SC, Noto Sans CJK SC, sans-serif">关键：源动作不能被重定向标签覆盖。</text>
+</svg>

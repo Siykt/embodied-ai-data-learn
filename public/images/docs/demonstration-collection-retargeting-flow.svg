@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="430" viewBox="0 0 1120 430" role="img" aria-labelledby="title desc">
+<title id="title">示教采集与动作重定向：数据流程</title>
+<desc id="desc">任务规格经多源采集、时空对齐和动作重定向后，以回放验收形成可用示教。</desc>
+<rect width="1120" height="430" rx="26" fill="#f5f8fc"/>
+<rect x="24" y="24" width="1072" height="382" rx="20" fill="#ffffff" stroke="#d9e5f0"/>
+<text x="55" y="76" text-anchor="start" fill="#17344d" font-size="30" font-weight="700" font-family="Inter, PingFang SC, Noto Sans CJK SC, sans-serif">示教采集与动作重定向：数据流程</text>
+<text x="55" y="109" text-anchor="start" fill="#597083" font-size="17" font-weight="400" font-family="Inter, PingFang SC, Noto Sans CJK SC, sans-serif">源命令与机器人执行必须保持可追溯</text>
+<rect x="45" y="160" width="185" height="170" rx="17" fill="#dceefe" stroke="#cddde9"/>
+<text x="61" y="207" text-anchor="start" fill="#54718a" font-size="18" font-weight="700" font-family="Inter, PingFang SC, Noto Sans CJK SC, sans-serif">01</text>
+<text x="61" y="252" text-anchor="start" fill="#213548" font-size="23" font-weight="700" font-family="Inter, PingFang SC, Noto Sans CJK SC, sans-serif">任务规格</text>
+<text x="61" y="289" text-anchor="start" fill="#526b7f" font-size="17" font-weight="400" font-family="Inter, PingFang SC, Noto Sans CJK SC, sans-serif">成功条件与场景</text>
+<path d="M 233 244 L 255 244" stroke="#7892a7" stroke-width="3"/>
+<path d="M 249 237 L 256 244 L 249 251" fill="none" stroke="#7892a7" stroke-width="3"/>
+<rect x="258" y="160" width="185" height="170" rx="17" fill="#e4f3e9" stroke="#cddde9"/>
+<text x="274" y="207" text-anchor="start" fill="#54718a" font-size="18" font-weight="700" font-family="Inter, PingFang SC, Noto Sans CJK SC, sans-serif">02</text>
+<text x="274" y="252" text-anchor="start" fill="#213548" font-size="23" font-weight="700" font-family="Inter, PingFang SC, Noto Sans CJK SC, sans-serif">多源采集</text>
+<text x="274" y="289" text-anchor="start" fill="#526b7f" font-size="17" font-weight="400" font-family="Inter, PingFang SC, Noto Sans CJK SC, sans-serif">视频/命令/状态</text>
+<path d="M 446 244 L 468 244" stroke="#7892a7" stroke-width="3"/>
+<path d="M 462 237 L 469 244 L 462 251" fill="none" stroke="#7892a7" stroke-width="3"/>
+<rect x="471" y="160" width="185" height="170" rx="17" fill="#fff0db" stroke="#cddde9"/>
+<text x="487" y="207" text-anchor="start" fill="#54718a" font-size="18" font-weight="700" font-family="Inter, PingFang SC, Noto Sans CJK SC, sans-serif">03</text>
+<text x="487" y="252" text-anchor="start" fill="#213548" font-size="23" font-weight="700" font-family="Inter, PingFang SC, Noto Sans CJK SC, sans-serif">时空对齐</text>
+<text x="487" y="289" text-anchor="start" fill="#526b7f" font-size="17" font-weight="400" font-family="Inter, PingFang SC, Noto Sans CJK SC, sans-serif">时钟与坐标</text>
+<path d="M 659 244 L 681 244" stroke="#7892a7" stroke-width="3"/>
+<path d="M 675 237 L 682 244 L 675 251" fill="none" stroke="#7892a7" stroke-width="3"/>
+<rect x="684" y="160" width="185" height="170" rx="17" fill="#ece8fb" stroke="#cddde9"/>
+<text x="700" y="207" text-anchor="start" fill="#54718a" font-size="18" font-weight="700" font-family="Inter, PingFang SC, Noto Sans CJK SC, sans-serif">04</text>
+<text x="700" y="252" text-anchor="start" fill="#213548" font-size="23" font-weight="700" font-family="Inter, PingFang SC, Noto Sans CJK SC, sans-serif">动作重定向</text>
+<text x="700" y="289" text-anchor="start" fill="#526b7f" font-size="17" font-weight="400" font-family="Inter, PingFang SC, Noto Sans CJK SC, sans-serif">源动作→机器人</text>
+<path d="M 872 244 L 894 244" stroke="#7892a7" stroke-width="3"/>
+<path d="M 888 237 L 895 244 L 888 251" fill="none" stroke="#7892a7" stroke-width="3"/>
+<rect x="897" y="160" width="185" height="170" rx="17" fill="#e4f2f5" stroke="#cddde9"/>
+<text x="913" y="207" text-anchor="start" fill="#54718a" font-size="18" font-weight="700" font-family="Inter, PingFang SC, Noto Sans CJK SC, sans-serif">05</text>
+<text x="913" y="252" text-anchor="start" fill="#213548" font-size="23" font-weight="700" font-family="Inter, PingFang SC, Noto Sans CJK SC, sans-serif">回放验收</text>
+<text x="913" y="289" text-anchor="start" fill="#526b7f" font-size="17" font-weight="400" font-family="Inter, PingFang SC, Noto Sans CJK SC, sans-serif">质量与结果</text>
+<text x="56" y="385" text-anchor="start" fill="#667e91" font-size="16" font-weight="400" font-family="Inter, PingFang SC, Noto Sans CJK SC, sans-serif">关键：源动作不能被重定向标签覆盖。</text>
+</svg>
