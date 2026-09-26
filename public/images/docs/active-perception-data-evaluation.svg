@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="430" viewBox="0 0 1120 430" role="img" aria-labelledby="title desc">
+<title id="title">主动感知与任务化测量数据：评估维度</title>
+<desc id="desc">主动感知评估分别观察视角覆盖增益、参考测量误差与证据不足时的决策结果。</desc>
+<rect width="1120" height="430" rx="26" fill="#f5f8fc"/>
+<rect x="24" y="24" width="1072" height="382" rx="20" fill="#ffffff" stroke="#d9e5f0"/>
+<text x="55" y="76" text-anchor="start" fill="#17344d" font-size="30" font-weight="700" font-family="Inter, PingFang SC, Noto Sans CJK SC, sans-serif">主动感知与任务化测量数据：评估维度</text>
+<text x="55" y="109" text-anchor="start" fill="#597083" font-size="17" font-weight="400" font-family="Inter, PingFang SC, Noto Sans CJK SC, sans-serif">证据不足与不合格应分别统计</text>
+<rect x="48" y="151" width="325" height="205" rx="17" fill="#dceefe" stroke="#cddde9"/>
+<text x="69" y="196" text-anchor="start" fill="#213548" font-size="25" font-weight="700" font-family="Inter, PingFang SC, Noto Sans CJK SC, sans-serif">覆盖</text>
+<text x="69" y="247" text-anchor="start" fill="#425d71" font-size="18" font-weight="500" font-family="Inter, PingFang SC, Noto Sans CJK SC, sans-serif">可见面/测点范围</text>
+<text x="69" y="302" text-anchor="start" fill="#5b7083" font-size="17" font-weight="400" font-family="Inter, PingFang SC, Noto Sans CJK SC, sans-serif">缺口触发补测</text>
+<rect x="394" y="151" width="325" height="205" rx="17" fill="#e4f3e9" stroke="#cddde9"/>
+<text x="415" y="196" text-anchor="start" fill="#213548" font-size="25" font-weight="700" font-family="Inter, PingFang SC, Noto Sans CJK SC, sans-serif">准确</text>
+<text x="415" y="247" text-anchor="start" fill="#425d71" font-size="18" font-weight="500" font-family="Inter, PingFang SC, Noto Sans CJK SC, sans-serif">参考误差/重复性</text>
+<text x="415" y="302" text-anchor="start" fill="#5b7083" font-size="17" font-weight="400" font-family="Inter, PingFang SC, Noto Sans CJK SC, sans-serif">仪器与版本说明</text>
+<rect x="740" y="151" width="325" height="205" rx="17" fill="#fff0db" stroke="#cddde9"/>
+<text x="761" y="196" text-anchor="start" fill="#213548" font-size="25" font-weight="700" font-family="Inter, PingFang SC, Noto Sans CJK SC, sans-serif">决策</text>
+<text x="761" y="247" text-anchor="start" fill="#425d71" font-size="18" font-weight="500" font-family="Inter, PingFang SC, Noto Sans CJK SC, sans-serif">假接受/漏判</text>
+<text x="761" y="302" text-anchor="start" fill="#5b7083" font-size="17" font-weight="400" font-family="Inter, PingFang SC, Noto Sans CJK SC, sans-serif">证据不足单列</text>
+<text x="56" y="385" text-anchor="start" fill="#667e91" font-size="16" font-weight="400" font-family="Inter, PingFang SC, Noto Sans CJK SC, sans-serif">关键：未覆盖的属性不能自动判为通过。</text>
+</svg>
