@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="430" viewBox="0 0 1120 430" role="img" aria-labelledby="title desc">
+<title id="title">人体与人-物交互重建数据：评估维度</title>
+<desc id="desc">人体交互重建分别检查米制尺度、遮挡下的时间连续性与物体关节接触重放。</desc>
+<rect width="1120" height="430" rx="26" fill="#f5f8fc"/>
+<rect x="24" y="24" width="1072" height="382" rx="20" fill="#ffffff" stroke="#d9e5f0"/>
+<text x="55" y="76" text-anchor="start" fill="#17344d" font-size="30" font-weight="700" font-family="Inter, PingFang SC, Noto Sans CJK SC, sans-serif">人体与人-物交互重建数据：评估维度</text>
+<text x="55" y="109" text-anchor="start" fill="#597083" font-size="17" font-weight="400" font-family="Inter, PingFang SC, Noto Sans CJK SC, sans-serif">几何准确与交互有效性分别报告</text>
+<rect x="48" y="151" width="325" height="205" rx="17" fill="#dceefe" stroke="#cddde9"/>
+<text x="69" y="196" text-anchor="start" fill="#213548" font-size="25" font-weight="700" font-family="Inter, PingFang SC, Noto Sans CJK SC, sans-serif">米制可靠性</text>
+<text x="69" y="247" text-anchor="start" fill="#425d71" font-size="18" font-weight="500" font-family="Inter, PingFang SC, Noto Sans CJK SC, sans-serif">双目/参考尺度</text>
+<text x="69" y="302" text-anchor="start" fill="#5b7083" font-size="17" font-weight="400" font-family="Inter, PingFang SC, Noto Sans CJK SC, sans-serif">不可估帧显式标记</text>
+<rect x="394" y="151" width="325" height="205" rx="17" fill="#e4f3e9" stroke="#cddde9"/>
+<text x="415" y="196" text-anchor="start" fill="#213548" font-size="25" font-weight="700" font-family="Inter, PingFang SC, Noto Sans CJK SC, sans-serif">时间连续性</text>
+<text x="415" y="247" text-anchor="start" fill="#425d71" font-size="18" font-weight="500" font-family="Inter, PingFang SC, Noto Sans CJK SC, sans-serif">轨迹与身份一致</text>
+<text x="415" y="302" text-anchor="start" fill="#5b7083" font-size="17" font-weight="400" font-family="Inter, PingFang SC, Noto Sans CJK SC, sans-serif">遮挡分桶报告</text>
+<rect x="740" y="151" width="325" height="205" rx="17" fill="#fff0db" stroke="#cddde9"/>
+<text x="761" y="196" text-anchor="start" fill="#213548" font-size="25" font-weight="700" font-family="Inter, PingFang SC, Noto Sans CJK SC, sans-serif">交互可用性</text>
+<text x="761" y="247" text-anchor="start" fill="#425d71" font-size="18" font-weight="500" font-family="Inter, PingFang SC, Noto Sans CJK SC, sans-serif">关节/接触重放</text>
+<text x="761" y="302" text-anchor="start" fill="#5b7083" font-size="17" font-weight="400" font-family="Inter, PingFang SC, Noto Sans CJK SC, sans-serif">转机器人再验证</text>
+<text x="56" y="385" text-anchor="start" fill="#667e91" font-size="16" font-weight="400" font-family="Inter, PingFang SC, Noto Sans CJK SC, sans-serif">关键：无法观测的区域需要置信度。</text>
+</svg>

@@ -36,6 +36,7 @@ export default defineConfig({
 					label: '2026 年 9 月论文知识点',
 					items: [
 						{ label: '示教采集与动作重定向', slug: 'guides/demonstration-collection-retargeting' },
+						{ label: '人体与人-物交互重建数据', slug: 'guides/human-object-interaction-reconstruction' },
 					],
 				},
 				{
