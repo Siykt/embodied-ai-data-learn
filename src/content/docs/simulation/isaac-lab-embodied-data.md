@@ -19,7 +19,7 @@ Isaac Lab 是建立在 NVIDIA Isaac Sim 之上的开源机器人学习框架。I
 | 任务与生成 | 环境任务配置、并行环境、随机化、示教与 Mimic | 任务变体、实际随机参数、示教血缘和独立 episode ID |
 | 记录与评估 | 项目记录/导出流程、训练器与任务评测 | 区分日志、视频和可回读数据集；保留版本和真实对照 |
 
-通用技术细节分别见[场景与物理配置](/guides/simulation-scene-physics/)、[传感器与时间对齐](/guides/simulation-sensors-timing/)、[任务与数据生成](/guides/simulation-task-generation/)及[验证与真实迁移](/guides/simulation-validation-sim2real/)。Isaac Lab 组织环境和训练流程，具体数据契约仍要由采集项目定义并验收。
+通用技术细节分别见[场景与物理配置](/simulation/simulation-scene-physics/)、[传感器与时间对齐](/simulation/simulation-sensors-timing/)、[任务与数据生成](/simulation/simulation-task-generation/)及[验证与真实迁移](/simulation/simulation-validation-sim2real/)。Isaac Lab 组织环境和训练流程，具体数据契约仍要由采集项目定义并验收。
 
 ## 先看结论：它在具身数据里做什么
 
@@ -156,4 +156,4 @@ dataset
 
 ## 资料来源
 
-本文的环境、传感器、示教与复现说明以 [Isaac Lab 官方文档](https://isaac-sim.github.io/IsaacLab/main/index.html)和[仓库](https://github.com/isaac-sim/IsaacLab)为准；场景、渲染与底层传感器能力参考 [Isaac Sim 文档](https://docs.isaacsim.omniverse.nvidia.com/latest/index.html)。与 MuJoCo 的数据任务选型见[仿真器与具身数据](/guides/simulators-embodied-data/)。
+本文的环境、传感器、示教与复现说明以 [Isaac Lab 官方文档](https://isaac-sim.github.io/IsaacLab/main/index.html)和[仓库](https://github.com/isaac-sim/IsaacLab)为准；场景、渲染与底层传感器能力参考 [Isaac Sim 文档](https://docs.isaacsim.omniverse.nvidia.com/latest/index.html)。与 MuJoCo 的数据任务选型见[仿真器与具身数据](/simulation/simulators-embodied-data/)。

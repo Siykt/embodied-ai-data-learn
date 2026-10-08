@@ -97,7 +97,7 @@ description: 面向入门者，从早期机器人仿真、接触物理、标准�
 6. **记录与质检**：每次尝试分配独立 episode ID，保存请求动作、实际命令、图像、状态、成功与失败原因，并检查丢帧、时间顺序和异常接触。
 7. **评估与真机对照**：按未见杯子或材质隔离测试，统计成功率与滑落率；用少量真实抓取检查延迟和摩擦差距，再决定是否修改模型或采集更多真实数据。
 
-这样得到的不是“许多仿真视频”，而是一批能追溯到资产、物理参数、策略和任务结果的交互数据。具体字段与操作步骤分别见[场景与物理配置](/guides/simulation-scene-physics/)、[传感器与时间对齐](/guides/simulation-sensors-timing/)、[任务与数据生成](/guides/simulation-task-generation/)和[验证与真实迁移](/guides/simulation-validation-sim2real/)。
+这样得到的不是“许多仿真视频”，而是一批能追溯到资产、物理参数、策略和任务结果的交互数据。具体字段与操作步骤分别见[场景与物理配置](/simulation/simulation-scene-physics/)、[传感器与时间对齐](/simulation/simulation-sensors-timing/)、[任务与数据生成](/simulation/simulation-task-generation/)和[验证与真实迁移](/simulation/simulation-validation-sim2real/)。
 
 ## 五、几组持续存在的设计权衡
 
@@ -114,9 +114,9 @@ description: 面向入门者，从早期机器人仿真、接触物理、标准�
 
 | 如果首先要解决…… | 可以先研究…… | 仍需自行明确…… |
 | --- | --- | --- |
-| 接触、关节控制和高频低维轨迹 | [MuJoCo / MJCF / MJX](/guides/mujoco-embodied-data/) | 任务环境、相机与记录格式、原生引擎和 MJX 的差异 |
-| 大型 USD 场景、多相机、多传感器和并行任务 | [Isaac Sim / Isaac Lab](/guides/isaac-lab-embodied-data/) | Lab/Sim 版本匹配、资产依赖、传感器时序与导出契约 |
-| 与真实机器人软件和 ROS 传感器链路联调 | [Gazebo 等系统仿真路线](/guides/simulators-embodied-data/) | 插件与传感器语义、真实设备时间对齐 |
+| 接触、关节控制和高频低维轨迹 | [MuJoCo / MJCF / MJX](/simulation/mujoco-embodied-data/) | 任务环境、相机与记录格式、原生引擎和 MJX 的差异 |
+| 大型 USD 场景、多相机、多传感器和并行任务 | [Isaac Sim / Isaac Lab](/simulation/isaac-lab-embodied-data/) | Lab/Sim 版本匹配、资产依赖、传感器时序与导出契约 |
+| 与真实机器人软件和 ROS 传感器链路联调 | [Gazebo 等系统仿真路线](/simulation/simulators-embodied-data/) | 插件与传感器语义、真实设备时间对齐 |
 
 这是按**数据目标**给出的起点，不是物理精度或速度排名。同一任务要比较两套仿真器时，先统一模型、动作表示、初态、控制周期、传感器和成功条件，再测真实硬件上的差异。
 

@@ -7,7 +7,7 @@ description: 从任务规格到场景、物理、传感器、数据生成与真�
 
 这篇文档先给出从建模到真实验证的完整技术链路，再横向整理主流仿真器的定位、选型和通用数据契约。MuJoCo 与 Isaac Lab 是两种具体实现；技术链路的输入、输出与质检规则应先于工具选择确定。
 
-第一次接触这个领域，可先阅读[具身仿真的发展脉络与设计逻辑](/guides/simulation-history-design/)：它解释各技术层为何形成，再回到本页查技术链路和工具选型。
+第一次接触这个领域，可先阅读[具身仿真的发展脉络与设计逻辑](/simulation/simulation-history-design/)：它解释各技术层为何形成，再回到本页查技术链路和工具选型。
 
 ## 端到端技术链路
 
@@ -24,7 +24,7 @@ description: 从任务规格到场景、物理、传感器、数据生成与真�
 | 7. 记录与整理 | episode ID、数据 schema、编码与压缩 | 可回读、可追溯的数据集版本 | 是否跨环境混写或丢失时间信息 |
 | 8. 质检与迁移 | 质量规则、评测划分、真实对照 | 质量报告、基准结果、已知域差距 | 仿真成功是否能解释真实表现 |
 
-按环节继续阅读：[场景资产、机器人模型与物理配置](/guides/simulation-scene-physics/) → [传感器、渲染与时间对齐](/guides/simulation-sensors-timing/) → [任务环境、数据生成与记录](/guides/simulation-task-generation/) → [验证、评测与真实迁移](/guides/simulation-validation-sim2real/)。每篇都包含输入、输出、跨引擎差异和检查项。
+按环节继续阅读：[场景资产、机器人模型与物理配置](/simulation/simulation-scene-physics/) → [传感器、渲染与时间对齐](/simulation/simulation-sensors-timing/) → [任务环境、数据生成与记录](/simulation/simulation-task-generation/) → [验证、评测与真实迁移](/simulation/simulation-validation-sim2real/)。每篇都包含输入、输出、跨引擎差异和检查项。
 
 例如生产抓取轨迹：先定义“抓起并稳定保持”的成功规则；导入机器人与物体并核对尺寸和碰撞体；校准夹爪、摩擦和控制周期；配置相机与接触观测；生成不同物体和初态的 episode；按轨迹血缘隔离训练与评测；最后用真实夹爪样本比较滑落、延迟和成功率。跳过任何一环，都可能得到数量很大但难以解释的数据。
 
@@ -64,14 +64,14 @@ MuJoCo 以接触建模、速度和模型格式（MJCF）著称，是 DeepMind �
 - 数据视角：适合生产**高频率的状态-动作轨迹**（关节位置/速度、接触力、传感器读数）；也可用于视觉任务，但需要单独评估渲染、标定和视觉域差距。
 - 场景即契约：MJCF 场景文件同时是机器人模型、物体布局、传感器和执行器的完整定义，数据集必须记录它的版本或哈希。
 - 资料入口：[MuJoCo 文档](https://mujoco.readthedocs.io)、[MuJoCo Menagerie 模型库](https://github.com/google-deepmind/mujoco_menagerie)、[dm_control](https://github.com/google-deepmind/dm_control)。
-- 专项整理见[MuJoCo 与具身数据](/guides/mujoco-embodied-data/)。
+- 专项整理见[MuJoCo 与具身数据](/simulation/mujoco-embodied-data/)。
 
 ### Isaac Sim / Isaac Lab（NVIDIA）
 
 Isaac Sim 基于 USD + PhysX + RTX 渲染，提供接近真实的图像、深度、分割和多种传感器仿真；Isaac Lab 在其上提供并行的机器人学习环境，支持强化学习、模仿学习以及 Mimic / DexMimicGen 这类示范扩增工具。适合需要**高保真视觉数据和合成数据集**的项目。NVIDIA 也在推动用 Cosmos 等模型把仿真数据生成规模化。
 
 - 数据视角：数据产物丰富但环境重、版本耦合强（Isaac Lab 与 Isaac Sim 版本必须匹配）。
-- 专项整理见[Isaac Lab 与具身数据](/guides/isaac-lab-embodied-data/)。
+- 专项整理见[Isaac Lab 与具身数据](/simulation/isaac-lab-embodied-data/)。
 
 ### Genesis（生成式物理引擎）
 

@@ -8,8 +8,13 @@ const pages = (await getCollection('docs'))
 const categories = [
 	{
 		key: 'guides',
-		title: '数据工程',
+		title: '数据技术整理',
 		intro: '从传感器采集到训练交付，关注真实设备上的数据质量。',
+	},
+	{
+		key: 'simulation',
+		title: '仿真器',
+		intro: '按发展路径和技术链路阅读仿真数据的生产、质量控制与真实验证。',
 	},
 	{
 		key: 'reference',
@@ -19,15 +24,36 @@ const categories = [
 ];
 
 type Page = typeof pages[number];
-const getCategory = (page: Page) => page.id.split('/')[0] === 'reference' ? 'reference' : 'guides';
-const getHref = (page: Page) => `/${page.id}/`;
+const getCategory = (page: Page) => {
+	const section = page.id.split('/')[0];
+	return section === 'reference' || section === 'simulation' ? section : 'guides';
+};
+const getHref = (page: Page) => `/${page.id.replace(/\/index$/, '')}/`;
+const simulationOrder = new Map([
+	'simulation',
+	'simulation/simulation-history-design',
+	'simulation/simulators-embodied-data',
+	'simulation/simulation-scene-physics',
+	'simulation/simulation-sensors-timing',
+	'simulation/simulation-task-generation',
+	'simulation/simulation-validation-sim2real',
+	'simulation/mujoco-embodied-data',
+	'simulation/isaac-lab-embodied-data',
+].map((id, index) => [id, index]));
+const getCategoryPages = (key: string) => {
+	const categoryPages = pages.filter((page) => getCategory(page) === key);
+	if (key === 'simulation') {
+		categoryPages.sort((a, b) => (simulationOrder.get(a.id) ?? 99) - (simulationOrder.get(b.id) ?? 99));
+	}
+	return categoryPages;
+};
 ---
 
 <div class="home-intro" id="文档目录">
 	<div>
 		<p class="home-kicker">DOCUMENTATION INDEX</p>
-		<h2>按主题查找</h2>
-		<p>每个页面都从数据采集、时间空间对齐、标注、质量控制和下游使用出发，适合按任务直接进入。</p>
+		<h2>按项目查找</h2>
+		<p>从真实数据与仿真数据两个项目进入，再按任务查找采集、生成、对齐、质量控制和评估资料。</p>
 	</div>
 	<div class="home-stats" aria-label="文档统计">
 		<strong>{pages.length}</strong>
@@ -35,9 +61,20 @@ const getHref = (page: Page) => `/${page.id}/`;
 	</div>
 </div>
 
+<div class="home-project-grid" aria-label="项目入口">
+	{categories.filter((category) => category.key !== 'reference').map((category, index) => (
+		<a class="home-project" href={category.key === 'simulation' ? '/simulation/' : '#category-guides'}>
+			<span class="home-project-index">项目 {String(index + 1).padStart(2, '0')}</span>
+			<h3>{category.title}</h3>
+			<p>{category.intro}</p>
+			<span class="home-project-action">进入项目 ↗</span>
+		</a>
+	))}
+</div>
+
 <div class="home-categories">
 	{categories.map((category) => {
-		const categoryPages = pages.filter((page) => getCategory(page) === category.key);
+		const categoryPages = getCategoryPages(category.key);
 		return (
 			<section class="home-section" aria-labelledby={`category-${category.key}`}>
 				<div class="home-section-heading">

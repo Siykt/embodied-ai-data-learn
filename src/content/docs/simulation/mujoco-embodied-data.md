@@ -28,7 +28,7 @@ MuJoCo（Multi-Joint dynamics with Contact）是 Google DeepMind 维护的开源
 | 任务与采样 | 项目环境或 dm_control 等上层任务库；MJX 可做批量 rollout | 明确 reset/step、奖励、终止、随机化和动作语义 |
 | 记录与评估 | 项目记录器、D4RL 或 robomimic 等格式 | 组装独立 episode，保存模型版本并用真实样本对照 |
 
-这些环节的通用方法分别见[场景与物理配置](/guides/simulation-scene-physics/)、[传感器与时间对齐](/guides/simulation-sensors-timing/)、[任务与数据生成](/guides/simulation-task-generation/)及[验证与真实迁移](/guides/simulation-validation-sim2real/)。MuJoCo 负责其中的物理与传感器计算，任务规则、记录器和数据集准入还需由上层管线明确实现。
+这些环节的通用方法分别见[场景与物理配置](/simulation/simulation-scene-physics/)、[传感器与时间对齐](/simulation/simulation-sensors-timing/)、[任务与数据生成](/simulation/simulation-task-generation/)及[验证与真实迁移](/simulation/simulation-validation-sim2real/)。MuJoCo 负责其中的物理与传感器计算，任务规则、记录器和数据集准入还需由上层管线明确实现。
 
 ## MJCF：场景即数据契约
 
@@ -98,7 +98,7 @@ MuJoCo 生态里已经存在一批成熟的数据形态，可以直接参考：
 - **robosuite / robomimic 风格**：hdf5 按 episode 组织，包含 obs（图像、关节、末端位姿）、actions、states、rewards、dones，并附带环境配置与模式说明；robomimic 可以直接消费这类数据。
 - **dm_control**：提供相机渲染、奖励分解和 replay buffer 工具，适合控制与视觉任务的数据生产。
 
-选用哪种形态取决于下游消费方，但无论哪种，都应补充统一的元数据与质量字段（见[仿真数据契约](/guides/simulators-embodied-data/#通用数据契约)）。
+选用哪种形态取决于下游消费方，但无论哪种，都应补充统一的元数据与质量字段（见[仿真数据契约](/simulation/simulators-embodied-data/#通用数据契约)）。
 
 ## 批量生成与 MJX 的使用边界
 
@@ -170,7 +170,7 @@ dataset
 | 从模型和现成任务起步 | [MuJoCo Menagerie](https://github.com/google-deepmind/mujoco_menagerie)、[dm_control](https://github.com/google-deepmind/dm_control) | 可复用资产、任务定义和许可条件 |
 | 消费已有轨迹数据 | [D4RL](https://github.com/Farama-Foundation/D4RL)、[robosuite](https://robosuite.ai)、[robomimic](https://robomimic.github.io) | episode 结构、终止语义和导出格式 |
 
-如果数据目标以多相机视觉、USD 资产和大规模渲染为主，可结合[Isaac Lab 与具身数据](/guides/isaac-lab-embodied-data/)比较；两者之间迁移数据时，先统一动作语义、坐标系、时间轴和成功条件。
+如果数据目标以多相机视觉、USD 资产和大规模渲染为主，可结合[Isaac Lab 与具身数据](/simulation/isaac-lab-embodied-data/)比较；两者之间迁移数据时，先统一动作语义、坐标系、时间轴和成功条件。
 
 ## 一句话定位
 

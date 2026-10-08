@@ -3,7 +3,7 @@ title: 仿真传感器、渲染与时间对齐
 description: 说明仿真状态如何变成相机、IMU、接触等观测，以及标定、时间轴、标签来源和视觉域差距的管理方式。
 ---
 
-物理引擎中的物体位置是内部状态，机器人真正能使用的则是相机、IMU、关节编码器等传感器观测。仿真数据集需要把两者分开：内部状态可提供监督标签，但不能悄悄混进部署时不可获得的策略输入。本页承接[场景与物理配置](/guides/simulation-scene-physics/)，整理“状态 → 传感器模型 → 图像或数值观测 → 对齐与标注”。
+物理引擎中的物体位置是内部状态，机器人真正能使用的则是相机、IMU、关节编码器等传感器观测。仿真数据集需要把两者分开：内部状态可提供监督标签，但不能悄悄混进部署时不可获得的策略输入。本页承接[场景与物理配置](/simulation/simulation-scene-physics/)，整理“状态 → 传感器模型 → 图像或数值观测 → 对齐与标注”。
 
 ![仿真状态经过传感器与渲染模型生成观测和标签](/images/docs/simulation-sensor-stack.svg)
 
@@ -72,7 +72,7 @@ IMU 通常提供加速度和角速度。将理想仿真状态转成 IMU 数据�
 - **物理观测**：对照引擎状态检查 IMU 方向、关节读数、接触阈值和事件持续时间。
 - **真实差异**：按材质、距离、光照、运动速度和接触条件分桶比较仿真与真实分布。
 
-交付给[任务与数据生成](/guides/simulation-task-generation/)的传感器 manifest 至少应包含：`stream_id`、传感器类型、安装位姿、内参、采样周期、时间戳定义、单位、噪声模型、标签映射和版本。视觉相机的详细要求另见[相机内参数据要求](/guides/camera-intrinsics-data-requirements/)与[多模态时空对齐数据](/guides/multimodal-spatiotemporal-alignment/)。
+交付给[任务与数据生成](/simulation/simulation-task-generation/)的传感器 manifest 至少应包含：`stream_id`、传感器类型、安装位姿、内参、采样周期、时间戳定义、单位、噪声模型、标签映射和版本。视觉相机的详细要求另见[相机内参数据要求](/guides/camera-intrinsics-data-requirements/)与[多模态时空对齐数据](/guides/multimodal-spatiotemporal-alignment/)。
 
 ## 官方资料
 

@@ -4,6 +4,16 @@ import starlight from '@astrojs/starlight';
 
 // https://astro.build/config
 export default defineConfig({
+	redirects: {
+		'/guides/simulation-history-design/': '/simulation/simulation-history-design/',
+		'/guides/simulators-embodied-data/': '/simulation/simulators-embodied-data/',
+		'/guides/simulation-scene-physics/': '/simulation/simulation-scene-physics/',
+		'/guides/simulation-sensors-timing/': '/simulation/simulation-sensors-timing/',
+		'/guides/simulation-task-generation/': '/simulation/simulation-task-generation/',
+		'/guides/simulation-validation-sim2real/': '/simulation/simulation-validation-sim2real/',
+		'/guides/mujoco-embodied-data/': '/simulation/mujoco-embodied-data/',
+		'/guides/isaac-lab-embodied-data/': '/simulation/isaac-lab-embodied-data/',
+	},
 	integrations: [
 		starlight({
 			title: '具身智能数据',
@@ -11,6 +21,7 @@ export default defineConfig({
 			sidebar: [
 				{
 					label: '数据技术整理',
+					collapsed: true,
 					items: [
 						{ label: '相机内参数据要求', slug: 'guides/camera-intrinsics-data-requirements' },
 						{ label: '视觉惯性 SLAM 数据', slug: 'guides/visual-inertial-slam' },
@@ -21,14 +32,6 @@ export default defineConfig({
 						{ label: 'Aria、Ego4D 与 Ego-Exo4D 数据格式', slug: 'guides/aria-ego4d-egoexo4d-formats' },
 						{ label: 'Meta VRS 多传感器数据规范', slug: 'guides/meta-vrs-data-standard' },
 						{ label: 'TURN 与具身数据实时采集', slug: 'guides/turn-for-embodied-data' },
-						{ label: '具身仿真的发展脉络与设计逻辑', slug: 'guides/simulation-history-design' },
-						{ label: '仿真器与具身数据', slug: 'guides/simulators-embodied-data' },
-						{ label: '仿真场景资产与物理配置', slug: 'guides/simulation-scene-physics' },
-						{ label: '仿真传感器与时间对齐', slug: 'guides/simulation-sensors-timing' },
-						{ label: '仿真任务与数据生成', slug: 'guides/simulation-task-generation' },
-						{ label: '仿真验证与真实迁移', slug: 'guides/simulation-validation-sim2real' },
-						{ label: 'MuJoCo 与具身数据', slug: 'guides/mujoco-embodied-data' },
-						{ label: 'Isaac Lab 与具身数据', slug: 'guides/isaac-lab-embodied-data' },
 						{ label: 'VLA 模型与主流验证方法', slug: 'guides/vla-models-and-evaluation' },
 						{ label: '程序化任务生成与具身数据', slug: 'guides/procedural-task-generation-embodied-data' },
 						{ label: '浏览器遥操作与众包数据采集', slug: 'guides/browser-teleoperation-crowdsourced-data' },
@@ -38,7 +41,23 @@ export default defineConfig({
 					],
 				},
 				{
+					label: '仿真器',
+					collapsed: true,
+					items: [
+						{ label: '项目概览', slug: 'simulation' },
+						{ label: '具身仿真的发展脉络与设计逻辑', slug: 'simulation/simulation-history-design' },
+						{ label: '仿真器与具身数据', slug: 'simulation/simulators-embodied-data' },
+						{ label: '仿真场景资产与物理配置', slug: 'simulation/simulation-scene-physics' },
+						{ label: '仿真传感器与时间对齐', slug: 'simulation/simulation-sensors-timing' },
+						{ label: '仿真任务与数据生成', slug: 'simulation/simulation-task-generation' },
+						{ label: '仿真验证与真实迁移', slug: 'simulation/simulation-validation-sim2real' },
+						{ label: 'MuJoCo 与具身数据', slug: 'simulation/mujoco-embodied-data' },
+						{ label: 'Isaac Lab 与具身数据', slug: 'simulation/isaac-lab-embodied-data' },
+					],
+				},
+				{
 					label: '2026 年 9 月论文知识点',
+					collapsed: true,
 					items: [
 						{ label: '示教采集与动作重定向', slug: 'guides/demonstration-collection-retargeting' },
 						{ label: '人体与人-物交互重建数据', slug: 'guides/human-object-interaction-reconstruction' },
@@ -70,6 +89,7 @@ export default defineConfig({
 				},
 				{
 					label: '参考',
+					collapsed: true,
 					items: [
 						{ label: '2026 年 9 月论文知识点索引', slug: 'reference/2026-09-paper-knowledge-map' },
 						{ label: '具身智能数据术语表', slug: 'reference/terms' },

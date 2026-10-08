@@ -95,7 +95,7 @@ episode:
       quality_flags: [string]
 ```
 
-`operator_id` 应使用受控的化名或内部标识，不把姓名、邮箱等直接写入训练样本。`task_version`、`control_mapping_version` 和 `schema_version` 是后续比较数据质量和复现实验的关键字段。具体的状态、动作和 episode 组织方式可以继续对照 [MuJoCo 与具身数据](/guides/mujoco-embodied-data/)中的控制循环与数据契约。
+`operator_id` 应使用受控的化名或内部标识，不把姓名、邮箱等直接写入训练样本。`task_version`、`control_mapping_version` 和 `schema_version` 是后续比较数据质量和复现实验的关键字段。具体的状态、动作和 episode 组织方式可以继续对照 [MuJoCo 与具身数据](/simulation/mujoco-embodied-data/)中的控制循环与数据契约。
 
 ## 众包样本的准入检查
 

@@ -140,7 +140,7 @@ policy_vN + eval_log_vN
 - [DAgger: Algorithmic and Dataset Aggregation](https://proceedings.mlr.press/v15/ross11a.html)：Ross、Gordon 和 Bagnell 提出通过策略访问状态并由专家提供动作，缓解行为克隆中的分布偏移；在本引擎中对应“失败状态进入采集队列”，不等于无条件复制全部 rollout。
 - [VLA 模型与主流验证方法](/guides/vla-models-and-evaluation/)：参考数据契约、离线动作预测、仿真闭环、真实闭环、跨本体和安全评估的分层方法。
 - [程序化任务生成与具身数据](/guides/procedural-task-generation-embodied-data/)：参考任务规格、随机化、episode 契约、约束检查和 split 隔离。
-- [仿真器与具身数据](/guides/simulators-embodied-data/)：理解仿真规模、传感器真值、版本耦合和 sim-to-real 对照的边界。
+- [仿真器与具身数据](/simulation/simulators-embodied-data/)：理解仿真规模、传感器真值、版本耦合和 sim-to-real 对照的边界。
 - [Open X-Embodiment](https://robotics-transformer-x.github.io/)：跨本体数据和统一接口的资料入口，可用于检查多机器人数据的字段与评估边界。
 - [SIMPLER benchmark](https://simpler-env.github.io/)：面向机器人策略的仿真评估环境，适合做闭环回归，但不能替代真实硬件验证。
 

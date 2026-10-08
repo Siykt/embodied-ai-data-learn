@@ -50,7 +50,7 @@ description: 从任务需求到场景资产、机器人关节、执行器、接�
 | 关节力矩 | 力矩裁剪、驱动器响应 | 请求与施加力矩、执行器延迟 |
 | 末端位姿目标 | 逆运动学、轨迹插值、碰撞检查 | 目标坐标系、求解器版本、生成的关节命令 |
 
-同一组数字在不同动作接口下含义完全不同。先固定控制接口，再做仿真数据集；若策略训练用末端增量、真实机器人执行用关节位置，应把中间转换器纳入数据血缘和验证。物理步长、控制周期和传感器采样周期的关系见[仿真传感器、渲染与时间对齐](/guides/simulation-sensors-timing/)。
+同一组数字在不同动作接口下含义完全不同。先固定控制接口，再做仿真数据集；若策略训练用末端增量、真实机器人执行用关节位置，应把中间转换器纳入数据血缘和验证。物理步长、控制周期和传感器采样周期的关系见[仿真传感器、渲染与时间对齐](/simulation/simulation-sensors-timing/)。
 
 这里的 PD 控制指根据位置误差和速度误差计算控制量；逆运动学指由末端目标位姿求关节配置。两者都有多种实现和参数，因此数据集不能只写“位置控制”或“IK”，还应保存控制器版本及关键参数。
 
@@ -97,7 +97,7 @@ scene_manifest
   validation_suite_version / validation_results
 ```
 
-下游的[传感器与时间对齐](/guides/simulation-sensors-timing/)要使用这些坐标、资产和物理时间设置；[任务与数据生成](/guides/simulation-task-generation/)则把场景版本与每条 episode 绑定。MuJoCo 的字段实例见[MuJoCo 与具身数据](/guides/mujoco-embodied-data/)，Isaac Lab 的场景组织见[Isaac Lab 与具身数据](/guides/isaac-lab-embodied-data/)。
+下游的[传感器与时间对齐](/simulation/simulation-sensors-timing/)要使用这些坐标、资产和物理时间设置；[任务与数据生成](/simulation/simulation-task-generation/)则把场景版本与每条 episode 绑定。MuJoCo 的字段实例见[MuJoCo 与具身数据](/simulation/mujoco-embodied-data/)，Isaac Lab 的场景组织见[Isaac Lab 与具身数据](/simulation/isaac-lab-embodied-data/)。
 
 ## 官方资料
 

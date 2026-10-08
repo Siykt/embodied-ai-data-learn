@@ -271,7 +271,7 @@ Isaac Sim 是 NVIDIA 面向机器人仿真的平台，提供基于物理的场�
 
 ## 仿真器
 
-仿真器是模拟物理世界和机器人交互的软件：它计算物体的运动、接触、传感器读数，有时还包括图像渲染。对具身数据来说，仿真器的主要价值是可控地批量生成轨迹、状态、动作和仿真真值，代价是它与真实世界之间存在系统性差异。常见仿真器包括 MuJoCo、Isaac Sim、PyBullet、Gazebo、Genesis、SAPIEN、Habitat 等，横向对比见[仿真器与具身数据](/guides/simulators-embodied-data/)。
+仿真器是模拟物理世界和机器人交互的软件：它计算物体的运动、接触、传感器读数，有时还包括图像渲染。对具身数据来说，仿真器的主要价值是可控地批量生成轨迹、状态、动作和仿真真值，代价是它与真实世界之间存在系统性差异。常见仿真器包括 MuJoCo、Isaac Sim、PyBullet、Gazebo、Genesis、SAPIEN、Habitat 等，横向对比见[仿真器与具身数据](/simulation/simulators-embodied-data/)。
 
 ## 物理引擎
 
@@ -287,7 +287,7 @@ Isaac Sim 是 NVIDIA 面向机器人仿真的平台，提供基于物理的场�
 
 ## MuJoCo
 
-MuJoCo 是 Multi-Joint dynamics with Contact 的缩写，是 DeepMind 开源维护的高性能物理引擎，以接触建模稳定、速度快和模型格式简洁著称。它使用 MJCF 场景格式描述机器人、物体、传感器和执行器，是 dm_control、robosuite、D4RL 等许多数据集与 benchmark 的底层引擎。对具身数据，MuJoCo 适合生产轻量、高频的状态-动作轨迹和接触数据，详见[MuJoCo 与具身数据](/guides/mujoco-embodied-data/)。
+MuJoCo 是 Multi-Joint dynamics with Contact 的缩写，是 DeepMind 开源维护的高性能物理引擎，以接触建模稳定、速度快和模型格式简洁著称。它使用 MJCF 场景格式描述机器人、物体、传感器和执行器，是 dm_control、robosuite、D4RL 等许多数据集与 benchmark 的底层引擎。对具身数据，MuJoCo 适合生产轻量、高频的状态-动作轨迹和接触数据，详见[MuJoCo 与具身数据](/simulation/mujoco-embodied-data/)。
 
 ## MJCF
 

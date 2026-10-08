@@ -98,7 +98,7 @@ episode
 
 对于大规模生成，要同时报告成功写入的 episode 数、拒绝数、失败原因分布、有效训练时长、图像/传感器覆盖以及磁盘和渲染开销。单独报告物理步吞吐会高估真实数据生产能力。
 
-下游的[仿真验证、评测与真实迁移](/guides/simulation-validation-sim2real/)负责建立评估划分、物理校验和真机对照；episode 结构的进一步设计见[Episode 与 Trajectory 数据设计](/guides/episode-trajectory-design/)。
+下游的[仿真验证、评测与真实迁移](/simulation/simulation-validation-sim2real/)负责建立评估划分、物理校验和真机对照；episode 结构的进一步设计见[Episode 与 Trajectory 数据设计](/guides/episode-trajectory-design/)。
 
 ## 官方资料
 

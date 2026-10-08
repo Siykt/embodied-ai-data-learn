@@ -74,7 +74,7 @@ split: train
 5. **质量验证**：检查时间、坐标、传感器、物理约束和字段完整性，拒绝或标记不合格 episode。
 6. **分配 split**：在生成前锁定按场景、资产、布局或任务变体的隔离规则，再写入 train、validation、test。
 
-这一流程可以接入不同仿真器。可先阅读[仿真器与具身数据](/guides/simulators-embodied-data/)了解观测、动作、记录和真实验证的共性，再参考[MuJoCo 与具身数据](/guides/mujoco-embodied-data/)了解物理状态、控制循环与数据落盘；字段含义可对照[具身智能数据术语表](/reference/terms/)。程序化生成器的接口应保持在任务规格和数据契约层，不要把下游数据集绑定到某个引擎的内部对象名。
+这一流程可以接入不同仿真器。可先阅读[仿真器与具身数据](/simulation/simulators-embodied-data/)了解观测、动作、记录和真实验证的共性，再参考[MuJoCo 与具身数据](/simulation/mujoco-embodied-data/)了解物理状态、控制循环与数据落盘；字段含义可对照[具身智能数据术语表](/reference/terms/)。程序化生成器的接口应保持在任务规格和数据契约层，不要把下游数据集绑定到某个引擎的内部对象名。
 
 ## 质量控制与评估
 
