@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 490" role="img" aria-labelledby="title desc"><title id="title">仿真多频传感器时间线</title><desc id="desc">物理步较密，控制更新较稀疏，相机与 IMU 有各自的采样时刻；数据对齐应使用时间戳。</desc>
+<defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0 0L10 5L0 10z" fill="#326b8a"/></marker><style>text{font-family:Arial,'Noto Sans SC',sans-serif;fill:#193547}.head{font-size:29px;font-weight:700}.step{font-size:24px;font-weight:700}.note{font-size:18px}.line{stroke:#326b8a;stroke-width:3;fill:none;marker-end:url(#arrow)}</style></defs>
+<rect width="1200" height="490" rx="24" fill="#fffdf8"/>
+<text x="55" y="58" class="head">多频时间线：数组序号不等于同一时刻</text>
+<text x="55" y="152" class="step">物理步</text><path d="M250 145H1080" stroke="#a7bdc8" stroke-width="3"/>
+<circle cx="260" cy="145" r="10" fill="#4a7896"/>
+<circle cx="340" cy="145" r="10" fill="#4a7896"/>
+<circle cx="420" cy="145" r="10" fill="#4a7896"/>
+<circle cx="500" cy="145" r="10" fill="#4a7896"/>
+<circle cx="580" cy="145" r="10" fill="#4a7896"/>
+<circle cx="660" cy="145" r="10" fill="#4a7896"/>
+<circle cx="740" cy="145" r="10" fill="#4a7896"/>
+<circle cx="820" cy="145" r="10" fill="#4a7896"/>
+<circle cx="900" cy="145" r="10" fill="#4a7896"/>
+<circle cx="980" cy="145" r="10" fill="#4a7896"/>
+<circle cx="1060" cy="145" r="10" fill="#4a7896"/>
+<text x="55" y="252" class="step">控制</text><path d="M250 245H1080" stroke="#a7bdc8" stroke-width="3"/>
+<circle cx="260" cy="245" r="10" fill="#d3853c"/>
+<circle cx="500" cy="245" r="10" fill="#d3853c"/>
+<circle cx="740" cy="245" r="10" fill="#d3853c"/>
+<circle cx="980" cy="245" r="10" fill="#d3853c"/>
+<text x="55" y="352" class="step">相机</text><path d="M250 345H1080" stroke="#a7bdc8" stroke-width="3"/>
+<circle cx="300" cy="345" r="10" fill="#7b60a8"/>
+<circle cx="620" cy="345" r="10" fill="#7b60a8"/>
+<circle cx="940" cy="345" r="10" fill="#7b60a8"/>
+<text x="55" y="432" class="step">IMU</text><path d="M250 425H1080" stroke="#a7bdc8" stroke-width="3"/>
+<circle cx="260" cy="425" r="10" fill="#419c83"/>
+<circle cx="420" cy="425" r="10" fill="#419c83"/>
+<circle cx="580" cy="425" r="10" fill="#419c83"/>
+<circle cx="740" cy="425" r="10" fill="#419c83"/>
+<circle cx="900" cy="425" r="10" fill="#419c83"/>
+<circle cx="1060" cy="425" r="10" fill="#419c83"/>
+<path d="M500 108V453M740 108V453" stroke="#7f9bae" stroke-width="2" stroke-dasharray="8 8"/>
+</svg>

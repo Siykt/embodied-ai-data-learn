@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1320 590" role="img" aria-labelledby="title desc"><title id="title">具身仿真端到端技术链路</title><desc id="desc">任务规格依次进入场景资产、物理、传感器、环境循环、批量生成、数据记录与质量评估，最后用真实数据反馈校准。</desc>
+<defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0 0L10 5L0 10z" fill="#326b8a"/></marker><style>text{font-family:Arial,'Noto Sans SC',sans-serif;fill:#193547}.head{font-size:30px;font-weight:700}.step{font-size:25px;font-weight:700}.note{font-size:18px}.line{stroke:#326b8a;stroke-width:3;fill:none;marker-end:url(#arrow)}</style></defs>
+<rect width="1320" height="590" rx="24" fill="#fffdf8"/>
+<text x="55" y="58" class="head">具身仿真：从任务需求到可验证数据</text>
+<rect x="52" y="110" width="255" height="156" rx="17" fill="#e3f1f7" stroke="#568da9" stroke-width="2"/>
+<text x="179" y="172" text-anchor="middle" class="step">任务规格</text>
+<text x="179" y="218" text-anchor="middle" class="note">目标与验收</text>
+<rect x="372" y="110" width="255" height="156" rx="17" fill="#f5fafc" stroke="#568da9" stroke-width="2"/>
+<text x="499" y="172" text-anchor="middle" class="step">场景资产</text>
+<text x="499" y="218" text-anchor="middle" class="note">机器人与物体</text>
+<rect x="692" y="110" width="255" height="156" rx="17" fill="#f5fafc" stroke="#568da9" stroke-width="2"/>
+<text x="819" y="172" text-anchor="middle" class="step">物理模型</text>
+<text x="819" y="218" text-anchor="middle" class="note">接触与执行器</text>
+<rect x="1012" y="110" width="255" height="156" rx="17" fill="#f5fafc" stroke="#568da9" stroke-width="2"/>
+<text x="1139" y="172" text-anchor="middle" class="step">传感器</text>
+<text x="1139" y="218" text-anchor="middle" class="note">渲染与标定</text>
+<rect x="1012" y="355" width="255" height="156" rx="17" fill="#f5fafc" stroke="#568da9" stroke-width="2"/>
+<text x="1139" y="417" text-anchor="middle" class="step">环境循环</text>
+<text x="1139" y="463" text-anchor="middle" class="note">观测与动作</text>
+<rect x="692" y="355" width="255" height="156" rx="17" fill="#f5fafc" stroke="#568da9" stroke-width="2"/>
+<text x="819" y="417" text-anchor="middle" class="step">批量生成</text>
+<text x="819" y="463" text-anchor="middle" class="note">随机化与示教</text>
+<rect x="372" y="355" width="255" height="156" rx="17" fill="#f5fafc" stroke="#568da9" stroke-width="2"/>
+<text x="499" y="417" text-anchor="middle" class="step">数据记录</text>
+<text x="499" y="463" text-anchor="middle" class="note">episode 与标签</text>
+<rect x="52" y="355" width="255" height="156" rx="17" fill="#e3f1f7" stroke="#568da9" stroke-width="2"/>
+<text x="179" y="417" text-anchor="middle" class="step">质量评估</text>
+<text x="179" y="463" text-anchor="middle" class="note">真机对照</text>
+<path d="M307 188H372" class="line"/>
+<path d="M627 188H692" class="line"/>
+<path d="M947 188H1012" class="line"/>
+<path d="M372 433H307" stroke="#326b8a" stroke-width="3" fill="none" marker-end="url(#arrow)"/>
+<path d="M692 433H627" stroke="#326b8a" stroke-width="3" fill="none" marker-end="url(#arrow)"/>
+<path d="M1012 433H947" stroke="#326b8a" stroke-width="3" fill="none" marker-end="url(#arrow)"/>
+<path d="M1267 188H1290V433H1267" stroke="#326b8a" stroke-width="3" fill="none" marker-end="url(#arrow)"/>
+<path d="M52 510H25V98H52" stroke="#7a99aa" stroke-width="2" fill="none" stroke-dasharray="8 7" marker-end="url(#arrow)"/>
+<text x="55" y="555" class="note">真实测量和失败复盘持续反馈模型、随机化与验收规则</text>
+</svg>

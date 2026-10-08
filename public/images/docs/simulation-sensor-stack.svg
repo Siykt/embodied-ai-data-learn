@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 410" role="img" aria-labelledby="title desc"><title id="title">传感器链路：从内部状态到数据流</title><desc id="desc">内部状态经传感器模型和渲染产生观测，随后按数据契约记录。</desc>
+<defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0 0L10 5L0 10z" fill="#326b8a"/></marker><style>text{font-family:Arial,'Noto Sans SC',sans-serif;fill:#193547}.head{font-size:29px;font-weight:700}.step{font-size:24px;font-weight:700}.note{font-size:18px}.line{stroke:#326b8a;stroke-width:3;fill:none;marker-end:url(#arrow)}</style></defs>
+<rect width="1200" height="410" rx="24" fill="#fffdf8"/>
+<text x="55" y="62" class="head">传感器链路：从内部状态到数据流</text>
+<rect x="48" y="127" width="235" height="174" rx="17" fill="#e3f1f7" stroke="#568da9" stroke-width="2"/>
+<text x="165" y="184" text-anchor="middle" class="step">仿真内部状态</text>
+<text x="165" y="229" text-anchor="middle" class="note">物体、机器人、接触</text>
+<path d="M285 214H332" class="line"/>
+<rect x="341" y="127" width="235" height="174" rx="17" fill="#f5fafc" stroke="#568da9" stroke-width="2"/>
+<text x="458" y="184" text-anchor="middle" class="step">传感器模型</text>
+<text x="458" y="229" text-anchor="middle" class="note">相机、IMU、力觉</text>
+<path d="M578 214H625" class="line"/>
+<rect x="634" y="127" width="235" height="174" rx="17" fill="#f5fafc" stroke="#568da9" stroke-width="2"/>
+<text x="751" y="184" text-anchor="middle" class="step">观测数据流</text>
+<text x="751" y="229" text-anchor="middle" class="note">RGB、深度、数值</text>
+<path d="M871 214H918" class="line"/>
+<rect x="927" y="127" width="235" height="174" rx="17" fill="#e3f1f7" stroke="#568da9" stroke-width="2"/>
+<text x="1044" y="184" text-anchor="middle" class="step">记录契约</text>
+<text x="1044" y="229" text-anchor="middle" class="note">时刻、坐标、来源</text>
+<text x="56" y="365" class="note">每一步都保留输入、输出、配置版本与校验结果</text>
+</svg>

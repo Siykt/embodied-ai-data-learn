@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 450" role="img" aria-labelledby="title desc"><title id="title">训练验证和留出集隔离</title><desc id="desc">同一场景、资产族或原始示教的派生样本只进入一个集合，避免数据泄漏。</desc>
+<defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0 0L10 5L0 10z" fill="#326b8a"/></marker><style>text{font-family:Arial,'Noto Sans SC',sans-serif;fill:#193547}.head{font-size:29px;font-weight:700}.step{font-size:24px;font-weight:700}.note{font-size:18px}.line{stroke:#326b8a;stroke-width:3;fill:none;marker-end:url(#arrow)}</style></defs>
+<rect width="1200" height="450" rx="24" fill="#fffdf8"/>
+<text x="55" y="58" class="head">划分单位：场景、资产族和示教血缘</text>
+<rect x="55" y="132" width="335" height="214" rx="17" fill="#e3f1f7" stroke="#568da9" stroke-width="2"/>
+<text x="222" y="192" text-anchor="middle" class="step">训练集</text>
+<text x="222" y="244" text-anchor="middle" class="note">场景 A / 资产族 1</text>
+<text x="222" y="293" text-anchor="middle" class="note">用于拟合与随机化</text>
+<rect x="441" y="132" width="335" height="214" rx="17" fill="#e3f1f7" stroke="#568da9" stroke-width="2"/>
+<text x="608" y="192" text-anchor="middle" class="step">验证集</text>
+<text x="608" y="244" text-anchor="middle" class="note">场景 B / 资产族 2</text>
+<text x="608" y="293" text-anchor="middle" class="note">用于开发调参</text>
+<rect x="827" y="132" width="335" height="214" rx="17" fill="#e3f1f7" stroke="#568da9" stroke-width="2"/>
+<text x="994" y="192" text-anchor="middle" class="step">留出评测集</text>
+<text x="994" y="244" text-anchor="middle" class="note">场景 C / 资产族 3</text>
+<text x="994" y="293" text-anchor="middle" class="note">冻结协议与成员</text>
+<text x="58" y="404" class="note">同一来源的派生 episode 不能跨集合</text></svg>

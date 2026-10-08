@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 520" role="img" aria-labelledby="title desc"><title id="title">并行环境与 episode 记录器</title><desc id="desc">三个环境槽位各自重置和结束，记录器按独立 episode ID 写入版本化数据集。</desc>
+<defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0 0L10 5L0 10z" fill="#326b8a"/></marker><style>text{font-family:Arial,'Noto Sans SC',sans-serif;fill:#193547}.head{font-size:29px;font-weight:700}.step{font-size:24px;font-weight:700}.note{font-size:18px}.line{stroke:#326b8a;stroke-width:3;fill:none;marker-end:url(#arrow)}</style></defs>
+<rect width="1200" height="520" rx="24" fill="#fffdf8"/>
+<text x="55" y="58" class="head">并行环境：槽位可复用，episode ID 必须更新</text>
+<rect x="65" y="110" width="290" height="84" rx="14" fill="#f5fafc" stroke="#568da9" stroke-width="2"/>
+<text x="210" y="144" text-anchor="middle" class="step">环境槽 0</text>
+<text x="210" y="175" text-anchor="middle" class="note">episode A → D</text>
+<path d="M355 152H565" class="line"/>
+<rect x="65" y="228" width="290" height="84" rx="14" fill="#f5fafc" stroke="#568da9" stroke-width="2"/>
+<text x="210" y="262" text-anchor="middle" class="step">环境槽 1</text>
+<text x="210" y="293" text-anchor="middle" class="note">episode B → E</text>
+<path d="M355 270H565" class="line"/>
+<rect x="65" y="346" width="290" height="84" rx="14" fill="#f5fafc" stroke="#568da9" stroke-width="2"/>
+<text x="210" y="380" text-anchor="middle" class="step">环境槽 2</text>
+<text x="210" y="411" text-anchor="middle" class="note">episode C → F</text>
+<path d="M355 388H565" class="line"/>
+<rect x="585" y="180" width="230" height="160" rx="17" fill="#e3f1f7" stroke="#568da9" stroke-width="2"/>
+<text x="700" y="237" text-anchor="middle" class="step">记录器</text>
+<text x="700" y="278" text-anchor="middle" class="note">时间、来源、边界</text>
+<path d="M815 260H905" class="line"/>
+<rect x="920" y="180" width="230" height="160" rx="17" fill="#f5fafc" stroke="#568da9" stroke-width="2"/>
+<text x="1035" y="237" text-anchor="middle" class="step">数据集版本</text>
+<text x="1035" y="278" text-anchor="middle" class="note">split 与质量报告</text>
+</svg>
