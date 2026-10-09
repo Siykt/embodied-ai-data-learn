@@ -36,4 +36,6 @@ description: 从发展路径、系统分层到数据生产与真实验证，按�
 - [MuJoCo 与具身数据](/simulation/mujoco-embodied-data/)：从 MJCF 模型、控制循环和传感器读取出发，理解高频状态与动作轨迹如何生成和记录。
 - [Isaac Lab 与具身数据](/simulation/isaac-lab-embodied-data/)：从 Isaac Sim 场景与传感器、Isaac Lab 任务组织出发，理解并行环境和多模态数据工作流。
 
+需要动手实践时，可从[仿真开源学习仓库与实践路线](/simulation/open-source-learning-repositories/)进入：先比较中文 MuJoCo 与官方 Isaac Lab 教程，再按模型、轨迹记录、传感器对齐和并行任务逐步练习。页面包含 Apple Silicon 本机运行记录与八秒轨迹数据的验收示例，并明确各平台的版本与兼容边界。
+
 工具篇用于把前述链路落到具体实现。跨工具比较时，要固定任务、动作语义、采样周期、标签来源和评测协议；最终数据集仍应记录环境版本、场景资产、随机种子、时间戳、质量标记与真实对照结果。相关字段可查[具身智能数据术语表](/reference/terms/)。

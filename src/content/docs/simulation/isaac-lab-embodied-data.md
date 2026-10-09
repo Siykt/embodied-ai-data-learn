@@ -3,7 +3,9 @@ title: Isaac Lab 与具身数据
 description: 按环境配置、传感器、示教、数据导出、复现与评估任务整理 Isaac Lab 官方资料和具身数据实践。
 ---
 
-Isaac Lab 是建立在 NVIDIA Isaac Sim 之上的开源机器人学习框架。Isaac Sim 提供 USD 场景、物理、渲染与传感器能力；Isaac Lab 组织机器人、物体、任务环境和训练工作流，支持并行仿真、强化学习和模仿学习。两者版本要一起记录，环境代码与资产也属于数据来源。
+Isaac Lab 是开源机器人学习框架，组织机器人、物体、任务环境和训练工作流，支持并行仿真、强化学习和模仿学习。本文主要讨论与 NVIDIA Isaac Sim 集成的路线：Isaac Sim 提供 USD 场景、物理、渲染与传感器能力，Isaac Lab 组织任务及数据工作流。使用这条路线时，两者版本要一起记录，环境代码与资产也属于数据来源。
+
+**版本范围：**截至 2026-10-09，Isaac Lab 3.0 的开发路线还提供不启动 Isaac Sim Kit 运行时的 Kit-less 工作流，可使用 Newton 等物理后端。本文中的 Isaac Sim 场景、渲染和传感器说明针对其集成路线，不能直接套用到所有后端。新路线、教程固定版本及平台限制见[仿真开源学习仓库与实践路线](/simulation/open-source-learning-repositories/#isaac-lab-的版本路线)和[官方 develop 安装指南](https://isaac-sim.github.io/IsaacLab/develop/source/setup/installation/index.html)；后端相关术语见 [Kit-less](/reference/terms/#kit-less) 与 [Newton](/reference/terms/#newton)。
 
 从具身数据角度看，Isaac Lab 最重要的角色不是“替代真实采集”，而是提供一个**可控地生成交互数据、快速验证数据契约、批量评估策略的仿真数据生产层**。
 

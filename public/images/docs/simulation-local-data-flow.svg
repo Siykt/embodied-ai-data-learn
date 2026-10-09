@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 690" role="img" aria-labelledby="title desc">
+  <title id="title">本地仿真轨迹的数据流程</title>
+  <desc id="desc">固定代码、模型和采样配置，向仿真写入动作并推进状态，分别读取状态、传感器和图像，依据仿真时间对齐后生成独立 episode，最后做回读和质量检查。</desc>
+  <defs>
+    <style>text{font-family:Arial,'Noto Sans SC','PingFang SC',sans-serif;fill:#173042}.title{font-size:28px;font-weight:700}.head{font-size:22px;font-weight:700}.body{font-size:18px}.small{font-size:16px}.box{fill:#fff;stroke:#91adbd;stroke-width:2}.line{fill:none;stroke:#467e99;stroke-width:3;marker-end:url(#arrow)}</style>
+    <marker id="arrow" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto"><path d="M0 0L9 4.5L0 9z" fill="#467e99"/></marker>
+  </defs>
+  <rect width="1200" height="690" rx="24" fill="#fffdf8"/>
+  <text x="48" y="57" class="title">数据记录器连接模型、时间轴与可回读的 episode</text>
+  <text x="48" y="90" class="body">动作写入、物理推进与观测读取的先后顺序，属于数据契约</text>
+  <rect x="45" y="123" width="277" height="230" rx="16" fill="#eaf4f8" stroke="#91adbd" stroke-width="2"/>
+  <text x="66" y="162" class="head">固定输入与配置</text>
+  <text x="66" y="205" class="body">代码提交 / 引擎版本</text>
+  <text x="66" y="239" class="body">MJCF / 网格 / 纹理</text>
+  <text x="66" y="273" class="body">初态 / 种子 / 动作定义</text>
+  <text x="66" y="307" class="body">物理、控制、相机周期</text>
+  <path d="M328 238H377" class="line"/>
+  <rect x="388" y="123" width="314" height="230" rx="16" class="box"/>
+  <text x="410" y="162" class="head">控制与物理循环</text>
+  <text x="410" y="205" class="body">1. 获取当前观测</text>
+  <text x="410" y="239" class="body">2. 写入实际控制量 ctrl</text>
+  <text x="410" y="273" class="body">3. 推进物理状态 mj_step</text>
+  <text x="410" y="307" class="body">4. 记录下一观测与结束状态</text>
+  <path d="M708 238H757" class="line"/>
+  <rect x="768" y="123" width="387" height="230" rx="16" fill="#f1f4e9" stroke="#91adbd" stroke-width="2"/>
+  <text x="790" y="162" class="head">按各自采样时刻读取</text>
+  <text x="790" y="205" class="body">状态：time / qpos / qvel</text>
+  <text x="790" y="239" class="body">传感器：名称 / 布局 / 单位</text>
+  <text x="790" y="273" class="body">图像：帧时间 / 相机配置</text>
+  <text x="790" y="312" class="small">采样率不同，数组同下标不代表同时</text>
+  <path d="M963 359V398" class="line"/>
+  <rect x="655" y="410" width="500" height="138" rx="16" class="box"/>
+  <text x="679" y="449" class="head">对齐并组织为 episode</text>
+  <text x="679" y="486" class="body">观测时间 / 动作时间 / 图像时间</text>
+  <text x="679" y="520" class="body">episode ID / 步序号 / 结束原因 / 质量标记</text>
+  <path d="M649 480H571" class="line"/>
+  <rect x="45" y="410" width="515" height="138" rx="16" class="box"/>
+  <text x="69" y="449" class="head">回读与质量检查</text>
+  <text x="69" y="486" class="body">时间递增 · 数值有限 · 维度与模型一致</text>
+  <text x="69" y="520" class="body">动作可解释 · 图像有效 · 轨迹边界完整</text>
+  <path d="M301 404V372H183V359" class="line"/>
+  <rect x="45" y="589" width="1110" height="60" rx="14" fill="#eaf4f8"/>
+  <text x="600" y="626" text-anchor="middle" class="body">发现异常后回到配置与采样环节修正；通过验收的数据再用于训练、评估和数据集导出</text>
+</svg>

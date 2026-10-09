@@ -46,6 +46,7 @@ export default defineConfig({
 					items: [
 						{ label: '项目概览', slug: 'simulation' },
 						{ label: '具身仿真的发展脉络与设计逻辑', slug: 'simulation/simulation-history-design' },
+						{ label: '仿真开源学习仓库与实践路线', slug: 'simulation/open-source-learning-repositories' },
 						{ label: '仿真器与具身数据', slug: 'simulation/simulators-embodied-data' },
 						{ label: '仿真场景资产与物理配置', slug: 'simulation/simulation-scene-physics' },
 						{ label: '仿真传感器与时间对齐', slug: 'simulation/simulation-sensors-timing' },
