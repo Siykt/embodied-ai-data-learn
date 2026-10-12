@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 860" role="img" aria-labelledby="title desc">
+  <title id="title">MuJoCo 旋转指针模型：控制输入、关节状态与传感器</title>
+  <desc id="desc">红色指针由底座上的旋转关节 pivot 支撑，只能绕 Z 轴旋转。motor 接收力矩输入 ctrl[0]，vel 接收目标角速度 ctrl[1]。qpos 是实际角度，qvel 是实际角速度。蓝色 imu site 随指针运动，作为仿真传感器的参考位置。外部概览视频与相对指针固定的 this_camera 图像具有不同的相机来源。结构示意不按比例。</desc>
+  <defs>
+    <style>
+      text{font-family:Arial,'Noto Sans SC','PingFang SC',sans-serif;fill:#173042}
+      .title{font-size:28px;font-weight:700}.heading{font-size:23px;font-weight:700}
+      .body{font-size:21px}.small{font-size:18px}.muted{fill:#536d7c}
+      .panel{fill:#f8fbfc;stroke:#b8cdd6;stroke-width:2}
+      .line{fill:none;stroke:#6d9db7;stroke-width:2}
+    </style>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0 0 10 5 0 10z" fill="#2f7294"/></marker>
+    <marker id="red-arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 10 5 0 10z" fill="#b94a4a"/></marker>
+  </defs>
+  <rect width="1200" height="860" rx="24" fill="#fffdf8"/>
+  <text x="40" y="56" class="title">旋转指针：从控制输入到可记录的数据</text>
+  <text x="40" y="92" class="body muted">pointer.xml · 一个旋转关节、两个执行器；目标速度与实际速度需要分别保存。</text>
+
+  <rect x="40" y="128" width="285" height="430" rx="18" class="panel"/>
+  <text x="60" y="167" class="heading">控制输入</text>
+  <rect x="58" y="188" width="249" height="130" rx="12" fill="#e3f1f7"/>
+  <text x="76" y="223" class="heading">ctrl[0] · motor</text>
+  <text x="76" y="259" class="body">力矩输入（N·m）</text>
+  <text x="76" y="292" class="small muted">本案例恒为 0</text>
+  <rect x="58" y="338" width="249" height="157" rx="12" fill="#e3f1f7"/>
+  <text x="76" y="374" class="heading">ctrl[1] · vel</text>
+  <text x="76" y="410" class="body">目标角速度（rad/s）</text>
+  <text x="76" y="443" class="small muted">本案例按正弦规律变化</text>
+  <text x="76" y="476" class="small muted">速度伺服增益 kv = 10</text>
+  <text x="60" y="535" class="small muted">两个执行器作用于同一关节</text>
+
+  <rect x="347" y="128" width="470" height="430" rx="18" class="panel"/>
+  <text x="582" y="168" text-anchor="middle" class="heading">一个自由度：绕 Z 轴旋转</text>
+  <ellipse cx="582" cy="491" rx="102" ry="22" fill="#dce5e7"/>
+  <path d="M539 354v126c0 18 86 18 86 0V354z" fill="#596671" stroke="#3b4b58" stroke-width="2"/>
+  <ellipse cx="582" cy="354" rx="43" ry="15" fill="#86939c" stroke="#3b4b58" stroke-width="2"/>
+  <path d="M582 354 731 299" stroke="#ba4848" stroke-width="20" stroke-linecap="round"/>
+  <path d="M587 350 729 297" stroke="#e08d85" stroke-width="5" stroke-linecap="round"/>
+  <circle cx="582" cy="354" r="13" fill="#173042" stroke="#fffdf8" stroke-width="3"/>
+  <path d="M582 333V221" stroke="#2f7294" stroke-width="3" marker-end="url(#arrow)"/>
+  <text x="598" y="233" class="body">Z 轴</text>
+  <path d="M527 346c-23 27 13 48 58 48 30 0 56-8 63-21" fill="none" stroke="#b94a4a" stroke-width="3" marker-end="url(#red-arrow)"/>
+  <circle cx="620" cy="328" r="19" fill="#d3e9ff" opacity=".8"/>
+  <circle cx="620" cy="328" r="9" fill="#2d75b7" stroke="#fff" stroke-width="3"/>
+  <path d="M620 317v-51h63" class="line"/>
+  <text x="647" y="244" class="heading">imu site</text>
+  <text x="647" y="284" class="small muted">随指针运动</text>
+  <path d="M427 295h66l74 52" class="line"/>
+  <text x="371" y="252" class="heading">pivot</text>
+  <text x="371" y="281" class="small">hinge 旋转关节</text>
+  <path d="M728 311v69h-27" class="line"/>
+  <text x="660" y="415" class="body" fill="#a63737">红色指针</text>
+  <text x="582" y="532" text-anchor="middle" class="small muted">底座固定；指针围绕支点转动</text>
+  <path d="M309 320h31" stroke="#2f7294" stroke-width="3" marker-end="url(#arrow)"/>
+
+  <rect x="840" y="128" width="320" height="430" rx="18" class="panel"/>
+  <text x="860" y="167" class="heading">记录实际状态与观测</text>
+  <rect x="858" y="188" width="284" height="90" rx="12" fill="#eaf3ec"/>
+  <text x="878" y="221" class="heading">qpos[0]</text>
+  <text x="878" y="255" class="body">关节实际角度（rad）</text>
+  <rect x="858" y="294" width="284" height="90" rx="12" fill="#eaf3ec"/>
+  <text x="878" y="327" class="heading">qvel[0]</text>
+  <text x="878" y="361" class="body">实际角速度（rad/s）</text>
+  <rect x="858" y="400" width="284" height="130" rx="12" fill="#e3f1f7"/>
+  <text x="878" y="434" class="heading">imu 参考点的观测</text>
+  <text x="878" y="468" class="small">姿态、角速度、加速度</text>
+  <text x="878" y="501" class="small muted">需同时记录坐标系与单位</text>
+
+  <text x="40" y="607" class="heading">两种图像来源：在数据中明确区分</text>
+  <rect x="40" y="631" width="548" height="151" rx="16" fill="#e3f1f7" stroke="#8aaebe" stroke-width="2"/>
+  <text x="62" y="670" class="heading">外部概览相机</text>
+  <text x="62" y="706" class="body">overview.mp4 · 640 × 480 · 25 fps</text>
+  <text x="62" y="746" class="small">用于检查整个模型；独立于模型内的相机。</text>
+  <rect x="612" y="631" width="548" height="151" rx="16" fill="#f1ece3" stroke="#c8b79d" stroke-width="2"/>
+  <text x="634" y="670" class="heading">模型相机 this_camera</text>
+  <text x="634" y="706" class="body">相对 pointer 固定，随指针一起转动。</text>
+  <text x="634" y="746" class="small">camera.png · 初始状态 · 1280 × 1080</text>
+  <text x="40" y="826" class="small muted">结构示意，不按比例。IMU 读数来自仿真传感器，本案例未添加测量噪声。</text>
+</svg>

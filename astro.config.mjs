@@ -45,6 +45,7 @@ export default defineConfig({
 					collapsed: true,
 					items: [
 						{ label: '项目概览', slug: 'simulation' },
+						{ label: '旋转关节实验：从模型到数据', slug: 'simulation/mujoco-data-walkthrough' },
 						{ label: '具身仿真的发展脉络与设计逻辑', slug: 'simulation/simulation-history-design' },
 						{ label: '仿真开源学习仓库与实践路线', slug: 'simulation/open-source-learning-repositories' },
 						{ label: '仿真器与具身数据', slug: 'simulation/simulators-embodied-data' },

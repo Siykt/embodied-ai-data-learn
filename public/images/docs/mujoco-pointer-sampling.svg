@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 950" role="img" aria-labelledby="title desc">
+  <title id="title">MuJoCo 指针案例的状态、动作和视频采样时序</title>
+  <desc id="desc">从零秒到零点零二秒，action[0] 保持不变，经过十个零点零零二秒的物理步得到 state[1]。state_ctrl[1] 保留 action[0]；接着应用 action[1] 到零点零四秒，再得到 state[2]。状态和动作按五十赫兹保存，概览视频每两个状态取一帧。完整八秒记录包含四百零一个状态、四百个动作和二百帧视频，八秒末态没有对应视频帧。</desc>
+  <defs>
+    <style>
+      text{font-family:Arial,'Noto Sans SC','PingFang SC',sans-serif;fill:#173042}
+      .title{font-size:28px;font-weight:700}.heading{font-size:23px;font-weight:700}
+      .body{font-size:21px}.small{font-size:18px}.muted{fill:#536d7c}
+      .guide{stroke:#b8cdd6;stroke-width:2;stroke-dasharray:6 7}
+    </style>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0 0 10 5 0 10z" fill="#2f7294"/></marker>
+  </defs>
+  <rect width="1200" height="950" rx="24" fill="#fffdf8"/>
+  <text x="40" y="56" class="title">一次采集里的三种节奏：物理、状态 / 动作、视频</text>
+  <text x="40" y="94" class="body muted">先保存状态，再把下一动作保持 0.02 秒；动作顺序为 [力矩 N·m, 目标角速度 rad/s]。</text>
+
+  <path d="M260 177V708M600 177V708M940 177V708" class="guide"/>
+  <path d="M260 161H1085" fill="none" stroke="#2f7294" stroke-width="3" marker-end="url(#arrow)"/>
+  <circle cx="260" cy="161" r="7" fill="#2f7294"/>
+  <circle cx="600" cy="161" r="7" fill="#2f7294"/>
+  <circle cx="940" cy="161" r="7" fill="#2f7294"/>
+  <text x="260" y="144" text-anchor="middle" class="heading">0 s</text>
+  <text x="600" y="144" text-anchor="middle" class="heading">0.02 s</text>
+  <text x="940" y="144" text-anchor="middle" class="heading">0.04 s</text>
+
+  <text x="40" y="224" class="heading">保存状态</text>
+  <text x="40" y="254" class="small muted">50 Hz</text>
+  <rect x="143" y="193" width="234" height="118" rx="13" fill="#eaf3ec" stroke="#92b4a0" stroke-width="2"/>
+  <text x="260" y="227" text-anchor="middle" class="heading">state[0]</text>
+  <text x="260" y="260" text-anchor="middle" class="small">state_ctrl[0] = [0, 0]</text>
+  <text x="260" y="288" text-anchor="middle" class="small muted">初始控制值</text>
+  <rect x="463" y="193" width="274" height="118" rx="13" fill="#eaf3ec" stroke="#92b4a0" stroke-width="2"/>
+  <text x="600" y="227" text-anchor="middle" class="heading">state[1]</text>
+  <text x="600" y="260" text-anchor="middle" class="small">state_ctrl[1] = action[0]</text>
+  <text x="600" y="288" text-anchor="middle" class="small muted">保留刚完成区间的控制</text>
+  <rect x="803" y="193" width="274" height="118" rx="13" fill="#eaf3ec" stroke="#92b4a0" stroke-width="2"/>
+  <text x="940" y="227" text-anchor="middle" class="heading">state[2]</text>
+  <text x="940" y="260" text-anchor="middle" class="small">state_ctrl[2] = action[1]</text>
+  <text x="940" y="288" text-anchor="middle" class="small muted">保留刚完成区间的控制</text>
+
+  <text x="40" y="363" class="heading">施加动作</text>
+  <text x="40" y="393" class="small muted">50 Hz</text>
+  <rect x="260" y="343" width="330" height="96" rx="12" fill="#e3f1f7" stroke="#8aaebe" stroke-width="2"/>
+  <text x="425" y="377" text-anchor="middle" class="heading">action[0] = [0, 0]</text>
+  <text x="425" y="412" text-anchor="middle" class="small">在 [0, 0.02) s 保持不变</text>
+  <rect x="600" y="343" width="330" height="96" rx="12" fill="#d9eaf2" stroke="#6d9db7" stroke-width="2"/>
+  <text x="765" y="377" text-anchor="middle" class="heading">action[1] ≈ [0, 0.0502]</text>
+  <text x="765" y="412" text-anchor="middle" class="small">在 [0.02, 0.04) s 保持不变</text>
+  <path d="M953 389h104" fill="none" stroke="#2f7294" stroke-width="3" marker-end="url(#arrow)"/>
+  <text x="1006" y="369" text-anchor="middle" class="small">action[2]</text>
+  <text x="1006" y="421" text-anchor="middle" class="small muted">继续下一段</text>
+
+  <text x="40" y="484" class="heading">物理推进</text>
+  <text x="40" y="514" class="small muted">500 Hz</text>
+  <g fill="#8aaebe" stroke="#fffdf8" stroke-width="2">
+    <rect x="260" y="477" width="34" height="22"/><rect x="294" y="477" width="34" height="22"/>
+    <rect x="328" y="477" width="34" height="22"/><rect x="362" y="477" width="34" height="22"/>
+    <rect x="396" y="477" width="34" height="22"/><rect x="430" y="477" width="34" height="22"/>
+    <rect x="464" y="477" width="34" height="22"/><rect x="498" y="477" width="34" height="22"/>
+    <rect x="532" y="477" width="34" height="22"/><rect x="566" y="477" width="34" height="22"/>
+    <rect x="600" y="477" width="34" height="22"/><rect x="634" y="477" width="34" height="22"/>
+    <rect x="668" y="477" width="34" height="22"/><rect x="702" y="477" width="34" height="22"/>
+    <rect x="736" y="477" width="34" height="22"/><rect x="770" y="477" width="34" height="22"/>
+    <rect x="804" y="477" width="34" height="22"/><rect x="838" y="477" width="34" height="22"/>
+    <rect x="872" y="477" width="34" height="22"/><rect x="906" y="477" width="34" height="22"/>
+  </g>
+  <text x="430" y="535" text-anchor="middle" class="small">10 个小步 × 0.002 s = 0.02 s</text>
+  <text x="770" y="535" text-anchor="middle" class="small">10 个小步 × 0.002 s = 0.02 s</text>
+
+  <text x="40" y="602" class="heading">概览视频</text>
+  <text x="40" y="632" class="small muted">25 fps</text>
+  <rect x="157" y="575" width="206" height="90" rx="12" fill="#f1ece3" stroke="#c8b79d" stroke-width="2"/>
+  <text x="260" y="609" text-anchor="middle" class="heading">frame[0]</text>
+  <text x="260" y="643" text-anchor="middle" class="small">来自 state[0]</text>
+  <text x="600" y="623" text-anchor="middle" class="small muted">此状态不取视频帧</text>
+  <rect x="837" y="575" width="206" height="90" rx="12" fill="#f1ece3" stroke="#c8b79d" stroke-width="2"/>
+  <text x="940" y="609" text-anchor="middle" class="heading">frame[1]</text>
+  <text x="940" y="643" text-anchor="middle" class="small">来自 state[2]</text>
+  <path d="M260 684v13h680v-13" fill="none" stroke="#a38e6c" stroke-width="2"/>
+  <text x="600" y="728" text-anchor="middle" class="body">每隔 2 个状态取一帧：frame[j] → state[2j]</text>
+
+  <rect x="40" y="763" width="1120" height="142" rx="17" fill="#f8fbfc" stroke="#b8cdd6" stroke-width="2"/>
+  <text x="64" y="801" class="heading">完整记录为 8 秒：401 个状态 · 400 个动作 · 200 帧视频</text>
+  <text x="64" y="839" class="body">8.00 s 末态没有下一动作或视频帧；最后一帧来自 state[398]（7.96 s）。</text>
+  <text x="64" y="877" class="body">对 k ≥ 1：state_ctrl[k] = action[k−1]；action[k] 则作用于下一个区间。</text>
+</svg>

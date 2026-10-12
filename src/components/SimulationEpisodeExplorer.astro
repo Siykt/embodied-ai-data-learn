@@ -1,0 +1,183 @@
+---
+import episode from '../data/mujoco-pointer-episode.json';
+
+const first = episode.states[0];
+const base = '/data/mujoco-pointer';
+const x = (time: number) => 52 + time / 8 * 656;
+const ySpeed = (value: number) => 96 - value * 65;
+const yPosition = (value: number) => 160 - value / 0.85 * 130;
+const line = (key: 'qvel' | 'qpos', y: (value: number) => number) => episode.states.map((s, i) => `${i ? 'L' : 'M'}${x(s.time).toFixed(2)},${y(s[key]).toFixed(2)}`).join(' ');
+const targetLine = episode.states.slice(0, -1).map((s, i) => `${i ? 'L' : 'M'}${x(s.time).toFixed(2)},${ySpeed(s.action![1]).toFixed(2)} L${x(episode.states[i + 1].time).toFixed(2)},${ySpeed(s.action![1]).toFixed(2)}`).join(' ');
+const sensorLabels = ['姿态 quat · wxyz', '陀螺仪 ang_vel · xyz', '加速度计 accel · xyz', '关节角 pivot_p', '关节速度 pivot_v', '测量点线速度 linvel · xyz'];
+const sensorUnits = ['无单位', 'rad/s · IMU 局部坐标', 'm/s² · IMU 局部坐标', 'rad', 'rad/s', 'm/s · 世界坐标'];
+const fixed = (v: number) => Math.abs(v) < 0.0000005 ? '0.000000' : v.toFixed(6);
+---
+
+<section class="episode-explorer not-content" aria-label="MuJoCo 实测数据交互回放" data-episode-explorer>
+  <script type="application/json" data-episode-json set:html={JSON.stringify(episode).replaceAll('<', '\\u003c')} />
+  <header class="case-header">
+    <span class="case-badge">固定样本 · 2026-10-09 实测</span>
+    <h3>同一时刻，画面与数据一起看</h3>
+    <p>拖动时间轴或选择示例时刻。这里回放已保存的 8 秒实验；实时仿真中的调速不会改变这份记录。</p>
+  </header>
+
+  <div class="media-grid">
+    <figure>
+      <video data-video controls playsinline preload="metadata" poster={`${base}/overview.png`} aria-label="旋转关节的外部概览录像，无音频">
+        <source src={`${base}/overview.mp4`} type="video/mp4" />
+        浏览器无法播放此视频，可下载下方 MP4 文件。
+      </video>
+      <figcaption>外部概览视角 · 640 × 480 · 25 fps<br />红色指针绕竖直关节转动；此视频用于检查运动。</figcaption>
+    </figure>
+    <div class="reading-guide">
+      <h4>先观察这三个时刻</h4>
+      <ol>
+        <li><strong>0.00 s：</strong>关节静止，加速度计 z 轴仍读到约 9.81。</li>
+        <li><strong>1.00 s：</strong>实际速度 0.627691，下一目标 0.587785；两个值对应不同含义。</li>
+        <li><strong>2.00 s：</strong>目标为负，指针反向运动；角度仍为正。</li>
+      </ol>
+      <p class="muted">数值显示到小数点后六位；下载文件保留原始精度。</p>
+    </div>
+  </div>
+  <p class="media-status" data-media-status role="status" hidden></p>
+  <div class="time-panel">
+    <div class="time-heading"><label for="episode-frame">选择记录时刻</label><output data-time for="episode-frame">0.00 s</output></div>
+    <input id="episode-frame" data-frame type="range" min="0" max="199" step="1" value="0" aria-valuetext="0.00 秒，第 0 帧，状态 0" />
+    <div class="time-ends"><span>0.00 s</span><span>每格 0.04 s · 最后一帧 7.96 s</span></div>
+    <div class="presets" aria-label="示例时刻">
+      {[['起点', 0], ['1.00 s', 25], ['1.24 s', 31], ['2.00 s', 50], ['末帧', 199]].map(([label, frame]) => <button type="button" data-preset={frame}>{label}</button>)}
+    </div>
+    <p class="mapping" data-mapping aria-live="polite">视频帧 0 → 状态 0；下一动作作用于 0.00–0.02 s。</p>
+  </div>
+
+  <div class="transition-grid">
+    <div class="transition-card">
+      <h4>① 此刻读到了什么</h4>
+      <span class="card-subtitle" data-state-label>state[0] · 0.00 s</span>
+      <dl><dt>关节角 qpos</dt><dd><b data-qpos>0.000000</b> rad <small data-degrees>（0.00°）</small></dd>
+        <dt>实际角速度 qvel</dt><dd><b data-qvel>0.000000</b> rad/s</dd>
+        <dt>刚执行的速度目标</dt><dd><span data-state-ctrl>0.000000</span> rad/s</dd></dl>
+    </div>
+    <div class="transition-card action-card">
+      <h4>② 接下来下发什么</h4>
+      <span class="card-subtitle" data-action-label>action[0] · 保持 0.02 s</span>
+      <dl><dt>速度目标 ctrl[1]</dt><dd><b data-target>0.000000</b> rad/s</dd>
+        <dt>力矩输入 ctrl[0]</dt><dd><b data-motor>0.000000</b> N·m</dd></dl>
+      <p>这是输入命令。速度执行器会根据误差产生力矩；motor 为零不代表总驱动力矩为零。</p>
+    </div>
+    <div class="transition-card">
+      <h4>③ 10 个物理步之后</h4>
+      <span class="card-subtitle" data-next-label>state[1] · 0.02 s</span>
+      <dl><dt>下一关节角</dt><dd><b data-next-qpos>0.000000</b> rad</dd>
+        <dt>下一实际角速度</dt><dd><b data-next-qvel>0.000000</b> rad/s</dd></dl>
+      <p>每个物理步为 0.002 s。录像每隔两个状态取一帧，因此下一状态可能没有对应画面。</p>
+    </div>
+  </div>
+
+  <div class="chart-block">
+    <h4>速度：命令与实际响应</h4>
+    <div class="legend"><span class="target-key">橙色虚线：下一速度目标</span><span class="actual-key">绿色实线：当前实际速度</span></div>
+    <svg viewBox="0 0 744 200" role="img" aria-label="0到8秒的速度曲线，目标速度为阶梯形，实际速度为采样点连线，纵轴单位弧度每秒">
+      {[-1, 0, 1].map(v => <g><line x1="52" y1={ySpeed(v)} x2="708" y2={ySpeed(v)} class="grid-line"/><text x="42" y={ySpeed(v)+4} text-anchor="end">{v}</text></g>)}
+      {[0, 2, 4, 6, 8].map(t => <text x={x(t)} y="191" text-anchor="middle">{t} s</text>)}
+      <text x="52" y="15">rad/s</text>
+      <path d={targetLine} class="target-line"/><path d={line('qvel', ySpeed)} class="actual-line"/>
+      <line data-cursor x1="52" x2="52" y1="24" y2="165" class="cursor-line" />
+    </svg>
+    <h4>角度：指针累计转到哪里</h4>
+    <svg viewBox="0 0 744 200" role="img" aria-label="0到8秒的关节角曲线，纵轴单位弧度，与速度分开显示">
+      {[0, 0.4, 0.8].map(v => <g><line x1="52" y1={yPosition(v)} x2="708" y2={yPosition(v)} class="grid-line"/><text x="42" y={yPosition(v)+4} text-anchor="end">{v}</text></g>)}
+      {[0, 2, 4, 6, 8].map(t => <text x={x(t)} y="191" text-anchor="middle">{t} s</text>)}
+      <text x="52" y="15">rad</text><path d={line('qpos', yPosition)} class="position-line"/>
+      <line data-cursor x1="52" x2="52" y1="24" y2="165" class="cursor-line" />
+    </svg>
+    <p class="muted">曲线连接全部 401 个状态采样点，目标按 400 个动作区间画成阶梯。竖线是当前所选时刻；连线不表示区间内连续测量。</p>
+  </div>
+
+  <details>
+    <summary>展开此刻全部传感器：6 类、15 个数值</summary>
+    <div class="sensor-grid">{episode.sensors.map((sensor, i) => <div class="sensor-card">
+      <strong>{sensorLabels[i]}</strong>
+      <code data-sensor={i}>{first.sensors.slice(sensor.offset, sensor.offset + sensor.dimension).map(fixed).join(', ')}</code>
+      <small>{sensorUnits[i]}</small>
+    </div>)}</div>
+    <p class="muted">姿态、角速度、加速度和线速度有不同单位及坐标系，不能直接比较数值大小。下文逐项解释它们的来源。</p>
+  </details>
+  <details>
+    <summary>展开当前状态 → 动作 → 下一状态的原始数值</summary>
+    <pre data-raw>{JSON.stringify({state: first, nextState: episode.states[1]}, null, 2)}</pre>
+  </details>
+  <footer>
+    <strong>打开原始文件</strong>
+    <div class="download-links">{[['trajectory.csv','CSV · 逐行查看'],['episode.npz','NPZ · 数组'],['episode.json','JSON · 网页样本'],['manifest.json','字段与来源'],['overview.mp4','MP4 · 概览录像']].map(([file,label]) => <a href={`${base}/${file}`} download>{label} ↓</a>)}</div>
+    <p>完整记录另含 8.00 s 的终止状态 state[400]，它没有下一动作和视频帧。此样本没有抓取任务、奖励或成功标签。</p>
+  </footer>
+  <noscript><p>当前显示初态。启用 JavaScript 可拖动时间轴；也可直接下载 CSV 或播放概览视频。</p></noscript>
+</section>
+
+<script>
+  import '../scripts/simulation-episode';
+</script>
+
+<style>
+  .episode-explorer { --ink:#203936; --muted:#576c68; --line:#d2e0db; --teal:#12665d; --orange:#a95508; background:#f7faf8; color:var(--ink); border:1px solid var(--line); border-radius:12px; overflow:hidden; margin:1.5rem 0 2rem; font-size:.92rem; line-height:1.6; }
+  .episode-explorer * { box-sizing:border-box; }
+  .episode-explorer h3,.episode-explorer h4,.episode-explorer p,.episode-explorer figure,.episode-explorer dl { margin:0; }
+  .case-header { padding:1.5rem; background:#e7f0eb; }
+  .case-badge { display:inline-block; color:#155749; font-size:.73rem; font-weight:700; letter-spacing:.04em; margin-bottom:.55rem; }
+  .case-header h3 { color:var(--ink); font-size:1.45rem; margin-bottom:.5rem; }
+  .case-header p { color:var(--muted); }
+  .media-grid { display:grid; grid-template-columns:1.3fr 1fr; gap:1.2rem; padding:1.3rem; align-items:center; }
+  video { display:block; width:100%; aspect-ratio:4/3; background:#283230; border-radius:6px; }
+  figcaption { color:var(--muted); font-size:.77rem; margin-top:.5rem; }
+  h4 { color:var(--ink); font-size:.98rem; font-weight:700; }
+  .reading-guide ol { padding-left:1.3rem; margin:.5rem 0; }
+  .reading-guide li { margin:.55rem 0; }
+  .muted { color:var(--muted); font-size:.79rem; }
+  .time-panel { padding:1rem 1.3rem 1.3rem; background:white; border-block:1px solid var(--line); }
+  .time-heading,.time-ends { display:flex; justify-content:space-between; align-items:center; gap:1rem; }
+  .time-heading label { font-weight:700; }
+  .time-heading output { font-variant-numeric:tabular-nums; color:var(--teal); font-size:1.5rem; font-weight:700; }
+  input[type=range] { width:100%; display:block; accent-color:var(--teal); cursor:pointer; margin:.7rem 0; }
+  .time-ends { color:var(--muted); font-size:.75rem; }
+  .presets { display:flex; flex-wrap:wrap; gap:.5rem; margin:.8rem 0; }
+  button { padding:.4rem .75rem; background:#edf5f0; color:var(--teal); border:1px solid #a7c8bb; border-radius:5px; cursor:pointer; font:inherit; }
+  button:hover,button[aria-pressed=true] { background:#145f55; color:white; }
+  button:focus-visible,input:focus-visible,a:focus-visible,summary:focus-visible { outline:3px solid #3588bd; outline-offset:3px; }
+  .mapping { font-size:.82rem; }
+  .transition-grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:.65rem; padding:1.3rem; }
+  .transition-card { border:1px solid var(--line); border-top:3px solid var(--teal); padding:1rem; border-radius:6px; background:white; min-width:0; }
+  .action-card { border-top-color:var(--orange); }
+  .card-subtitle { display:block; color:var(--muted); font-size:.73rem; margin:.3rem 0 .8rem; }
+  dt { color:var(--muted); font-size:.74rem; margin-top:.65rem; }
+  dd { margin:0; font-size:.8rem; font-variant-numeric:tabular-nums; }
+  dd b { font-size:1.08rem; overflow-wrap:anywhere; }
+  dd small { display:block; }
+  .transition-card p { color:var(--muted); font-size:.73rem; margin-top:.8rem; }
+  .chart-block { padding:0 1.3rem 1.3rem; }
+  .chart-block svg { width:100%; height:auto; display:block; margin:.4rem 0 1rem; background:white; border:1px solid var(--line); border-radius:6px; }
+  svg text { font-family:inherit; fill:var(--muted); font-size:12px; }
+  .grid-line { stroke:#dbe4df; }
+  .target-line,.actual-line,.position-line { fill:none; stroke-width:2.2; }
+  .target-line { stroke:var(--orange); stroke-dasharray:5 3; }
+  .actual-line { stroke:var(--teal); }
+  .position-line { stroke:#436eb4; }
+  .cursor-line { stroke:#283a39; stroke-width:1.3; stroke-dasharray:3 3; }
+  .legend { display:flex; flex-wrap:wrap; gap:.3rem 1rem; font-size:.74rem; margin-top:.4rem; }
+  .target-key { color:var(--orange); } .actual-key { color:var(--teal); }
+  details { border-top:1px solid var(--line); padding:1rem 1.3rem; }
+  summary { cursor:pointer; font-weight:600; }
+  .sensor-grid { display:grid; grid-template-columns:1fr 1fr; gap:.7rem; margin:1rem 0; }
+  .sensor-card { background:white; border:1px solid var(--line); border-radius:5px; padding:.8rem; min-width:0; }
+  .sensor-card strong,.sensor-card code,.sensor-card small { display:block; }
+  .sensor-card strong { font-size:.82rem; } .sensor-card code { font-size:.77rem; white-space:normal; overflow-wrap:anywhere; color:var(--teal); background:none; padding:.35rem 0; }
+  .sensor-card small { color:var(--muted); font-size:.72rem; }
+  pre { overflow:auto; max-height:24rem; font-size:.77rem; background:#20322e; color:#e4f5ee; padding:1rem; border-radius:5px; }
+  footer { padding:1.1rem 1.3rem; border-top:1px solid var(--line); }
+  .download-links { display:flex; flex-wrap:wrap; gap:.5rem 1rem; margin:.6rem 0; }
+  a { color:#12665d; text-underline-offset:3px; }
+  footer p { color:var(--muted); font-size:.77rem; }
+  .media-status { margin:.7rem 1.3rem !important; color:#8a4500; }
+  [hidden] { display:none !important; }
+  @media (max-width:48rem) { .media-grid,.transition-grid { grid-template-columns:1fr; } .sensor-grid { grid-template-columns:1fr; } .case-header h3 { font-size:1.25rem; } }
+</style>
