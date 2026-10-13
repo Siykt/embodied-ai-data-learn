@@ -14,7 +14,7 @@ const categories = [
 	{
 		key: 'simulation',
 		title: '仿真器',
-		intro: '按发展路径和技术链路阅读仿真数据的生产、质量控制与真实验证。',
+		intro: '从生活类比进入，依次理解发展历程、技术链路、工具选择与数据实验。',
 	},
 	{
 		key: 'reference',
@@ -31,9 +31,7 @@ const getCategory = (page: Page) => {
 const getHref = (page: Page) => `/${page.id.replace(/\/index$/, '')}/`;
 const simulationOrder = new Map([
 	'simulation',
-	'simulation/mujoco-data-walkthrough',
 	'simulation/simulation-history-design',
-	'simulation/open-source-learning-repositories',
 	'simulation/simulators-embodied-data',
 	'simulation/simulation-scene-physics',
 	'simulation/simulation-sensors-timing',
@@ -41,6 +39,9 @@ const simulationOrder = new Map([
 	'simulation/simulation-validation-sim2real',
 	'simulation/mujoco-embodied-data',
 	'simulation/isaac-lab-embodied-data',
+	'simulation/open-source-learning-repositories',
+	'simulation/mujoco-data-walkthrough',
+	'simulation/softvtbench-diaggen-5w',
 ].map((id, index) => [id, index]));
 const getCategoryPages = (key: string) => {
 	const categoryPages = pages.filter((page) => getCategory(page) === key);

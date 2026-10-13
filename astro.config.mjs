@@ -44,17 +44,40 @@ export default defineConfig({
 					label: '仿真器',
 					collapsed: true,
 					items: [
-						{ label: '项目概览', slug: 'simulation' },
-						{ label: '旋转关节实验：从模型到数据', slug: 'simulation/mujoco-data-walkthrough' },
-						{ label: '具身仿真的发展脉络与设计逻辑', slug: 'simulation/simulation-history-design' },
-						{ label: '仿真开源学习仓库与实践路线', slug: 'simulation/open-source-learning-repositories' },
-						{ label: '仿真器与具身数据', slug: 'simulation/simulators-embodied-data' },
-						{ label: '仿真场景资产与物理配置', slug: 'simulation/simulation-scene-physics' },
-						{ label: '仿真传感器与时间对齐', slug: 'simulation/simulation-sensors-timing' },
-						{ label: '仿真任务与数据生成', slug: 'simulation/simulation-task-generation' },
-						{ label: '仿真验证与真实迁移', slug: 'simulation/simulation-validation-sim2real' },
-						{ label: 'MuJoCo 与具身数据', slug: 'simulation/mujoco-embodied-data' },
-						{ label: 'Isaac Lab 与具身数据', slug: 'simulation/isaac-lab-embodied-data' },
+						{ label: '学习总览', slug: 'simulation' },
+						{
+							label: '入门与发展',
+							collapsed: false,
+							items: [
+								{ label: '发展历程与设计逻辑', slug: 'simulation/simulation-history-design' },
+								{ label: '仿真器分工与数据', slug: 'simulation/simulators-embodied-data' },
+							],
+						},
+						{
+							label: '技术链路',
+							collapsed: false,
+							items: [
+								{ label: '场景资产与物理配置', slug: 'simulation/simulation-scene-physics' },
+								{ label: '传感器与时间对齐', slug: 'simulation/simulation-sensors-timing' },
+								{ label: '任务与数据生成', slug: 'simulation/simulation-task-generation' },
+								{ label: '验证与真实迁移', slug: 'simulation/simulation-validation-sim2real' },
+							],
+						},
+						{
+							label: '工具与实践',
+							collapsed: false,
+							items: [
+								{ label: 'MuJoCo 与具身数据', slug: 'simulation/mujoco-embodied-data' },
+								{ label: 'Isaac Lab 与具身数据', slug: 'simulation/isaac-lab-embodied-data' },
+								{ label: '开源学习仓库与实践路线', slug: 'simulation/open-source-learning-repositories' },
+								{ label: '旋转关节实验：从模型到数据', slug: 'simulation/mujoco-data-walkthrough' },
+							],
+						},
+						{
+							label: '补充案例',
+							collapsed: true,
+							items: [{ label: 'SoftVTBench 与 DiagGen', slug: 'simulation/softvtbench-diaggen-5w' }],
+						},
 					],
 				},
 				{
