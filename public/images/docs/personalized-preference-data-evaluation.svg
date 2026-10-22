@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1120 640" role="img" aria-labelledby="title desc">
+<title id="title">个性化评估：两个目标的四种结果</title><desc id="desc">任务成功不代表偏好满足；只统计成功样本时必须同时报告分母。</desc>
+<defs><marker id="arrow" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto"><path d="M1 1L7 4.5L1 8" fill="none" stroke="#a4512e" stroke-width="1.7"/></marker></defs>
+<rect width="1120" height="640" rx="22" fill="#f3f8fc"/>
+<g font-family="PingFang SC, Microsoft YaHei, Noto Sans CJK SC, sans-serif">
+<text x="32" y="45" fill="#17324d" font-size="28" font-weight="700">个性化评估：两个目标的四种结果</text>
+<text x="32" y="77" fill="#466178" font-size="18">任务成功不代表偏好满足；只统计成功样本时必须同时报告分母。</text>
+<text x="373" y="115" fill="#17324d" font-size="20" font-weight="700" text-anchor="middle">偏好满足</text>
+<text x="795" y="115" fill="#17324d" font-size="20" font-weight="700" text-anchor="middle">偏好未满足</text>
+<text x="32" y="203" fill="#17324d" font-size="19" font-weight="700" text-anchor="start">任务成功</text>
+<text x="32" y="332" fill="#17324d" font-size="19" font-weight="700" text-anchor="start">任务失败</text>
+<rect x="162" y="133" width="405" height="107" rx="15" fill="#e2efec" stroke="#237a73" stroke-width="1.8"/>
+<text x="180" y="167" fill="#17324d" font-size="21" font-weight="700" text-anchor="start">目标与方式均满足</text>
+<text x="180" y="198" fill="#466178" font-size="18" font-weight="400" text-anchor="start">同时检查任务、偏好两套证据</text>
+<rect x="597" y="133" width="491" height="107" rx="15" fill="#fff" stroke="#a4512e" stroke-width="1.8"/>
+<text x="615" y="167" fill="#17324d" font-size="21" font-weight="700" text-anchor="start">目标完成，方式不符合</text>
+<text x="615" y="198" fill="#466178" font-size="18" font-weight="400" text-anchor="start">保留为偏好学习与诊断样本</text>
+<rect x="162" y="262" width="405" height="107" rx="15" fill="#fff" stroke="#a4512e" stroke-width="1.8"/>
+<text x="180" y="296" fill="#17324d" font-size="21" font-weight="700" text-anchor="start">局部方式符合，任务未完成</text>
+<text x="180" y="327" fill="#466178" font-size="18" font-weight="400" text-anchor="start">不能将满意度替代任务成功</text>
+<rect x="597" y="262" width="491" height="107" rx="15" fill="#fff" stroke="#237a73" stroke-width="1.8"/>
+<text x="615" y="296" fill="#17324d" font-size="21" font-weight="700" text-anchor="start">两项均未满足</text>
+<text x="615" y="327" fill="#466178" font-size="18" font-weight="400" text-anchor="start">分别定位任务失败与偏好原因</text>
+<rect x="32" y="406" width="240" height="98" rx="15" fill="#fff" stroke="#237a73" stroke-width="1.8"/>
+<text x="50" y="440" fill="#17324d" font-size="21" font-weight="700" text-anchor="start">响应与保持</text>
+<text x="50" y="471" fill="#466178" font-size="18" font-weight="400" text-anchor="start">有 / 无偏好对照</text>
+<rect x="304" y="406" width="240" height="98" rx="15" fill="#fff" stroke="#237a73" stroke-width="1.8"/>
+<text x="322" y="440" fill="#17324d" font-size="21" font-weight="700" text-anchor="start">跨任务布局</text>
+<text x="322" y="471" fill="#466178" font-size="18" font-weight="400" text-anchor="start">留出新任务与布局</text>
+<rect x="576" y="406" width="240" height="98" rx="15" fill="#fff" stroke="#237a73" stroke-width="1.8"/>
+<text x="594" y="440" fill="#17324d" font-size="21" font-weight="700" text-anchor="start">组合</text>
+<text x="594" y="471" fill="#466178" font-size="18" font-weight="400" text-anchor="start">无、A、B、A+B</text>
+<rect x="848" y="406" width="240" height="98" rx="15" fill="#fff" stroke="#237a73" stroke-width="1.8"/>
+<text x="866" y="440" fill="#17324d" font-size="21" font-weight="700" text-anchor="start">冲突</text>
+<text x="866" y="471" fill="#466178" font-size="18" font-weight="400" text-anchor="start">各项得分与优先级</text>
+<rect x="32" y="532" width="1056" height="80" rx="14" fill="#e2efec"/>
+<text x="52" y="561" fill="#17324d" font-size="20" font-weight="700" text-anchor="start">指标边界</text>
+<text x="52" y="590" fill="#466178" font-size="18" font-weight="400" text-anchor="start">行为满意度不等于真实用户主观满意；仿真偏好基准不能替代长期用户验证。</text>
+</g>
+</svg>

@@ -112,6 +112,7 @@ export default defineConfig({
 						{ label: '特定行业具身数据设计', slug: 'guides/domain-specific-embodied-data' },
 						{ label: '多机器人协作与共享状态数据', slug: 'guides/multi-robot-coordination-data' },
 						{ label: '机器人持续学习与经验保留数据', slug: 'guides/continual-robot-learning-data' },
+						{ label: '个性化偏好与机器人操作数据', slug: 'guides/personalized-preference-data' },
 					],
 				},
 				{

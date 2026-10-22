@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1120 590" role="img" aria-labelledby="title desc">
+<title id="title">个性化偏好数据契约：表达、配对与证据</title><desc id="desc">原始要求、模型解释和实际执行分别保存，避免把一次行为倒推为用户意愿。</desc>
+<defs><marker id="arrow" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto"><path d="M1 1L7 4.5L1 8" fill="none" stroke="#a4512e" stroke-width="1.7"/></marker></defs>
+<rect width="1120" height="590" rx="22" fill="#f3f8fc"/>
+<g font-family="PingFang SC, Microsoft YaHei, Noto Sans CJK SC, sans-serif">
+<text x="32" y="45" fill="#17324d" font-size="28" font-weight="700">个性化偏好数据契约：表达、配对与证据</text>
+<text x="32" y="77" fill="#466178" font-size="18">原始要求、模型解释和实际执行分别保存，避免把一次行为倒推为用户意愿。</text>
+<rect x="32" y="118" width="336" height="174" rx="15" fill="#fff" stroke="#237a73" stroke-width="1.8"/>
+<text x="50" y="152" fill="#17324d" font-size="21" font-weight="700" text-anchor="start">任务和目标</text>
+<text x="50" y="183" fill="#466178" font-size="18" font-weight="400" text-anchor="start">mission_id / goal_predicate</text>
+<text x="50" y="210" fill="#466178" font-size="18" font-weight="400" text-anchor="start">对象、布局、机器人版本</text>
+<text x="50" y="237" fill="#466178" font-size="18" font-weight="400" text-anchor="start">客观任务验收规则</text>
+<rect x="392" y="118" width="336" height="174" rx="15" fill="#fff" stroke="#237a73" stroke-width="1.8"/>
+<text x="410" y="152" fill="#17324d" font-size="21" font-weight="700" text-anchor="start">偏好和解释</text>
+<text x="410" y="183" fill="#466178" font-size="18" font-weight="400" text-anchor="start">raw_text / context_text</text>
+<text x="410" y="210" fill="#466178" font-size="18" font-weight="400" text-anchor="start">类型、对象、动作阶段</text>
+<text x="410" y="237" fill="#466178" font-size="18" font-weight="400" text-anchor="start">解释来源及人工确认</text>
+<rect x="752" y="118" width="336" height="174" rx="15" fill="#fff" stroke="#237a73" stroke-width="1.8"/>
+<text x="770" y="152" fill="#17324d" font-size="21" font-weight="700" text-anchor="start">成对来源</text>
+<text x="770" y="183" fill="#466178" font-size="18" font-weight="400" text-anchor="start">pair_group_id / condition</text>
+<text x="770" y="210" fill="#466178" font-size="18" font-weight="400" text-anchor="start">无偏好与有偏好轨迹</text>
+<text x="770" y="237" fill="#466178" font-size="18" font-weight="400" text-anchor="start">布局编辑、种子、父记录</text>
+<rect x="32" y="337" width="506" height="112" rx="15" fill="#fff" stroke="#237a73" stroke-width="1.8"/>
+<text x="50" y="371" fill="#17324d" font-size="21" font-weight="700" text-anchor="start">执行与标注证据</text>
+<text x="50" y="402" fill="#466178" font-size="18" font-weight="400" text-anchor="start">图像、动作、物体状态、接触和时间</text>
+<text x="50" y="429" fill="#466178" font-size="18" font-weight="400" text-anchor="start">指标规则、阈值、单位及 evidence_span</text>
+<rect x="562" y="337" width="526" height="112" rx="15" fill="#fff" stroke="#237a73" stroke-width="1.8"/>
+<text x="580" y="371" fill="#17324d" font-size="21" font-weight="700" text-anchor="start">独立指标与多项条件</text>
+<text x="580" y="402" fill="#466178" font-size="18" font-weight="400" text-anchor="start">任务成功与偏好满意度分开记录</text>
+<text x="580" y="429" fill="#466178" font-size="18" font-weight="400" text-anchor="start">偏好集合、冲突类型、优先级及解决来源</text>
+<path d="M200 292L260 334" stroke="#a4512e" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+<path d="M560 292L562 334" stroke="#a4512e" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+<path d="M920 292L825 334" stroke="#a4512e" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+<rect x="32" y="480" width="1056" height="80" rx="14" fill="#e2efec"/>
+<text x="52" y="509" fill="#17324d" font-size="20" font-weight="700" text-anchor="start">防止标签泄漏</text>
+<text x="52" y="538" fill="#466178" font-size="18" font-weight="400" text-anchor="start">按源任务、布局与生成模板划分；同一轨迹的指令改写不跨训练和测试。</text>
+</g>
+</svg>
