@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1120 590" role="img" aria-labelledby="title desc">
+<title id="title">多机器人协作：团队记录与局部证据</title><desc id="desc">联合标识连接轨迹、通信、共享状态与交接；保留每条记录的来源和版本。</desc>
+<defs><marker id="arrow" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto"><path d="M1 1L7 4.5L1 8" fill="none" stroke="#a4512e" stroke-width="1.7"/></marker></defs>
+<rect width="1120" height="590" rx="22" fill="#f3f8fc"/>
+<g font-family="PingFang SC, Microsoft YaHei, Noto Sans CJK SC, sans-serif">
+<text x="32" y="45" fill="#17324d" font-size="28" font-weight="700">多机器人协作：团队记录与局部证据</text>
+<text x="32" y="77" fill="#466178" font-size="18">联合标识连接轨迹、通信、共享状态与交接；保留每条记录的来源和版本。</text>
+<rect x="370" y="108" width="380" height="100" rx="15" fill="#fff" stroke="#237a73" stroke-width="1.8"/>
+<text x="388" y="142" fill="#17324d" font-size="21" font-weight="700" text-anchor="start">team_episode_id</text>
+<text x="388" y="173" fill="#466178" font-size="18" font-weight="400" text-anchor="start">任务、成员、共同起止与成功条件</text>
+<path d="M560 208L152 273" stroke="#a4512e" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+<rect x="32" y="276" width="240" height="173" rx="15" fill="#fff" stroke="#237a73" stroke-width="1.8"/>
+<text x="50" y="310" fill="#17324d" font-size="21" font-weight="700" text-anchor="start">成员轨迹</text>
+<text x="50" y="341" fill="#466178" font-size="18" font-weight="400" text-anchor="start">agent_id / operator_id</text>
+<text x="50" y="368" fill="#466178" font-size="18" font-weight="400" text-anchor="start">观测、实际动作、时钟</text>
+<text x="50" y="395" fill="#466178" font-size="18" font-weight="400" text-anchor="start">基座与世界坐标变换</text>
+<path d="M560 208L424 273" stroke="#a4512e" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+<rect x="304" y="276" width="240" height="173" rx="15" fill="#fff" stroke="#237a73" stroke-width="1.8"/>
+<text x="322" y="310" fill="#17324d" font-size="21" font-weight="700" text-anchor="start">消息记录</text>
+<text x="322" y="341" fill="#466178" font-size="18" font-weight="400" text-anchor="start">sender / receiver</text>
+<text x="322" y="368" fill="#466178" font-size="18" font-weight="400" text-anchor="start">发送、接收、使用时间</text>
+<text x="322" y="395" fill="#466178" font-size="18" font-weight="400" text-anchor="start">内容与对应 decision_id</text>
+<path d="M560 208L696 273" stroke="#a4512e" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+<rect x="576" y="276" width="240" height="173" rx="15" fill="#fff" stroke="#237a73" stroke-width="1.8"/>
+<text x="594" y="310" fill="#17324d" font-size="21" font-weight="700" text-anchor="start">共享状态</text>
+<text x="594" y="341" fill="#466178" font-size="18" font-weight="400" text-anchor="start">state_version / entity_id</text>
+<text x="594" y="368" fill="#466178" font-size="18" font-weight="400" text-anchor="start">观测或推断、证据来源</text>
+<text x="594" y="395" fill="#466178" font-size="18" font-weight="400" text-anchor="start">未验证 / 已验证 / 撤回</text>
+<path d="M560 208L968 273" stroke="#a4512e" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+<rect x="848" y="276" width="240" height="173" rx="15" fill="#fff" stroke="#237a73" stroke-width="1.8"/>
+<text x="866" y="310" fill="#17324d" font-size="21" font-weight="700" text-anchor="start">交接事件</text>
+<text x="866" y="341" fill="#466178" font-size="18" font-weight="400" text-anchor="start">event_id / participants</text>
+<text x="866" y="368" fill="#466178" font-size="18" font-weight="400" text-anchor="start">请求 → 确认 → 执行</text>
+<text x="866" y="395" fill="#466178" font-size="18" font-weight="400" text-anchor="start">接触、物体姿态、结果</text>
+<rect x="32" y="480" width="1056" height="80" rx="14" fill="#e2efec"/>
+<text x="52" y="509" fill="#17324d" font-size="20" font-weight="700" text-anchor="start">关联约束</text>
+<text x="52" y="538" fill="#466178" font-size="18" font-weight="400" text-anchor="start">同一次交接的成员轨迹进入同一数据划分；未知状态与真实零值分别记录。</text>
+</g>
+</svg>

@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1120 590" role="img" aria-labelledby="title desc">
+<title id="title">多机器人协作：形成可回放的团队经验</title><desc id="desc">每个成员保留局部轨迹；消息和共同事件建立跨成员关系。</desc>
+<defs><marker id="arrow" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto"><path d="M1 1L7 4.5L1 8" fill="none" stroke="#a4512e" stroke-width="1.7"/></marker></defs>
+<rect width="1120" height="590" rx="22" fill="#f3f8fc"/>
+<g font-family="PingFang SC, Microsoft YaHei, Noto Sans CJK SC, sans-serif">
+<text x="32" y="45" fill="#17324d" font-size="28" font-weight="700">多机器人协作：形成可回放的团队经验</text>
+<text x="32" y="77" fill="#466178" font-size="18">每个成员保留局部轨迹；消息和共同事件建立跨成员关系。</text>
+<rect x="32" y="116" width="240" height="168" rx="15" fill="#fff" stroke="#237a73" stroke-width="1.8"/>
+<text x="50" y="150" fill="#17324d" font-size="21" font-weight="700" text-anchor="start">共同任务</text>
+<text x="50" y="181" fill="#466178" font-size="18" font-weight="400" text-anchor="start">团队成员与角色</text>
+<text x="50" y="208" fill="#466178" font-size="18" font-weight="400" text-anchor="start">联合成功条件</text>
+<text x="50" y="235" fill="#466178" font-size="18" font-weight="400" text-anchor="start">共享物体与坐标</text>
+<rect x="304" y="116" width="240" height="168" rx="15" fill="#fff" stroke="#237a73" stroke-width="1.8"/>
+<text x="322" y="150" fill="#17324d" font-size="21" font-weight="700" text-anchor="start">成员原始流</text>
+<text x="322" y="181" fill="#466178" font-size="18" font-weight="400" text-anchor="start">各自观测与状态</text>
+<text x="322" y="208" fill="#466178" font-size="18" font-weight="400" text-anchor="start">命令与实际动作</text>
+<text x="322" y="235" fill="#466178" font-size="18" font-weight="400" text-anchor="start">本地时钟及映射</text>
+<rect x="576" y="116" width="240" height="168" rx="15" fill="#fff" stroke="#237a73" stroke-width="1.8"/>
+<text x="594" y="150" fill="#17324d" font-size="21" font-weight="700" text-anchor="start">协作连接</text>
+<text x="594" y="181" fill="#466178" font-size="18" font-weight="400" text-anchor="start">消息收发与使用</text>
+<text x="594" y="208" fill="#466178" font-size="18" font-weight="400" text-anchor="start">交接与共同接触</text>
+<text x="594" y="235" fill="#466178" font-size="18" font-weight="400" text-anchor="start">共享地图版本</text>
+<rect x="848" y="116" width="240" height="168" rx="15" fill="#fff" stroke="#237a73" stroke-width="1.8"/>
+<text x="866" y="150" fill="#17324d" font-size="21" font-weight="700" text-anchor="start">团队结果</text>
+<text x="866" y="181" fill="#466178" font-size="18" font-weight="400" text-anchor="start">共同成功与失败</text>
+<text x="866" y="208" fill="#466178" font-size="18" font-weight="400" text-anchor="start">等待、碰撞、贡献</text>
+<text x="866" y="235" fill="#466178" font-size="18" font-weight="400" text-anchor="start">证据及来源追溯</text>
+<path d="M272 199L297 199" stroke="#a4512e" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+<path d="M544 199L569 199" stroke="#a4512e" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+<path d="M816 199L841 199" stroke="#a4512e" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+<text x="52" y="337" fill="#17324d" font-size="21" font-weight="700" text-anchor="start">消息因果链</text>
+<circle cx="85" cy="377" r="8" fill="#237a73"/>
+<text x="85" y="414" fill="#17324d" font-size="18" font-weight="400" text-anchor="middle">发送</text>
+<text x="85" y="441" fill="#466178" font-size="16" font-weight="400" text-anchor="middle">t_send</text>
+<circle cx="355" cy="377" r="8" fill="#237a73"/>
+<text x="355" y="414" fill="#17324d" font-size="18" font-weight="400" text-anchor="middle">收到</text>
+<text x="355" y="441" fill="#466178" font-size="16" font-weight="400" text-anchor="middle">t_receive</text>
+<circle cx="625" cy="377" r="8" fill="#237a73"/>
+<text x="625" y="414" fill="#17324d" font-size="18" font-weight="400" text-anchor="middle">用于决策</text>
+<text x="625" y="441" fill="#466178" font-size="16" font-weight="400" text-anchor="middle">decision_id</text>
+<circle cx="895" cy="377" r="8" fill="#237a73"/>
+<text x="895" y="414" fill="#17324d" font-size="18" font-weight="400" text-anchor="middle">动作生效</text>
+<text x="895" y="441" fill="#466178" font-size="16" font-weight="400" text-anchor="middle">t_apply</text>
+<path d="M93 377L347 377" stroke="#a4512e" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+<path d="M363 377L617 377" stroke="#a4512e" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+<path d="M633 377L887 377" stroke="#a4512e" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+<rect x="32" y="480" width="1056" height="80" rx="14" fill="#e2efec"/>
+<text x="52" y="509" fill="#17324d" font-size="20" font-weight="700" text-anchor="start">检查关键：当时是否已经知道</text>
+<text x="52" y="538" fill="#466178" font-size="18" font-weight="400" text-anchor="start">接收消息不等于动作完成；最终共享地图不能回填成过去决策的已知信息。</text>
+</g>
+</svg>

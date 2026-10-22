@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1120 590" role="img" aria-labelledby="title desc">
+<title id="title">多机器人协作：质量、任务与协作收益</title><desc id="desc">先确认记录可解释，再检查团队效果，最后用条件一致的实验判断协作收益。</desc>
+<defs><marker id="arrow" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto"><path d="M1 1L7 4.5L1 8" fill="none" stroke="#a4512e" stroke-width="1.7"/></marker></defs>
+<rect width="1120" height="590" rx="22" fill="#f3f8fc"/>
+<g font-family="PingFang SC, Microsoft YaHei, Noto Sans CJK SC, sans-serif">
+<text x="32" y="45" fill="#17324d" font-size="28" font-weight="700">多机器人协作：质量、任务与协作收益</text>
+<text x="32" y="77" fill="#466178" font-size="18">先确认记录可解释，再检查团队效果，最后用条件一致的实验判断协作收益。</text>
+<rect x="32" y="120" width="336" height="180" rx="15" fill="#fff" stroke="#237a73" stroke-width="1.8"/>
+<text x="50" y="154" fill="#17324d" font-size="21" font-weight="700" text-anchor="start">证据质量</text>
+<text x="50" y="185" fill="#466178" font-size="18" font-weight="400" text-anchor="start">时钟误差与消息丢失</text>
+<text x="50" y="212" fill="#466178" font-size="18" font-weight="400" text-anchor="start">共同物体坐标一致性</text>
+<text x="50" y="239" fill="#466178" font-size="18" font-weight="400" text-anchor="start">交接状态与接触证据</text>
+<rect x="392" y="120" width="336" height="180" rx="15" fill="#fff" stroke="#237a73" stroke-width="1.8"/>
+<text x="410" y="154" fill="#17324d" font-size="21" font-weight="700" text-anchor="start">团队与成员结果</text>
+<text x="410" y="185" fill="#466178" font-size="18" font-weight="400" text-anchor="start">团队成功、时间、碰撞</text>
+<text x="410" y="212" fill="#466178" font-size="18" font-weight="400" text-anchor="start">重复搜索与目标覆盖</text>
+<text x="410" y="239" fill="#466178" font-size="18" font-weight="400" text-anchor="start">等待、工作量、交接延迟</text>
+<rect x="752" y="120" width="336" height="180" rx="15" fill="#fff" stroke="#237a73" stroke-width="1.8"/>
+<text x="770" y="154" fill="#17324d" font-size="21" font-weight="700" text-anchor="start">协作对照</text>
+<text x="770" y="185" fill="#466178" font-size="18" font-weight="400" text-anchor="start">关闭或延迟消息</text>
+<text x="770" y="212" fill="#466178" font-size="18" font-weight="400" text-anchor="start">更换伙伴及能力约束</text>
+<text x="770" y="239" fill="#466178" font-size="18" font-weight="400" text-anchor="start">成员退出与控制来源</text>
+<path d="M368 210L389 210" stroke="#a4512e" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+<path d="M728 210L749 210" stroke="#a4512e" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+<rect x="32" y="338" width="506" height="108" rx="15" fill="#fff" stroke="#a4512e" stroke-width="1.8"/>
+<text x="50" y="372" fill="#17324d" font-size="21" font-weight="700" text-anchor="start">比较时保持一致</text>
+<text x="50" y="403" fill="#466178" font-size="18" font-weight="400" text-anchor="start">任务与种子、感知和动作模型、总预算</text>
+<rect x="562" y="338" width="526" height="108" rx="15" fill="#fff" stroke="#a4512e" stroke-width="1.8"/>
+<text x="580" y="372" fill="#17324d" font-size="21" font-weight="700" text-anchor="start">泛化时明确留出</text>
+<text x="580" y="403" fill="#466178" font-size="18" font-weight="400" text-anchor="start">新场景、新伙伴或未见能力约束组合</text>
+<rect x="32" y="480" width="1056" height="80" rx="14" fill="#e2efec"/>
+<text x="52" y="509" fill="#17324d" font-size="20" font-weight="700" text-anchor="start">分开解释</text>
+<text x="52" y="538" fill="#466178" font-size="18" font-weight="400" text-anchor="start">工作量均衡不等于最优分工；团队成功也不证明每个成员的独立能力提高。</text>
+</g>
+</svg>

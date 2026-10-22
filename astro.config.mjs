@@ -81,7 +81,7 @@ export default defineConfig({
 					],
 				},
 				{
-					label: '2026 年 9 月论文知识点',
+					label: '论文知识点',
 					collapsed: true,
 					items: [
 						{ label: '示教采集与动作重定向', slug: 'guides/demonstration-collection-retargeting' },
@@ -110,6 +110,7 @@ export default defineConfig({
 						{ label: '奖励、价值函数与反馈数据', slug: 'guides/reward-value-feedback-data' },
 						{ label: '轨迹规划、控制与物理约束数据', slug: 'guides/trajectory-control-constraint-data' },
 						{ label: '特定行业具身数据设计', slug: 'guides/domain-specific-embodied-data' },
+						{ label: '多机器人协作与共享状态数据', slug: 'guides/multi-robot-coordination-data' },
 					],
 				},
 				{
