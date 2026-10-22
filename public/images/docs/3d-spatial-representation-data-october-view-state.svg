@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 590" role="img" aria-labelledby="title desc">
+<title id="title">让场景状态与观察方式各有记录</title>
+<desc id="desc">相机位姿和同场景对应形成共同尺度的三维状态；坐标节点、关系监督和干预来源分别保存，并以不同用途验证。</desc>
+<defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0 0L10 5L0 10" fill="#64748b"/></marker></defs>
+<rect width="1200" height="590" rx="20" fill="#f8fafc"/>
+<g font-family="PingFang SC, Microsoft YaHei, Noto Sans CJK SC, sans-serif">
+<text x="44" y="51" font-size="28" font-weight="700" fill="#0f172a">让场景状态与观察方式各有记录</text>
+<text x="44" y="83" font-size="16" fill="#475569">2026 年 10 月 · 数据组织示意 · 字段及验收为本站建议</text>
+<rect x="40" y="115" width="340" height="326" rx="14" fill="white" stroke="#cbd5e1"/>
+<rect x="40" y="115" width="340" height="61" rx="14" fill="#0f766e"/>
+<text x="60" y="154" font-size="23" font-weight="650" fill="white">01 观察来源</text>
+<text x="60" y="211" font-size="19" font-weight="600" fill="#0f766e">同场景多视角</text>
+<circle cx="63" cy="252" r="4" fill="#0f766e"/>
+<text x="78" y="258" font-size="18" fill="#1e293b">RGB-D / 本体状态</text>
+<circle cx="63" cy="295" r="4" fill="#0f766e"/>
+<text x="78" y="301" font-size="18" fill="#1e293b">相机位姿 / 射线</text>
+<circle cx="63" cy="338" r="4" fill="#0f766e"/>
+<text x="78" y="344" font-size="18" fill="#1e293b">输入坐标轴与尺度</text>
+<circle cx="63" cy="381" r="4" fill="#0f766e"/>
+<text x="78" y="387" font-size="18" fill="#1e293b">干预目标与重置记录</text>
+<line x1="389" y1="285" x2="418" y2="285" stroke="#64748b" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="430" y="115" width="340" height="326" rx="14" fill="white" stroke="#cbd5e1"/>
+<rect x="430" y="115" width="340" height="61" rx="14" fill="#1d4ed8"/>
+<text x="450" y="154" font-size="23" font-weight="650" fill="white">02 共同状态</text>
+<text x="450" y="211" font-size="19" font-weight="600" fill="#1d4ed8">几何与身份可解释</text>
+<circle cx="453" cy="252" r="4" fill="#1d4ed8"/>
+<text x="468" y="258" font-size="18" fill="#1e293b">机器人关节 / 物体中心</text>
+<circle cx="453" cy="295" r="4" fill="#1d4ed8"/>
+<text x="468" y="301" font-size="18" fill="#1e293b">交互点与节点有效性</text>
+<circle cx="453" cy="338" r="4" fill="#1d4ed8"/>
+<text x="468" y="344" font-size="18" fill="#1e293b">相机运动单独建模</text>
+<circle cx="453" cy="381" r="4" fill="#1d4ed8"/>
+<text x="468" y="387" font-size="18" fill="#1e293b">整个预测段共享尺度</text>
+<line x1="779" y1="285" x2="808" y2="285" stroke="#64748b" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="820" y="115" width="340" height="326" rx="14" fill="white" stroke="#cbd5e1"/>
+<rect x="820" y="115" width="340" height="61" rx="14" fill="#7e22ce"/>
+<text x="840" y="154" font-size="23" font-weight="650" fill="white">03 监督与验收</text>
+<text x="840" y="211" font-size="19" font-weight="600" fill="#7e22ce">关系也需要来源</text>
+<circle cx="843" cy="252" r="4" fill="#7e22ce"/>
+<text x="858" y="258" font-size="18" fill="#1e293b">点对 / 教师版本</text>
+<circle cx="843" cy="295" r="4" fill="#7e22ce"/>
+<text x="858" y="301" font-size="18" fill="#1e293b">新视角对应与定位</text>
+<circle cx="843" cy="338" r="4" fill="#7e22ce"/>
+<text x="858" y="344" font-size="18" fill="#1e293b">长预测段尺度漂移</text>
+<circle cx="843" cy="381" r="4" fill="#7e22ce"/>
+<text x="858" y="387" font-size="18" fill="#1e293b">原任务能力保持</text>
+<rect x="40" y="468" width="1120" height="89" rx="12" fill="#e2e8f0"/>
+<text x="61" y="503" font-size="20" font-weight="600" fill="#0f172a">不混淆：相机移动 ≠ 场景运动；中心节点 ≠ 完整接触或碰撞表面</text>
+<text x="61" y="535" font-size="18" fill="#334155">评估：几何定位、视角变化、时间预测和机器人操作分别验收</text>
+</g></svg>
