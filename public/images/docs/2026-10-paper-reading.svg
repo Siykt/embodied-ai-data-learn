@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="550" viewBox="0 0 1080 550" role="img" aria-labelledby="title desc">
+<title id="title">按数据工作问题选择阅读入口</title>
+<desc id="desc">阅读顺序围绕数据生命周期；跨主题引用不重复计算论文；如何获得数据:示教与动作重定向、合成、仿真与主动感知、模型条件化数据引擎；如何表达状态:多模态时空对齐、三维、触觉与材料状态、人体和本体动作表示；如何形成监督:语言、技能与动作块、奖励、价值和阶段归因、偏好条件与用户差异；如何闭环改进:失败纠错与人工接管、记忆检索与经验保留、任务流与持续学习；如何完成物理任务:灵巧手、人形与导航、轨迹控制和安全过滤、团队协作与共享状态；如何判断有效:评估对象和证据等级、任务成功与物理后果、行业边界和迁移范围</desc>
+<rect width="1080" height="550" rx="18" fill="#f3f6fc"/>
+<g font-family="system-ui, -apple-system, PingFang SC, Microsoft YaHei, sans-serif">
+<text x="30" y="43" fill="#182b49" font-size="26" font-weight="700">按数据工作问题选择阅读入口</text>
+<text x="30" y="75" fill="#536782" font-size="17">阅读顺序围绕数据生命周期；跨主题引用不重复计算论文</text>
+<rect x="30" y="102" width="324" height="180" rx="12" fill="white" stroke="#b9c9df"/>
+<text x="47" y="139" fill="#1c5277" font-size="22" font-weight="700">如何获得数据</text>
+<text x="47" y="181" fill="#233b55" font-size="17">示教与动作重定向</text>
+<text x="47" y="217" fill="#233b55" font-size="17">合成、仿真与主动感知</text>
+<text x="47" y="253" fill="#233b55" font-size="17">模型条件化数据引擎</text>
+<rect x="378" y="102" width="324" height="180" rx="12" fill="white" stroke="#b9c9df"/>
+<text x="395" y="139" fill="#1c5277" font-size="22" font-weight="700">如何表达状态</text>
+<text x="395" y="181" fill="#233b55" font-size="17">多模态时空对齐</text>
+<text x="395" y="217" fill="#233b55" font-size="17">三维、触觉与材料状态</text>
+<text x="395" y="253" fill="#233b55" font-size="17">人体和本体动作表示</text>
+<rect x="726" y="102" width="324" height="180" rx="12" fill="white" stroke="#b9c9df"/>
+<text x="743" y="139" fill="#1c5277" font-size="22" font-weight="700">如何形成监督</text>
+<text x="743" y="181" fill="#233b55" font-size="17">语言、技能与动作块</text>
+<text x="743" y="217" fill="#233b55" font-size="17">奖励、价值和阶段归因</text>
+<text x="743" y="253" fill="#233b55" font-size="17">偏好条件与用户差异</text>
+<rect x="30" y="307" width="324" height="180" rx="12" fill="white" stroke="#b9c9df"/>
+<text x="47" y="344" fill="#1c5277" font-size="22" font-weight="700">如何闭环改进</text>
+<text x="47" y="386" fill="#233b55" font-size="17">失败纠错与人工接管</text>
+<text x="47" y="422" fill="#233b55" font-size="17">记忆检索与经验保留</text>
+<text x="47" y="458" fill="#233b55" font-size="17">任务流与持续学习</text>
+<rect x="378" y="307" width="324" height="180" rx="12" fill="white" stroke="#b9c9df"/>
+<text x="395" y="344" fill="#1c5277" font-size="22" font-weight="700">如何完成物理任务</text>
+<text x="395" y="386" fill="#233b55" font-size="17">灵巧手、人形与导航</text>
+<text x="395" y="422" fill="#233b55" font-size="17">轨迹控制和安全过滤</text>
+<text x="395" y="458" fill="#233b55" font-size="17">团队协作与共享状态</text>
+<rect x="726" y="307" width="324" height="180" rx="12" fill="white" stroke="#b9c9df"/>
+<text x="743" y="344" fill="#1c5277" font-size="22" font-weight="700">如何判断有效</text>
+<text x="743" y="386" fill="#233b55" font-size="17">评估对象和证据等级</text>
+<text x="743" y="422" fill="#233b55" font-size="17">任务成功与物理后果</text>
+<text x="743" y="458" fill="#233b55" font-size="17">行业边界和迁移范围</text>
+<text x="30" y="530" fill="#536782" font-size="16">三个新增主题：多机器人协作、机器人持续学习、个性化偏好。</text>
+</g></svg>

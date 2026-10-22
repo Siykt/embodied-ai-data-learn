@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="345" viewBox="0 0 1080 345" role="img" aria-labelledby="title desc">
+<title id="title">来源覆盖与证据强度</title>
+<desc id="desc">缓存可用、自动评分与原文抽查分别记录；原始资料覆盖:176 / 176 有原始摘要、17 / 176 有本地全文缓存、纳入集全文缓存 15 / 167；派生资料覆盖:144 份中文 summary、143 份 verify 均 pass、仅 17 份记录 fetched 证据；本轮官方抽查:核对 10 篇官方摘要、抽查 9 篇官方 HTML 全文、1 篇仅核实摘要</desc>
+<rect width="1080" height="345" rx="18" fill="#f3f6fc"/>
+<g font-family="system-ui, -apple-system, PingFang SC, Microsoft YaHei, sans-serif">
+<text x="30" y="43" fill="#182b49" font-size="26" font-weight="700">来源覆盖与证据强度</text>
+<text x="30" y="75" fill="#536782" font-size="17">缓存可用、自动评分与原文抽查分别记录</text>
+<rect x="30" y="102" width="324" height="180" rx="12" fill="white" stroke="#b9c9df"/>
+<text x="47" y="139" fill="#1c5277" font-size="22" font-weight="700">原始资料覆盖</text>
+<text x="47" y="181" fill="#233b55" font-size="17">176 / 176 有原始摘要</text>
+<text x="47" y="217" fill="#233b55" font-size="17">17 / 176 有本地全文缓存</text>
+<text x="47" y="253" fill="#233b55" font-size="17">纳入集全文缓存 15 / 167</text>
+<rect x="378" y="102" width="324" height="180" rx="12" fill="white" stroke="#b9c9df"/>
+<text x="395" y="139" fill="#1c5277" font-size="22" font-weight="700">派生资料覆盖</text>
+<text x="395" y="181" fill="#233b55" font-size="17">144 份中文 summary</text>
+<text x="395" y="217" fill="#233b55" font-size="17">143 份 verify 均 pass</text>
+<text x="395" y="253" fill="#233b55" font-size="17">仅 17 份记录 fetched 证据</text>
+<rect x="726" y="102" width="324" height="180" rx="12" fill="white" stroke="#b9c9df"/>
+<text x="743" y="139" fill="#1c5277" font-size="22" font-weight="700">本轮官方抽查</text>
+<text x="743" y="181" fill="#233b55" font-size="17">核对 10 篇官方摘要</text>
+<text x="743" y="217" fill="#233b55" font-size="17">抽查 9 篇官方 HTML 全文</text>
+<text x="743" y="253" fill="#233b55" font-size="17">1 篇仅核实摘要</text>
+<text x="30" y="325" fill="#536782" font-size="16">pass 仅相对于所提供材料；不表示全部论文经过全文审核。</text>
+</g></svg>

@@ -1,0 +1,4086 @@
+{
+  "schema_version": 1,
+  "snapshot_date": "2026-10-22",
+  "publication_window": {
+    "start_inclusive": "2026-10-01T00:00:00Z",
+    "end_exclusive": "2026-10-23T00:00:00Z",
+    "as_of_local_date": "2026-10-22",
+    "timezone_for_filter": "UTC",
+    "filter_field": "published",
+    "min_published": "2026-10-01T16:43:17Z",
+    "max_published": "2026-10-21T17:59:56Z"
+  },
+  "source": "spiders/arxiv/papers/YYYY-MM-DD.json",
+  "counts": {
+    "date_json_scanned": 52,
+    "all_scanned_records": 524,
+    "source_batches_with_matches": 13,
+    "matching_records": 176,
+    "unique_papers": 176,
+    "duplicate_records": 0,
+    "in_scope": 167,
+    "out_of_scope": 9,
+    "topics": 32,
+    "existing_topics": 29,
+    "new_topics": 3
+  },
+  "evidence": {
+    "local_cache": {
+      "fulltext": 17,
+      "summary": 144,
+      "verify": 143,
+      "figure": 143,
+      "verify_pass": 143,
+      "verify_fail": 0,
+      "verify_with_fetched_evidence": 17
+    },
+    "included_local_cache": {
+      "fulltext": 15,
+      "summary": 140,
+      "verify": 140,
+      "figure": 136,
+      "verify_pass": 140,
+      "verify_fail": 0,
+      "verify_with_fetched_evidence": 15
+    },
+    "official_abstracts_checked": [
+      "2610.02161",
+      "2610.15001",
+      "2610.15038",
+      "2610.22372",
+      "2610.13816",
+      "2610.18792",
+      "2610.22362",
+      "2610.24804",
+      "2610.30125",
+      "2610.26844"
+    ],
+    "official_html_sampled": [
+      "2610.02161",
+      "2610.15001",
+      "2610.15038",
+      "2610.22372",
+      "2610.18792",
+      "2610.22362",
+      "2610.24804",
+      "2610.30125",
+      "2610.26844"
+    ],
+    "note": "缓存可用性与本轮人工抽查是不同维度；自动verify通过不等于全文核验。"
+  },
+  "batches": [
+    {
+      "source_json": "2026-10-03.json",
+      "records": 11,
+      "in_window": 11
+    },
+    {
+      "source_json": "2026-10-06.json",
+      "records": 14,
+      "in_window": 14
+    },
+    {
+      "source_json": "2026-10-07.json",
+      "records": 8,
+      "in_window": 8
+    },
+    {
+      "source_json": "2026-10-09.json",
+      "records": 18,
+      "in_window": 18
+    },
+    {
+      "source_json": "2026-10-10.json",
+      "records": 23,
+      "in_window": 23
+    },
+    {
+      "source_json": "2026-10-13.json",
+      "records": 8,
+      "in_window": 8
+    },
+    {
+      "source_json": "2026-10-14.json",
+      "records": 7,
+      "in_window": 7
+    },
+    {
+      "source_json": "2026-10-15.json",
+      "records": 20,
+      "in_window": 20
+    },
+    {
+      "source_json": "2026-10-16.json",
+      "records": 11,
+      "in_window": 11
+    },
+    {
+      "source_json": "2026-10-17.json",
+      "records": 12,
+      "in_window": 12
+    },
+    {
+      "source_json": "2026-10-20.json",
+      "records": 10,
+      "in_window": 10
+    },
+    {
+      "source_json": "2026-10-21.json",
+      "records": 17,
+      "in_window": 17
+    },
+    {
+      "source_json": "2026-10-22.json",
+      "records": 17,
+      "in_window": 17
+    }
+  ],
+  "topics": [
+    {
+      "id": "3d-spatial-representation-data",
+      "name": "三维空间表征与部件数据",
+      "status": "existing",
+      "paper_count": 6,
+      "paper_ids": [
+        "2610.02021",
+        "2610.02120",
+        "2610.03717",
+        "2610.06809",
+        "2610.22343",
+        "2610.24705"
+      ]
+    },
+    {
+      "id": "active-perception-data",
+      "name": "主动感知与任务化测量数据",
+      "status": "existing",
+      "paper_count": 4,
+      "paper_ids": [
+        "2610.03710",
+        "2610.10388",
+        "2610.12457",
+        "2610.30105"
+      ]
+    },
+    {
+      "id": "closed-loop-correction-data",
+      "name": "闭环纠错与失败经验数据",
+      "status": "existing",
+      "paper_count": 3,
+      "paper_ids": [
+        "2610.02204",
+        "2610.14977",
+        "2610.18873"
+      ]
+    },
+    {
+      "id": "continual-robot-learning-data",
+      "name": "机器人持续学习与经验保留数据",
+      "status": "new",
+      "paper_count": 5,
+      "paper_ids": [
+        "2610.03713",
+        "2610.13816",
+        "2610.18790",
+        "2610.18792",
+        "2610.24804"
+      ]
+    },
+    {
+      "id": "deformable-material-state-data",
+      "name": "可变形物体与材质状态数据",
+      "status": "existing",
+      "paper_count": 1,
+      "paper_ids": [
+        "2610.15073"
+      ]
+    },
+    {
+      "id": "demonstration-collection-retargeting",
+      "name": "示教采集与动作重定向",
+      "status": "existing",
+      "paper_count": 5,
+      "paper_ids": [
+        "2610.06850",
+        "2610.12440",
+        "2610.18711",
+        "2610.18822",
+        "2610.26762"
+      ]
+    },
+    {
+      "id": "demonstration-data-curation",
+      "name": "示教数据筛选与再利用",
+      "status": "existing",
+      "paper_count": 2,
+      "paper_ids": [
+        "2610.18869",
+        "2610.20504"
+      ]
+    },
+    {
+      "id": "dexterous-manipulation-data",
+      "name": "灵巧操作与双臂装配数据",
+      "status": "existing",
+      "paper_count": 3,
+      "paper_ids": [
+        "2610.12470",
+        "2610.26765",
+        "2610.29997"
+      ]
+    },
+    {
+      "id": "domain-specific-embodied-data",
+      "name": "特定行业具身数据设计",
+      "status": "existing",
+      "paper_count": 4,
+      "paper_ids": [
+        "2610.10390",
+        "2610.22337",
+        "2610.24747",
+        "2610.26717"
+      ]
+    },
+    {
+      "id": "embodied-evaluation-data-quality",
+      "name": "具身数据质量与基准评估",
+      "status": "existing",
+      "paper_count": 10,
+      "paper_ids": [
+        "2610.02089",
+        "2610.02205",
+        "2610.10409",
+        "2610.13829",
+        "2610.18699",
+        "2610.18836",
+        "2610.24801",
+        "2610.26711",
+        "2610.26848",
+        "2610.30043"
+      ]
+    },
+    {
+      "id": "embodied-memory-experience-data",
+      "name": "具身记忆与经验检索数据",
+      "status": "existing",
+      "paper_count": 7,
+      "paper_ids": [
+        "2610.02162",
+        "2610.06843",
+        "2610.10538",
+        "2610.18867",
+        "2610.20524",
+        "2610.22323",
+        "2610.24767"
+      ]
+    },
+    {
+      "id": "human-gated-dagger-correction-data",
+      "name": "Human-gated DAgger 纠错数据",
+      "status": "existing",
+      "paper_count": 2,
+      "paper_ids": [
+        "2610.03620",
+        "2610.10534"
+      ]
+    },
+    {
+      "id": "human-object-interaction-reconstruction",
+      "name": "人体与人-物交互重建数据",
+      "status": "existing",
+      "paper_count": 4,
+      "paper_ids": [
+        "2610.10438",
+        "2610.12416",
+        "2610.26780",
+        "2610.29936"
+      ]
+    },
+    {
+      "id": "humanoid-locomotion-data",
+      "name": "人形与足式全身运动数据",
+      "status": "existing",
+      "paper_count": 8,
+      "paper_ids": [
+        "2610.10489",
+        "2610.20552",
+        "2610.20606",
+        "2610.24779",
+        "2610.24847",
+        "2610.30044",
+        "2610.30061",
+        "2610.30080"
+      ]
+    },
+    {
+      "id": "imitation-learning-action-data",
+      "name": "模仿学习动作数据与轨迹表示",
+      "status": "existing",
+      "paper_count": 1,
+      "paper_ids": [
+        "2610.20429"
+      ]
+    },
+    {
+      "id": "language-action-grounding-data",
+      "name": "语言指令与机器人动作对齐数据",
+      "status": "existing",
+      "paper_count": 5,
+      "paper_ids": [
+        "2610.03615",
+        "2610.10526",
+        "2610.12386",
+        "2610.24885",
+        "2610.26854"
+      ]
+    },
+    {
+      "id": "latent-action-cross-embodiment",
+      "name": "潜在动作与跨本体对齐",
+      "status": "existing",
+      "paper_count": 4,
+      "paper_ids": [
+        "2610.03607",
+        "2610.12435",
+        "2610.13732",
+        "2610.18774"
+      ]
+    },
+    {
+      "id": "model-conditioned-data-engine",
+      "name": "模型条件化数据引擎",
+      "status": "existing",
+      "paper_count": 4,
+      "paper_ids": [
+        "2610.10498",
+        "2610.12465",
+        "2610.20474",
+        "2610.22362"
+      ]
+    },
+    {
+      "id": "multi-robot-coordination-data",
+      "name": "多机器人协作与共享状态数据",
+      "status": "new",
+      "paper_count": 6,
+      "paper_ids": [
+        "2610.02161",
+        "2610.02170",
+        "2610.15001",
+        "2610.15038",
+        "2610.20579",
+        "2610.22322"
+      ]
+    },
+    {
+      "id": "multimodal-spatiotemporal-alignment",
+      "name": "多模态时空对齐数据",
+      "status": "existing",
+      "paper_count": 3,
+      "paper_ids": [
+        "2610.12451",
+        "2610.18872",
+        "2610.26751"
+      ]
+    },
+    {
+      "id": "navigation-traversability-data",
+      "name": "导航、语义地图与可通行性数据",
+      "status": "existing",
+      "paper_count": 2,
+      "paper_ids": [
+        "2610.12368",
+        "2610.13838"
+      ]
+    },
+    {
+      "id": "personalized-preference-data",
+      "name": "个性化偏好与机器人操作数据",
+      "status": "new",
+      "paper_count": 1,
+      "paper_ids": [
+        "2610.22372"
+      ]
+    },
+    {
+      "id": "reward-value-feedback-data",
+      "name": "奖励、价值函数与反馈数据",
+      "status": "existing",
+      "paper_count": 8,
+      "paper_ids": [
+        "2610.02196",
+        "2610.10437",
+        "2610.13943",
+        "2610.14936",
+        "2610.14941",
+        "2610.20607",
+        "2610.22368",
+        "2610.30097"
+      ]
+    },
+    {
+      "id": "robot-safety-robustness-data",
+      "name": "机器人安全与鲁棒性数据",
+      "status": "existing",
+      "paper_count": 5,
+      "paper_ids": [
+        "2610.03498",
+        "2610.06814",
+        "2610.12432",
+        "2610.18843",
+        "2610.20609"
+      ]
+    },
+    {
+      "id": "robot-skill-composition-data",
+      "name": "机器人技能组合与任务过程数据",
+      "status": "existing",
+      "paper_count": 5,
+      "paper_ids": [
+        "2610.12369",
+        "2610.12459",
+        "2610.18874",
+        "2610.24675",
+        "2610.30136"
+      ]
+    },
+    {
+      "id": "synthetic-data-sim-to-real",
+      "name": "合成数据与仿真到真实迁移",
+      "status": "existing",
+      "paper_count": 5,
+      "paper_ids": [
+        "2610.06643",
+        "2610.10479",
+        "2610.13945",
+        "2610.18835",
+        "2610.26757"
+      ]
+    },
+    {
+      "id": "tactile-force-contact-data",
+      "name": "触觉、力觉与接触数据",
+      "status": "existing",
+      "paper_count": 12,
+      "paper_ids": [
+        "2610.03538",
+        "2610.10370",
+        "2610.10384",
+        "2610.10510",
+        "2610.12333",
+        "2610.18848",
+        "2610.18852",
+        "2610.18855",
+        "2610.22342",
+        "2610.26759",
+        "2610.26846",
+        "2610.30117"
+      ]
+    },
+    {
+      "id": "trajectory-control-constraint-data",
+      "name": "轨迹规划、控制与物理约束数据",
+      "status": "existing",
+      "paper_count": 4,
+      "paper_ids": [
+        "2610.12404",
+        "2610.12431",
+        "2610.20409",
+        "2610.26810"
+      ]
+    },
+    {
+      "id": "vla-models-and-evaluation",
+      "name": "VLA 模型与主流验证方法",
+      "status": "existing",
+      "paper_count": 3,
+      "paper_ids": [
+        "2610.20442",
+        "2610.30051",
+        "2610.30108"
+      ]
+    },
+    {
+      "id": "vla-realtime-execution-data",
+      "name": "VLA 实时执行与动作分块数据",
+      "status": "existing",
+      "paper_count": 4,
+      "paper_ids": [
+        "2610.10453",
+        "2610.10528",
+        "2610.13740",
+        "2610.14997"
+      ]
+    },
+    {
+      "id": "world-model-planning-evaluation",
+      "name": "世界模型规划与决策评估",
+      "status": "existing",
+      "paper_count": 6,
+      "paper_ids": [
+        "2610.03664",
+        "2610.06805",
+        "2610.12407",
+        "2610.18826",
+        "2610.26844",
+        "2610.26845"
+      ]
+    },
+    {
+      "id": "world-model-training-data",
+      "name": "世界模型训练数据与物理表征",
+      "status": "existing",
+      "paper_count": 25,
+      "paper_ids": [
+        "2610.02054",
+        "2610.02160",
+        "2610.03516",
+        "2610.03587",
+        "2610.03632",
+        "2610.06651",
+        "2610.10400",
+        "2610.10515",
+        "2610.12349",
+        "2610.12412",
+        "2610.12417",
+        "2610.12464",
+        "2610.12468",
+        "2610.18697",
+        "2610.22311",
+        "2610.22340",
+        "2610.22363",
+        "2610.22364",
+        "2610.26811",
+        "2610.26855",
+        "2610.29915",
+        "2610.29989",
+        "2610.30120",
+        "2610.30125",
+        "2610.30129"
+      ]
+    }
+  ],
+  "papers": [
+    {
+      "id": "2610.02021",
+      "title": "Task-Adaptive Grounded 3D-Programmers Using 2D VLMs",
+      "published": "2026-10-01T16:43:17Z",
+      "arxiv_url": "https://arxiv.org/abs/2610.02021",
+      "source_json": "../spiders/arxiv/papers/2026-10-03.json",
+      "source_record_sha256": "b57d5e2d78b98d9f590e20d08356490f3d817ce74f1a506f2619c916c304796b",
+      "in_scope": true,
+      "topic": "3d-spatial-representation-data",
+      "knowledge_point": "统一米制坐标与任务反馈",
+      "scope_reason": "视觉输入与程序输出需要共享轴向和尺度，可补充三维数据坐标契约。",
+      "local_evidence_available": {
+        "fulltext": false,
+        "summary": false,
+        "verify": false,
+        "figure": true
+      },
+      "official_abstract_checked": false,
+      "official_html_sampled": false
+    },
+    {
+      "id": "2610.02054",
+      "title": "UniWAM: Unified World-Action Model",
+      "published": "2026-10-01T17:01:27Z",
+      "arxiv_url": "https://arxiv.org/abs/2610.02054",
+      "source_json": "../spiders/arxiv/papers/2026-10-03.json",
+      "source_record_sha256": "194ce721cf1b8969396170b5555a6568c602745b787d1ae7a35292643477bb48",
+      "in_scope": true,
+      "topic": "world-model-training-data",
+      "knowledge_point": "人机混合世界动作监督",
+      "scope_reason": "直接讨论人类第一视角和机器人数据清洗、标注与互补监督。",
+      "local_evidence_available": {
+        "fulltext": false,
+        "summary": false,
+        "verify": false,
+        "figure": true
+      },
+      "official_abstract_checked": false,
+      "official_html_sampled": false
+    },
+    {
+      "id": "2610.02089",
+      "title": "HumanoidToolBench: Benchmarking Humanoid Tool Use from Selection to Mobile Execution",
+      "published": "2026-10-01T17:21:54Z",
+      "arxiv_url": "https://arxiv.org/abs/2610.02089",
+      "source_json": "../spiders/arxiv/papers/2026-10-03.json",
+      "source_record_sha256": "6c38f21ac03491af9d6e7d906511d140439e4719540e48ca9acff5d2303a7184",
+      "in_scope": true,
+      "topic": "embodied-evaluation-data-quality",
+      "knowledge_point": "工具选择到移动执行的分层评测",
+      "scope_reason": "含仿真及真实人形机器人示教集和分层任务指标。",
+      "local_evidence_available": {
+        "fulltext": false,
+        "summary": false,
+        "verify": false,
+        "figure": true
+      },
+      "official_abstract_checked": false,
+      "official_html_sampled": false
+    },
+    {
+      "id": "2610.02120",
+      "title": "SkeleWAM: Skeleton World-Action Modeling for Efficient Robotic Manipulation",
+      "published": "2026-10-01T17:35:10Z",
+      "arxiv_url": "https://arxiv.org/abs/2610.02120",
+      "source_json": "../spiders/arxiv/papers/2026-10-03.json",
+      "source_record_sha256": "1c2e2a701f86a155051de306c23615e8b1c30b7768f7f39ad9f886d29c1afdd1",
+      "in_scope": true,
+      "topic": "3d-spatial-representation-data",
+      "knowledge_point": "机器人—物体稀疏三维骨架",
+      "scope_reason": "RGB-D与本体状态转成关节、物心、交互点，支持结构化状态字段和监督。",
+      "local_evidence_available": {
+        "fulltext": false,
+        "summary": false,
+        "verify": false,
+        "figure": true
+      },
+      "official_abstract_checked": false,
+      "official_html_sampled": false
+    },
+    {
+      "id": "2610.02160",
+      "title": "4Director: Controlling Video World Models with Rigid 3D Geometry",
+      "published": "2026-10-01T17:52:58Z",
+      "arxiv_url": "https://arxiv.org/abs/2610.02160",
+      "source_json": "../spiders/arxiv/papers/2026-10-03.json",
+      "source_record_sha256": "087485615e7222c6906f09286f1c63d298fd126ab54d110bac873541b222ee01",
+      "in_scope": true,
+      "topic": "world-model-training-data",
+      "knowledge_point": "刚体场景控制与视频标注",
+      "scope_reason": "虽面向视频生产，提供逐帧刚体变换、自动三维场景标注与身份/运动一致性评估；作为动作条件视频边界资料保留。",
+      "local_evidence_available": {
+        "fulltext": false,
+        "summary": false,
+        "verify": false,
+        "figure": true
+      },
+      "official_abstract_checked": false,
+      "official_html_sampled": false
+    },
+    {
+      "id": "2610.02161",
+      "title": "DuoMind: Enabling Distributed Multi-Robot Coordination with Semantic Communication",
+      "published": "2026-10-01T17:53:09Z",
+      "arxiv_url": "https://arxiv.org/abs/2610.02161",
+      "source_json": "../spiders/arxiv/papers/2026-10-03.json",
+      "source_record_sha256": "ea862d7c47df468d57a3f4becb8fa120effe6d07a01418f72494d873b8663e9a",
+      "in_scope": true,
+      "topic": "multi-robot-coordination-data",
+      "knowledge_point": "语义通信与分布式任务协调",
+      "scope_reason": "机器人本地观测、对等消息和联合闭环任务需要独立的团队轨迹契约。",
+      "local_evidence_available": {
+        "fulltext": false,
+        "summary": false,
+        "verify": false,
+        "figure": true
+      },
+      "official_abstract_checked": true,
+      "official_html_sampled": true
+    },
+    {
+      "id": "2610.02162",
+      "title": "World Observer: Joint Actor-Observer Generation for Persistent World Modeling",
+      "published": "2026-10-01T17:53:20Z",
+      "arxiv_url": "https://arxiv.org/abs/2610.02162",
+      "source_json": "../spiders/arxiv/papers/2026-10-03.json",
+      "source_record_sha256": "5688fce52fb4a388b98255f6fde03afe228a2b46970e1a0e95b8372f894ecd12",
+      "in_scope": true,
+      "topic": "embodied-memory-experience-data",
+      "knowledge_point": "视野外状态持续演化",
+      "scope_reason": "多观察者共享几何对应，可补充离开视野后的状态版本、恢复与评测。",
+      "local_evidence_available": {
+        "fulltext": false,
+        "summary": false,
+        "verify": false,
+        "figure": true
+      },
+      "official_abstract_checked": false,
+      "official_html_sampled": false
+    },
+    {
+      "id": "2610.02170",
+      "title": "Watch, Infer, Coordinate: Inferring Robot Partner Constraints for Zero-Shot Coordination",
+      "published": "2026-10-01T17:56:04Z",
+      "arxiv_url": "https://arxiv.org/abs/2610.02170",
+      "source_json": "../spiders/arxiv/papers/2026-10-03.json",
+      "source_record_sha256": "de04a18fafcb76ca0c456326e7ff86d2197471c949c9d0889d9779739ab5c0d8",
+      "in_scope": true,
+      "topic": "multi-robot-coordination-data",
+      "knowledge_point": "伙伴能力约束的联合行为推断",
+      "scope_reason": "实体耦合机器人示教需同时记录双方动作、能力约束与补偿行为。",
+      "local_evidence_available": {
+        "fulltext": false,
+        "summary": false,
+        "verify": false,
+        "figure": true
+      },
+      "official_abstract_checked": false,
+      "official_html_sampled": false
+    },
+    {
+      "id": "2610.02196",
+      "title": "InterEvolve: Test-Time Evolution of Reward Programs for Humanoid Loco-Manipulation",
+      "published": "2026-10-01T17:59:40Z",
+      "arxiv_url": "https://arxiv.org/abs/2610.02196",
+      "source_json": "../spiders/arxiv/papers/2026-10-03.json",
+      "source_record_sha256": "7a374cea0b03dc4727b5912be01b1584837bef6236b7845acff9c32e627f2916",
+      "in_scope": true,
+      "topic": "reward-value-feedback-data",
+      "knowledge_point": "可验证的分阶段奖励程序",
+      "scope_reason": "真实人形机器人任务将奖励结构、完成条件、候选验证和执行反馈结合。",
+      "local_evidence_available": {
+        "fulltext": false,
+        "summary": false,
+        "verify": false,
+        "figure": true
+      },
+      "official_abstract_checked": false,
+      "official_html_sampled": false
+    },
+    {
+      "id": "2610.02204",
+      "title": "Reconstruct, Practice, Go Real: Guided Self-Improvement for Embodied Agents",
+      "published": "2026-10-01T17:59:50Z",
+      "arxiv_url": "https://arxiv.org/abs/2610.02204",
+      "source_json": "../spiders/arxiv/papers/2026-10-03.json",
+      "source_record_sha256": "f614056ffe26cf76cb18aa3ce6e866fe85a087e5ba9b58a89d8ffeb06bbf1135",
+      "in_scope": true,
+      "topic": "closed-loop-correction-data",
+      "knowledge_point": "模拟练习中的失败诊断与技能改进",
+      "scope_reason": "从离线轨迹重建任务，使用执行反馈检验修订并迁移实机。",
+      "local_evidence_available": {
+        "fulltext": false,
+        "summary": false,
+        "verify": false,
+        "figure": true
+      },
+      "official_abstract_checked": false,
+      "official_html_sampled": false
+    },
+    {
+      "id": "2610.02205",
+      "title": "ROWBench: Do Video Models Render What the Program Specifies?",
+      "published": "2026-10-01T17:59:53Z",
+      "arxiv_url": "https://arxiv.org/abs/2610.02205",
+      "source_json": "../spiders/arxiv/papers/2026-10-03.json",
+      "source_record_sha256": "3f7532156d0443a30ec0681a70d62defe388655711956423088d9d874dc35057",
+      "in_scope": true,
+      "topic": "embodied-evaluation-data-quality",
+      "knowledge_point": "程序事件与生成视频的一致性评估",
+      "scope_reason": "包含可回放实体状态、时间戳事件和同步视图，可用于世界模型数据审计。",
+      "local_evidence_available": {
+        "fulltext": false,
+        "summary": false,
+        "verify": false,
+        "figure": true
+      },
+      "official_abstract_checked": false,
+      "official_html_sampled": false
+    },
+    {
+      "id": "2610.03498",
+      "title": "Detect and Suppress: A Mechanistic Defense against Adversarial Patches in VLA Models",
+      "published": "2026-10-02T15:57:04Z",
+      "arxiv_url": "https://arxiv.org/abs/2610.03498",
+      "source_json": "../spiders/arxiv/papers/2026-10-06.json",
+      "source_record_sha256": "45d59650da715875066deca45e3ac0cb956edb335d1187921141a418f31a4fe0",
+      "in_scope": true,
+      "topic": "robot-safety-robustness-data",
+      "knowledge_point": "间歇视觉攻击与条件干预评估",
+      "scope_reason": "机器人VLA在受污染观测下的闭环数据和正常/攻击分桶直接相关。",
+      "local_evidence_available": {
+        "fulltext": false,
+        "summary": false,
+        "verify": false,
+        "figure": true
+      },
+      "official_abstract_checked": false,
+      "official_html_sampled": false
+    },
+    {
+      "id": "2610.03516",
+      "title": "XGenAct: Geometry-Enhanced World Action Models through Cross-Task Generation",
+      "published": "2026-10-02T16:10:53Z",
+      "arxiv_url": "https://arxiv.org/abs/2610.03516",
+      "source_json": "../spiders/arxiv/papers/2026-10-06.json",
+      "source_record_sha256": "ecdddb6d61e796bf814e41f1691ff3cdbf94864998849e017c84822357feac53",
+      "in_scope": true,
+      "topic": "world-model-training-data",
+      "knowledge_point": "深度、法线和功能分割的联合监督",
+      "scope_reason": "以确定性编码统一多模态未来预测，涉及监督字段及跨任务切分。",
+      "local_evidence_available": {
+        "fulltext": false,
+        "summary": false,
+        "verify": false,
+        "figure": true
+      },
+      "official_abstract_checked": false,
+      "official_html_sampled": false
+    },
+    {
+      "id": "2610.03538",
+      "title": "RATE: Risk-Aware Tactile Encoding for Contact-rich Robotic Manipulation",
+      "published": "2026-10-02T16:20:35Z",
+      "arxiv_url": "https://arxiv.org/abs/2610.03538",
+      "source_json": "../spiders/arxiv/papers/2026-10-06.json",
+      "source_record_sha256": "c6f963ea4ee7e93d59450677f9d62bd93605071090b5761f11ea4a44606a06fc",
+      "in_scope": true,
+      "topic": "tactile-force-contact-data",
+      "knowledge_point": "带任务风险的触觉时序标注",
+      "scope_reason": "机器人接触历史与警报监督区分噪声、允许变化和危险接触。",
+      "local_evidence_available": {
+        "fulltext": false,
+        "summary": false,
+        "verify": false,
+        "figure": true
+      },
+      "official_abstract_checked": false,
+      "official_html_sampled": false
+    },
+    {
+      "id": "2610.03587",
+      "title": "AVL-JEPA: Preventing Causal Dynamics Information Collapse In Joint Embedding Predictive Architecture World Models",
+      "published": "2026-10-02T16:56:15Z",
+      "arxiv_url": "https://arxiv.org/abs/2610.03587",
+      "source_json": "../spiders/arxiv/papers/2026-10-06.json",
+      "source_record_sha256": "fbd3455b01708f0c47d0e6543f592cae07b5ea0e3748df784a597f6a5c32d822",
+      "in_scope": true,
+      "topic": "world-model-training-data",
+      "knowledge_point": "动作因果信息与视觉扰动对照",
+      "scope_reason": "机器人世界模型需保留真实动作后果，提供可检验的干净/扰动配对。",
+      "local_evidence_available": {
+        "fulltext": false,
+        "summary": false,
+        "verify": false,
+        "figure": true
+      },
+      "official_abstract_checked": false,
+      "official_html_sampled": false
+    },
+    {
+      "id": "2610.03599",
+      "title": "ManifoldSplat: Language-Guided Semantic Shape Editing of 3D Gaussian Head Avatars",
+      "published": "2026-10-02T17:04:22Z",
+      "arxiv_url": "https://arxiv.org/abs/2610.03599",
+      "source_json": "../spiders/arxiv/papers/2026-10-06.json",
+      "source_record_sha256": "129cdf64a06cba457bbb8d798c0182d58e7f556dc1845dc5c4306ae805f3c810",
+      "in_scope": false,
+      "topic": null,
+      "knowledge_point": "头部数字人几何编辑",
+      "scope_reason": "仅讨论语言驱动头部头像编辑、身份和动画保持，摘要未提供机器人交互、具身状态采集或物理任务评估。",
+      "local_evidence_available": {
+        "fulltext": false,
+        "summary": false,
+        "verify": false,
+        "figure": true
+      },
+      "official_abstract_checked": false,
+      "official_html_sampled": false
+    },
+    {
+      "id": "2610.03607",
+      "title": "World Action Learning via Interaction-Centric Spectral Latent Guidance",
+      "published": "2026-10-02T17:08:12Z",
+      "arxiv_url": "https://arxiv.org/abs/2610.03607",
+      "source_json": "../spiders/arxiv/papers/2026-10-06.json",
+      "source_record_sha256": "3acde17abe71fa34c7e0560ddb5d571ee4658636e58af519adcb221d26f8ad1e",
+      "in_scope": true,
+      "topic": "latent-action-cross-embodiment",
+      "knowledge_point": "去除自运动的人类视频潜在动作",
+      "scope_reason": "明确分离相机运动与手物交互，并对齐人机不同时间尺度。",
+      "local_evidence_available": {
+        "fulltext": false,
+        "summary": false,
+        "verify": false,
+        "figure": true
+      },
+      "official_abstract_checked": false,
+      "official_html_sampled": false
+    },
+    {
+      "id": "2610.03615",
+      "title": "Bridging Frontier Reasoning and Robot Execution: From Autonomous Demonstration Generation to Dense Language Supervision",
+      "published": "2026-10-02T17:12:29Z",
+      "arxiv_url": "https://arxiv.org/abs/2610.03615",
+      "source_json": "../spiders/arxiv/papers/2026-10-06.json",
+      "source_record_sha256": "50a83667868e590c2c0731b810d0d203151da4560a88468a987b1450e86538b1",
+      "in_scope": true,
+      "topic": "language-action-grounding-data",
+      "knowledge_point": "原语、原子与组合动作的稠密语言监督",
+      "scope_reason": "机器人演示自动生成及多粒度语言标注，直接补充动作阶段对齐。",
+      "local_evidence_available": {
+        "fulltext": false,
+        "summary": false,
+        "verify": false,
+        "figure": true
+      },
+      "official_abstract_checked": false,
+      "official_html_sampled": false
+    },
+    {
+      "id": "2610.03620",
+      "title": "UniIntervene++: An Adaptive Intervention Agent for Efficient Real-World Reinforcement Learning",
+      "published": "2026-10-02T17:18:12Z",
+      "arxiv_url": "https://arxiv.org/abs/2610.03620",
+      "source_json": "../spiders/arxiv/papers/2026-10-06.json",
+      "source_record_sha256": "c90e3a4b2dfbdac4a8f0252440b73b425832f5cbd4e16f294e678d6b44778a11",
+      "in_scope": true,
+      "topic": "human-gated-dagger-correction-data",
+      "knowledge_point": "随策略能力调整的控制接管",
+      "scope_reason": "真实机器人在线学习需记录自主/辅助模式、接管及归还时机。",
+      "local_evidence_available": {
+        "fulltext": false,
+        "summary": false,
+        "verify": false,
+        "figure": true
+      },
+      "official_abstract_checked": false,
+      "official_html_sampled": false
+    },
+    {
+      "id": "2610.03632",
+      "title": "World Embedding Benchmark",
+      "published": "2026-10-02T17:24:25Z",
+      "arxiv_url": "https://arxiv.org/abs/2610.03632",
+      "source_json": "../spiders/arxiv/papers/2026-10-06.json",
+      "source_record_sha256": "dfef162ba931958db9de96382b75a1a1c11f81be550cfded485d9153f74dc4ea",
+      "in_scope": true,
+      "topic": "world-model-training-data",
+      "knowledge_point": "物理属性标注与表征可恢复性",
+      "scope_reason": "物理仿真视频配定量标签，适用于世界模型物理状态表征质量控制。",
+      "local_evidence_available": {
+        "fulltext": false,
+        "summary": false,
+        "verify": false,
+        "figure": true
+      },
+      "official_abstract_checked": false,
+      "official_html_sampled": false
+    },
+    {
+      "id": "2610.03662",
+      "title": "Forecasting from Counterfactual Simulator Rollouts: A Sim2Real Evaluation",
+      "published": "2026-10-02T17:37:14Z",
+      "arxiv_url": "https://arxiv.org/abs/2610.03662",
+      "source_json": "../spiders/arxiv/papers/2026-10-06.json",
+      "source_record_sha256": "b8f7034cb64d9dec480a7959f04ea6a31c16ce44bb4fdc11d0841a08bd1bff01",
+      "in_scope": false,
+      "topic": null,
+      "knowledge_point": "库存策略的反事实预测",
+      "scope_reason": "实证对象为库存控制部署和需求预测，没有机器人、传感器或实体动作轨迹；sim2real词汇不构成具身数据关联。",
+      "local_evidence_available": {
+        "fulltext": false,
+        "summary": false,
+        "verify": false,
+        "figure": true
+      },
+      "official_abstract_checked": false,
+      "official_html_sampled": false
+    },
+    {
+      "id": "2610.03664",
+      "title": "ProAR: Learning Prospective Reasoning with Autoregressive Video Models",
+      "published": "2026-10-02T17:37:47Z",
+      "arxiv_url": "https://arxiv.org/abs/2610.03664",
+      "source_json": "../spiders/arxiv/papers/2026-10-06.json",
+      "source_record_sha256": "f793078b3e9bd575065d4507b3a6ea61145970e2f8ceda33ab53afd2a8e7bee0",
+      "in_scope": true,
+      "topic": "world-model-planning-evaluation",
+      "knowledge_point": "目标帧与中间状态的前瞻监督",
+      "scope_reason": "包含具身推理应用，作为视觉规划中的目标/过程监督边界研究保留。",
+      "local_evidence_available": {
+        "fulltext": false,
+        "summary": false,
+        "verify": false,
+        "figure": true
+      },
+      "official_abstract_checked": false,
+      "official_html_sampled": false
+    },
+    {
+      "id": "2610.03710",
+      "title": "EyeRobot 2.0: Active Gaze for Precise Manipulation without Wrist Cameras",
+      "published": "2026-10-02T17:57:51Z",
+      "arxiv_url": "https://arxiv.org/abs/2610.03710",
+      "source_json": "../spiders/arxiv/papers/2026-10-06.json",
+      "source_record_sha256": "a864bb47280a96cfb157b0177cfc3e01b472d88347bb08e3f505101e1f846edd",
+      "in_scope": true,
+      "topic": "active-perception-data",
+      "knowledge_point": "主动注视和相对注视坐标",
+      "scope_reason": "真实双臂任务中记录视线目标、视觉证据、相机配置及注视相对动作。",
+      "local_evidence_available": {
+        "fulltext": false,
+        "summary": false,
+        "verify": false,
+        "figure": false
+      },
+      "official_abstract_checked": false,
+      "official_html_sampled": false
+    },
+    {
+      "id": "2610.03713",
+      "title": "What Should World Models Forget? Stratified Retention for Continual Adaptation",
+      "published": "2026-10-02T17:58:14Z",
+      "arxiv_url": "https://arxiv.org/abs/2610.03713",
+      "source_json": "../spiders/arxiv/papers/2026-10-06.json",
+      "source_record_sha256": "e019e04c784b896f21649591240c69af376d1a6adddc2b041653d7ba86fbfa89",
+      "in_scope": true,
+      "topic": "continual-robot-learning-data",
+      "knowledge_point": "不变量与过期实例事实的差异保留",
+      "scope_reason": "世界状态随环境变化，数据和评测需区分物理不变量、实例修订及修订延迟。",
+      "local_evidence_available": {
+        "fulltext": false,
+        "summary": false,
+        "verify": false,
+        "figure": true
+      },
+      "official_abstract_checked": false,
+      "official_html_sampled": false
+    },
+    {
+      "id": "2610.03717",
+      "title": "Less Decoder is More Encoder: Geometric Representation Learning from Novel View Synthesis",
+      "published": "2026-10-02T17:59:14Z",
+      "arxiv_url": "https://arxiv.org/abs/2610.03717",
+      "source_json": "../spiders/arxiv/papers/2026-10-06.json",
+      "source_record_sha256": "f7a469f2dd05d4cfeb9d4096c4758b6f054da2e436e4041badde3f648fd364ef",
+      "in_scope": true,
+      "topic": "3d-spatial-representation-data",
+      "knowledge_point": "位姿条件多视角几何监督",
+      "scope_reason": "含机器人操作、定位、深度和对应点评估，与几何数据可迁移性直接相关。",
+      "local_evidence_available": {
+        "fulltext": false,
+        "summary": false,
+        "verify": false,
+        "figure": true
+      },
+      "official_abstract_checked": false,
+      "official_html_sampled": false
+    },
+    {
+      "id": "2610.06643",
+      "title": "AffordCraft: Scalable Construction of Task-Ready Simulation Assets from Single Images",
+      "published": "2026-10-05T16:26:48Z",
+      "arxiv_url": "https://arxiv.org/abs/2610.06643",
+      "source_json": "../spiders/arxiv/papers/2026-10-07.json",
+      "source_record_sha256": "c653ad09f7f5e8131a89ae1c366e60bc0cb0ccff08d721f54e9d37d5f58f71e2",
+      "in_scope": true,
+      "topic": "synthetic-data-sim-to-real",
+      "knowledge_point": "任务可用关节资产的检索与验证",
+      "scope_reason": "由单图构建带部件/关节/物理性质的仿真资产并检查真实任务可用性。",
+      "local_evidence_available": {
+        "fulltext": false,
+        "summary": true,
+        "verify": true,
+        "figure": true
+      },
+      "official_abstract_checked": false,
+      "official_html_sampled": false
+    },
+    {
+      "id": "2610.06651",
+      "title": "Considering Context: When World Models Need Context Encoders",
+      "published": "2026-10-05T16:32:15Z",
+      "arxiv_url": "https://arxiv.org/abs/2610.06651",
+      "source_json": "../spiders/arxiv/papers/2026-10-07.json",
+      "source_record_sha256": "51b69394340d9d9f2601574ceb0583e0f426a0b7c37cae266880d4dd8206bbc7",
+      "in_scope": true,
+      "topic": "world-model-training-data",
+      "knowledge_point": "历史与环境上下文的预测充分性",
+      "scope_reason": "控制环境中衡量历史可恢复物理条件与真实上下文增益，可约束状态采集和信息泄漏。",
+      "local_evidence_available": {
+        "fulltext": false,
+        "summary": true,
+        "verify": true,
+        "figure": true
+      },
+      "official_abstract_checked": false,
+      "official_html_sampled": false
+    },
+    {
+      "id": "2610.06658",
+      "title": "Talk Like You: Imitating How You Speak in Real-Time Talking Head Generation",
+      "published": "2026-10-05T16:35:12Z",
+      "arxiv_url": "https://arxiv.org/abs/2610.06658",
+      "source_json": "../spiders/arxiv/papers/2026-10-07.json",
+      "source_record_sha256": "676282c0e322d477b25355b817d66902a1408a06e999ac3819cb892d97379464",
+      "in_scope": false,
+      "topic": null,
+      "knowledge_point": "个性化说话头像生成",
+      "scope_reason": "研究唇形和说话习惯模仿，未提供机器人动作、物理交互或具身数据使用证据。",
+      "local_evidence_available": {
+        "fulltext": true,
+        "summary": true,
+        "verify": true,
+        "figure": true
+      },
+      "official_abstract_checked": false,
+      "official_html_sampled": false
+    },
+    {
+      "id": "2610.06805",
+      "title": "H-JEPA: End-to-End Learning of Hierarchical World Models for Visual Planning",
+      "published": "2026-10-05T17:53:34Z",
+      "arxiv_url": "https://arxiv.org/abs/2610.06805",
+      "source_json": "../spiders/arxiv/papers/2026-10-07.json",
+      "source_record_sha256": "4730c178f902e493a07ed644ee8b4117e90f357f43442013272d7cf360615fd2",
+      "in_scope": true,
+      "topic": "world-model-planning-evaluation",
+      "knowledge_point": "分层时间尺度的潜在规划数据",
+      "scope_reason": "含导航、操作及DROID数据的层级目标监督和离线规划评估。",
+      "local_evidence_available": {
+        "fulltext": false,
+        "summary": true,
+        "verify": true,
+        "figure": true
+      },
+      "official_abstract_checked": false,
+      "official_html_sampled": false
+    },
+    {
+      "id": "2610.06809",
+      "title": "Block Disentanglement in CRL: Bridging Identifiability and Visual State Estimation",
+      "published": "2026-10-05T17:54:25Z",
+      "arxiv_url": "https://arxiv.org/abs/2610.06809",
+      "source_json": "../spiders/arxiv/papers/2026-10-07.json",
+      "source_record_sha256": "8b6c049dfdf353016ec95613da63bbc7a90aea01259f591230dfc0114b5fe389",
+      "in_scope": true,
+      "topic": "3d-spatial-representation-data",
+      "knowledge_point": "无标签视觉状态与因果干预",
+      "scope_reason": "明确用于机器人物理变量恢复，需保留干预方式和可辨识假设。",
+      "local_evidence_available": {
+        "fulltext": false,
+        "summary": true,
+        "verify": true,
+        "figure": true
+      },
+      "official_abstract_checked": false,
+      "official_html_sampled": false
+    },
+    {
+      "id": "2610.06814",
+      "title": "TAPDreamer: Transferable Adversarial Patches for World Action Models",
+      "published": "2026-10-05T17:55:21Z",
+      "arxiv_url": "https://arxiv.org/abs/2610.06814",
+      "source_json": "../spiders/arxiv/papers/2026-10-07.json",
+      "source_record_sha256": "4be12884b51cd05c80c6cbd429e3c1a99204ef3bd3314e62f5f533d783b61f68",
+      "in_scope": true,
+      "topic": "robot-safety-robustness-data",
+      "knowledge_point": "跨任务视觉补丁压力测试",
+      "scope_reason": "机器人世界动作模型的固定污染输入与闭环失败，适合鲁棒性数据分桶。",
+      "local_evidence_available": {
+        "fulltext": false,
+        "summary": true,
+        "verify": true,
+        "figure": true
+      },
+      "official_abstract_checked": false,
+      "official_html_sampled": false
+    },
+    {
+      "id": "2610.06843",
+      "title": "Recursive Video In-Context Learning for Agentic Robot",
+      "published": "2026-10-05T17:59:11Z",
+      "arxiv_url": "https://arxiv.org/abs/2610.06843",
+      "source_json": "../spiders/arxiv/papers/2026-10-07.json",
+      "source_record_sha256": "ad17fe6889c989386127a129adbe86f191ad5ccac669540620e96575865ea3fa",
+      "in_scope": true,
+      "topic": "embodied-memory-experience-data",
+      "knowledge_point": "按事件层级检索示教视频",
+      "scope_reason": "抓取/释放事件形成阶段、时刻、短片检索层级，避免丢失接触证据。",
+      "local_evidence_available": {
+        "fulltext": false,
+        "summary": true,
+        "verify": true,
+        "figure": true
+      },
+      "official_abstract_checked": false,
+      "official_html_sampled": false
+    },
+    {
+      "id": "2610.06850",
+      "title": "InterMimicGen: Scaling Humanoid Loco-Manipulation through Self-Evolving Motion Imitation",
+      "published": "2026-10-05T17:59:50Z",
+      "arxiv_url": "https://arxiv.org/abs/2610.06850",
+      "source_json": "../spiders/arxiv/papers/2026-10-07.json",
+      "source_record_sha256": "87144ddf7371dbc4ef896c233ec972fb7d3137d96491acd9a0a5bdde4b7d7649",
+      "in_scope": true,
+      "topic": "demonstration-collection-retargeting",
+      "knowledge_point": "保留接触的人体动作重定向与扩增",
+      "scope_reason": "人—物动捕统一、转成机器人参考并以模拟执行筛选变体。",
+      "local_evidence_available": {
+        "fulltext": false,
+        "summary": true,
+        "verify": true,
+        "figure": true
+      },
+      "official_abstract_checked": false,
+      "official_html_sampled": false
+    },
+    {
+      "id": "2610.10370",
+      "title": "PalmSpace: Towards a Versatile On-Palm Interaction Space through Unified Touch Modeling",
+      "published": "2026-10-07T16:37:01Z",
+      "arxiv_url": "https://arxiv.org/abs/2610.10370",
+      "source_json": "../spiders/arxiv/papers/2026-10-09.json",
+      "source_record_sha256": "91e94a922d77480568c89e6bbb1b36ee0033ef81a8d099286acbaefbb0c38626",
+      "in_scope": true,
+      "topic": "tactile-force-contact-data",
+      "knowledge_point": "手掌触摸事件、模式和位置采集",
+      "scope_reason": "真实身体交互传感研究，具有参与者外推和空间误差标注；保留为触觉采集边界，不能当作机器人策略验证。",
+      "local_evidence_available": {
+        "fulltext": true,
+        "summary": true,
+        "verify": true,
+        "figure": false
+      },
+      "official_abstract_checked": false,
+      "official_html_sampled": false
+    },
+    {
+      "id": "2610.10384",
+      "title": "OpenViTac: Learning and Benchmarking Visuo-Tactile Policies in a Unified Sim-and-Real Framework",
+      "published": "2026-10-07T16:43:29Z",
+      "arxiv_url": "https://arxiv.org/abs/2610.10384",
+      "source_json": "../spiders/arxiv/papers/2026-10-09.json",
+      "source_record_sha256": "955f9cae506fbcb6baf65fc16afb3f250b451d0468d04f21a39d2a69b5b75f7b",
+      "in_scope": true,
+      "topic": "tactile-force-contact-data",
+      "knowledge_point": "成对仿真—真实视触觉基准",
+      "scope_reason": "统一接触能力维度、触觉表征与跨域训练对照。",
+      "local_evidence_available": {
+        "fulltext": false,
+        "summary": true,
+        "verify": true,
+        "figure": true
+      },
+      "official_abstract_checked": false,
+      "official_html_sampled": false
+    },
+    {
+      "id": "2610.10388",
+      "title": "RoboQuest: Generalist Physical Agents that Search, Inspect and Test",
+      "published": "2026-10-07T16:46:45Z",
+      "arxiv_url": "https://arxiv.org/abs/2610.10388",
+      "source_json": "../spiders/arxiv/papers/2026-10-09.json",
+      "source_record_sha256": "3a39c883f4feb02b6742448b810d69e141bb797999a0fc1ac53b6755b14a849e",
+      "in_scope": true,
+      "topic": "active-perception-data",
+      "knowledge_point": "搜索、检查和试验的证据获取",
+      "scope_reason": "实体操作任务要求主动获取隐藏信息并评估探索不足与扰动恢复。",
+      "local_evidence_available": {
+        "fulltext": false,
+        "summary": true,
+        "verify": true,
+        "figure": true
+      },
+      "official_abstract_checked": false,
+      "official_html_sampled": false
+    },
+    {
+      "id": "2610.10390",
+      "title": "Explicit Geometric Chain-of-Thought for Vision-Language-Action in Autonomous Driving",
+      "published": "2026-10-07T16:47:17Z",
+      "arxiv_url": "https://arxiv.org/abs/2610.10390",
+      "source_json": "../spiders/arxiv/papers/2026-10-09.json",
+      "source_record_sha256": "b5e3bba045bebd5f4a192d5e7592970e2e58b085c238c1c4f857201eaae5d945",
+      "in_scope": true,
+      "topic": "domain-specific-embodied-data",
+      "knowledge_point": "自动驾驶决策区域与局部三维监督",
+      "scope_reason": "实际具身领域中的规划相关区域标注和几何线索，保留驾驶数据使用边界。",
+      "local_evidence_available": {
+        "fulltext": false,
+        "summary": true,
+        "verify": true,
+        "figure": true
+      },
+      "official_abstract_checked": false,
+      "official_html_sampled": false
+    },
+    {
+      "id": "2610.10400",
+      "title": "Self-correction Optimization for Interleaved Multimodal Generation",
+      "published": "2026-10-07T16:51:02Z",
+      "arxiv_url": "https://arxiv.org/abs/2610.10400",
+      "source_json": "../spiders/arxiv/papers/2026-10-09.json",
+      "source_record_sha256": "428ea8b1a050841a7b81b44450c7c91831f23e9829134a82fea5b12adce012a2",
+      "in_scope": true,
+      "topic": "world-model-training-data",
+      "knowledge_point": "交错生成中的事件与状态一致性",
+      "scope_reason": "摘要明确扩展到机器人操作和长程手工过程，作为物理视频一致性辅助证据保留。",
+      "local_evidence_available": {
+        "fulltext": false,
+        "summary": true,
+        "verify": true,
+        "figure": true
+      },
+      "official_abstract_checked": false,
+      "official_html_sampled": false
+    },
+    {
+      "id": "2610.10409",
+      "title": "RobotWorld: Benchmarking Multimodal Agents for Robot Use Across Diverse Tasks and Embodiments",
+      "published": "2026-10-07T16:55:24Z",
+      "arxiv_url": "https://arxiv.org/abs/2610.10409",
+      "source_json": "../spiders/arxiv/papers/2026-10-09.json",
+      "source_record_sha256": "438b608fc749fafa3d311f3980b34914e79eb800be10f28afd1808d19d425446",
+      "in_scope": true,
+      "topic": "embodied-evaluation-data-quality",
+      "knowledge_point": "跨本体任务、交互预算与执行轨迹",
+      "scope_reason": "84类机器人仿真任务具有可执行成功检查，可分析感知/控制/恢复错误。",
+      "local_evidence_available": {
+        "fulltext": false,
+        "summary": true,
+        "verify": true,
+        "figure": true
+      },
+      "official_abstract_checked": false,
+      "official_html_sampled": false
+    },
+    {
+      "id": "2610.10437",
+      "title": "Q-Learning with Scalar Adjoint Matching",
+      "published": "2026-10-07T17:13:35Z",
+      "arxiv_url": "https://arxiv.org/abs/2610.10437",
+      "source_json": "../spiders/arxiv/papers/2026-10-09.json",
+      "source_record_sha256": "8f53adfcbe35f22a2a31750df3d8b4e194567ee67efc92f31c6c672365f4a089",
+      "in_scope": true,
+      "topic": "reward-value-feedback-data",
+      "knowledge_point": "离线轨迹的价值估计与真实策略改进",
+      "scope_reason": "包含真实双臂机器人后训练，涉及示教与价值监督的分布差异。",
+      "local_evidence_available": {
+        "fulltext": false,
+        "summary": true,
+        "verify": true,
+        "figure": true
+      },
+      "official_abstract_checked": false,
+      "official_html_sampled": false
+    },
+    {
+      "id": "2610.10438",
+      "title": "ECHO: Embodied Camera Observations of Human Object Carrying",
+      "published": "2026-10-07T17:15:27Z",
+      "arxiv_url": "https://arxiv.org/abs/2610.10438",
+      "source_json": "../spiders/arxiv/papers/2026-10-09.json",
+      "source_record_sha256": "b24430aa095a386bbd5a34b2fef58e3bbae46f91a82c06981e3f903f446e6a56",
+      "in_scope": true,
+      "topic": "human-object-interaction-reconstruction",
+      "knowledge_point": "搬运活动与场景目的地标注",
+      "scope_reason": "同步RGB-D、人体/物体/相机轨迹、自然语言与场景标签构成可审计交互数据集。",
+      "local_evidence_available": {
+        "fulltext": false,
+        "summary": true,
+        "verify": true,
+        "figure": true
+      },
+      "official_abstract_checked": false,
+      "official_html_sampled": false
+    },
+    {
+      "id": "2610.10453",
+      "title": "RFPO: Rectified Flow Policy Optimization for Embodied Control",
+      "published": "2026-10-07T17:24:46Z",
+      "arxiv_url": "https://arxiv.org/abs/2610.10453",
+      "source_json": "../spiders/arxiv/papers/2026-10-09.json",
+      "source_record_sha256": "7a9dc6c25dab80a54d30b196ce932804207a94e57aba2af6050926f48439725d",
+      "in_scope": true,
+      "topic": "vla-realtime-execution-data",
+      "knowledge_point": "数值积分预算与实机动作延迟",
+      "scope_reason": "足式控制的一步执行需保留积分预算、机载耗时和物理回报对照。",
+      "local_evidence_available": {
+        "fulltext": false,
+        "summary": true,
+        "verify": true,
+        "figure": true
+      },
+      "official_abstract_checked": false,
+      "official_html_sampled": false
+    },
+    {
+      "id": "2610.10479",
+      "title": "Agentic RSR: Real-to-Sim-to-Real through Scene Reconstruction and Execution-Grounded Robot Policies",
+      "published": "2026-10-07T17:37:20Z",
+      "arxiv_url": "https://arxiv.org/abs/2610.10479",
+      "source_json": "../spiders/arxiv/papers/2026-10-09.json",
+      "source_record_sha256": "19789cda8404fd85049408f4c657fed6d1caf2ccac7f9a28912995e085d97ec4",
+      "in_scope": true,
+      "topic": "synthetic-data-sim-to-real",
+      "knowledge_point": "场景重建到真实执行的任务对齐",
+      "scope_reason": "工作区视频、米制重建、模拟交互检验及真实机器人任务贯通。",
+      "local_evidence_available": {
+        "fulltext": false,
+        "summary": true,
+        "verify": true,
+        "figure": true
+      },
+      "official_abstract_checked": false,
+      "official_html_sampled": false
+    },
+    {
+      "id": "2610.10489",
+      "title": "HuMBLE: Human Motion-Driven Behavior Learning for Embodied Locomotion",
+      "published": "2026-10-07T17:45:17Z",
+      "arxiv_url": "https://arxiv.org/abs/2610.10489",
+      "source_json": "../spiders/arxiv/papers/2026-10-09.json",
+      "source_record_sha256": "c8bda294cf786c245c2f7f2742f222368e45b1d02e59827581c9e10cafd3e690",
+      "in_scope": true,
+      "topic": "humanoid-locomotion-data",
+      "knowledge_point": "人类步态先验与命令覆盖",
+      "scope_reason": "采集不同速度方向的人体动作，兼顾风格、控制指令和实机泛化。",
+      "local_evidence_available": {
+        "fulltext": false,
+        "summary": true,
+        "verify": true,
+        "figure": true
+      },
+      "official_abstract_checked": false,
+      "official_html_sampled": false
+    },
+    {
+      "id": "2610.10498",
+      "title": "EmbodiedRSI: Active Continual Robot Learning Through Hypothesis-Guided Co-Evolution",
+      "published": "2026-10-07T17:48:02Z",
+      "arxiv_url": "https://arxiv.org/abs/2610.10498",
+      "source_json": "../spiders/arxiv/papers/2026-10-09.json",
+      "source_record_sha256": "d3a1553de3b624395e4247ebfad34ee097ec1682cbab0fcba5faa9338e9e66dc",
+      "in_scope": true,
+      "topic": "model-conditioned-data-engine",
+      "knowledge_point": "假设驱动的主动实验与数据回流",
+      "scope_reason": "依据不确定假设选择物理实验，记录实验结果、代码/技能修订和后续收益。",
+      "local_evidence_available": {
+        "fulltext": false,
+        "summary": true,
+        "verify": true,
+        "figure": true
+      },
+      "official_abstract_checked": false,
+      "official_html_sampled": false
+    },
+    {
+      "id": "2610.10510",
+      "title": "Factorized Tactile Representation and Control for Sim-to-Real Manipulation",
+      "published": "2026-10-07T17:51:52Z",
+      "arxiv_url": "https://arxiv.org/abs/2610.10510",
+      "source_json": "../spiders/arxiv/papers/2026-10-09.json",
+      "source_record_sha256": "fafe071ea4861d54d51613b1b84e84a983c125a75664b1aea3880156c96c52ab",
+      "in_scope": true,
+      "topic": "tactile-force-contact-data",
+      "knowledge_point": "接触几何、力分布和变化的解耦",
+      "scope_reason": "模拟触觉与设备响应独立记录、空间对齐及力误差评估直接相关。",
+      "local_evidence_available": {
+        "fulltext": false,
+        "summary": true,
+        "verify": true,
+        "figure": true
+      },
+      "official_abstract_checked": false,
+      "official_html_sampled": false
+    },
+    {
+      "id": "2610.10515",
+      "title": "RoboJEPA: Scaling Robotic Latent World Models",
+      "published": "2026-10-07T17:54:42Z",
+      "arxiv_url": "https://arxiv.org/abs/2610.10515",
+      "source_json": "../spiders/arxiv/papers/2026-10-09.json",
+      "source_record_sha256": "05ea7dcde003b74a847a0934c156df1a40919fd5059abbc5936e91da5cfa963f",
+      "in_scope": true,
+      "topic": "world-model-training-data",
+      "knowledge_point": "多本体规模化预测与规划代理指标",
+      "scope_reason": "12本体数据上的想象误差、算力及实机规划效用需要统一数据口径。",
+      "local_evidence_available": {
+        "fulltext": false,
+        "summary": true,
+        "verify": true,
+        "figure": true
+      },
+      "official_abstract_checked": false,
+      "official_html_sampled": false
+    },
+    {
+      "id": "2610.10526",
+      "title": "Rephrase Before You Act: Characterizing and Mitigating Language Sensitivity in Vision-Language-Action Models",
+      "published": "2026-10-07T17:57:38Z",
+      "arxiv_url": "https://arxiv.org/abs/2610.10526",
+      "source_json": "../spiders/arxiv/papers/2026-10-09.json",
+      "source_record_sha256": "5fac650d9c6f0f627d901159d69fa7ba9e13e0613ffc1f2c03de647d645d8eba",
+      "in_scope": true,
+      "topic": "language-action-grounding-data",
+      "knowledge_point": "指令改写敏感性与语义等价组",
+      "scope_reason": "一句话的单词改变影响机器人成功率，需配对指令、任务隔离和改写证据。",
+      "local_evidence_available": {
+        "fulltext": false,
+        "summary": true,
+        "verify": true,
+        "figure": true
+      },
+      "official_abstract_checked": false,
+      "official_html_sampled": false
+    },
+    {
+      "id": "2610.10528",
+      "title": "Long-WAM: Scaling the Context of World-Action Models",
+      "published": "2026-10-07T17:58:04Z",
+      "arxiv_url": "https://arxiv.org/abs/2610.10528",
+      "source_json": "../spiders/arxiv/papers/2026-10-09.json",
+      "source_record_sha256": "1cc5e688dab9d43536953c7edca5cc2d6a354703e795f8dac482543c892f9c0c",
+      "in_scope": true,
+      "topic": "vla-realtime-execution-data",
+      "knowledge_point": "长历史输入与异步动作时延",
+      "scope_reason": "世界动作控制的历史秒数、流式编码和动作块时间需联合记录。",
+      "local_evidence_available": {
+        "fulltext": false,
+        "summary": true,
+        "verify": true,
+        "figure": true
+      },
+      "official_abstract_checked": false,
+      "official_html_sampled": false
+    },
+    {
+      "id": "2610.10534",
+      "title": "RoboPrompt: Intuitive Robot Policy Steering with Sparse Human Input",
+      "published": "2026-10-07T17:58:53Z",
+      "arxiv_url": "https://arxiv.org/abs/2610.10534",
+      "source_json": "../spiders/arxiv/papers/2026-10-09.json",
+      "source_record_sha256": "c150b2695b12d7ef5c7bfbe5a52ae2b39b88e5c1554d588d7f649d6faf2498b6",
+      "in_scope": true,
+      "topic": "human-gated-dagger-correction-data",
+      "knowledge_point": "稀疏人工输入转动作草案与DAgger",
+      "scope_reason": "轨迹线、点和方向纠正与后续机器人执行、干预次数直接形成学习数据。",
+      "local_evidence_available": {
+        "fulltext": false,
+        "summary": true,
+        "verify": true,
+        "figure": true
+      },
+      "official_abstract_checked": false,
+      "official_html_sampled": false
+    },
+    {
+      "id": "2610.10538",
+      "title": "Never Look Back: Understanding Persistence in 3D Object Memory from Egocentric Videos",
+      "published": "2026-10-07T17:59:41Z",
+      "arxiv_url": "https://arxiv.org/abs/2610.10538",
+      "source_json": "../spiders/arxiv/papers/2026-10-09.json",
+      "source_record_sha256": "94b40bdd172dfd42618efec819f4a5ac2abc3e15252d27b916fdb8f1b3c5389c",
+      "in_scope": true,
+      "topic": "embodied-memory-experience-data",
+      "knowledge_point": "持久三维物体位置与历史",
+      "scope_reason": "第一视角视频中跨观察关联、移动证据累计和无原视频检索。",
+      "local_evidence_available": {
+        "fulltext": false,
+        "summary": true,
+        "verify": true,
+        "figure": true
+      },
+      "official_abstract_checked": false,
+      "official_html_sampled": false
+    },
+    {
+      "id": "2610.12333",
+      "title": "RiCo: Neural Simulation of Rigid-Body Interactions via Local Contact Reasoning",
+      "published": "2026-10-08T17:11:54Z",
+      "arxiv_url": "https://arxiv.org/abs/2610.12333",
+      "source_json": "../spiders/arxiv/papers/2026-10-10.json",
+      "source_record_sha256": "c7afc4325a70ad6903de124a4950475685e1ee3a1fefb9abb6114640a08e5a77",
+      "in_scope": true,
+      "topic": "tactile-force-contact-data",
+      "knowledge_point": "局部接触几何与刚体相互作用",
+      "scope_reason": "使用接触表面点、相对运动和材质，含真实碰撞，支持接触/穿透质控。",
+      "local_evidence_available": {
+        "fulltext": false,
+        "summary": true,
+        "verify": true,
+        "figure": false
+      },
+      "official_abstract_checked": false,
+      "official_html_sampled": false
+    },
+    {
+      "id": "2610.12349",
+      "title": "SplitJEPA: Learning Invariant and Variant Latent Worlds without Reconstruction",
+      "published": "2026-10-08T17:19:10Z",
+      "arxiv_url": "https://arxiv.org/abs/2610.12349",
+      "source_json": "../spiders/arxiv/papers/2026-10-10.json",
+      "source_record_sha256": "91c7d188397c85049d159d61343e67b4ef7a1d3510d6d5581faa72cf4fec9c57",
+      "in_scope": true,
+      "topic": "world-model-training-data",
+      "knowledge_point": "不变与可变潜在因子的配对监督",
+      "scope_reason": "机器人操作中分离相机光照变化和真实状态变化，提供扰动配对评估。",
+      "local_evidence_available": {
+        "fulltext": false,
+        "summary": true,
+        "verify": true,
+        "figure": false
+      },
+      "official_abstract_checked": false,
+      "official_html_sampled": false
+    },
+    {
+      "id": "2610.12361",
+      "title": "Cited but Not Consulted: A Counterfactual Audit of Legal Chain-of-Thought Faithfulness",
+      "published": "2026-10-08T17:26:17Z",
+      "arxiv_url": "https://arxiv.org/abs/2610.12361",
+      "source_json": "../spiders/arxiv/papers/2026-10-10.json",
+      "source_record_sha256": "439f0c0f60b45d196eaa16dc62e1fc48effe5dbf283476e8874ebd9e0ff7939c",
+      "in_scope": false,
+      "topic": null,
+      "knowledge_point": "法律推理引用的反事实审计",
+      "scope_reason": "测试司法与合同推理，不涉及实体控制、传感器、物理环境或具身任务数据。",
+      "local_evidence_available": {
+        "fulltext": true,
+        "summary": true,
+        "verify": true,
+        "figure": false
+      },
+      "official_abstract_checked": false,
+      "official_html_sampled": false
+    },
+    {
+      "id": "2610.12368",
+      "title": "LiteNWM: Efficient Latent World Models for Onboard Visual Navigation in the Wild",
+      "published": "2026-10-08T17:29:04Z",
+      "arxiv_url": "https://arxiv.org/abs/2610.12368",
+      "source_json": "../spiders/arxiv/papers/2026-10-10.json",
+      "source_record_sha256": "554231fed8eb310c749fa3f77bbfe9833f4c6f23f79c8d59508addd0bdcdb33c",
+      "in_scope": true,
+      "topic": "navigation-traversability-data",
+      "knowledge_point": "共享观测编码的导航候选轨迹评估",
+      "scope_reason": "RECON/SCAND/SACSoN离线轨迹与未见真实室内外导航形成可比评测。",
+      "local_evidence_available": {
+        "fulltext": false,
+        "summary": true,
+        "verify": true,
+        "figure": true
+      },
+      "official_abstract_checked": false,
+      "official_html_sampled": false
+    },
+    {
+      "id": "2610.12369",
+      "title": "Embodied Turing Machines: Stateful Code for Robot Recursive Self-Improvement",
+      "published": "2026-10-08T17:29:08Z",
+      "arxiv_url": "https://arxiv.org/abs/2610.12369",
+      "source_json": "../spiders/arxiv/papers/2026-10-10.json",
+      "source_record_sha256": "c21abdeb537751dc0ee09cf1962f4f94f989dfffc9081266e711995949b093d8",
+      "in_scope": true,
+      "topic": "robot-skill-composition-data",
+      "knowledge_point": "显式状态与可复用代码技能",
+      "scope_reason": "机器人双臂任务中的相机/本体状态估计、代码库版本和执行结果可构成技能数据。",
+      "local_evidence_available": {
+        "fulltext": false,
+        "summary": true,
+        "verify": true,
+        "figure": true
+      },
+      "official_abstract_checked": false,
+      "official_html_sampled": false
+    },
+    {
+      "id": "2610.12386",
+      "title": "ARC: A Reasoning Recipe for Robot Foundation Models",
+      "published": "2026-10-08T17:38:04Z",
+      "arxiv_url": "https://arxiv.org/abs/2610.12386",
+      "source_json": "../spiders/arxiv/papers/2026-10-10.json",
+      "source_record_sha256": "6c58777c40afddf97b7e932ccdf8aaa2722767bfeafc890590e1b0bdbff3aefb",
+      "in_scope": true,
+      "topic": "language-action-grounding-data",
+      "knowledge_point": "面向下一动作的因果推理标注",
+      "scope_reason": "在DROID既有轨迹上自动标注动作原因和预期后果，直接对应语言动作对齐。",
+      "local_evidence_available": {
+        "fulltext": false,
+        "summary": true,
+        "verify": true,
+        "figure": true
+      },
+      "official_abstract_checked": false,
+      "official_html_sampled": false
+    },
+    {
+      "id": "2610.12404",
+      "title": "A Physics-Informed Collision Learning Framework for Collaborative Robot Motion Generation",
+      "published": "2026-10-08T17:45:04Z",
+      "arxiv_url": "https://arxiv.org/abs/2610.12404",
+      "source_json": "../spiders/arxiv/papers/2026-10-10.json",
+      "source_record_sha256": "a3a7655cf2fb9594187027d588a2cbe961763e321942f66440e5da8a8eadcba1",
+      "in_scope": true,
+      "topic": "trajectory-control-constraint-data",
+      "knowledge_point": "机器人碰撞边界样本与误安全标签",
+      "scope_reason": "真实双臂的配置、距离、边界采样与回放验证用于控制约束数据。",
+      "local_evidence_available": {
+        "fulltext": false,
+        "summary": true,
+        "verify": true,
+        "figure": true
+      },
+      "official_abstract_checked": false,
+      "official_html_sampled": false
+    },
+    {
+      "id": "2610.12407",
+      "title": "LeWAM: A JEPA World Action Model with Diffusion-Steering-Based MPC",
+      "published": "2026-10-08T17:46:03Z",
+      "arxiv_url": "https://arxiv.org/abs/2610.12407",
+      "source_json": "../spiders/arxiv/papers/2026-10-10.json",
+      "source_record_sha256": "eb18cc67ede1770876ffe940beb3e2351deb3f750c333d60861347cac1e40676",
+      "in_scope": true,
+      "topic": "world-model-planning-evaluation",
+      "knowledge_point": "避免模型误差被利用的潜在规划",
+      "scope_reason": "同一数据的前后向/逆动力学监督以及噪声空间候选动作闭环比较。",
+      "local_evidence_available": {
+        "fulltext": false,
+        "summary": true,
+        "verify": true,
+        "figure": true
+      },
+      "official_abstract_checked": false,
+      "official_html_sampled": false
+    },
+    {
+      "id": "2610.12412",
+      "title": "WorldCast: Distributed Multiplayer World Models",
+      "published": "2026-10-08T17:49:44Z",
+      "arxiv_url": "https://arxiv.org/abs/2610.12412",
+      "source_json": "../spiders/arxiv/papers/2026-10-10.json",
+      "source_record_sha256": "e22e30270feb4c2583f93a70e199bf612e869537435875cbb403a653a22963b5",
+      "in_scope": true,
+      "topic": "world-model-training-data",
+      "knowledge_point": "分布式多视图共享实体状态",
+      "scope_reason": "游戏世界边界研究提供位置、地图、相机对齐和共享场景状态；保留为交互世界模型数据一致性，不外推机器人效果。",
+      "local_evidence_available": {
+        "fulltext": false,
+        "summary": true,
+        "verify": true,
+        "figure": true
+      },
+      "official_abstract_checked": false,
+      "official_html_sampled": false
+    },
+    {
+      "id": "2610.12416",
+      "title": "MAMHOI: Factorizing Scene-Aware Human-Object Interaction through Affordances",
+      "published": "2026-10-08T17:52:02Z",
+      "arxiv_url": "https://arxiv.org/abs/2610.12416",
+      "source_json": "../spiders/arxiv/papers/2026-10-10.json",
+      "source_record_sha256": "0b43354c45af484ea7c8c2df9ee75c500e02935a14e7f7841c84adbf6ce3d247",
+      "in_scope": true,
+      "topic": "human-object-interaction-reconstruction",
+      "knowledge_point": "场景可供性与人体物体运动的拆分监督",
+      "scope_reason": "互补的人场景/人物数据组合，需检查场景穿透与交互可行性。",
+      "local_evidence_available": {
+        "fulltext": false,
+        "summary": true,
+        "verify": true,
+        "figure": true
+      },
+      "official_abstract_checked": false,
+      "official_html_sampled": false
+    },
+    {
+      "id": "2610.12417",
+      "title": "WOVEN: Weaving Visual World Modeling into Multimodal LLMs",
+      "published": "2026-10-08T17:52:03Z",
+      "arxiv_url": "https://arxiv.org/abs/2610.12417",
+      "source_json": "../spiders/arxiv/papers/2026-10-10.json",
+      "source_record_sha256": "3ad8ad248f82656a52b6190ca5be90ab3019d2d3f4d4615dcfcaa9db6bc89f54",
+      "in_scope": true,
+      "topic": "world-model-training-data",
+      "knowledge_point": "按推理操作组织视觉转移监督",
+      "scope_reason": "场景、动作、推理类型及物理/具身任务的分层样本支持训练集切分。",
+      "local_evidence_available": {
+        "fulltext": false,
+        "summary": true,
+        "verify": true,
+        "figure": false
+      },
+      "official_abstract_checked": false,
+      "official_html_sampled": false
+    },
+    {
+      "id": "2610.12431",
+      "title": "Control-Ready Uncertainty for Trajectory Diffusion",
+      "published": "2026-10-08T17:57:01Z",
+      "arxiv_url": "https://arxiv.org/abs/2610.12431",
+      "source_json": "../spiders/arxiv/papers/2026-10-10.json",
+      "source_record_sha256": "56f80869e2d1c092613aa045aa64693bf62344f0a9f740989f71949c87489c04",
+      "in_scope": true,
+      "topic": "trajectory-control-constraint-data",
+      "knowledge_point": "候选轨迹的不确定性标注与校准",
+      "scope_reason": "行人预测、导航和真实机械臂的逐时协方差与闭环风险相关。",
+      "local_evidence_available": {
+        "fulltext": false,
+        "summary": true,
+        "verify": true,
+        "figure": true
+      },
+      "official_abstract_checked": false,
+      "official_html_sampled": false
+    },
+    {
+      "id": "2610.12432",
+      "title": "FAITH: Feasibility-Aware Safety-Filtered RL for High-Dimensional Systems",
+      "published": "2026-10-08T17:57:06Z",
+      "arxiv_url": "https://arxiv.org/abs/2610.12432",
+      "source_json": "../spiders/arxiv/papers/2026-10-10.json",
+      "source_record_sha256": "ece2b473fe31e20819f9929274ceb1914cd2ce8846594114fb8a15cd7ee36304",
+      "in_scope": true,
+      "topic": "robot-safety-robustness-data",
+      "knowledge_point": "可行/不可行起点与峰值伤害评估",
+      "scope_reason": "真实人形控制的安全过滤器需要违规、回报、伤害和初始可行性标签。",
+      "local_evidence_available": {
+        "fulltext": false,
+        "summary": true,
+        "verify": true,
+        "figure": true
+      },
+      "official_abstract_checked": false,
+      "official_html_sampled": false
+    },
+    {
+      "id": "2610.12435",
+      "title": "VioLA: Learning Generalist Humanoid Control Policies from Human Data",
+      "published": "2026-10-08T17:57:27Z",
+      "arxiv_url": "https://arxiv.org/abs/2610.12435",
+      "source_json": "../spiders/arxiv/papers/2026-10-10.json",
+      "source_record_sha256": "5a7e5d1fda0efa844c295ffeb66cfbd851c0611d2293d02415b2924df0105a03",
+      "in_scope": true,
+      "topic": "latent-action-cross-embodiment",
+      "knowledge_point": "人机共享身体和手部潜在动作",
+      "scope_reason": "大规模人类数据映射到与机器人一致的动作空间并实机验证。",
+      "local_evidence_available": {
+        "fulltext": false,
+        "summary": true,
+        "verify": true,
+        "figure": true
+      },
+      "official_abstract_checked": false,
+      "official_html_sampled": false
+    },
+    {
+      "id": "2610.12440",
+      "title": "Generative Neural Retargeting for Human-to-Robot Dexterous Manipulation",
+      "published": "2026-10-08T17:57:58Z",
+      "arxiv_url": "https://arxiv.org/abs/2610.12440",
+      "source_json": "../spiders/arxiv/papers/2026-10-10.json",
+      "source_record_sha256": "389f020db8af10deba1712c21e3e4c73e7915c2b0ff91f89b7d4f9cfe8061a67",
+      "in_scope": true,
+      "topic": "demonstration-collection-retargeting",
+      "knowledge_point": "动态可行重定向与稠密接触力标签",
+      "scope_reason": "人类轨迹转机器人可执行示教，构造大规模跨物体接触标注集。",
+      "local_evidence_available": {
+        "fulltext": false,
+        "summary": true,
+        "verify": true,
+        "figure": true
+      },
+      "official_abstract_checked": false,
+      "official_html_sampled": false
+    },
+    {
+      "id": "2610.12451",
+      "title": "VersaCamVLA: Camera-Configurable VLA Policies for Robotic Manipulation",
+      "published": "2026-10-08T17:58:47Z",
+      "arxiv_url": "https://arxiv.org/abs/2610.12451",
+      "source_json": "../spiders/arxiv/papers/2026-10-10.json",
+      "source_record_sha256": "6a9fe6264b15f1cc64a2d165049e41b26a39210236ded4fb36eaf0a48ebb358e",
+      "in_scope": true,
+      "topic": "multimodal-spatiotemporal-alignment",
+      "knowledge_point": "可变相机集合和位姿多样性",
+      "scope_reason": "机器人多视图输入含相机位姿、数量及目标视图监督，适合时空对齐契约。",
+      "local_evidence_available": {
+        "fulltext": false,
+        "summary": true,
+        "verify": true,
+        "figure": true
+      },
+      "official_abstract_checked": false,
+      "official_html_sampled": false
+    },
+    {
+      "id": "2610.12457",
+      "title": "SpatialHarness: Test-Time Spatial Scaffolding for Fine Robotic Manipulation",
+      "published": "2026-10-08T17:59:20Z",
+      "arxiv_url": "https://arxiv.org/abs/2610.12457",
+      "source_json": "../spiders/arxiv/papers/2026-10-10.json",
+      "source_record_sha256": "78d4ede746ebdac928d33ad3910583c1fee098fb3927700e8c9be066a1a79ae9",
+      "in_scope": true,
+      "topic": "active-perception-data",
+      "knowledge_point": "虚拟视点与在线场景同步",
+      "scope_reason": "实体操作在静止/持有/过渡模式下维护重建场景，补全任务关键空间证据。",
+      "local_evidence_available": {
+        "fulltext": false,
+        "summary": true,
+        "verify": true,
+        "figure": true
+      },
+      "official_abstract_checked": false,
+      "official_html_sampled": false
+    },
+    {
+      "id": "2610.12459",
+      "title": "WorldGuide: Goal-Directed Video World Model for Procedural Task Execution",
+      "published": "2026-10-08T17:59:31Z",
+      "arxiv_url": "https://arxiv.org/abs/2610.12459",
+      "source_json": "../spiders/arxiv/papers/2026-10-10.json",
+      "source_record_sha256": "d7907835326fe60a0b6599a462a2d67140fcddbe720e7d9e09fc771015e38081",
+      "in_scope": true,
+      "topic": "robot-skill-composition-data",
+      "knowledge_point": "逐步骤视频动作与任务完成监督",
+      "scope_reason": "近六万步骤标注视频支持原子动作、视觉进度、终止和层级记忆的数据结构；为视频执行边界。",
+      "local_evidence_available": {
+        "fulltext": false,
+        "summary": true,
+        "verify": true,
+        "figure": true
+      },
+      "official_abstract_checked": false,
+      "official_html_sampled": false
+    },
+    {
+      "id": "2610.12461",
+      "title": "OuroWorld: Bringing Any 3D World Alive as Diverse, Endlessly Looping 3D Cinemagraphs",
+      "published": "2026-10-08T17:59:46Z",
+      "arxiv_url": "https://arxiv.org/abs/2610.12461",
+      "source_json": "../spiders/arxiv/papers/2026-10-10.json",
+      "source_record_sha256": "19d026aff54f1c8e5c7aa23cf438021db21866e5e747fd6c957bb21890b513d2",
+      "in_scope": false,
+      "topic": null,
+      "knowledge_point": "循环三维电影动图生成",
+      "scope_reason": "目标是静态场景视觉动画与循环自然度，无动作条件、可执行物理交互、机器人评估或数据质量验证。",
+      "local_evidence_available": {
+        "fulltext": false,
+        "summary": true,
+        "verify": true,
+        "figure": false
+      },
+      "official_abstract_checked": false,
+      "official_html_sampled": false
+    },
+    {
+      "id": "2610.12464",
+      "title": "What 30,000 Hours of Ego-centric Video Does Not Teach",
+      "published": "2026-10-08T17:59:49Z",
+      "arxiv_url": "https://arxiv.org/abs/2610.12464",
+      "source_json": "../spiders/arxiv/papers/2026-10-10.json",
+      "source_record_sha256": "25f125f3ad26aca1192187759dd9417d432142902b09444f4e076a1f306728f5",
+      "in_scope": true,
+      "topic": "world-model-training-data",
+      "knowledge_point": "第一视角规模与物体交互保真度",
+      "scope_reason": "大规模人类视频训练直接比较主体、物体作用及下游人形模型效果。",
+      "local_evidence_available": {
+        "fulltext": false,
+        "summary": true,
+        "verify": true,
+        "figure": true
+      },
+      "official_abstract_checked": false,
+      "official_html_sampled": false
+    },
+    {
+      "id": "2610.12465",
+      "title": "A Balanced Data Diet: Addressing the Exploration Bottleneck in Mega-Scale RL for Robot Control",
+      "published": "2026-10-08T17:59:50Z",
+      "arxiv_url": "https://arxiv.org/abs/2610.12465",
+      "source_json": "../spiders/arxiv/papers/2026-10-10.json",
+      "source_record_sha256": "8aed8355aea6f4707f8b54c680d6b2570cb496a1c58a78d2c843691778b58198",
+      "in_scope": true,
+      "topic": "model-conditioned-data-engine",
+      "knowledge_point": "按策略成功边界采样任务配置",
+      "scope_reason": "模拟重置数据需保留采样概率、策略版本和能力区间，含实机迁移。",
+      "local_evidence_available": {
+        "fulltext": false,
+        "summary": true,
+        "verify": true,
+        "figure": false
+      },
+      "official_abstract_checked": false,
+      "official_html_sampled": false
+    },
+    {
+      "id": "2610.12468",
+      "title": "DreamTrue: Action-Faithful Robot World Model with Counterfactual Post-Training",
+      "published": "2026-10-08T17:59:51Z",
+      "arxiv_url": "https://arxiv.org/abs/2610.12468",
+      "source_json": "../spiders/arxiv/papers/2026-10-10.json",
+      "source_record_sha256": "70198343d7744c5bae1eb8e2a59bf4cd998f9374f7efe7606c28b824d2de93f2",
+      "in_scope": true,
+      "topic": "world-model-training-data",
+      "knowledge_point": "动作几何校准、反事实与缺陷标签",
+      "scope_reason": "机器人多视图动作条件需校准，失败交互和人工缺陷标注支持后训练。",
+      "local_evidence_available": {
+        "fulltext": false,
+        "summary": true,
+        "verify": true,
+        "figure": true
+      },
+      "official_abstract_checked": false,
+      "official_html_sampled": false
+    },
+    {
+      "id": "2610.12470",
+      "title": "Dex-One2Many: Learning Dexterous Manipulation from a Single Human Demonstration",
+      "published": "2026-10-08T17:59:58Z",
+      "arxiv_url": "https://arxiv.org/abs/2610.12470",
+      "source_json": "../spiders/arxiv/papers/2026-10-10.json",
+      "source_record_sha256": "418a50351f63654d38e856c85e7a04e75e97ae58bce922def806c08daa8b4c61",
+      "in_scope": true,
+      "topic": "dexterous-manipulation-data",
+      "knowledge_point": "单人类视频的关系图与多样初始状态",
+      "scope_reason": "多指实机操作从视频阶段图生成重置状态和奖励，需区分关系与位姿泛化。",
+      "local_evidence_available": {
+        "fulltext": false,
+        "summary": true,
+        "verify": true,
+        "figure": true
+      },
+      "official_abstract_checked": false,
+      "official_html_sampled": false
+    },
+    {
+      "id": "2610.13732",
+      "title": "LAPT-Scale: Scaling Embodied Policies with Latent Action Pre-Training on Human Videos",
+      "published": "2026-10-09T15:29:20Z",
+      "arxiv_url": "https://arxiv.org/abs/2610.13732",
+      "source_json": "../spiders/arxiv/papers/2026-10-13.json",
+      "source_record_sha256": "700e69fc42f2d1eaee76d67640b14f0f00d5a7ba1c51c745f55a73142bdfb934",
+      "in_scope": true,
+      "topic": "latent-action-cross-embodiment",
+      "knowledge_point": "连续潜在动作与转移多信号监督",
+      "scope_reason": "无机器人动作标签的人类视频经感知/语义/光流监督并进行本体对齐。",
+      "local_evidence_available": {
+        "fulltext": true,
+        "summary": true,
+        "verify": true,
+        "figure": false
+      },
+      "official_abstract_checked": false,
+      "official_html_sampled": false
+    },
+    {
+      "id": "2610.13740",
+      "title": "SmolWAM: A Latent World-Action Model for Robotic Manipulation on Edge Devices",
+      "published": "2026-10-09T15:34:33Z",
+      "arxiv_url": "https://arxiv.org/abs/2610.13740",
+      "source_json": "../spiders/arxiv/papers/2026-10-13.json",
+      "source_record_sha256": "1ae04346dcac3a8496de1d839cfcfc41f870ab6c0c9ec84a3a69039767be5642",
+      "in_scope": true,
+      "topic": "vla-realtime-execution-data",
+      "knowledge_point": "边缘部署的动作块资源预算",
+      "scope_reason": "机器人世界动作模型需按同一episode记录动作块时延、显存、预测质量及成功率。",
+      "local_evidence_available": {
+        "fulltext": true,
+        "summary": true,
+        "verify": true,
+        "figure": true
+      },
+      "official_abstract_checked": false,
+      "official_html_sampled": false
+    },
+    {
+      "id": "2610.13816",
+      "title": "Dream to Remember: Continual Steering of Generalist Robot Policies with World Models",
+      "published": "2026-10-09T16:28:01Z",
+      "arxiv_url": "https://arxiv.org/abs/2610.13816",
+      "source_json": "../spiders/arxiv/papers/2026-10-13.json",
+      "source_record_sha256": "c7f8493e3b1348dcae6d7b88c821bf3a95fe657ec10faa6492f44c4b4504b4a1",
+      "in_scope": true,
+      "topic": "continual-robot-learning-data",
+      "knowledge_point": "想象回放保留历史机器人技能",
+      "scope_reason": "按任务序列追踪真实/想象训练来源、世界模型保真度与遗忘。",
+      "local_evidence_available": {
+        "fulltext": false,
+        "summary": true,
+        "verify": true,
+        "figure": true
+      },
+      "official_abstract_checked": true,
+      "official_html_sampled": false
+    },
+    {
+      "id": "2610.13829",
+      "title": "MC-EvoBench: Auditing Experience-Driven Self-Improvement in Minecraft Agents",
+      "published": "2026-10-09T16:37:39Z",
+      "arxiv_url": "https://arxiv.org/abs/2610.13829",
+      "source_json": "../spiders/arxiv/papers/2026-10-13.json",
+      "source_record_sha256": "34c5b00e7064efb8b52e850d444ab1c65d22d77124122267b026448af3324e92",
+      "in_scope": true,
+      "topic": "embodied-evaluation-data-quality",
+      "knowledge_point": "经验迁移的隔离环境和对照预算",
+      "scope_reason": "Minecraft为交互环境边界，提供声明工件、状态重置和成对源目标评估；不能替代物理机器人实验。",
+      "local_evidence_available": {
+        "fulltext": true,
+        "summary": true,
+        "verify": true,
+        "figure": true
+      },
+      "official_abstract_checked": false,
+      "official_html_sampled": false
+    },
+    {
+      "id": "2610.13838",
+      "title": "Mapless, Stabilizing, and Anti-Stuck Flipper Control for Articulated Tracked Robots",
+      "published": "2026-10-09T16:48:23Z",
+      "arxiv_url": "https://arxiv.org/abs/2610.13838",
+      "source_json": "../spiders/arxiv/papers/2026-10-13.json",
+      "source_record_sha256": "2a1c3650263a32ad3e880431eff368551ead891d6b576a07b29b9b694540fa7b",
+      "in_scope": true,
+      "topic": "navigation-traversability-data",
+      "knowledge_point": "无地图越障的短窗惯性与运动线索",
+      "scope_reason": "真实履带机器人用IMU、关节角与是否移动记录防卡死，无需累计里程计。",
+      "local_evidence_available": {
+        "fulltext": true,
+        "summary": true,
+        "verify": true,
+        "figure": false
+      },
+      "official_abstract_checked": false,
+      "official_html_sampled": false
+    },
+    {
+      "id": "2610.13915",
+      "title": "Where to Look Matters: Rethinking Sub-Volume Sampling in 3D Medical Self-supervised Learning",
+      "published": "2026-10-09T17:51:47Z",
+      "arxiv_url": "https://arxiv.org/abs/2610.13915",
+      "source_json": "../spiders/arxiv/papers/2026-10-13.json",
+      "source_record_sha256": "ab37a0e48abb9c9e15275e4fa0660322bc3bcb845736ccdc0244acfeaa19e865",
+      "in_scope": false,
+      "topic": null,
+      "knowledge_point": "医学体数据自监督裁剪",
+      "scope_reason": "研究静态医学图像解剖区域抽样，无机器人、实体感知动作闭环或具身数据来源。",
+      "local_evidence_available": {
+        "fulltext": false,
+        "summary": false,
+        "verify": false,
+        "figure": true
+      },
+      "official_abstract_checked": false,
+      "official_html_sampled": false
+    },
+    {
+      "id": "2610.13943",
+      "title": "Noise Space Learning for VLA Adaptation",
+      "published": "2026-10-09T17:58:50Z",
+      "arxiv_url": "https://arxiv.org/abs/2610.13943",
+      "source_json": "../spiders/arxiv/papers/2026-10-13.json",
+      "source_record_sha256": "cee0f2f0dbef5225827bd5f18e59f56999bc77e1bff3d497f5b37486ead68de7",
+      "in_scope": true,
+      "topic": "reward-value-feedback-data",
+      "knowledge_point": "有限交互下的噪声空间后训练",
+      "scope_reason": "真实机器人采用不同在线/离线RL方式，需记录交互预算、安全约束和回报证据。",
+      "local_evidence_available": {
+        "fulltext": true,
+        "summary": true,
+        "verify": true,
+        "figure": true
+      },
+      "official_abstract_checked": false,
+      "official_html_sampled": false
+    },
+    {
+      "id": "2610.13945",
+      "title": "Splat2Act: From Captured Scenes to Personalized VLA Manipulation",
+      "published": "2026-10-09T17:59:06Z",
+      "arxiv_url": "https://arxiv.org/abs/2610.13945",
+      "source_json": "../spiders/arxiv/papers/2026-10-13.json",
+      "source_record_sha256": "13b7e76df31621b83fa3bab8af958224b0536f4387cfa34327903ae993eaf7c1",
+      "in_scope": true,
+      "topic": "synthetic-data-sim-to-real",
+      "knowledge_point": "真实大场景扫描到个性化示教",
+      "scope_reason": "手机扫描和物体图片生成数字孪生、可行任务及示教，验证模拟与实机差距。",
+      "local_evidence_available": {
+        "fulltext": true,
+        "summary": true,
+        "verify": true,
+        "figure": true
+      },
+      "official_abstract_checked": false,
+      "official_html_sampled": false
+    },
+    {
+      "id": "2610.14936",
+      "title": "CFG-Policy: Unified Diffusion Policy Learning Framework via Classifier-free Guidance",
+      "published": "2026-10-10T14:09:24Z",
+      "arxiv_url": "https://arxiv.org/abs/2610.14936",
+      "source_json": "../spiders/arxiv/papers/2026-10-14.json",
+      "source_record_sha256": "94228ba3c511778c8d852d27d8765ec7a654bc2c1b471abdf836312ef03ea16b",
+      "in_scope": true,
+      "topic": "reward-value-feedback-data",
+      "knowledge_point": "探索和利用分支的数据分布",
+      "scope_reason": "包含机器人仿真操作，讨论后训练行为多样性与在线/离线经验使用。",
+      "local_evidence_available": {
+        "fulltext": true,
+        "summary": true,
+        "verify": true,
+        "figure": true
+      },
+      "official_abstract_checked": false,
+      "official_html_sampled": false
+    },
+    {
+      "id": "2610.14941",
+      "title": "Compositional Average Velocity Modeling for Efficient Diffusion Offline Reinforcement Learning",
+      "published": "2026-10-10T14:11:52Z",
+      "arxiv_url": "https://arxiv.org/abs/2610.14941",
+      "source_json": "../spiders/arxiv/papers/2026-10-14.json",
+      "source_record_sha256": "f1baf2922dfaae8e37bde58e73bdd0380d9b9232bf6e4b30a539eff6d8ed0635",
+      "in_scope": true,
+      "topic": "reward-value-feedback-data",
+      "knowledge_point": "离线RL中的行为约束与候选价值",
+      "scope_reason": "包含真实机器人任务，涉及历史轨迹价值估计和单步策略的资源对照。",
+      "local_evidence_available": {
+        "fulltext": true,
+        "summary": true,
+        "verify": true,
+        "figure": true
+      },
+      "official_abstract_checked": false,
+      "official_html_sampled": false
+    },
+    {
+      "id": "2610.14977",
+      "title": "EnactOpt: Diagnosis-Guided Harness Evolution for Embodied Agents",
+      "published": "2026-10-10T14:51:25Z",
+      "arxiv_url": "https://arxiv.org/abs/2610.14977",
+      "source_json": "../spiders/arxiv/papers/2026-10-14.json",
+      "source_record_sha256": "19701cbbff33abc9af63375dc8fec06f001e76b1c63bf416d5767344cddf52ec",
+      "in_scope": true,
+      "topic": "closed-loop-correction-data",
+      "knowledge_point": "相邻决策诊断与经验摘要",
+      "scope_reason": "将实际模型输入、动作、反馈及验证保留记录用于具身执行改进。",
+      "local_evidence_available": {
+        "fulltext": true,
+        "summary": true,
+        "verify": true,
+        "figure": true
+      },
+      "official_abstract_checked": false,
+      "official_html_sampled": false
+    },
+    {
+      "id": "2610.14997",
+      "title": "Barrier-Constrained Guidance For Real-time Asynchronous VLA Execution",
+      "published": "2026-10-10T15:23:16Z",
+      "arxiv_url": "https://arxiv.org/abs/2610.14997",
+      "source_json": "../spiders/arxiv/papers/2026-10-14.json",
+      "source_record_sha256": "457e34d0c3ef544371c02497e3fc4dabeb58db7af6a316b6df9dc0cd7733b4cd",
+      "in_scope": true,
+      "topic": "vla-realtime-execution-data",
+      "knowledge_point": "异步动作块的提交边界一致性",
+      "scope_reason": "真实机器人执行中对齐已提交动作流、候选块和时延变化。",
+      "local_evidence_available": {
+        "fulltext": true,
+        "summary": true,
+        "verify": true,
+        "figure": true
+      },
+      "official_abstract_checked": false,
+      "official_html_sampled": false
+    },
+    {
+      "id": "2610.15001",
+      "title": "Design and Evaluation of a Collaborative Teleoperation Interface for Multi-Operator Multi-Robot Systems in Challenging Environments",
+      "published": "2026-10-10T15:32:36Z",
+      "arxiv_url": "https://arxiv.org/abs/2610.15001",
+      "source_json": "../spiders/arxiv/papers/2026-10-14.json",
+      "source_record_sha256": "bffddcf210324cc304e006d8f18afd8dca8abe8f6e13bb050de49d57413db840",
+      "in_scope": true,
+      "topic": "multi-robot-coordination-data",
+      "knowledge_point": "多操作者共享可视化与协作记录",
+      "scope_reason": "多机器人灾害任务采集行为、碰撞、工作负荷和态势感知，属于联合采集数据。",
+      "local_evidence_available": {
+        "fulltext": true,
+        "summary": true,
+        "verify": true,
+        "figure": false
+      },
+      "official_abstract_checked": true,
+      "official_html_sampled": true
+    },
+    {
+      "id": "2610.15038",
+      "title": "Training-Free Multi-Agent Cooperative Embodied Search from Uncertain Vision-Language Priors",
+      "published": "2026-10-10T16:22:39Z",
+      "arxiv_url": "https://arxiv.org/abs/2610.15038",
+      "source_json": "../spiders/arxiv/papers/2026-10-14.json",
+      "source_record_sha256": "fdcc9aff419ac3b15cf7f908bcb67517f090ff787fc6ba9777631327bb275eae",
+      "in_scope": true,
+      "topic": "multi-robot-coordination-data",
+      "knowledge_point": "不确定语义先验和团队联合搜索",
+      "scope_reason": "具身导航的共享信息、图边证据、目标覆盖、重复访问与工作量需要团队级记录。",
+      "local_evidence_available": {
+        "fulltext": true,
+        "summary": true,
+        "verify": true,
+        "figure": false
+      },
+      "official_abstract_checked": true,
+      "official_html_sampled": true
+    },
+    {
+      "id": "2610.15073",
+      "title": "Modeling and Control of a Rigid-soft Hybrid-link Humanoid Robot",
+      "published": "2026-10-10T17:13:12Z",
+      "arxiv_url": "https://arxiv.org/abs/2610.15073",
+      "source_json": "../spiders/arxiv/papers/2026-10-14.json",
+      "source_record_sha256": "4d57522bad6bdeca97e9440e299c81e6913a0c87a2d0710f6fbe39c1305e2c2e",
+      "in_scope": true,
+      "topic": "deformable-material-state-data",
+      "knowledge_point": "刚柔连杆形变与全身控制记录",
+      "scope_reason": "真实人形机器人柔性假肢的动捕形变、支撑状态和动力学验证直接相关。",
+      "local_evidence_available": {
+        "fulltext": true,
+        "summary": true,
+        "verify": true,
+        "figure": false
+      },
+      "official_abstract_checked": false,
+      "official_html_sampled": false
+    },
+    {
+      "id": "2610.18697",
+      "title": "UniW(A)M: A Unified Mixture-of-Experts Framework for World and World-Action Models",
+      "published": "2026-10-13T16:47:16Z",
+      "arxiv_url": "https://arxiv.org/abs/2610.18697",
+      "source_json": "../spiders/arxiv/papers/2026-10-15.json",
+      "source_record_sha256": "410ddd064bae090052b4b77072b281d740e7efb069fccfe3a0db721153c17dba",
+      "in_scope": true,
+      "topic": "world-model-training-data",
+      "knowledge_point": "同一具身轨迹可供世界预测与动作生成使用，但需保存各条件接口、动作块及接口选择结果，以比较联合监督对预测质量和执行成功率的影响。",
+      "scope_reason": "动作条件预测与机器人动作生成联合训练，并在真实操作中验证，直接涉及具身轨迹复用。",
+      "local_evidence_available": {
+        "fulltext": false,
+        "summary": true,
+        "verify": true,
+        "figure": true
+      },
+      "official_abstract_checked": false,
+      "official_html_sampled": false
+    },
+    {
+      "id": "2610.18699",
+      "title": "RoboFQE: Rollout-Free Evaluation of Visual Robot Policies from Offline Trajectories",
+      "published": "2026-10-13T16:48:25Z",
+      "arxiv_url": "https://arxiv.org/abs/2610.18699",
+      "source_json": "../spiders/arxiv/papers/2026-10-15.json",
+      "source_record_sha256": "2b85e0b9087fadbb01e3d19b0fbfa9a7ee3c2101f8e9491adf459a86192f6250",
+      "in_scope": true,
+      "topic": "embodied-evaluation-data-quality",
+      "knowledge_point": "离线策略评估可复用历史视觉轨迹与学习得到的终局成功标注；应分别检验回报估计误差、策略排序和长任务表现，不能将无新 rollout 等同于无评估误差。",
+      "scope_reason": "利用离线机器人轨迹估计策略回报，是具身数据评估的直接研究。",
+      "local_evidence_available": {
+        "fulltext": false,
+        "summary": true,
+        "verify": true,
+        "figure": true
+      },
+      "official_abstract_checked": false,
+      "official_html_sampled": false
+    },
+    {
+      "id": "2610.18711",
+      "title": "Steertuning Policies from a Few Human Videos",
+      "published": "2026-10-13T16:55:32Z",
+      "arxiv_url": "https://arxiv.org/abs/2610.18711",
+      "source_json": "../spiders/arxiv/papers/2026-10-15.json",
+      "source_record_sha256": "f917c306a4dd1ecaf7425c64e75de1abf2e0f53ade09f7c61a09d47f27a0d806",
+      "in_scope": true,
+      "topic": "demonstration-collection-retargeting",
+      "knowledge_point": "100 小时密集标注随机人体交互用于预训练，5 条新任务示教用于适配和采样引导；人体到机器人处理链与新环境留出应共同记录。",
+      "scope_reason": "用第一视角人体交互数据和少量新任务示教迁移到真实机器人。",
+      "local_evidence_available": {
+        "fulltext": false,
+        "summary": true,
+        "verify": true,
+        "figure": true
+      },
+      "official_abstract_checked": false,
+      "official_html_sampled": false
+    },
+    {
+      "id": "2610.18730",
+      "title": "Learning When to Transfer: Reinforcement Learning for Carbon-Footprint Modeling in New Manufacturing Domains",
+      "published": "2026-10-13T17:06:31Z",
+      "arxiv_url": "https://arxiv.org/abs/2610.18730",
+      "source_json": "../spiders/arxiv/papers/2026-10-15.json",
+      "source_record_sha256": "2b7b0f02aa59aafe85f9e4c0b60fc780ef8008e30e59f9749b55f9cbcccc73eb",
+      "in_scope": false,
+      "topic": null,
+      "knowledge_point": "可作为制造业迁移学习背景，但不能据 embodied emissions 关键词归入具身智能数据论文。",
+      "scope_reason": "研究制造业产品碳排放的表格预测与选择性迁移；embodied 指隐含温室气体排放，未研究机器人感知、动作或物理交互轨迹。",
+      "local_evidence_available": {
+        "fulltext": false,
+        "summary": true,
+        "verify": false,
+        "figure": true
+      },
+      "official_abstract_checked": false,
+      "official_html_sampled": false
+    },
+    {
+      "id": "2610.18774",
+      "title": "GreenWAM: A World Foundation Model for Robotics",
+      "published": "2026-10-13T17:31:29Z",
+      "arxiv_url": "https://arxiv.org/abs/2610.18774",
+      "source_json": "../spiders/arxiv/papers/2026-10-15.json",
+      "source_record_sha256": "751afd31fac794c0669fc257c82fe6a23c6a10ff40753eeec86887f0711918fa",
+      "in_scope": true,
+      "topic": "latent-action-cross-embodiment",
+      "knowledge_point": "跨本体数据需要共享解剖动作空间，同时保留机器人家族与原始关节映射；共同动作格式应接受轨迹、深度、三维预测与真实控制的交叉验证。",
+      "scope_reason": "为 20 类机器人统一动作坐标，并联合训练世界预测和控制。",
+      "local_evidence_available": {
+        "fulltext": false,
+        "summary": true,
+        "verify": true,
+        "figure": true
+      },
+      "official_abstract_checked": false,
+      "official_html_sampled": false
+    },
+    {
+      "id": "2610.18790",
+      "title": "EqC: Equilibrium Energy Control for Introspective Lifelong Robot Learning",
+      "published": "2026-10-13T17:39:36Z",
+      "arxiv_url": "https://arxiv.org/abs/2610.18790",
+      "source_json": "../spiders/arxiv/papers/2026-10-15.json",
+      "source_record_sha256": "25fee015b5c71c200d785f004024fdd7433e06151503af172fcee270c607523d",
+      "in_scope": true,
+      "topic": "continual-robot-learning-data",
+      "knowledge_point": "将能力违例、专家接管和恢复轨迹关联策略更新版本，并保留固定场景评估快照；持续学习既要检验自主能力边界扩展，也需对早期任务检查性能保持。",
+      "scope_reason": "策略能力信号触发专家接管，恢复轨迹用于后续更新，直接形成纠错数据闭环。",
+      "local_evidence_available": {
+        "fulltext": false,
+        "summary": true,
+        "verify": true,
+        "figure": true
+      },
+      "official_abstract_checked": false,
+      "official_html_sampled": false
+    },
+    {
+      "id": "2610.18792",
+      "title": "SEAR: Self-Evolving Agentic Robotics",
+      "published": "2026-10-13T17:40:20Z",
+      "arxiv_url": "https://arxiv.org/abs/2610.18792",
+      "source_json": "../spiders/arxiv/papers/2026-10-15.json",
+      "source_record_sha256": "2eac6125f410db886f912dab04b82d792f1799245859e64fd564df937ec653be",
+      "in_scope": true,
+      "topic": "continual-robot-learning-data",
+      "knowledge_point": "将保留经验、控制程序及技能版本与任务流关联，在固定预算和冻结经验快照下评测跨任务迁移；分开控制重复尝试、特权状态与场景熟悉度，检验是否真正积累可复用能力。",
+      "scope_reason": "机器人代理通过控制代码、技能与记忆积累经验，包含仿真及真实机器人评估。",
+      "local_evidence_available": {
+        "fulltext": false,
+        "summary": true,
+        "verify": true,
+        "figure": true
+      },
+      "official_abstract_checked": true,
+      "official_html_sampled": true
+    },
+    {
+      "id": "2610.18822",
+      "title": "EgoMatrix: Physically Faithful Dexterous Robot Demonstrations from Egocentric Human Videos",
+      "published": "2026-10-13T17:51:46Z",
+      "arxiv_url": "https://arxiv.org/abs/2610.18822",
+      "source_json": "../spiders/arxiv/papers/2026-10-15.json",
+      "source_record_sha256": "41ad37f490decb9308db612b70b8aaa352975d0707afd06ca5d8d5ed7443efa8",
+      "in_scope": true,
+      "topic": "demonstration-collection-retargeting",
+      "knowledge_point": "从手物相对几何和接触重建出发，经重定向与仿真执行生成同步状态、动作和机器人视频；背景扩增应保持物体运动及接触关系不变。",
+      "scope_reason": "将第一视角人体视频转成可重放的双手机器人轨迹及同步视觉观测。",
+      "local_evidence_available": {
+        "fulltext": false,
+        "summary": true,
+        "verify": true,
+        "figure": true
+      },
+      "official_abstract_checked": false,
+      "official_html_sampled": false
+    },
+    {
+      "id": "2610.18826",
+      "title": "WorldOracle: Benchmarking Action-Conditioned World Models against Real-World Executions",
+      "published": "2026-10-13T17:52:55Z",
+      "arxiv_url": "https://arxiv.org/abs/2610.18826",
+      "source_json": "../spiders/arxiv/papers/2026-10-15.json",
+      "source_record_sha256": "10ef3d538d4ea78eca3aacb1c43af9ff0e08c2d2cf81f8acdc84c73cec6d6af1",
+      "in_scope": true,
+      "topic": "world-model-planning-evaluation",
+      "knowledge_point": "评估样本应配对真实 rollout 与预测 rollout，并覆盖成功、失败和多阶段执行；分别检查物理状态、交互位置、关键接触区和多视角动作一致性。",
+      "scope_reason": "以相同初始观测和动作对应的真实执行检验动作条件世界模型。",
+      "local_evidence_available": {
+        "fulltext": false,
+        "summary": true,
+        "verify": true,
+        "figure": true
+      },
+      "official_abstract_checked": false,
+      "official_html_sampled": false
+    },
+    {
+      "id": "2610.18835",
+      "title": "RoboSimStudio: An Interactive Toolkit for Rapid Real2Sim of Robot Manipulation Tasks",
+      "published": "2026-10-13T17:55:14Z",
+      "arxiv_url": "https://arxiv.org/abs/2610.18835",
+      "source_json": "../spiders/arxiv/papers/2026-10-15.json",
+      "source_record_sha256": "727fad267a863fbcc50902d932bc4879847a696d3547522ac97c9abb9840b19d",
+      "in_scope": true,
+      "topic": "synthetic-data-sim-to-real",
+      "knowledge_point": "真实交互证据应关联求解器、接触模型、刚度、摩擦和变形参数的修订版本，使 Real2Sim 校准过程和后续迁移结果可以复现。",
+      "scope_reason": "通过视觉和力反馈迭代校准机器人操作仿真，直接关联真实到仿真的数据链。",
+      "local_evidence_available": {
+        "fulltext": false,
+        "summary": true,
+        "verify": true,
+        "figure": false
+      },
+      "official_abstract_checked": false,
+      "official_html_sampled": false
+    },
+    {
+      "id": "2610.18836",
+      "title": "Plan-Bench: Can Existing VLMs Go Well Beyond Perception to Reason and Plan in Embodied Worlds?",
+      "published": "2026-10-13T17:55:20Z",
+      "arxiv_url": "https://arxiv.org/abs/2610.18836",
+      "source_json": "../spiders/arxiv/papers/2026-10-15.json",
+      "source_record_sha256": "d5afde4cf4eb73616d2ccd112c82d4f1efb09862d5b5947156ae2554c5edf7ee",
+      "in_scope": true,
+      "topic": "embodied-evaluation-data-quality",
+      "knowledge_point": "将高层推理和规划题的空间状态、时间顺序与约束单独标注，能隔离执行器误差；该基准的答题准确率不能替代机器人闭环成功率。",
+      "scope_reason": "评测面向物理任务的空间、时间与多步规划，属于执行前能力的边界评估。",
+      "local_evidence_available": {
+        "fulltext": false,
+        "summary": true,
+        "verify": true,
+        "figure": true
+      },
+      "official_abstract_checked": false,
+      "official_html_sampled": false
+    },
+    {
+      "id": "2610.18843",
+      "title": "LIBERO-RIG: A Hardware-Setup Robustness Benchmark for Vision-Language-Action Models",
+      "published": "2026-10-13T17:57:18Z",
+      "arxiv_url": "https://arxiv.org/abs/2610.18843",
+      "source_json": "../spiders/arxiv/papers/2026-10-15.json",
+      "source_record_sha256": "45761493dd66b8310a918bfd513e66cf466ce82771d98509863e14ee195d7945",
+      "in_scope": true,
+      "topic": "robot-safety-robustness-data",
+      "knowledge_point": "在任务保持固定时记录相机安装、标定、增益、控制频率、本体噪声和夹爪磨损等扰动及强度，可区分视觉变化与图像不可见硬件故障。",
+      "scope_reason": "系统扰动机器人硬件与安装设置，检验策略部署鲁棒性。",
+      "local_evidence_available": {
+        "fulltext": false,
+        "summary": true,
+        "verify": true,
+        "figure": true
+      },
+      "official_abstract_checked": false,
+      "official_html_sampled": false
+    },
+    {
+      "id": "2610.18848",
+      "title": "Contact Trajectory Prompting: In-Context Transfer of Contact-Rich Behaviors from a Single Demonstration",
+      "published": "2026-10-13T17:58:08Z",
+      "arxiv_url": "https://arxiv.org/abs/2610.18848",
+      "source_json": "../spiders/arxiv/papers/2026-10-15.json",
+      "source_record_sha256": "965da6a65e0433731d14892b064318d3ffb356a70d853b6061b114fbbda45d7a",
+      "in_scope": true,
+      "topic": "tactile-force-contact-data",
+      "knowledge_point": "接触示教应按时间保存运动、力强度和作用方向，并通过在线感知检索相应阶段；相似动作轨迹中的不同接触要求需要独立标注。",
+      "scope_reason": "单次示教中的运动和接触轨迹指导真实接触操作。",
+      "local_evidence_available": {
+        "fulltext": false,
+        "summary": true,
+        "verify": true,
+        "figure": true
+      },
+      "official_abstract_checked": false,
+      "official_html_sampled": false
+    },
+    {
+      "id": "2610.18852",
+      "title": "ForceWAM: Decoupling Future and Response Learning from Demo and Play Data for Contact-Rich Manipulation",
+      "published": "2026-10-13T17:58:44Z",
+      "arxiv_url": "https://arxiv.org/abs/2610.18852",
+      "source_json": "../spiders/arxiv/papers/2026-10-15.json",
+      "source_record_sha256": "003618889e50d84f067a0a5289be40e27990e7aa10b2d499e68f37ff0bad031d",
+      "in_scope": true,
+      "topic": "tactile-force-contact-data",
+      "knowledge_point": "成功示教提供任务兼容未来，无目标 play 扩展动作与接触响应覆盖；视频、六轴力矩、动作和刷新频率应对齐，分别评估两类来源的贡献。",
+      "scope_reason": "结合成功示教与无任务目标的 play 数据学习视觉和六维力矩变化。",
+      "local_evidence_available": {
+        "fulltext": false,
+        "summary": true,
+        "verify": true,
+        "figure": true
+      },
+      "official_abstract_checked": false,
+      "official_html_sampled": false
+    },
+    {
+      "id": "2610.18855",
+      "title": "Interaction Latents as Actions for Contact-Rich Manipulation",
+      "published": "2026-10-13T17:59:16Z",
+      "arxiv_url": "https://arxiv.org/abs/2610.18855",
+      "source_json": "../spiders/arxiv/papers/2026-10-15.json",
+      "source_record_sha256": "338e7b8d89437b4c7e4b6aed4946d2ba1b93538e12e04575bb327fd660725422",
+      "in_scope": true,
+      "topic": "tactile-force-contact-data",
+      "knowledge_point": "动作监督可以包含触觉交互演变，而不只把触觉作为输入；应保存潜在动作与原始运动、触觉的对应关系，以及成功段重加权和失败段修正来源。",
+      "scope_reason": "把运动、接触及施力演变共同编码为可解码动作单元，并用于离线改进。",
+      "local_evidence_available": {
+        "fulltext": false,
+        "summary": true,
+        "verify": true,
+        "figure": true
+      },
+      "official_abstract_checked": false,
+      "official_html_sampled": false
+    },
+    {
+      "id": "2610.18867",
+      "title": "EmbodiedEvo: Self-improving Coding Agents for Physical Intelligence",
+      "published": "2026-10-13T17:59:51Z",
+      "arxiv_url": "https://arxiv.org/abs/2610.18867",
+      "source_json": "../spiders/arxiv/papers/2026-10-15.json",
+      "source_record_sha256": "7fa4f77579220e4ae8c8df1fe7713492741ecfb35dff91effc98359e90a75983",
+      "in_scope": true,
+      "topic": "embodied-memory-experience-data",
+      "knowledge_point": "将原始交互历史整理成技能与教训后，应冻结经验集合并留出新场景，分别评测记忆依赖任务、程序复用、接触控制和推理成本。",
+      "scope_reason": "机器人编码代理通过物理任务反馈积累可复用技能和教训。",
+      "local_evidence_available": {
+        "fulltext": false,
+        "summary": true,
+        "verify": true,
+        "figure": true
+      },
+      "official_abstract_checked": false,
+      "official_html_sampled": false
+    },
+    {
+      "id": "2610.18869",
+      "title": "What Matters in Quality-Aware VLA Pretraining: A Benchmark and Empirical Study",
+      "published": "2026-10-13T17:59:52Z",
+      "arxiv_url": "https://arxiv.org/abs/2610.18869",
+      "source_json": "../spiders/arxiv/papers/2026-10-15.json",
+      "source_record_sha256": "9c81f0fc249bee5442b6b9edff8ea192789cb430f6fb84420cd262c5c9bf1305",
+      "in_scope": true,
+      "topic": "demonstration-data-curation",
+      "knowledge_point": "质量标签需保留奖励定义和 episode、动作块等粒度；在相同示教与训练预算下比较筛选策略，利用物体和接触状态重算标签，避免把来源差异误当质量收益。",
+      "scope_reason": "直接比较低质量示教的加权、过滤与条件化，并提供可重算质量标签的数据。",
+      "local_evidence_available": {
+        "fulltext": false,
+        "summary": true,
+        "verify": true,
+        "figure": true
+      },
+      "official_abstract_checked": false,
+      "official_html_sampled": false
+    },
+    {
+      "id": "2610.18872",
+      "title": "EgoExplorer: A Vision-Motion-Touch Observatory for Human Loco-Manipulation In Situ",
+      "published": "2026-10-13T17:59:55Z",
+      "arxiv_url": "https://arxiv.org/abs/2610.18872",
+      "source_json": "../spiders/arxiv/papers/2026-10-15.json",
+      "source_record_sha256": "f373589bcde2923d8870aba8de07ac41f5c40f3acd321147a0641778396a5d98",
+      "in_scope": true,
+      "topic": "multimodal-spatiotemporal-alignment",
+      "knowledge_point": "人体几何与传感器安装先校准，再补全未观测关节并施加测量、时间连续性和几何约束；应同步保存视频、全身运动、手部关节、触觉与步骤描述。",
+      "scope_reason": "可穿戴系统采集第一视角、全身、手指及触觉数据，并研究对齐和重建质量。",
+      "local_evidence_available": {
+        "fulltext": false,
+        "summary": true,
+        "verify": true,
+        "figure": true
+      },
+      "official_abstract_checked": false,
+      "official_html_sampled": false
+    },
+    {
+      "id": "2610.18873",
+      "title": "LoopWAM: Closed-Loop Generalist Policy Improvement from Deployment Rollouts",
+      "published": "2026-10-13T17:59:56Z",
+      "arxiv_url": "https://arxiv.org/abs/2610.18873",
+      "source_json": "../spiders/arxiv/papers/2026-10-15.json",
+      "source_record_sha256": "5813ebcf3e71c2d017dc6aee66df2acfb62d20d7933a8d338d7dbdd602700fb3",
+      "in_scope": true,
+      "topic": "closed-loop-correction-data",
+      "knowledge_point": "混合质量 rollout 可保留完整视频监督，同时用质量权重控制动作模仿；记录来源策略、质量、迭代轮次和部署分布，才能追踪失败经验的利用方式。",
+      "scope_reason": "从自身和其他部署策略的成功、次优、失败 rollout 中闭环更新通用机器人策略。",
+      "local_evidence_available": {
+        "fulltext": false,
+        "summary": true,
+        "verify": true,
+        "figure": true
+      },
+      "official_abstract_checked": false,
+      "official_html_sampled": false
+    },
+    {
+      "id": "2610.18874",
+      "title": "ChunkAct: Action Chunking for Agentic Robotics",
+      "published": "2026-10-13T17:59:57Z",
+      "arxiv_url": "https://arxiv.org/abs/2610.18874",
+      "source_json": "../spiders/arxiv/papers/2026-10-15.json",
+      "source_record_sha256": "02cefa2398766cbb52e63666518b6708ddc499df7d7bcb30303492492caf9493",
+      "in_scope": true,
+      "topic": "robot-skill-composition-data",
+      "knowledge_point": "技能数据应包含原语顺序、子目标、块边界和失败返回条件；评测时同时记录任务成功、决策次数与调用成本，区分动作压缩和规划收益。",
+      "scope_reason": "把机器人代理的多步原语编译为可执行动作块，并在失败时返回规划器。",
+      "local_evidence_available": {
+        "fulltext": false,
+        "summary": true,
+        "verify": true,
+        "figure": true
+      },
+      "official_abstract_checked": false,
+      "official_html_sampled": false
+    },
+    {
+      "id": "2610.20409",
+      "title": "Hyperspherical Contrastive Representations Unlock Planning and Exploration",
+      "published": "2026-10-14T16:08:28Z",
+      "arxiv_url": "https://arxiv.org/abs/2610.20409",
+      "source_json": "../spiders/arxiv/papers/2026-10-16.json",
+      "source_record_sha256": "ac022d0d6e1e43146c24e7d58700caebf8c0757a5b093a4d114491587ab9c463",
+      "in_scope": true,
+      "topic": "trajectory-control-constraint-data",
+      "knowledge_point": "自监督交互可以形成可复用目标状态表示；应记录起终状态、中间路点数及任务难度，以检验自适应路径分段能否支持长任务执行。",
+      "scope_reason": "研究无示教探索得到的导航和机器人操作路径规划，属于物理决策边界。",
+      "local_evidence_available": {
+        "fulltext": false,
+        "summary": true,
+        "verify": true,
+        "figure": true
+      },
+      "official_abstract_checked": false,
+      "official_html_sampled": false
+    },
+    {
+      "id": "2610.20429",
+      "title": "When Do Discrete Actions Make Good Continuous Controllers?",
+      "published": "2026-10-14T16:20:58Z",
+      "arxiv_url": "https://arxiv.org/abs/2610.20429",
+      "source_json": "../spiders/arxiv/papers/2026-10-16.json",
+      "source_record_sha256": "addf007517267d926c01bf0ee3b72ab68c263e685a60de4aadd0b405bea584f3",
+      "in_scope": true,
+      "topic": "imitation-learning-action-data",
+      "knowledge_point": "动作量化实验需控制训练数据与预算，分别检查精度、时间及动作维度间的依赖误差、动作块响应性，不能仅凭离散化精度判断可执行性。",
+      "scope_reason": "在仿真及真实机器人上比较离散和连续动作表示。",
+      "local_evidence_available": {
+        "fulltext": false,
+        "summary": true,
+        "verify": true,
+        "figure": true
+      },
+      "official_abstract_checked": false,
+      "official_html_sampled": false
+    },
+    {
+      "id": "2610.20442",
+      "title": "Towards Agentic Robots: Model, Data, Environment, and Harness",
+      "published": "2026-10-14T16:32:22Z",
+      "arxiv_url": "https://arxiv.org/abs/2610.20442",
+      "source_json": "../spiders/arxiv/papers/2026-10-16.json",
+      "source_record_sha256": "0d2b18283f8c3d5b77dbabfe5334245f15f1e3124e326bdb43dea781aba6994c",
+      "in_scope": true,
+      "topic": "vla-models-and-evaluation",
+      "knowledge_point": "数据采集筛选、任务环境构造、执行反馈和模型更新应作为机器人系统的独立模块记录，避免只用低层动作预测能力描述整套代理能力。",
+      "scope_reason": "综述机器人代理的模型、数据、环境和执行组织，明确覆盖采集与评测。",
+      "local_evidence_available": {
+        "fulltext": false,
+        "summary": true,
+        "verify": true,
+        "figure": true
+      },
+      "official_abstract_checked": false,
+      "official_html_sampled": false
+    },
+    {
+      "id": "2610.20474",
+      "title": "AdaRSI: On-Demand Recursive Self-Improvement for Embodied Agents",
+      "published": "2026-10-14T16:51:09Z",
+      "arxiv_url": "https://arxiv.org/abs/2610.20474",
+      "source_json": "../spiders/arxiv/papers/2026-10-16.json",
+      "source_record_sha256": "4008655c1acddaf7dc3b15c5b410ddd82986a17b4f1b8cf14fc1826c919184c5",
+      "in_scope": true,
+      "topic": "model-conditioned-data-engine",
+      "knowledge_point": "从保存状态重试失败子步骤，区分调用方式问题与执行能力不足；只为持续失败部分采集和训练，并记录示教数量、预算及跨任务经验来源。",
+      "scope_reason": "按失败归因选择机器人子步骤并自主收集示教进行针对性更新。",
+      "local_evidence_available": {
+        "fulltext": false,
+        "summary": true,
+        "verify": true,
+        "figure": false
+      },
+      "official_abstract_checked": false,
+      "official_html_sampled": false
+    },
+    {
+      "id": "2610.20504",
+      "title": "Graph-Reweighted Behavior Cloning with Human Interventions for Precise Robotic Manipulation",
+      "published": "2026-10-14T17:09:36Z",
+      "arxiv_url": "https://arxiv.org/abs/2610.20504",
+      "source_json": "../spiders/arxiv/papers/2026-10-16.json",
+      "source_record_sha256": "738c97fbb0d21b6033a9161d7bf02359e223f7571c65d94cecfc401fb6df4c43",
+      "in_scope": true,
+      "topic": "demonstration-data-curation",
+      "knowledge_point": "按数据支持内到成功的可达步数对动作块赋权，可复用失败轨迹中的恢复段并降权成功轨迹中的倒退段；保存图连接、干预段和每轮权重便于审计。",
+      "scope_reason": "在包含人工干预和失败的机器人轨迹中估计动作块任务进展并重加权。",
+      "local_evidence_available": {
+        "fulltext": false,
+        "summary": true,
+        "verify": true,
+        "figure": true
+      },
+      "official_abstract_checked": false,
+      "official_html_sampled": false
+    },
+    {
+      "id": "2610.20524",
+      "title": "Physical Time as a Missing Dimension of Robot Policy Memory Dynamics",
+      "published": "2026-10-14T17:24:13Z",
+      "arxiv_url": "https://arxiv.org/abs/2610.20524",
+      "source_json": "../spiders/arxiv/papers/2026-10-16.json",
+      "source_record_sha256": "e764adeb466bf51a4b3097c4d4f893555a5cb6f9e9b406b33b6854d502dd7cd8",
+      "in_scope": true,
+      "topic": "embodied-memory-experience-data",
+      "knowledge_point": "记忆数据必须保留观测间实际经过时间，而不只保留帧序号；时间干预、遮挡后事件恢复与行为时序应共同用于检验记忆是否利用物理时间。",
+      "scope_reason": "显式使用真实时间间隔更新机器人记忆，并在真实任务中验证。",
+      "local_evidence_available": {
+        "fulltext": false,
+        "summary": true,
+        "verify": true,
+        "figure": true
+      },
+      "official_abstract_checked": false,
+      "official_html_sampled": false
+    },
+    {
+      "id": "2610.20552",
+      "title": "KinoGen: Customizable Humanoid Loco-Manipulation References via Kinematically Grounded Video Generation",
+      "published": "2026-10-14T17:43:32Z",
+      "arxiv_url": "https://arxiv.org/abs/2610.20552",
+      "source_json": "../spiders/arxiv/papers/2026-10-16.json",
+      "source_record_sha256": "c5775c5793d33fd53df9858e9219d5864ea6e6d357971711acffd376bf38f37e",
+      "in_scope": true,
+      "topic": "humanoid-locomotion-data",
+      "knowledge_point": "以标定后的机器人和物体渲染约束双视角生成，再拟合本体配置空间参考；质检应覆盖穿透、足滑、接触保留和指定物体目标的满足情况。",
+      "scope_reason": "从机器人条件视频生成全身操作参考，并部署到真实人形机器人。",
+      "local_evidence_available": {
+        "fulltext": false,
+        "summary": true,
+        "verify": true,
+        "figure": true
+      },
+      "official_abstract_checked": false,
+      "official_html_sampled": false
+    },
+    {
+      "id": "2610.20579",
+      "title": "PingpongDuo: Agile Humanoid Table Tennis Doubles with Safe Team Coordination",
+      "published": "2026-10-14T17:56:27Z",
+      "arxiv_url": "https://arxiv.org/abs/2610.20579",
+      "source_json": "../spiders/arxiv/papers/2026-10-16.json",
+      "source_record_sha256": "1508f50d69a98a14da6a65932671ded6221adebe815fc7d75facc631f5b8be70",
+      "in_scope": true,
+      "topic": "multi-robot-coordination-data",
+      "knowledge_point": "人体双打步法、球飞行与球拍接触测量可分别支持参考动作和仿真标定；轨迹还应标记击球者交替、让位过程及队友碰撞风险。",
+      "scope_reason": "真实双人形乒乓球需要人体参考动作、接触标定和团队安全协调。",
+      "local_evidence_available": {
+        "fulltext": false,
+        "summary": true,
+        "verify": true,
+        "figure": true
+      },
+      "official_abstract_checked": false,
+      "official_html_sampled": false
+    },
+    {
+      "id": "2610.20606",
+      "title": "Modeling and Understanding Neural Weights of Humanoid Policies with Diffusion",
+      "published": "2026-10-14T17:59:52Z",
+      "arxiv_url": "https://arxiv.org/abs/2610.20606",
+      "source_json": "../spiders/arxiv/papers/2026-10-16.json",
+      "source_record_sha256": "bc72dd796cf1c71522a1f2ae33a2ce6714410eeafabd23b6cfdbcf8c3f2d79ee",
+      "in_scope": true,
+      "topic": "humanoid-locomotion-data",
+      "knowledge_point": "控制策略权重可作为带本体、训练过程和动作能力标签的样本集合，但生成权重仍需真实执行验证；权重空间规律不等价于完整运动轨迹数据。",
+      "scope_reason": "研究人形控制策略权重的生成与结构，并展示真实硬件动作，属于机器人策略数据边界。",
+      "local_evidence_available": {
+        "fulltext": false,
+        "summary": true,
+        "verify": true,
+        "figure": true
+      },
+      "official_abstract_checked": false,
+      "official_html_sampled": false
+    },
+    {
+      "id": "2610.20607",
+      "title": "Hierarchical Residual Policy Learning for Real-World Mobile Manipulation with Sparse Human Guidance",
+      "published": "2026-10-14T17:59:52Z",
+      "arxiv_url": "https://arxiv.org/abs/2610.20607",
+      "source_json": "../spiders/arxiv/papers/2026-10-16.json",
+      "source_record_sha256": "fdd3d6c47bff565a5472cf5ddc3fd364665e06e2517b0bb4c11cd40b8a8aea1a",
+      "in_scope": true,
+      "topic": "reward-value-feedback-data",
+      "knowledge_point": "离线基础策略、在线残差和人工干预需分别标识，并保留底盘与机械臂动作关系；干预覆盖率、交互时长和价值对齐效果决定真实数据的利用效率。",
+      "scope_reason": "以稀疏人工干预指导真实移动操作的在线残差更新。",
+      "local_evidence_available": {
+        "fulltext": false,
+        "summary": true,
+        "verify": true,
+        "figure": true
+      },
+      "official_abstract_checked": false,
+      "official_html_sampled": false
+    },
+    {
+      "id": "2610.20609",
+      "title": "SafeDriveVLA: Navigation-Conditioned World Model Dreaming for Conflict-Aware End-to-End Autonomous Driving",
+      "published": "2026-10-14T17:59:56Z",
+      "arxiv_url": "https://arxiv.org/abs/2610.20609",
+      "source_json": "../spiders/arxiv/papers/2026-10-16.json",
+      "source_record_sha256": "ef92fabdfaba74bc43f6021c67fb6eeca613e13d226e30fe11fb59bc1c81fc49",
+      "in_scope": true,
+      "topic": "robot-safety-robustness-data",
+      "knowledge_point": "将正常导航、危险指令和对抗扰动配对，保存遵循指令的预测后果与导航合规模式；闭环语言遵循和碰撞风险应分别评价。",
+      "scope_reason": "自动驾驶的语言指令与物理场景冲突属于真实行动系统安全边界。",
+      "local_evidence_available": {
+        "fulltext": false,
+        "summary": true,
+        "verify": true,
+        "figure": true
+      },
+      "official_abstract_checked": false,
+      "official_html_sampled": false
+    },
+    {
+      "id": "2610.22311",
+      "title": "Velox: Spatial Memory Makes World Models Efficient",
+      "published": "2026-10-15T17:50:20Z",
+      "arxiv_url": "https://arxiv.org/abs/2610.22311",
+      "source_json": "../spiders/arxiv/papers/2026-10-17.json",
+      "source_record_sha256": "39ec7ab197fa632c2262e9322a8539322d3186507dbc52095c8e890dd44a3934",
+      "in_scope": true,
+      "topic": "world-model-training-data",
+      "knowledge_point": "历史视频上下文应记录相机视锥、深度覆盖和上下文选择来源；加速评估需同时检查长 rollout 延迟、未覆盖区域表现及导航视频一致性。",
+      "scope_reason": "以几何空间记忆加速导航视频世界模型，关联交互仿真与空间一致性。",
+      "local_evidence_available": {
+        "fulltext": false,
+        "summary": true,
+        "verify": true,
+        "figure": true
+      },
+      "official_abstract_checked": false,
+      "official_html_sampled": false
+    },
+    {
+      "id": "2610.22322",
+      "title": "Learning Self-Orchestration in Decentralized Agent Swarms",
+      "published": "2026-10-15T17:51:57Z",
+      "arxiv_url": "https://arxiv.org/abs/2610.22322",
+      "source_json": "../spiders/arxiv/papers/2026-10-17.json",
+      "source_record_sha256": "95f904cb084a876b642aad7952287ed2f422e432e6f4a39508810ee13d0a280d",
+      "in_scope": true,
+      "topic": "multi-robot-coordination-data",
+      "knowledge_point": "多代理轨迹需记录参与竞价、实际执行者、局部反馈与集体结果，以比较协作方式、规模扩展和成员退出；深度研究任务的结果不外推到机器人。",
+      "scope_reason": "虽涉及通用代理群体，但实验明确包含机器人导航与具身任务，应保留机器人部分。",
+      "local_evidence_available": {
+        "fulltext": false,
+        "summary": true,
+        "verify": true,
+        "figure": true
+      },
+      "official_abstract_checked": false,
+      "official_html_sampled": false
+    },
+    {
+      "id": "2610.22323",
+      "title": "Mem4Act: Learning Effective Latent Memory for Long-Horizon Robotic Manipulation",
+      "published": "2026-10-15T17:51:58Z",
+      "arxiv_url": "https://arxiv.org/abs/2610.22323",
+      "source_json": "../spiders/arxiv/papers/2026-10-17.json",
+      "source_record_sha256": "286ca0f19e2ed3a70b2225ae1b497d084dbc1dc8b5012a9f5c8b8be1e0c81db4",
+      "in_scope": true,
+      "topic": "embodied-memory-experience-data",
+      "knowledge_point": "历史可按多时间粒度组织，并用问答和关键帧特征共同监督固定大小记忆；需要检验动作策略是否真正使用历史以及哪些证据在压缩中保留。",
+      "scope_reason": "以任务语义、关键帧与动作监督训练长任务机器人记忆。",
+      "local_evidence_available": {
+        "fulltext": false,
+        "summary": true,
+        "verify": true,
+        "figure": true
+      },
+      "official_abstract_checked": false,
+      "official_html_sampled": false
+    },
+    {
+      "id": "2610.22337",
+      "title": "Sim-to-Real Reinforcement Learning for Path-Safe Target Reaching in Robotic Harvesting of Hydroponic Lettuce",
+      "published": "2026-10-15T17:54:16Z",
+      "arxiv_url": "https://arxiv.org/abs/2610.22337",
+      "source_json": "../spiders/arxiv/papers/2026-10-17.json",
+      "source_record_sha256": "b7f03c33b886f099e6962d18b54aa826fd9568e8ee9013f9d7cd3b407d3ec1d9",
+      "in_scope": true,
+      "topic": "domain-specific-embodied-data",
+      "knowledge_point": "农业采收轨迹应标记目标、侧向安全走廊、末段接近路径和完整采收结果；只检查终点精度会漏掉植株附近的危险路径与不平滑动作。",
+      "scope_reason": "温室采收中的真实机器人到达和完整采收有明确行业约束与评测。",
+      "local_evidence_available": {
+        "fulltext": false,
+        "summary": true,
+        "verify": true,
+        "figure": true
+      },
+      "official_abstract_checked": false,
+      "official_html_sampled": false
+    },
+    {
+      "id": "2610.22340",
+      "title": "Dexterity from Supervised Play",
+      "published": "2026-10-15T17:55:50Z",
+      "arxiv_url": "https://arxiv.org/abs/2610.22340",
+      "source_json": "../spiders/arxiv/papers/2026-10-17.json",
+      "source_record_sha256": "93f993ddf85b49766790a670e52a9f6d194d2d40eccf3ec21bfbed3fea0d0ca8",
+      "in_scope": true,
+      "topic": "world-model-training-data",
+      "knowledge_point": "把人工 play、克隆后的自主探索和模型内自博弈分别保留来源；无特定任务示教的交互数据仍须覆盖接触状态，并以真实手内操作验证规划用途。",
+      "scope_reason": "少量人工 play 驱动机器人自主收集接触经验，再训练世界模型和规划。",
+      "local_evidence_available": {
+        "fulltext": false,
+        "summary": true,
+        "verify": true,
+        "figure": true
+      },
+      "official_abstract_checked": false,
+      "official_html_sampled": false
+    },
+    {
+      "id": "2610.22342",
+      "title": "Spark-0: Scaling Spatially Aligned Tactile Pretraining for Robot Dexterous Manipulation",
+      "published": "2026-10-15T17:56:17Z",
+      "arxiv_url": "https://arxiv.org/abs/2610.22342",
+      "source_json": "../spiders/arxiv/papers/2026-10-17.json",
+      "source_record_sha256": "697792191f35cb020f5dc7b8b063c7db4194b96ecd7ff36ff02fb8e0af33f40b",
+      "in_scope": true,
+      "topic": "tactile-force-contact-data",
+      "knowledge_point": "将触觉手套接触映射到图像及三维触点，保存区域力历史与空间对应；分别评测触觉仅用于预训练监督和部署时仍输入触觉的收益。",
+      "scope_reason": "构建千小时全手触觉人体数据，并进行空间对齐的视触觉机器人预训练。",
+      "local_evidence_available": {
+        "fulltext": false,
+        "summary": true,
+        "verify": true,
+        "figure": true
+      },
+      "official_abstract_checked": false,
+      "official_html_sampled": false
+    },
+    {
+      "id": "2610.22343",
+      "title": "GeoState: Learning View-Decoupled Geometry States for 3D World Modeling",
+      "published": "2026-10-15T17:56:18Z",
+      "arxiv_url": "https://arxiv.org/abs/2610.22343",
+      "source_json": "../spiders/arxiv/papers/2026-10-17.json",
+      "source_record_sha256": "2c2a8659d5e1adef5b57dfab4a85e4f9de0dab3773419dccd1e69ff46d0634e0",
+      "in_scope": true,
+      "topic": "3d-spatial-representation-data",
+      "knowledge_point": "多视角几何特征需要区分场景演变与相机运动，并保持 rollout 内统一尺度；跨视角查询与跨数据集评测可暴露逐帧尺度对齐掩盖的误差。",
+      "scope_reason": "研究把场景状态变化与相机变化解耦的三维世界状态，并在驾驶数据上验证。",
+      "local_evidence_available": {
+        "fulltext": false,
+        "summary": true,
+        "verify": true,
+        "figure": true
+      },
+      "official_abstract_checked": false,
+      "official_html_sampled": false
+    },
+    {
+      "id": "2610.22362",
+      "title": "CoDA: Co-Evolution of Data Engines and Action Policies",
+      "published": "2026-10-15T17:59:02Z",
+      "arxiv_url": "https://arxiv.org/abs/2610.22362",
+      "source_json": "../spiders/arxiv/papers/2026-10-17.json",
+      "source_record_sha256": "a164f34fb861b8b7d05fe78db25fcf2bedd82e4d9561dfcbdfe5cc96ca87c0bb",
+      "in_scope": true,
+      "topic": "model-conditioned-data-engine",
+      "knowledge_point": "将环境构造程序、失败诊断、训练程序和学习进展写入共享记录，并保留固定生成预算下的分布外效果，检验生成数据是否针对真实能力缺口。",
+      "scope_reason": "直接研究数据引擎根据机器人失败和学习进展生成训练环境。",
+      "local_evidence_available": {
+        "fulltext": false,
+        "summary": true,
+        "verify": true,
+        "figure": true
+      },
+      "official_abstract_checked": true,
+      "official_html_sampled": true
+    },
+    {
+      "id": "2610.22363",
+      "title": "Perceive, Predict, and Plan: a Unified World Action Model for Egocentric Dexterous Manipulation",
+      "published": "2026-10-15T17:59:07Z",
+      "arxiv_url": "https://arxiv.org/abs/2610.22363",
+      "source_json": "../spiders/arxiv/papers/2026-10-17.json",
+      "source_record_sha256": "d78e7558ada815f16cec8ed7aa1b7ebd012c66b12485f60bf5efe7d084ed0900",
+      "in_scope": true,
+      "topic": "world-model-training-data",
+      "knowledge_point": "统一视频与三维动作样本可通过可见模态随机化用于感知、预测和规划；三种能力应分开验证，生成操作视频的评价不能自动视为真实机器人执行证明。",
+      "scope_reason": "联合第一视角手部重建、动作条件未来和操作规划，涉及具身视频动作监督。",
+      "local_evidence_available": {
+        "fulltext": false,
+        "summary": true,
+        "verify": true,
+        "figure": true
+      },
+      "official_abstract_checked": false,
+      "official_html_sampled": false
+    },
+    {
+      "id": "2610.22364",
+      "title": "T2-z: Test-Time Optimization of Environment Latents for Robotic World Models",
+      "published": "2026-10-15T17:59:11Z",
+      "arxiv_url": "https://arxiv.org/abs/2610.22364",
+      "source_json": "../spiders/arxiv/papers/2026-10-17.json",
+      "source_record_sha256": "1a8f428632b9bcbe39fb49108d35b339659ebf848883f35d8034877a4302ab5a",
+      "in_scope": true,
+      "topic": "world-model-training-data",
+      "knowledge_point": "训练样本应保留环境身份与交互轨迹，测试时隔离用于适配的少量交互和正式评测；无物理参数标签的环境潜变量仍需预测误差和动作成功率双重验证。",
+      "scope_reason": "通过少量真实机器人交互识别不可观测环境因素并适配世界模型。",
+      "local_evidence_available": {
+        "fulltext": false,
+        "summary": true,
+        "verify": true,
+        "figure": true
+      },
+      "official_abstract_checked": false,
+      "official_html_sampled": false
+    },
+    {
+      "id": "2610.22368",
+      "title": "Value as Memory: Online Value-Guided Post-training for General Robot Policies",
+      "published": "2026-10-15T17:59:31Z",
+      "arxiv_url": "https://arxiv.org/abs/2610.22368",
+      "source_json": "../spiders/arxiv/papers/2026-10-17.json",
+      "source_record_sha256": "62a46d3b2f0cc92005fd7b1e20fade881cbc68d7cf8fa2b09d88dc39be01fc6c",
+      "in_scope": true,
+      "topic": "reward-value-feedback-data",
+      "knowledge_point": "将近期价值预测作为任务进度记忆时，需对齐观测、价值版本、动作和稀疏奖励；并发采集与训练还应记录策略版本，公平比较在线更新和离线更新。",
+      "scope_reason": "结合离线示教、干预和在线 rollout，以价值缓存推动真实机器人持续学习。",
+      "local_evidence_available": {
+        "fulltext": false,
+        "summary": true,
+        "verify": true,
+        "figure": true
+      },
+      "official_abstract_checked": false,
+      "official_html_sampled": false
+    },
+    {
+      "id": "2610.22372",
+      "title": "LIBERO-PeRM: Benchmarking Personalized Robotic Manipulation",
+      "published": "2026-10-15T17:59:59Z",
+      "arxiv_url": "https://arxiv.org/abs/2610.22372",
+      "source_json": "../spiders/arxiv/papers/2026-10-17.json",
+      "source_record_sha256": "2269d268881ace79f41e16303534dcb3f88c3e78f7c11b2a34581bcb510eb835",
+      "in_scope": true,
+      "topic": "personalized-preference-data",
+      "knowledge_point": "偏好标签应覆盖动作方式、技能选择和用户背景，并与不改变目标的无偏好示教配对；分别评测偏好满足、目标成功、冲突处理与跨布局泛化。",
+      "scope_reason": "用配对示教研究机器人语言偏好，明确区分完成任务与满足偏好。",
+      "local_evidence_available": {
+        "fulltext": false,
+        "summary": true,
+        "verify": true,
+        "figure": true
+      },
+      "official_abstract_checked": true,
+      "official_html_sampled": true
+    },
+    {
+      "id": "2610.24675",
+      "title": "Action-Aligned Latent Planning for Versatile Humanoid Loco-Manipulation",
+      "published": "2026-10-17T12:59:06Z",
+      "arxiv_url": "https://arxiv.org/abs/2610.24675",
+      "source_json": "../spiders/arxiv/papers/2026-10-20.json",
+      "source_record_sha256": "4eccb1b251be4bace968610292c05808cfd6848b94ff1b68cae368f4861c9b21",
+      "in_scope": true,
+      "topic": "robot-skill-composition-data",
+      "knowledge_point": "技能投影应匹配局部状态下的真实控制响应，再聚合闭环潜在轨迹训练规划器；共享技能表示还需验证低频规划与高频反馈的衔接及技能串联。",
+      "scope_reason": "把不同人形交互技能投影到共同可执行潜在空间并汇集闭环数据。",
+      "local_evidence_available": {
+        "fulltext": false,
+        "summary": true,
+        "verify": true,
+        "figure": true
+      },
+      "official_abstract_checked": false,
+      "official_html_sampled": false
+    },
+    {
+      "id": "2610.24705",
+      "title": "Relational Spatial Alignment for Vision-Language-Action Models",
+      "published": "2026-10-17T14:08:49Z",
+      "arxiv_url": "https://arxiv.org/abs/2610.24705",
+      "source_json": "../spiders/arxiv/papers/2026-10-20.json",
+      "source_record_sha256": "2f02feac700fbedcb8c50934bf71ee1343bb884adc3a0d3795336aa0705f5c57",
+      "in_scope": true,
+      "topic": "3d-spatial-representation-data",
+      "knowledge_point": "几何监督可约束特征之间的空间关系，而非强制逐点相同；评估应同时检查空间推理、表示退化和真实操作效果，避免仅凭特征相似度验收。",
+      "scope_reason": "研究机器人模型与三维几何表征的关系对齐，并有真实操作检验。",
+      "local_evidence_available": {
+        "fulltext": false,
+        "summary": true,
+        "verify": true,
+        "figure": true
+      },
+      "official_abstract_checked": false,
+      "official_html_sampled": false
+    },
+    {
+      "id": "2610.24738",
+      "title": "Editing Images into Reusable Layers via Compositional Edit-Prior Distillation",
+      "published": "2026-10-17T15:07:53Z",
+      "arxiv_url": "https://arxiv.org/abs/2610.24738",
+      "source_json": "../spiders/arxiv/papers/2026-10-20.json",
+      "source_record_sha256": "4dee98e426a3866788a1f6469b3ce555dd75cf1394b4d887deccad7215491f97",
+      "in_scope": false,
+      "topic": null,
+      "knowledge_point": "图层编辑数据虽可被未来仿真工具借用，但本文未建立具身数据用途，不能因 manipulation 指图像操作而收录。",
+      "scope_reason": "研究通用指令图像编辑及 RGBA 图层分解，摘要没有机器人、物理状态或具身下游验证。",
+      "local_evidence_available": {
+        "fulltext": false,
+        "summary": false,
+        "verify": false,
+        "figure": true
+      },
+      "official_abstract_checked": false,
+      "official_html_sampled": false
+    },
+    {
+      "id": "2610.24747",
+      "title": "EndoVLA-OOV: Language-Conditioned Out-of-View Target Acquisition in Robotic Endoscopy",
+      "published": "2026-10-17T15:28:36Z",
+      "arxiv_url": "https://arxiv.org/abs/2610.24747",
+      "source_json": "../spiders/arxiv/papers/2026-10-20.json",
+      "source_record_sha256": "109a042b09c029a8c29583e13eabfa1c4a362338ec863b75eeebf84426212c61",
+      "in_scope": true,
+      "topic": "domain-specific-embodied-data",
+      "knowledge_point": "医学复访数据应关联初始、中间与当前图像、解剖描述和弯曲动作；按镜面湿润、低照度、未见模型及跨本体切分，区分数据规模收益和环境泛化。",
+      "scope_reason": "真实机器人内窥镜通过语言和时序观测重新寻找视野外目标，并发布操作数据。",
+      "local_evidence_available": {
+        "fulltext": false,
+        "summary": true,
+        "verify": true,
+        "figure": true
+      },
+      "official_abstract_checked": false,
+      "official_html_sampled": false
+    },
+    {
+      "id": "2610.24767",
+      "title": "DialogMem: Evaluating Dialogue-Grounded Embodied Memory in 3D Environments",
+      "published": "2026-10-17T16:19:40Z",
+      "arxiv_url": "https://arxiv.org/abs/2610.24767",
+      "source_json": "../spiders/arxiv/papers/2026-10-20.json",
+      "source_record_sha256": "737b9df55716fb716b8cc726ececb2f88d526ddb5df5dcd8348253cbb68ea014",
+      "in_scope": true,
+      "topic": "embodied-memory-experience-data",
+      "knowledge_point": "对话必须按时间连接到具体物体实例及位置；评测应分别诊断记忆形成时的关联、检索正确条目和空间定位，问答改善不代表导航改善。",
+      "scope_reason": "将真实三维场景中的 RGB-D、位姿与人类对话构成导航和问答记忆。",
+      "local_evidence_available": {
+        "fulltext": false,
+        "summary": true,
+        "verify": true,
+        "figure": true
+      },
+      "official_abstract_checked": false,
+      "official_html_sampled": false
+    },
+    {
+      "id": "2610.24779",
+      "title": "Learning Structured Locomotion References for Optimization-Based Whole-Body Control",
+      "published": "2026-10-17T16:47:46Z",
+      "arxiv_url": "https://arxiv.org/abs/2610.24779",
+      "source_json": "../spiders/arxiv/papers/2026-10-20.json",
+      "source_record_sha256": "3694ff454772208f906ff6b26178d3a8c90dec4ae64614b45987adef4c1bd6ab",
+      "in_scope": true,
+      "topic": "humanoid-locomotion-data",
+      "knowledge_point": "结构化运动参考需同步记录身体运动、接触力、落脚点和步态时间；在统一扰动网格中做通道消融可区分各参考量对存活率的贡献。",
+      "scope_reason": "四足控制中的身体、接触、落脚和步态参考及扰动实验属于足式机器人数据。",
+      "local_evidence_available": {
+        "fulltext": false,
+        "summary": true,
+        "verify": true,
+        "figure": true
+      },
+      "official_abstract_checked": false,
+      "official_html_sampled": false
+    },
+    {
+      "id": "2610.24801",
+      "title": "When Better Policies Leave Harder Failures: Coverage Shift in VLM Success Monitoring",
+      "published": "2026-10-17T18:08:27Z",
+      "arxiv_url": "https://arxiv.org/abs/2610.24801",
+      "source_json": "../spiders/arxiv/papers/2026-10-20.json",
+      "source_record_sha256": "040fcd87c90b2c0ff096b6bd7b3d8f69d790d2d228cf594b33943fa383945ce1",
+      "in_scope": true,
+      "topic": "embodied-evaluation-data-quality",
+      "knowledge_point": "策略更新会改变剩余失败的可见性；质量报告需同时记录绝对漏检数、失败条件下漏检率和审计覆盖，尤其保留遮挡造成的边界失败样本。",
+      "scope_reason": "研究机器人策略改善后成功监测器的失败分布变化，直接关乎质量评估。",
+      "local_evidence_available": {
+        "fulltext": false,
+        "summary": true,
+        "verify": true,
+        "figure": false
+      },
+      "official_abstract_checked": false,
+      "official_html_sampled": false
+    },
+    {
+      "id": "2610.24804",
+      "title": "SARAM: Sparse Adapter Allocation with Reuse and Merging for Lifelong Robot Learning",
+      "published": "2026-10-17T18:14:37Z",
+      "arxiv_url": "https://arxiv.org/abs/2610.24804",
+      "source_json": "../spiders/arxiv/papers/2026-10-20.json",
+      "source_record_sha256": "fa88904bb8002e99e7ce8757619568f74fbb24bfb6da596a7737f5027e140173",
+      "in_scope": true,
+      "topic": "continual-robot-learning-data",
+      "knowledge_point": "终身学习数据应保留任务流顺序、历史任务评测和每轮适配器版本，并在固定设备预算下报告旧任务保持、存储增长与控制频率。",
+      "scope_reason": "研究真实与仿真机器人顺序任务学习、保留效果及部署成本。",
+      "local_evidence_available": {
+        "fulltext": false,
+        "summary": true,
+        "verify": true,
+        "figure": true
+      },
+      "official_abstract_checked": true,
+      "official_html_sampled": true
+    },
+    {
+      "id": "2610.24847",
+      "title": "DiPLO: Self-distilled Diffusion Planning for Loco-manipulation",
+      "published": "2026-10-17T19:51:59Z",
+      "arxiv_url": "https://arxiv.org/abs/2610.24847",
+      "source_json": "../spiders/arxiv/papers/2026-10-20.json",
+      "source_record_sha256": "e8b43910eb68d1c40716bcfafe6cf41f29dd7ffc4e4e90551289e93a6e7a8d39",
+      "in_scope": true,
+      "topic": "humanoid-locomotion-data",
+      "knowledge_point": "将人体重定向预训练参考、蒸馏阶段与强化学习后训练轨迹分开标记，并检查生成计划是否适配冻结跟踪器的可执行能力。",
+      "scope_reason": "人体动作重定向参考用于人形全身规划训练，并进行真实部署。",
+      "local_evidence_available": {
+        "fulltext": false,
+        "summary": true,
+        "verify": true,
+        "figure": true
+      },
+      "official_abstract_checked": false,
+      "official_html_sampled": false
+    },
+    {
+      "id": "2610.24885",
+      "title": "Goal Images Are Control Targets: Spatially-Grounded Goal-Image Synthesis for Robotic Manipulation",
+      "published": "2026-10-17T21:47:46Z",
+      "arxiv_url": "https://arxiv.org/abs/2610.24885",
+      "source_json": "../spiders/arxiv/papers/2026-10-20.json",
+      "source_record_sha256": "5977f176d13a754b15f21a1f51aa2e61649b1461c335c9f0171aedfd9478686a",
+      "in_scope": true,
+      "topic": "language-action-grounding-data",
+      "knowledge_point": "目标图像数据应标注正确对象、目标状态及初末编辑区域；质量验收应以动作目标满足和长任务控制成功为主，不能仅用照片真实感或编辑榜单评分。",
+      "scope_reason": "生成目标图像用于机器人控制，并揭示图像质量与真实控制用途的差异。",
+      "local_evidence_available": {
+        "fulltext": false,
+        "summary": true,
+        "verify": true,
+        "figure": true
+      },
+      "official_abstract_checked": false,
+      "official_html_sampled": false
+    },
+    {
+      "id": "2610.26711",
+      "title": "PVBench: Quantifying Physical Plausibility in Video Generation with Object-Level Physical Measurements",
+      "published": "2026-10-19T16:44:45Z",
+      "arxiv_url": "https://arxiv.org/abs/2610.26711",
+      "source_json": "../spiders/arxiv/papers/2026-10-21.json",
+      "source_record_sha256": "f7455347654ce25e8538bb59cc5918d48c0bbff1dc5c43eab9becd8f46b25bab",
+      "in_scope": true,
+      "topic": "embodied-evaluation-data-quality",
+      "knowledge_point": "物理视频质检可记录物体六维位姿、尺度、运动及守恒残差，并用人工一致性验证自动评分；视频物理合理性仍不同于动作条件执行可靠性。",
+      "scope_reason": "虽面向视频生成，但包含机器人等物理主体并提供可测物理指标，属于具身合成数据质量边界。",
+      "local_evidence_available": {
+        "fulltext": false,
+        "summary": true,
+        "verify": true,
+        "figure": true
+      },
+      "official_abstract_checked": false,
+      "official_html_sampled": false
+    },
+    {
+      "id": "2610.26717",
+      "title": "Robot Learning with Vision-Language-Action Models for Agricultural Manipulation",
+      "published": "2026-10-19T16:49:17Z",
+      "arxiv_url": "https://arxiv.org/abs/2610.26717",
+      "source_json": "../spiders/arxiv/papers/2026-10-21.json",
+      "source_record_sha256": "c3820cf68c69a2b2bddc33315eef4ae34e6de591014cda6f5c54f33d92460b54",
+      "in_scope": true,
+      "topic": "domain-specific-embodied-data",
+      "knowledge_point": "番茄场景数据应覆盖植株几何、遮挡、视角和空间位移，区分仿真适配与真实微调来源，并检查本体状态信息对农业分布外操作的贡献。",
+      "scope_reason": "农业操作通过仿真遥操作示教及真实机器人示教适配通用策略。",
+      "local_evidence_available": {
+        "fulltext": false,
+        "summary": true,
+        "verify": true,
+        "figure": true
+      },
+      "official_abstract_checked": false,
+      "official_html_sampled": false
+    },
+    {
+      "id": "2610.26751",
+      "title": "Beyond Omni: A Unified MLLM for Embodied Sensory Understanding",
+      "published": "2026-10-19T17:14:37Z",
+      "arxiv_url": "https://arxiv.org/abs/2610.26751",
+      "source_json": "../spiders/arxiv/papers/2026-10-21.json",
+      "source_record_sha256": "294dea48e54a2e82887375ef80d3de97e8817c24e3a2420643e778b5aba1fd43",
+      "in_scope": true,
+      "topic": "multimodal-spatiotemporal-alignment",
+      "knowledge_point": "异质传感数据需要各自表示与语言语义接口，并保留模态特定处理和评测；多模态语料规模不能替代每种传感任务的独立质量验证。",
+      "scope_reason": "统一深度、点云、IMU、触觉等物理感知语料，直接涉及具身传感数据。",
+      "local_evidence_available": {
+        "fulltext": false,
+        "summary": true,
+        "verify": true,
+        "figure": true
+      },
+      "official_abstract_checked": false,
+      "official_html_sampled": false
+    },
+    {
+      "id": "2610.26757",
+      "title": "Simulation Priors for Rapid Adaptation in Model-Based RL for Autonomous Racing",
+      "published": "2026-10-19T17:17:24Z",
+      "arxiv_url": "https://arxiv.org/abs/2610.26757",
+      "source_json": "../spiders/arxiv/papers/2026-10-21.json",
+      "source_record_sha256": "207a295f0a9b8fcf9c3a37eedc588fe587633315f0c759393120bc849ac590c3",
+      "in_scope": true,
+      "topic": "synthetic-data-sim-to-real",
+      "knowledge_point": "将低精度和高精度仿真轨迹作为有偏先验分别标记，用有限真实交互校正残差；按赛道、地表变化和失败率评价迁移，而非假定仿真物理完全准确。",
+      "scope_reason": "不同仿真精度的轨迹用于真实赛车少量交互适配，属于真实物理控制边界。",
+      "local_evidence_available": {
+        "fulltext": false,
+        "summary": true,
+        "verify": true,
+        "figure": true
+      },
+      "official_abstract_checked": false,
+      "official_html_sampled": false
+    },
+    {
+      "id": "2610.26759",
+      "title": "Tactile In-Hand Object Rotation: A Comparative Study of Hand Morphology in Simulation and Hardware",
+      "published": "2026-10-19T17:18:25Z",
+      "arxiv_url": "https://arxiv.org/abs/2610.26759",
+      "source_json": "../spiders/arxiv/papers/2026-10-21.json",
+      "source_record_sha256": "06f094d5a9001fad19dbb6d7444c5f4da10f57d2856fc9f543c1ef202dd43730",
+      "in_scope": true,
+      "topic": "tactile-force-contact-data",
+      "knowledge_point": "跨手型比较需统一训练和测试条件，保存每指接触、参与度、累计负载与旋转进度；触觉信息收益应与形态收益分别分析。",
+      "scope_reason": "比较两种真实机器人手形态的触觉、接触组织与负载分配。",
+      "local_evidence_available": {
+        "fulltext": false,
+        "summary": true,
+        "verify": true,
+        "figure": true
+      },
+      "official_abstract_checked": false,
+      "official_html_sampled": false
+    },
+    {
+      "id": "2610.26762",
+      "title": "DexOAK: Object-Aware Kinematic Retargeting",
+      "published": "2026-10-19T17:20:10Z",
+      "arxiv_url": "https://arxiv.org/abs/2610.26762",
+      "source_json": "../spiders/arxiv/papers/2026-10-21.json",
+      "source_record_sha256": "7b6afde394a05bf7c4d1ada235d92f56188e93dfebda322741e3d6f9927c78b3",
+      "in_scope": true,
+      "topic": "demonstration-collection-retargeting",
+      "knowledge_point": "重定向应保留手物相对交互图、接触位置、非穿透与自碰撞约束；用未见物体和真实开环重放检验参考是否可用于机器人数据生成。",
+      "scope_reason": "利用人体动捕和物体点云重定向为可在真实手上重放的接触参考。",
+      "local_evidence_available": {
+        "fulltext": false,
+        "summary": true,
+        "verify": true,
+        "figure": true
+      },
+      "official_abstract_checked": false,
+      "official_html_sampled": false
+    },
+    {
+      "id": "2610.26765",
+      "title": "HandsOn: A Large-Scale Simulation Benchmark for Generalizable Dexterous Manipulation",
+      "published": "2026-10-19T17:22:48Z",
+      "arxiv_url": "https://arxiv.org/abs/2610.26765",
+      "source_json": "../spiders/arxiv/papers/2026-10-21.json",
+      "source_record_sha256": "e16caa85c49d73da487a6aacb4428d907dc926a75c2c45b58d6e424ec5dba3f2",
+      "in_scope": true,
+      "topic": "dexterous-manipulation-data",
+      "knowledge_point": "灵巧操作数据需标注机械臂、手型、物体属性和任务关系，并隔离有目标示教的核心任务与无目标示教的迁移任务，分阶段诊断接触和协调失败。",
+      "scope_reason": "提供多本体灵巧操作仿真平台、人工示教和任务泛化基准。",
+      "local_evidence_available": {
+        "fulltext": false,
+        "summary": true,
+        "verify": true,
+        "figure": true
+      },
+      "official_abstract_checked": false,
+      "official_html_sampled": false
+    },
+    {
+      "id": "2610.26780",
+      "title": "V-JEPA Hand: Simple, Accurate and Fast 3D Hand and Camera Trajectory Recovery from Egocentric Videos",
+      "published": "2026-10-19T17:34:49Z",
+      "arxiv_url": "https://arxiv.org/abs/2610.26780",
+      "source_json": "../spiders/arxiv/papers/2026-10-21.json",
+      "source_record_sha256": "59e9d5814822b53d22b7960e04b4277ad5bb551bc81242d2beff6977562d1951",
+      "in_scope": true,
+      "topic": "human-object-interaction-reconstruction",
+      "knowledge_point": "伪标签与高精度三维标注应注明来源，联合手部存在性、关节和相机运动恢复统一世界坐标；误差评测需要考虑漏检覆盖和世界轨迹漂移。",
+      "scope_reason": "从第一视角视频联合恢复米制双手和相机轨迹，直接服务人体示教数据处理。",
+      "local_evidence_available": {
+        "fulltext": false,
+        "summary": true,
+        "verify": true,
+        "figure": true
+      },
+      "official_abstract_checked": false,
+      "official_html_sampled": false
+    },
+    {
+      "id": "2610.26810",
+      "title": "Bio-inspired Thrust-Assisted Trotting on a legged-Aerial Robot via Real-Time QP-MPC",
+      "published": "2026-10-19T17:50:01Z",
+      "arxiv_url": "https://arxiv.org/abs/2610.26810",
+      "source_json": "../spiders/arxiv/papers/2026-10-21.json",
+      "source_record_sha256": "01ec16615b3da5c3940d3a04625625edf98805ec9df08d92b5260a5fe855d10f",
+      "in_scope": true,
+      "topic": "trajectory-control-constraint-data",
+      "knowledge_point": "助推步态轨迹应同步保存推力矢量、地面反力、关节跟踪和控制周期，并验证摩擦锥及求解时限；少量硬件速度条件的结果需保留测试范围。",
+      "scope_reason": "展示助推双足机器人的真实高频控制，属于物理约束执行数据边界。",
+      "local_evidence_available": {
+        "fulltext": false,
+        "summary": true,
+        "verify": true,
+        "figure": true
+      },
+      "official_abstract_checked": false,
+      "official_html_sampled": false
+    },
+    {
+      "id": "2610.26811",
+      "title": "State World Models: Execute the Rules, Generate the Pixels",
+      "published": "2026-10-19T17:50:32Z",
+      "arxiv_url": "https://arxiv.org/abs/2610.26811",
+      "source_json": "../spiders/arxiv/papers/2026-10-21.json",
+      "source_record_sha256": "e35566191b38386f5834fc496b87758aaae6e78d8b6ba1780c7a056dad69761c",
+      "in_scope": true,
+      "topic": "world-model-training-data",
+      "knowledge_point": "为相同初始图像和动作构造隐藏状态不同的反事实配对，可检验预测是否依赖持久状态；规则执行、三维引导和视频渲染应分别记录与评估。",
+      "scope_reason": "研究带隐藏状态和可执行规则的交互世界，关联动作条件仿真数据有效性。",
+      "local_evidence_available": {
+        "fulltext": false,
+        "summary": false,
+        "verify": false,
+        "figure": true
+      },
+      "official_abstract_checked": false,
+      "official_html_sampled": false
+    },
+    {
+      "id": "2610.26828",
+      "title": "Agent World Model in the Wild: Computer-Use Agent Environment Synthesis",
+      "published": "2026-10-19T17:55:35Z",
+      "arxiv_url": "https://arxiv.org/abs/2610.26828",
+      "source_json": "../spiders/arxiv/papers/2026-10-21.json",
+      "source_record_sha256": "e3b72b99be6f819e944c89b948237b1288f0c59284ae11f0893eaa39ddb4589c",
+      "in_scope": false,
+      "topic": null,
+      "knowledge_point": "执行式任务验证和反事实质量门具有方法参考价值，但纯数字界面环境不属于本次具身物理数据范围。",
+      "scope_reason": "环境与任务专门服务 GUI、MCP、CLI 等计算机操作代理，未涉及机器人或物理感知行动。",
+      "local_evidence_available": {
+        "fulltext": false,
+        "summary": false,
+        "verify": false,
+        "figure": true
+      },
+      "official_abstract_checked": false,
+      "official_html_sampled": false
+    },
+    {
+      "id": "2610.26844",
+      "title": "AnyGoal: On World Model Generalization Beyond Expert Rollouts",
+      "published": "2026-10-19T17:59:05Z",
+      "arxiv_url": "https://arxiv.org/abs/2610.26844",
+      "source_json": "../spiders/arxiv/papers/2026-10-21.json",
+      "source_record_sha256": "c810145c56ddbcad5fcb426a9af3242fe494981155cb6d0c35fa332749436405",
+      "in_scope": true,
+      "topic": "world-model-planning-evaluation",
+      "knowledge_point": "保持单个状态因素和动作仍在训练支持内，只改变它们的组合与目标，可暴露专家轨迹覆盖盲点；预测误差和下游规划成功需要同时检验。",
+      "scope_reason": "研究物理交互世界模型在专家轨迹外的状态动作组合与规划泛化。",
+      "local_evidence_available": {
+        "fulltext": false,
+        "summary": false,
+        "verify": false,
+        "figure": true
+      },
+      "official_abstract_checked": true,
+      "official_html_sampled": true
+    },
+    {
+      "id": "2610.26845",
+      "title": "Train An Imaginative Agent",
+      "published": "2026-10-19T17:59:12Z",
+      "arxiv_url": "https://arxiv.org/abs/2610.26845",
+      "source_json": "../spiders/arxiv/papers/2026-10-21.json",
+      "source_record_sha256": "bf0b7f19418452417a841e61c8a550984175e4ab42fcd9c54691090009c16c1f",
+      "in_scope": true,
+      "topic": "world-model-planning-evaluation",
+      "knowledge_point": "记录候选动作、想象未来、分支及实际观察频率，可检验有限反馈下的规划收益；游戏任务表现应与 PushT 等物理操作结果分开解释。",
+      "scope_reason": "虽然包含游戏，但也在 PushT 物理操作环境评估想象规划，保留该物理决策边界。",
+      "local_evidence_available": {
+        "fulltext": false,
+        "summary": false,
+        "verify": false,
+        "figure": true
+      },
+      "official_abstract_checked": false,
+      "official_html_sampled": false
+    },
+    {
+      "id": "2610.26846",
+      "title": "GPT-6 Astra Is a Native Visuo-Tactile Policy for Contact-Rich Manipulation",
+      "published": "2026-10-19T17:59:17Z",
+      "arxiv_url": "https://arxiv.org/abs/2610.26846",
+      "source_json": "../spiders/arxiv/papers/2026-10-21.json",
+      "source_record_sha256": "17750726b69ad823ce546d92ec4c157c919fb0055c9c30b066c5b4e767b01160",
+      "in_scope": true,
+      "topic": "tactile-force-contact-data",
+      "knowledge_point": "视觉和触觉图像应按控制回合同步，并与仅视觉输入做匹配比较；保存探测、对齐、恢复轨迹和切向载荷失败，真实触觉控制仍需硬件验证。",
+      "scope_reason": "直接把触觉图像输入通用模型进行闭环机器人操作；当前证据限于仿真。",
+      "local_evidence_available": {
+        "fulltext": false,
+        "summary": true,
+        "verify": true,
+        "figure": true
+      },
+      "official_abstract_checked": false,
+      "official_html_sampled": false
+    },
+    {
+      "id": "2610.26848",
+      "title": "Where is Physical RSI capability from? An Observational Scaling Law of LLM-as-policy",
+      "published": "2026-10-19T17:59:30Z",
+      "arxiv_url": "https://arxiv.org/abs/2610.26848",
+      "source_json": "../spiders/arxiv/papers/2026-10-21.json",
+      "source_record_sha256": "364fc48ec7fcfff0fbb3db4e7e0238b46726518f00f74b9d281c1aa5afe2726b",
+      "in_scope": true,
+      "topic": "embodied-evaluation-data-quality",
+      "knowledge_point": "评估自我改进应同时报告首次表现、效率、成功、预算与失败后改善，并用移除历史、冻结工作区和新布局对照区分场景适配与可复用经验。",
+      "scope_reason": "对物理自我改进的机器人任务、交互预算和失败学习进行系统评测。",
+      "local_evidence_available": {
+        "fulltext": false,
+        "summary": true,
+        "verify": true,
+        "figure": true
+      },
+      "official_abstract_checked": false,
+      "official_html_sampled": false
+    },
+    {
+      "id": "2610.26854",
+      "title": "Physical Words: A Vocabulary for Structuring Latent Reasoning in Robot Manipulation",
+      "published": "2026-10-19T17:59:54Z",
+      "arxiv_url": "https://arxiv.org/abs/2610.26854",
+      "source_json": "../spiders/arxiv/papers/2026-10-21.json",
+      "source_record_sha256": "4ec971f7562e59c5cbea390e1b628d55b0665b4595ecc4cc63f48c4fe8769336",
+      "in_scope": true,
+      "topic": "language-action-grounding-data",
+      "knowledge_point": "原子动作词应按时间连接执行阶段、未来观测及可选触觉状态；这种语义与连续物理目标的对齐需要在未见场景和长任务中验证。",
+      "scope_reason": "以动作动词对齐未来视觉或触觉动态，并用于真实机器人动作生成。",
+      "local_evidence_available": {
+        "fulltext": false,
+        "summary": true,
+        "verify": true,
+        "figure": true
+      },
+      "official_abstract_checked": false,
+      "official_html_sampled": false
+    },
+    {
+      "id": "2610.26855",
+      "title": "Ropedia W0: Scaling Loco-Manipulation World Models across Embodiments with Human Experience",
+      "published": "2026-10-19T17:59:55Z",
+      "arxiv_url": "https://arxiv.org/abs/2610.26855",
+      "source_json": "../spiders/arxiv/papers/2026-10-21.json",
+      "source_record_sha256": "0384dfe543d7c11925648525f038f350bbe2559ca8d0b21f10687c320f7c43a3",
+      "in_scope": true,
+      "topic": "world-model-training-data",
+      "knowledge_point": "把相机位姿表示的移动与投影骨架表示的操作统一，仍须保留本体正运动学、人工关键点修订及质量记录，并使用高质量遥操作留出集验证跨本体泛化。",
+      "scope_reason": "构建大规模人体与机器人第一视角数据和统一标注，训练跨本体世界模型。",
+      "local_evidence_available": {
+        "fulltext": false,
+        "summary": true,
+        "verify": true,
+        "figure": true
+      },
+      "official_abstract_checked": false,
+      "official_html_sampled": false
+    },
+    {
+      "id": "2610.29915",
+      "title": "CausalAlign: Causal Alignment of Video Generation Models for Consistent Ego-Motion",
+      "published": "2026-10-21T15:54:57Z",
+      "arxiv_url": "https://arxiv.org/abs/2610.29915",
+      "source_json": "../spiders/arxiv/papers/2026-10-22.json",
+      "source_record_sha256": "a4112ec1e881030eb048e2fd06173862ba99895bea844a2928abb811dedfdb31",
+      "in_scope": true,
+      "topic": "world-model-training-data",
+      "knowledge_point": "监督相邻帧变化可针对相机运动而非静态外观；检验几何一致性和时间平滑时，还应保留移动操作成功率作为生成数据的具身用途证据。",
+      "scope_reason": "视频生成的相机运动对齐在移动操作世界动作模型上有直接下游验证。",
+      "local_evidence_available": {
+        "fulltext": false,
+        "summary": true,
+        "verify": true,
+        "figure": false
+      },
+      "official_abstract_checked": false,
+      "official_html_sampled": false
+    },
+    {
+      "id": "2610.29936",
+      "title": "DewHand: Direct Metric World-Space Hand Motion Reconstruction from Egocentric Videos",
+      "published": "2026-10-21T16:08:38Z",
+      "arxiv_url": "https://arxiv.org/abs/2610.29936",
+      "source_json": "../spiders/arxiv/papers/2026-10-22.json",
+      "source_record_sha256": "0ff7d75d967f08420000db6ed08535357698c47d0478ea1d5479408e5cb567ea",
+      "in_scope": true,
+      "topic": "human-object-interaction-reconstruction",
+      "knowledge_point": "重建数据应区分相对对齐误差与米制尺度误差，并为遮挡和视野外手部保留生成不确定性；跨采集设备验证能揭示训练标注的域偏差。",
+      "scope_reason": "联合恢复第一视角的世界坐标手部与相机运动，处理尺度、遮挡及跨设备问题。",
+      "local_evidence_available": {
+        "fulltext": false,
+        "summary": true,
+        "verify": true,
+        "figure": false
+      },
+      "official_abstract_checked": false,
+      "official_html_sampled": false
+    },
+    {
+      "id": "2610.29989",
+      "title": "Looking Ahead: Modeling Future Evolution in Autoregressive Video Generation",
+      "published": "2026-10-21T16:28:46Z",
+      "arxiv_url": "https://arxiv.org/abs/2610.29989",
+      "source_json": "../spiders/arxiv/papers/2026-10-22.json",
+      "source_record_sha256": "0e49f9aa726b96c043573825c0f48d1eccb2981d9d6ad4687e128815cbeb74b3",
+      "in_scope": true,
+      "topic": "world-model-training-data",
+      "knowledge_point": "以间隔未来视频块作为辅助监督可削弱局部视觉连续性捷径；归档时应注明其证据为视频物理合理性，尚不能推断动作条件控制收益。",
+      "scope_reason": "面向物理视频演变的训练监督，属于世界模型数据方法边界；摘要未提供机器人执行验证。",
+      "local_evidence_available": {
+        "fulltext": false,
+        "summary": false,
+        "verify": false,
+        "figure": false
+      },
+      "official_abstract_checked": false,
+      "official_html_sampled": false
+    },
+    {
+      "id": "2610.29997",
+      "title": "DONIC: Generalist Dexterous Bimanual Tracking Control from Human Demonstrations",
+      "published": "2026-10-21T16:36:02Z",
+      "arxiv_url": "https://arxiv.org/abs/2610.29997",
+      "source_json": "../spiders/arxiv/papers/2026-10-22.json",
+      "source_record_sha256": "1db0c4588c7a232110e1227609508981fee70c011bbbdec942b7de77fe63d3b2",
+      "in_scope": true,
+      "topic": "dexterous-manipulation-data",
+      "knowledge_point": "双手示教应记录各手接触角色和共同物体运动，保留视频重建到机器人参考的来源链；验证成功执行回流训练时必须隔离未见轨迹及未见物体评测。",
+      "scope_reason": "提供持续双手交互多视角数据，并把验证成功的机器人执行再用于训练。",
+      "local_evidence_available": {
+        "fulltext": false,
+        "summary": true,
+        "verify": true,
+        "figure": false
+      },
+      "official_abstract_checked": false,
+      "official_html_sampled": false
+    },
+    {
+      "id": "2610.30043",
+      "title": "TARSphere: A Robot-Oriented Full-Stack Framework for Long-Horizon Embodied Agents in Evolving Physical and Social Environments",
+      "published": "2026-10-21T17:02:52Z",
+      "arxiv_url": "https://arxiv.org/abs/2610.30043",
+      "source_json": "../spiders/arxiv/papers/2026-10-22.json",
+      "source_record_sha256": "2030bddb27d0328f77b79f9c8a771b10d169c7d578e6030182c9b183aecc8a14",
+      "in_scope": true,
+      "topic": "embodied-evaluation-data-quality",
+      "knowledge_point": "任务数据需对齐语义、因果前提与场景几何，并通过事件状态机记录已完成动作和传递信息；评测应分开覆盖扰动、任务更新、人类协调和碰撞跌倒。",
+      "scope_reason": "在物理和社会约束下评测长任务机器人，含可执行技能、场景与人类交互。",
+      "local_evidence_available": {
+        "fulltext": false,
+        "summary": true,
+        "verify": true,
+        "figure": false
+      },
+      "official_abstract_checked": false,
+      "official_html_sampled": false
+    },
+    {
+      "id": "2610.30044",
+      "title": "SP-HLM: Sparse-Pose-Driven Motion Generation and Whole-Body Control for Humanoid Loco-Manipulation",
+      "published": "2026-10-21T17:03:34Z",
+      "arxiv_url": "https://arxiv.org/abs/2610.30044",
+      "source_json": "../spiders/arxiv/papers/2026-10-22.json",
+      "source_record_sha256": "e44da38f961dbf6e1307f5144aa86a4704e9f15ac03e9f66d1f9e62736c34f0e",
+      "in_scope": true,
+      "topic": "humanoid-locomotion-data",
+      "knowledge_point": "数据接口应对齐五个任务关键位姿、手指关节、完整身体参考和潜在运动先验，保留异步动作块时间，检验空间意图到全身执行的衔接。",
+      "scope_reason": "以稀疏身体目标和运动先验联接人形任务策略与全身控制，并真实验证。",
+      "local_evidence_available": {
+        "fulltext": false,
+        "summary": true,
+        "verify": true,
+        "figure": false
+      },
+      "official_abstract_checked": false,
+      "official_html_sampled": false
+    },
+    {
+      "id": "2610.30051",
+      "title": "From Reasoning to Action: Benchmarking Frontier AI Models on LIBERO-10 Robot Manipulation Tasks",
+      "published": "2026-10-21T17:11:52Z",
+      "arxiv_url": "https://arxiv.org/abs/2610.30051",
+      "source_json": "../spiders/arxiv/papers/2026-10-22.json",
+      "source_record_sha256": "50ad6f5bfb4c2a878eb2008edcbd3123bf6d46b3aa02cb94de5081f9204fae29",
+      "in_scope": true,
+      "topic": "vla-models-and-evaluation",
+      "knowledge_point": "标准化评测需记录末端位姿和夹爪工具调用、推理预算及各任务结果；模型推理能力的比较应同时控制动作接口并报告额外推理成本。",
+      "scope_reason": "用统一视觉、本体状态和工具接口评测通用模型闭环机器人操作。",
+      "local_evidence_available": {
+        "fulltext": false,
+        "summary": true,
+        "verify": true,
+        "figure": false
+      },
+      "official_abstract_checked": false,
+      "official_html_sampled": false
+    },
+    {
+      "id": "2610.30061",
+      "title": "Test-Time Motion Steering for Perceptive Humanoid Fall Recovery",
+      "published": "2026-10-21T17:20:04Z",
+      "arxiv_url": "https://arxiv.org/abs/2610.30061",
+      "source_json": "../spiders/arxiv/papers/2026-10-22.json",
+      "source_record_sha256": "cc4954509dbdb5662c8cfc2c5b5c77a59034d3e571a512b65a97bdf3102ea4a7",
+      "in_scope": true,
+      "topic": "humanoid-locomotion-data",
+      "knowledge_point": "恢复数据应覆盖跌倒姿态、地形、支撑转换与最终朝向，并连接动作意图、身体未来状态和控制响应；不同起身方案需按任务目标分别评价。",
+      "scope_reason": "在人形跌倒恢复中学习参考动作与任务化路线选择，并有真实示例。",
+      "local_evidence_available": {
+        "fulltext": false,
+        "summary": true,
+        "verify": true,
+        "figure": false
+      },
+      "official_abstract_checked": false,
+      "official_html_sampled": false
+    },
+    {
+      "id": "2610.30080",
+      "title": "Do Earth-Trained Humanoid Controllers Walk on the Moon? Gravity, Terrain, and Soil Transfer",
+      "published": "2026-10-21T17:28:57Z",
+      "arxiv_url": "https://arxiv.org/abs/2610.30080",
+      "source_json": "../spiders/arxiv/papers/2026-10-22.json",
+      "source_record_sha256": "ae4b08e1c24c753f1ff5ba1c8f868206c1dd27c6ea8dcff88eda811915309d61",
+      "in_scope": true,
+      "topic": "humanoid-locomotion-data",
+      "knowledge_point": "重力、地形和土壤接触模型应作为独立数据因子，记录双向迁移及地球性能代价；月面预测必须附带土壤刚度、足压和未见土壤模型的适用范围。",
+      "scope_reason": "月球重力与土壤迁移属于人形物理控制边界，摘要明确限定为接触模型条件下的仿真预测。",
+      "local_evidence_available": {
+        "fulltext": false,
+        "summary": true,
+        "verify": true,
+        "figure": false
+      },
+      "official_abstract_checked": false,
+      "official_html_sampled": false
+    },
+    {
+      "id": "2610.30097",
+      "title": "AtomicRL: Atomic Reinforcement Learning for Long-Horizon Robotic Manipulation",
+      "published": "2026-10-21T17:45:24Z",
+      "arxiv_url": "https://arxiv.org/abs/2610.30097",
+      "source_json": "../spiders/arxiv/papers/2026-10-22.json",
+      "source_record_sha256": "31ea295bbc7a99e20c44c64a3aefd2ba150c09886ad671a2f7bfde6e123485cf",
+      "in_scope": true,
+      "topic": "reward-value-feedback-data",
+      "knowledge_point": "奖励与价值数据应保留原子子任务边界，避免失败残差跨边界污染归因；根据子任务掌握程度调整采样时，需记录采样权重和真实迁移结果。",
+      "scope_reason": "使用原子子任务边界与掌握程度改进机器人长任务奖励分配和采样。",
+      "local_evidence_available": {
+        "fulltext": false,
+        "summary": true,
+        "verify": true,
+        "figure": false
+      },
+      "official_abstract_checked": false,
+      "official_html_sampled": false
+    },
+    {
+      "id": "2610.30105",
+      "title": "Asymmetric On-Policy Distillation Learns In-Context Exploration",
+      "published": "2026-10-21T17:50:31Z",
+      "arxiv_url": "https://arxiv.org/abs/2610.30105",
+      "source_json": "../spiders/arxiv/papers/2026-10-22.json",
+      "source_record_sha256": "2e1f41d4ee559786d183ebcdc9fc3f855b30bcde0c0de15217e64f6f6de3cf79",
+      "in_scope": true,
+      "topic": "active-perception-data",
+      "knowledge_point": "让学生以自身策略收集历史，再由特权专家为该历史标注动作，可覆盖实际探索状态；需记录何时信息被揭示，并在固定探索预算下评价收益。",
+      "scope_reason": "在部分可观测机器人任务中学习主动探索，并验证无视觉真实操作。",
+      "local_evidence_available": {
+        "fulltext": false,
+        "summary": true,
+        "verify": true,
+        "figure": false
+      },
+      "official_abstract_checked": false,
+      "official_html_sampled": false
+    },
+    {
+      "id": "2610.30108",
+      "title": "Multimodal Embodied Agents: A Unified Capability-centric Perspective from Computer-Use to Robot-Use",
+      "published": "2026-10-21T17:52:48Z",
+      "arxiv_url": "https://arxiv.org/abs/2610.30108",
+      "source_json": "../spiders/arxiv/papers/2026-10-22.json",
+      "source_record_sha256": "52831feea8820f966ab24746db0635b67e1f20e2a1bf56c08c6a5ba90b13e94b",
+      "in_scope": true,
+      "topic": "vla-models-and-evaluation",
+      "knowledge_point": "把感知、预测、规划、行动和验证分开建立证据与指标，可发现只报告任务成功率时隐藏的预测和验证缺口；数字界面能力不可直接替代机器人能力。",
+      "scope_reason": "虽然比较计算机代理，但研究核心是进入真实物理行动后的能力约束与机器人评测。",
+      "local_evidence_available": {
+        "fulltext": false,
+        "summary": true,
+        "verify": true,
+        "figure": false
+      },
+      "official_abstract_checked": false,
+      "official_html_sampled": false
+    },
+    {
+      "id": "2610.30117",
+      "title": "CW-WAM: A Structured Contact-Wrench World Action Model for Force-Sensitive Manipulation",
+      "published": "2026-10-21T17:55:53Z",
+      "arxiv_url": "https://arxiv.org/abs/2610.30117",
+      "source_json": "../spiders/arxiv/papers/2026-10-22.json",
+      "source_record_sha256": "6c09e29c44b40f306c584f43e4f4b74696e3df7d76dc36e236de5e90f89188da",
+      "in_scope": true,
+      "topic": "tactile-force-contact-data",
+      "knowledge_point": "运动与六维接触力矩块应严格时间对齐，并记录慢速模型查询与快速导纳控制之间的参考更新；力参考误差、波动和任务成功需同时评估。",
+      "scope_reason": "联合视频、运动和接触力矩预测，并通过实时力反馈完成真实插入等任务。",
+      "local_evidence_available": {
+        "fulltext": false,
+        "summary": true,
+        "verify": true,
+        "figure": false
+      },
+      "official_abstract_checked": false,
+      "official_html_sampled": false
+    },
+    {
+      "id": "2610.30120",
+      "title": "ALPS: Visual State Encoders for World Models",
+      "published": "2026-10-21T17:57:11Z",
+      "arxiv_url": "https://arxiv.org/abs/2610.30120",
+      "source_json": "../spiders/arxiv/papers/2026-10-22.json",
+      "source_record_sha256": "c606db4841e1b497594280817df98c139afc4ac8abaaa7a2e6e1f3739b736c00",
+      "in_scope": true,
+      "topic": "world-model-training-data",
+      "knowledge_point": "视觉预训练可结合语言、像素重建和空间对应监督；统一数据切分下应分别测量物理状态可读性、语言对齐、未来像素重建和策略成功。",
+      "scope_reason": "视觉状态编码器通过机器人状态探测、策略和物理规划任务验证。",
+      "local_evidence_available": {
+        "fulltext": true,
+        "summary": true,
+        "verify": true,
+        "figure": false
+      },
+      "official_abstract_checked": false,
+      "official_html_sampled": false
+    },
+    {
+      "id": "2610.30125",
+      "title": "PhysiCalWorld: In-Context Physics Calibration for World Models",
+      "published": "2026-10-21T17:57:59Z",
+      "arxiv_url": "https://arxiv.org/abs/2610.30125",
+      "source_json": "../spiders/arxiv/papers/2026-10-22.json",
+      "source_record_sha256": "76ead74530f745bd185b9e7c2d0e81724b15a75d1f814db58599b65af1117161",
+      "in_scope": true,
+      "topic": "world-model-training-data",
+      "knowledge_point": "将一次探索交互片段与后续预测分开存储，可检验无物理参数标签的描述符是否捕捉实例动力学；需要测试训练物理范围外的预测与规划收益。",
+      "scope_reason": "用测试场景探索交互校准动作条件世界模型的物理潜变量。",
+      "local_evidence_available": {
+        "fulltext": false,
+        "summary": true,
+        "verify": true,
+        "figure": false
+      },
+      "official_abstract_checked": true,
+      "official_html_sampled": true
+    },
+    {
+      "id": "2610.30129",
+      "title": "Rethinking Video Autoencoders for Interactive World Models",
+      "published": "2026-10-21T17:58:11Z",
+      "arxiv_url": "https://arxiv.org/abs/2610.30129",
+      "source_json": "../spiders/arxiv/papers/2026-10-22.json",
+      "source_record_sha256": "c598c2079242dbd8906728703f055b2ebd1882237a31cac91d0902b51788276b",
+      "in_scope": true,
+      "topic": "world-model-training-data",
+      "knowledge_point": "评估视频压缩时应按相机是否移动区分空间和时间压缩，联合报告延迟、动作生效时间与运动误差；图像清晰度不能代替动态一致性质检。",
+      "scope_reason": "在操作和导航交互环境中研究视频压缩对世界模型延迟与动作响应的影响。",
+      "local_evidence_available": {
+        "fulltext": false,
+        "summary": true,
+        "verify": true,
+        "figure": false
+      },
+      "official_abstract_checked": false,
+      "official_html_sampled": false
+    },
+    {
+      "id": "2610.30136",
+      "title": "Agentic World Action Models",
+      "published": "2026-10-21T17:59:56Z",
+      "arxiv_url": "https://arxiv.org/abs/2610.30136",
+      "source_json": "../spiders/arxiv/papers/2026-10-22.json",
+      "source_record_sha256": "2a8ee806e77e82320c5f3f02a0586f3edcb1ba891e8347db48117c8c385ac3a4",
+      "in_scope": true,
+      "topic": "robot-skill-composition-data",
+      "knowledge_point": "机器人及人体轨迹可标注为时间对齐的程序、视频和动作，再提炼重复过程为技能库；应保留参数化程序到真实双臂执行的对应关系并验证指令遵循。",
+      "scope_reason": "把代码、未来视频和机器人动作对齐，并自动整理可复用技能数据。",
+      "local_evidence_available": {
+        "fulltext": false,
+        "summary": true,
+        "verify": true,
+        "figure": false
+      },
+      "official_abstract_checked": false,
+      "official_html_sampled": false
+    }
+  ],
+  "source_hash_method": "SHA-256 of original JSON record serialized as UTF-8 with sorted keys, ensure_ascii=false, separators comma and colon (no extra spaces)."
+}

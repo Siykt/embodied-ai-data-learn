@@ -120,6 +120,7 @@ export default defineConfig({
 					collapsed: true,
 					items: [
 						{ label: '2026 年 9 月论文知识点索引', slug: 'reference/2026-09-paper-knowledge-map' },
+						{ label: '2026 年 10 月论文知识点索引', slug: 'reference/2026-10-paper-knowledge-map' },
 						{ label: '具身智能数据术语表', slug: 'reference/terms' },
 					],
 				},
