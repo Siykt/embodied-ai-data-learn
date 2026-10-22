@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 590" role="img" aria-labelledby="title desc">
+<title id="title">柔性连杆状态与证据范围</title>
+<desc id="desc">编码器和动捕共同形成刚柔混合机器人状态，分段常应变模型保留参考几何；站立实机与动态仿真证据分开。</desc>
+<defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0 0L10 5L0 10" fill="#64748b"/></marker></defs>
+<rect width="1200" height="590" rx="20" fill="#f8fafc"/>
+<g font-family="PingFang SC, Microsoft YaHei, Noto Sans CJK SC, sans-serif">
+<text x="44" y="51" font-size="28" font-weight="700" fill="#0f172a">柔性连杆状态与证据范围</text>
+<text x="44" y="83" font-size="16" fill="#475569">2026 年 10 月 · 数据组织示意 · 字段及验收为本站建议</text>
+<rect x="40" y="115" width="340" height="326" rx="14" fill="white" stroke="#cbd5e1"/>
+<rect x="40" y="115" width="340" height="61" rx="14" fill="#0f766e"/>
+<text x="60" y="154" font-size="23" font-weight="650" fill="white">01 原始测量</text>
+<text x="60" y="211" font-size="19" font-weight="600" fill="#0f766e">刚性与柔性状态并存</text>
+<circle cx="63" cy="252" r="4" fill="#0f766e"/>
+<text x="78" y="258" font-size="18" fill="#1e293b">关节编码器状态</text>
+<circle cx="63" cy="295" r="4" fill="#0f766e"/>
+<text x="78" y="301" font-size="18" fill="#1e293b">柔性腿动捕标记</text>
+<circle cx="63" cy="338" r="4" fill="#0f766e"/>
+<text x="78" y="344" font-size="18" fill="#1e293b">接触脚 / 支撑模式</text>
+<circle cx="63" cy="381" r="4" fill="#0f766e"/>
+<text x="78" y="387" font-size="18" fill="#1e293b">时间戳与结构标定</text>
+<line x1="389" y1="285" x2="418" y2="285" stroke="#64748b" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="430" y="115" width="340" height="326" rx="14" fill="white" stroke="#cbd5e1"/>
+<rect x="430" y="115" width="340" height="61" rx="14" fill="#1d4ed8"/>
+<text x="450" y="154" font-size="23" font-weight="650" fill="white">02 派生形变</text>
+<text x="450" y="211" font-size="19" font-weight="600" fill="#1d4ed8">分段常应变模型</text>
+<circle cx="453" cy="252" r="4" fill="#1d4ed8"/>
+<text x="468" y="258" font-size="18" fill="#1e293b">分段边界 / 参考形状</text>
+<circle cx="453" cy="295" r="4" fill="#1d4ed8"/>
+<text x="468" y="301" font-size="18" fill="#1e293b">各段应变与拟合残差</text>
+<circle cx="453" cy="338" r="4" fill="#1d4ed8"/>
+<text x="468" y="344" font-size="18" fill="#1e293b">测量与估计来源</text>
+<circle cx="453" cy="381" r="4" fill="#1d4ed8"/>
+<text x="468" y="387" font-size="18" fill="#1e293b">结构 / 材料版本</text>
+<line x1="779" y1="285" x2="808" y2="285" stroke="#64748b" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="820" y="115" width="340" height="326" rx="14" fill="white" stroke="#cbd5e1"/>
+<rect x="820" y="115" width="340" height="61" rx="14" fill="#7e22ce"/>
+<text x="840" y="154" font-size="23" font-weight="650" fill="white">03 证据分层</text>
+<text x="840" y="211" font-size="19" font-weight="600" fill="#7e22ce">任务与载体明确</text>
+<circle cx="843" cy="252" r="4" fill="#7e22ce"/>
+<text x="858" y="258" font-size="18" fill="#1e293b">仿真：站立 / 跳跃</text>
+<circle cx="843" cy="295" r="4" fill="#7e22ce"/>
+<text x="858" y="301" font-size="18" fill="#1e293b">仿真：行走</text>
+<circle cx="843" cy="338" r="4" fill="#7e22ce"/>
+<text x="858" y="344" font-size="18" fill="#1e293b">实机：双支撑站立</text>
+<circle cx="843" cy="381" r="4" fill="#7e22ce"/>
+<text x="858" y="387" font-size="18" fill="#1e293b">实机：单支撑站立</text>
+<rect x="40" y="468" width="1120" height="89" rx="12" fill="#e2e8f0"/>
+<text x="61" y="503" font-size="20" font-weight="600" fill="#0f172a">状态完整性：同样的关节角，不保证柔性腿形状和足端位置相同</text>
+<text x="61" y="535" font-size="18" fill="#334155">覆盖检查：站立平衡数据不能代替支撑切换、动态冲击与实机行走</text>
+</g></svg>
