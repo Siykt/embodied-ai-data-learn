@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1120 680" role="img" aria-labelledby="title desc">
+<title id="title">模型条件化数据引擎：10 月增量记录</title><desc id="desc">本站数据记录视图：不同研究对应不同选择环节，最终都需追溯证据与收益。</desc>
+<defs><marker id="arrow" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto"><path d="M1 1L7 4.5L1 8" fill="none" stroke="#a4512e" stroke-width="1.7"/></marker></defs>
+<rect width="1120" height="680" rx="22" fill="#f3f8fc"/>
+<g font-family="PingFang SC, Microsoft YaHei, Noto Sans CJK SC, sans-serif">
+<text x="32" y="45" fill="#17324d" font-size="28" font-weight="700">模型条件化数据引擎：10 月增量记录</text>
+<text x="32" y="77" fill="#466178" font-size="18">本站数据记录视图：不同研究对应不同选择环节，最终都需追溯证据与收益。</text>
+<rect x="32" y="105" width="1056" height="80" rx="14" fill="#e2efec"/>
+<text x="52" y="134" fill="#17324d" font-size="20" font-weight="700" text-anchor="start">输入：独立的开发反馈</text>
+<text x="52" y="163" fill="#466178" font-size="18" font-weight="400" text-anchor="start">原始失败证据、策略及调用版本、任务配置、当前成本与评估协议。</text>
+<rect x="32" y="220" width="336" height="168" rx="15" fill="#fff" stroke="#237a73" stroke-width="1.8"/>
+<text x="50" y="254" fill="#17324d" font-size="21" font-weight="700" text-anchor="start">假设驱动实验</text>
+<text x="50" y="285" fill="#466178" font-size="18" font-weight="400" text-anchor="start">候选解释与预期证据</text>
+<text x="50" y="312" fill="#466178" font-size="18" font-weight="400" text-anchor="start">选择能区分假设的试验</text>
+<text x="50" y="339" fill="#466178" font-size="18" font-weight="400" text-anchor="start">保留支持与反驳结果</text>
+<rect x="392" y="220" width="336" height="168" rx="15" fill="#fff" stroke="#237a73" stroke-width="1.8"/>
+<text x="410" y="254" fill="#17324d" font-size="21" font-weight="700" text-anchor="start">能力边界重置</text>
+<text x="410" y="285" fill="#466178" font-size="18" font-weight="400" text-anchor="start">策略版本与成功窗口</text>
+<text x="410" y="312" fill="#466178" font-size="18" font-weight="400" text-anchor="start">候选配置及采样概率</text>
+<text x="410" y="339" fill="#466178" font-size="18" font-weight="400" text-anchor="start">保持独立评估分布</text>
+<rect x="752" y="220" width="336" height="168" rx="15" fill="#fff" stroke="#237a73" stroke-width="1.8"/>
+<text x="770" y="254" fill="#17324d" font-size="21" font-weight="700" text-anchor="start">子步骤重试</text>
+<text x="770" y="285" fill="#466178" font-size="18" font-weight="400" text-anchor="start">保存状态及调用配置</text>
+<text x="770" y="312" fill="#466178" font-size="18" font-weight="400" text-anchor="start">区分调用与能力问题</text>
+<text x="770" y="339" fill="#466178" font-size="18" font-weight="400" text-anchor="start">决定采集或微调范围</text>
+<path d="M200 388L200 419" stroke="#a4512e" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+<path d="M560 388L560 419" stroke="#a4512e" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+<path d="M920 388L920 419" stroke="#a4512e" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+<rect x="32" y="422" width="336" height="139" rx="15" fill="#fff" stroke="#237a73" stroke-width="1.8"/>
+<text x="50" y="456" fill="#17324d" font-size="21" font-weight="700" text-anchor="start">诊断验证</text>
+<text x="50" y="487" fill="#466178" font-size="18" font-weight="400" text-anchor="start">场景有效性与对照批次</text>
+<text x="50" y="514" fill="#466178" font-size="18" font-weight="400" text-anchor="start">困难模式及反证</text>
+<text x="50" y="541" fill="#466178" font-size="18" font-weight="400" text-anchor="start">通过后写入版本化记忆</text>
+<rect x="392" y="422" width="336" height="139" rx="15" fill="#fff" stroke="#237a73" stroke-width="1.8"/>
+<text x="410" y="456" fill="#17324d" font-size="21" font-weight="700" text-anchor="start">生成与训练程序</text>
+<text x="410" y="487" fill="#466178" font-size="18" font-weight="400" text-anchor="start">环境参数与生成程序</text>
+<text x="410" y="514" fill="#466178" font-size="18" font-weight="400" text-anchor="start">原始奖励及塑形项</text>
+<text x="410" y="541" fill="#466178" font-size="18" font-weight="400" text-anchor="start">训练材料与代码版本</text>
+<rect x="752" y="422" width="336" height="139" rx="15" fill="#fff" stroke="#237a73" stroke-width="1.8"/>
+<text x="770" y="456" fill="#17324d" font-size="21" font-weight="700" text-anchor="start">更新前后评估</text>
+<text x="770" y="487" fill="#466178" font-size="18" font-weight="400" text-anchor="start">固定协议测学习进度</text>
+<text x="770" y="514" fill="#466178" font-size="18" font-weight="400" text-anchor="start">分项报告资源成本</text>
+<text x="770" y="541" fill="#466178" font-size="18" font-weight="400" text-anchor="start">驱动下一轮开发选择</text>
+<path d="M368 490L389 490" stroke="#a4512e" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+<path d="M728 490L749 490" stroke="#a4512e" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+<text x="560" y="614" fill="#17324d" font-size="19" font-weight="400" text-anchor="middle">正式测试实例与标签不参与自适应选择；采样和监督的变化均产生新版本。</text>
+</g>
+</svg>
