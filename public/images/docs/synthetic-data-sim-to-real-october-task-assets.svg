@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 590" role="img" aria-labelledby="title desc">
+<title id="title">任务可用的仿真资产与物理版本</title>
+<desc id="desc">照片检索和场景扫描构造可动及碰撞资产；求解器参数修订产生新版本；跨保真度仿真与实机适配保持可追溯关联。</desc>
+<defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0 0L10 5L0 10" fill="#64748b"/></marker></defs>
+<rect width="1200" height="590" rx="20" fill="#f8fafc"/>
+<g font-family="PingFang SC, Microsoft YaHei, Noto Sans CJK SC, sans-serif">
+<text x="44" y="51" font-size="28" font-weight="700" fill="#0f172a">任务可用的仿真资产与物理版本</text>
+<text x="44" y="83" font-size="16" fill="#475569">2026 年 10 月 · 数据组织示意 · 字段及验收为本站建议</text>
+<rect x="40" y="115" width="340" height="326" rx="14" fill="white" stroke="#cbd5e1"/>
+<rect x="40" y="115" width="340" height="61" rx="14" fill="#0f766e"/>
+<text x="60" y="154" font-size="23" font-weight="650" fill="white">01 构建资产</text>
+<text x="60" y="211" font-size="19" font-weight="600" fill="#0f766e">图像 / 任务 / 扫描</text>
+<circle cx="63" cy="252" r="4" fill="#0f766e"/>
+<text x="78" y="258" font-size="18" fill="#1e293b">资产库条目与拟合变换</text>
+<circle cx="63" cy="295" r="4" fill="#0f766e"/>
+<text x="78" y="301" font-size="18" fill="#1e293b">部件关节结构</text>
+<circle cx="63" cy="338" r="4" fill="#0f766e"/>
+<text x="78" y="344" font-size="18" fill="#1e293b">渲染与碰撞几何分开</text>
+<circle cx="63" cy="381" r="4" fill="#0f766e"/>
+<text x="78" y="387" font-size="18" fill="#1e293b">承放表面与对象来源</text>
+<line x1="389" y1="285" x2="418" y2="285" stroke="#64748b" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="430" y="115" width="340" height="326" rx="14" fill="white" stroke="#cbd5e1"/>
+<rect x="430" y="115" width="340" height="61" rx="14" fill="#1d4ed8"/>
+<text x="450" y="154" font-size="23" font-weight="650" fill="white">02 物理修订</text>
+<text x="450" y="211" font-size="19" font-weight="600" fill="#1d4ed8">观测 → 改动 → 回放</text>
+<circle cx="453" cy="252" r="4" fill="#1d4ed8"/>
+<text x="468" y="258" font-size="18" fill="#1e293b">求解器 / 接触模型</text>
+<circle cx="453" cy="295" r="4" fill="#1d4ed8"/>
+<text x="468" y="301" font-size="18" fill="#1e293b">刚度 / 摩擦等参数</text>
+<circle cx="453" cy="338" r="4" fill="#1d4ed8"/>
+<text x="468" y="344" font-size="18" fill="#1e293b">保留每次参数差异</text>
+<circle cx="453" cy="381" r="4" fill="#1d4ed8"/>
+<text x="468" y="387" font-size="18" fill="#1e293b">特权状态输入掩码</text>
+<line x1="779" y1="285" x2="808" y2="285" stroke="#64748b" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="820" y="115" width="340" height="326" rx="14" fill="white" stroke="#cbd5e1"/>
+<rect x="820" y="115" width="340" height="61" rx="14" fill="#7e22ce"/>
+<text x="840" y="154" font-size="23" font-weight="650" fill="white">03 迁移适配</text>
+<text x="840" y="211" font-size="19" font-weight="600" fill="#7e22ce">仿真先验 + 实机残差</text>
+<circle cx="843" cy="252" r="4" fill="#7e22ce"/>
+<text x="858" y="258" font-size="18" fill="#1e293b">轨迹保真度标签</text>
+<circle cx="843" cy="295" r="4" fill="#7e22ce"/>
+<text x="858" y="301" font-size="18" fill="#1e293b">适配轮次与目标域</text>
+<circle cx="843" cy="338" r="4" fill="#7e22ce"/>
+<text x="858" y="344" font-size="18" fill="#1e293b">真实 / 模拟任务配对</text>
+<circle cx="843" cy="381" r="4" fill="#7e22ce"/>
+<text x="858" y="387" font-size="18" fill="#1e293b">冻结实机留出切片</text>
+<rect x="40" y="468" width="1120" height="89" rx="12" fill="#e2e8f0"/>
+<text x="61" y="503" font-size="20" font-weight="600" fill="#0f172a">数据版本：修改物理参数后，重新生成受影响的接触与状态标签</text>
+<text x="61" y="535" font-size="18" fill="#334155">独立验收：资产稳定 → 任务执行 → 物理残差 → 留出实机效果</text>
+</g></svg>
