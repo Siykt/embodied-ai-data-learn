@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 590" role="img" aria-labelledby="title desc">
+<title id="title">探索必须留下证据与停止理由</title>
+<desc id="desc">未知属性触发物理注视、交互或虚拟视角，证据检查决定继续探测、修复扰动或提交任务；专家标签保留学生所见历史。</desc>
+<defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0 0L10 5L0 10" fill="#64748b"/></marker></defs>
+<rect width="1200" height="590" rx="20" fill="#f8fafc"/>
+<g font-family="PingFang SC, Microsoft YaHei, Noto Sans CJK SC, sans-serif">
+<text x="44" y="51" font-size="28" font-weight="700" fill="#0f172a">探索必须留下证据与停止理由</text>
+<text x="44" y="83" font-size="16" fill="#475569">2026 年 10 月 · 数据组织示意 · 字段及验收为本站建议</text>
+<rect x="40" y="115" width="340" height="326" rx="14" fill="white" stroke="#cbd5e1"/>
+<rect x="40" y="115" width="340" height="61" rx="14" fill="#0f766e"/>
+<text x="60" y="154" font-size="23" font-weight="650" fill="white">01 信息缺口</text>
+<text x="60" y="211" font-size="19" font-weight="600" fill="#0f766e">现在还不知道什么</text>
+<circle cx="63" cy="252" r="4" fill="#0f766e"/>
+<text x="78" y="258" font-size="18" fill="#1e293b">未知位置 / 属性 / 效果</text>
+<circle cx="63" cy="295" r="4" fill="#0f766e"/>
+<text x="78" y="301" font-size="18" fill="#1e293b">学生可见历史</text>
+<circle cx="63" cy="338" r="4" fill="#0f766e"/>
+<text x="78" y="344" font-size="18" fill="#1e293b">期望注视点 / 探测动作</text>
+<circle cx="63" cy="381" r="4" fill="#0f766e"/>
+<text x="78" y="387" font-size="18" fill="#1e293b">当前策略版本</text>
+<line x1="389" y1="285" x2="418" y2="285" stroke="#64748b" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="430" y="115" width="340" height="326" rx="14" fill="white" stroke="#cbd5e1"/>
+<rect x="430" y="115" width="340" height="61" rx="14" fill="#1d4ed8"/>
+<text x="450" y="154" font-size="23" font-weight="650" fill="white">02 获得证据</text>
+<text x="450" y="211" font-size="19" font-weight="600" fill="#1d4ed8">记录实际发生的观察</text>
+<circle cx="453" cy="252" r="4" fill="#1d4ed8"/>
+<text x="468" y="258" font-size="18" fill="#1e293b">实际视线与遮挡</text>
+<circle cx="453" cy="295" r="4" fill="#1d4ed8"/>
+<text x="468" y="301" font-size="18" fill="#1e293b">实测或渲染来源</text>
+<circle cx="453" cy="338" r="4" fill="#1d4ed8"/>
+<text x="468" y="344" font-size="18" fill="#1e293b">虚拟场景同步时刻</text>
+<circle cx="453" cy="381" r="4" fill="#1d4ed8"/>
+<text x="468" y="387" font-size="18" fill="#1e293b">探测造成的扰动</text>
+<line x1="779" y1="285" x2="808" y2="285" stroke="#64748b" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="820" y="115" width="340" height="326" rx="14" fill="white" stroke="#cbd5e1"/>
+<rect x="820" y="115" width="340" height="61" rx="14" fill="#7e22ce"/>
+<text x="840" y="154" font-size="23" font-weight="650" fill="white">03 准入决策</text>
+<text x="840" y="211" font-size="19" font-weight="600" fill="#7e22ce">何时继续、何时结束</text>
+<circle cx="843" cy="252" r="4" fill="#7e22ce"/>
+<text x="858" y="258" font-size="18" fill="#1e293b">证据不足 → 继续</text>
+<circle cx="843" cy="295" r="4" fill="#7e22ce"/>
+<text x="858" y="301" font-size="18" fill="#1e293b">场景被扰动 → 修复</text>
+<circle cx="843" cy="338" r="4" fill="#7e22ce"/>
+<text x="858" y="344" font-size="18" fill="#1e293b">证据充分 → 提交</text>
+<circle cx="843" cy="381" r="4" fill="#7e22ce"/>
+<text x="858" y="387" font-size="18" fill="#1e293b">专家特权信息隔离</text>
+<rect x="40" y="468" width="1120" height="89" rx="12" fill="#e2e8f0"/>
+<text x="61" y="503" font-size="20" font-weight="600" fill="#0f172a">保留无效探测与过早结束：它们是学习探索策略的重要失败样本</text>
+<text x="61" y="535" font-size="18" fill="#334155">评估：信息获取、执行技能、扰动修复、提前停止分别统计</text>
+</g></svg>
