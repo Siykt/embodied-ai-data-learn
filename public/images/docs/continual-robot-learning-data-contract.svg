@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1120 590" role="img" aria-labelledby="title desc">
+<title id="title">持续学习数据契约：顺序、来源与快照</title><desc id="desc">给定任意检查点，都能还原当时可访问的经验及真正执行的系统。</desc>
+<defs><marker id="arrow" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto"><path d="M1 1L7 4.5L1 8" fill="none" stroke="#a4512e" stroke-width="1.7"/></marker></defs>
+<rect width="1120" height="590" rx="22" fill="#f3f8fc"/>
+<g font-family="PingFang SC, Microsoft YaHei, Noto Sans CJK SC, sans-serif">
+<text x="32" y="45" fill="#17324d" font-size="28" font-weight="700">持续学习数据契约：顺序、来源与快照</text>
+<text x="32" y="77" fill="#466178" font-size="18">给定任意检查点，都能还原当时可访问的经验及真正执行的系统。</text>
+<rect x="32" y="118" width="330" height="164" rx="15" fill="#fff" stroke="#237a73" stroke-width="1.8"/>
+<text x="50" y="152" fill="#17324d" font-size="21" font-weight="700" text-anchor="start">任务流记录</text>
+<text x="50" y="183" fill="#466178" font-size="18" font-weight="400" text-anchor="start">stream_id / arrival_order</text>
+<text x="50" y="210" fill="#466178" font-size="18" font-weight="400" text-anchor="start">task_id / available_from</text>
+<text x="50" y="237" fill="#466178" font-size="18" font-weight="400" text-anchor="start">任务边界与协议版本</text>
+<rect x="395" y="118" width="330" height="164" rx="15" fill="#fff" stroke="#237a73" stroke-width="1.8"/>
+<text x="413" y="152" fill="#17324d" font-size="21" font-weight="700" text-anchor="start">经验清单</text>
+<text x="413" y="183" fill="#466178" font-size="18" font-weight="400" text-anchor="start">真实 / 恢复 / 想象来源</text>
+<text x="413" y="210" fill="#466178" font-size="18" font-weight="400" text-anchor="start">源 episode、回放规则</text>
+<text x="413" y="237" fill="#466178" font-size="18" font-weight="400" text-anchor="start">世界模型版本与随机种子</text>
+<rect x="758" y="118" width="330" height="164" rx="15" fill="#fff" stroke="#237a73" stroke-width="1.8"/>
+<text x="776" y="152" fill="#17324d" font-size="21" font-weight="700" text-anchor="start">更新记录</text>
+<text x="776" y="183" fill="#466178" font-size="18" font-weight="400" text-anchor="start">变动模块与训练配置</text>
+<text x="776" y="210" fill="#466178" font-size="18" font-weight="400" text-anchor="start">模型 / 技能 / 记忆快照</text>
+<text x="776" y="237" fill="#466178" font-size="18" font-weight="400" text-anchor="start">适配器组合和部署哈希</text>
+<path d="M362 200L392 200" stroke="#a4512e" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+<path d="M725 200L755 200" stroke="#a4512e" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+<rect x="32" y="334" width="506" height="116" rx="15" fill="#fff" stroke="#237a73" stroke-width="1.8"/>
+<text x="50" y="368" fill="#17324d" font-size="21" font-weight="700" text-anchor="start">接管证据</text>
+<text x="50" y="399" fill="#466178" font-size="18" font-weight="400" text-anchor="start">能力信号 → 请求 → 实际接管 → 交还</text>
+<text x="50" y="426" fill="#466178" font-size="18" font-weight="400" text-anchor="start">记录控制来源；保持原始动作与时间</text>
+<rect x="562" y="334" width="526" height="116" rx="15" fill="#fff" stroke="#237a73" stroke-width="1.8"/>
+<text x="580" y="368" fill="#17324d" font-size="21" font-weight="700" text-anchor="start">评测快照</text>
+<text x="580" y="399" fill="#466178" font-size="18" font-weight="400" text-anchor="start">checkpoint_id × eval_task × protocol</text>
+<text x="580" y="426" fill="#466178" font-size="18" font-weight="400" text-anchor="start">尝试次数、结果、存储与运行成本</text>
+<rect x="32" y="480" width="1056" height="80" rx="14" fill="#e2efec"/>
+<text x="52" y="509" fill="#17324d" font-size="20" font-weight="700" text-anchor="start">时间完整性检查</text>
+<text x="52" y="538" fill="#466178" font-size="18" font-weight="400" text-anchor="start">后获得的数据不能进入较早检查点；坐标或硬件变化不能误记为能力遗忘。</text>
+</g>
+</svg>

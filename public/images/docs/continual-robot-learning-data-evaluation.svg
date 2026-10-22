@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1120 630" role="img" aria-labelledby="title desc">
+<title id="title">持续学习评估：新任务、保持与事实修订</title><desc id="desc">示意评测矩阵：每次更新后回测旧任务；未知任务不计入当前能力。</desc>
+<defs><marker id="arrow" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto"><path d="M1 1L7 4.5L1 8" fill="none" stroke="#a4512e" stroke-width="1.7"/></marker></defs>
+<rect width="1120" height="630" rx="22" fill="#f3f8fc"/>
+<g font-family="PingFang SC, Microsoft YaHei, Noto Sans CJK SC, sans-serif">
+<text x="32" y="45" fill="#17324d" font-size="28" font-weight="700">持续学习评估：新任务、保持与事实修订</text>
+<text x="32" y="77" fill="#466178" font-size="18">示意评测矩阵：每次更新后回测旧任务；未知任务不计入当前能力。</text>
+<rect x="32" y="110" width="240" height="139" rx="15" fill="#fff" stroke="#237a73" stroke-width="1.8"/>
+<text x="50" y="144" fill="#17324d" font-size="21" font-weight="700" text-anchor="start">新任务适应</text>
+<text x="50" y="175" fill="#466178" font-size="18" font-weight="400" text-anchor="start">当前任务成功与接管</text>
+<text x="50" y="202" fill="#466178" font-size="18" font-weight="400" text-anchor="start">数据量与训练预算</text>
+<rect x="304" y="110" width="240" height="139" rx="15" fill="#fff" stroke="#237a73" stroke-width="1.8"/>
+<text x="322" y="144" fill="#17324d" font-size="21" font-weight="700" text-anchor="start">旧能力保持</text>
+<text x="322" y="175" fill="#466178" font-size="18" font-weight="400" text-anchor="start">相同协议下回测</text>
+<text x="322" y="202" fill="#466178" font-size="18" font-weight="400" text-anchor="start">退化或后向迁移</text>
+<rect x="576" y="110" width="240" height="139" rx="15" fill="#fff" stroke="#237a73" stroke-width="1.8"/>
+<text x="594" y="144" fill="#17324d" font-size="21" font-weight="700" text-anchor="start">实例事实修订</text>
+<text x="594" y="175" fill="#466178" font-size="18" font-weight="400" text-anchor="start">独立变化真值</text>
+<text x="594" y="202" fill="#466178" font-size="18" font-weight="400" text-anchor="start">修订延迟与误修订</text>
+<rect x="848" y="110" width="240" height="139" rx="15" fill="#fff" stroke="#237a73" stroke-width="1.8"/>
+<text x="866" y="144" fill="#17324d" font-size="21" font-weight="700" text-anchor="start">资源增长</text>
+<text x="866" y="175" fill="#466178" font-size="18" font-weight="400" text-anchor="start">存储及初始化延迟</text>
+<text x="866" y="202" fill="#466178" font-size="18" font-weight="400" text-anchor="start">显存与逐步控制频率</text>
+<text x="52" y="291" fill="#17324d" font-size="18" font-weight="700" text-anchor="start">更新后快照</text>
+<text x="315" y="291" fill="#17324d" font-size="18" font-weight="700" text-anchor="middle">任务 A</text>
+<text x="485" y="291" fill="#17324d" font-size="18" font-weight="700" text-anchor="middle">任务 B</text>
+<text x="655" y="291" fill="#17324d" font-size="18" font-weight="700" text-anchor="middle">任务 C</text>
+<text x="52" y="338" fill="#17324d" font-size="18" font-weight="400" text-anchor="start">完成 A</text>
+<rect x="241" y="309" width="148" height="40" rx="7" fill="#e2efec"/>
+<text x="315" y="336" fill="#17324d" font-size="18" font-weight="400" text-anchor="middle">新测</text>
+<rect x="411" y="309" width="148" height="40" rx="7" fill="#e7ebef"/>
+<text x="485" y="336" fill="#17324d" font-size="18" font-weight="400" text-anchor="middle">未到</text>
+<rect x="581" y="309" width="148" height="40" rx="7" fill="#e7ebef"/>
+<text x="655" y="336" fill="#17324d" font-size="18" font-weight="400" text-anchor="middle">未到</text>
+<text x="52" y="387" fill="#17324d" font-size="18" font-weight="400" text-anchor="start">完成 B</text>
+<rect x="241" y="358" width="148" height="40" rx="7" fill="#e2efec"/>
+<text x="315" y="385" fill="#17324d" font-size="18" font-weight="400" text-anchor="middle">回测</text>
+<rect x="411" y="358" width="148" height="40" rx="7" fill="#e2efec"/>
+<text x="485" y="385" fill="#17324d" font-size="18" font-weight="400" text-anchor="middle">新测</text>
+<rect x="581" y="358" width="148" height="40" rx="7" fill="#e7ebef"/>
+<text x="655" y="385" fill="#17324d" font-size="18" font-weight="400" text-anchor="middle">未到</text>
+<text x="52" y="436" fill="#17324d" font-size="18" font-weight="400" text-anchor="start">完成 C</text>
+<rect x="241" y="407" width="148" height="40" rx="7" fill="#e2efec"/>
+<text x="315" y="434" fill="#17324d" font-size="18" font-weight="400" text-anchor="middle">回测</text>
+<rect x="411" y="407" width="148" height="40" rx="7" fill="#e2efec"/>
+<text x="485" y="434" fill="#17324d" font-size="18" font-weight="400" text-anchor="middle">回测</text>
+<rect x="581" y="407" width="148" height="40" rx="7" fill="#e2efec"/>
+<text x="655" y="434" fill="#17324d" font-size="18" font-weight="400" text-anchor="middle">新测</text>
+<rect x="796" y="287" width="292" height="169" rx="15" fill="#fff" stroke="#237a73" stroke-width="1.8"/>
+<text x="814" y="321" fill="#17324d" font-size="21" font-weight="700" text-anchor="start">事实变化单独计分</text>
+<text x="814" y="352" fill="#466178" font-size="18" font-weight="400" text-anchor="start">旧标签仍然有效？</text>
+<text x="814" y="379" fill="#466178" font-size="18" font-weight="400" text-anchor="start">是：检查能力保持</text>
+<text x="814" y="406" fill="#466178" font-size="18" font-weight="400" text-anchor="start">否：检查修订是否及时</text>
+<rect x="32" y="509" width="1056" height="80" rx="14" fill="#e2efec"/>
+<text x="52" y="538" fill="#17324d" font-size="20" font-weight="700" text-anchor="start">必要对照</text>
+<text x="52" y="567" fill="#466178" font-size="18" font-weight="400" text-anchor="start">等预算多次重试、无历史经验、冻结经验库；成功率之外单独报告成本。</text>
+</g>
+</svg>
