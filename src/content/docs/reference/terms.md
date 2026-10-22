@@ -1232,3 +1232,9 @@ Data-to-Model 是把合格数据从采集、处理、验证和版本化数据集
 不仅依据观测顺序，还根据真实经过时间更新的机器人记忆表示；数据需保存实际时间间隔、时钟来源及缺帧，避免把帧数等同于持续时间。
 
 相关主题：[具身记忆与经验检索数据](/guides/embodied-memory-experience-data/)。
+
+## 时间扩展动作（Option）
+
+跨多个控制步执行、具有启动与终止条件的行为单元，可用于描述自主策略、辅助纠正和代码技能之间的控制权切换。
+
+相关主题：[Human-gated DAgger 纠错数据](/guides/human-gated-dagger-correction-data/)。
