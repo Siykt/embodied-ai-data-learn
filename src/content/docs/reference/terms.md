@@ -1238,3 +1238,9 @@ Data-to-Model 是把合格数据从采集、处理、验证和版本化数据集
 跨多个控制步执行、具有启动与终止条件的行为单元，可用于描述自主策略、辅助纠正和代码技能之间的控制权切换。
 
 相关主题：[Human-gated DAgger 纠错数据](/guides/human-gated-dagger-correction-data/)。
+
+## 运动可供性接口
+
+描述给定场景中交互可以在哪里、以何种运动方式发生的中间表示，用于连接场景可行性监督与人体-物体运动生成；不等同于原始数据已逐帧配对。
+
+相关主题：[人体与人-物交互重建数据](/guides/human-object-interaction-reconstruction/)。
