@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 590" role="img" aria-labelledby="title desc">
+<title id="title">动作量化和动作相关性分别验收</title>
+<desc id="desc">连续动作块分箱后保留量化规则；解码误差与跨时间和维度的组合错误不同，最终需在固定控制频率下闭环验证。</desc>
+<defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0 0L10 5L0 10" fill="#64748b"/></marker></defs>
+<rect width="1200" height="590" rx="20" fill="#f8fafc"/>
+<g font-family="PingFang SC, Microsoft YaHei, Noto Sans CJK SC, sans-serif">
+<text x="44" y="51" font-size="28" font-weight="700" fill="#0f172a">动作量化和动作相关性分别验收</text>
+<text x="44" y="83" font-size="16" fill="#475569">2026 年 10 月 · 数据组织示意 · 字段及验收为本站建议</text>
+<rect x="40" y="115" width="340" height="326" rx="14" fill="white" stroke="#cbd5e1"/>
+<rect x="40" y="115" width="340" height="61" rx="14" fill="#0f766e"/>
+<text x="60" y="154" font-size="23" font-weight="650" fill="white">01 完整动作块</text>
+<text x="60" y="211" font-size="19" font-weight="600" fill="#0f766e">原始数值不可丢</text>
+<circle cx="63" cy="252" r="4" fill="#0f766e"/>
+<text x="78" y="258" font-size="18" fill="#1e293b">动作维度顺序</text>
+<circle cx="63" cy="295" r="4" fill="#0f766e"/>
+<text x="78" y="301" font-size="18" fill="#1e293b">单位 / 坐标 / 频率</text>
+<circle cx="63" cy="338" r="4" fill="#0f766e"/>
+<text x="78" y="344" font-size="18" fill="#1e293b">夹爪与位移同时间</text>
+<circle cx="63" cy="381" r="4" fill="#0f766e"/>
+<text x="78" y="387" font-size="18" fill="#1e293b">块内与块间上下文</text>
+<line x1="389" y1="285" x2="418" y2="285" stroke="#64748b" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="430" y="115" width="340" height="326" rx="14" fill="white" stroke="#cbd5e1"/>
+<rect x="430" y="115" width="340" height="61" rx="14" fill="#1d4ed8"/>
+<text x="450" y="154" font-size="23" font-weight="650" fill="white">02 离散编码</text>
+<text x="450" y="211" font-size="19" font-weight="600" fill="#1d4ed8">往返误差可重算</text>
+<circle cx="453" cy="252" r="4" fill="#1d4ed8"/>
+<text x="468" y="258" font-size="18" fill="#1e293b">每维分箱边界</text>
+<circle cx="453" cy="295" r="4" fill="#1d4ed8"/>
+<text x="468" y="301" font-size="18" fill="#1e293b">解码规则 / 截断掩码</text>
+<circle cx="453" cy="338" r="4" fill="#1d4ed8"/>
+<text x="468" y="344" font-size="18" fill="#1e293b">量化器版本</text>
+<circle cx="453" cy="381" r="4" fill="#1d4ed8"/>
+<text x="468" y="387" font-size="18" fill="#1e293b">连续原值与符号并存</text>
+<line x1="779" y1="285" x2="808" y2="285" stroke="#64748b" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="820" y="115" width="340" height="326" rx="14" fill="white" stroke="#cbd5e1"/>
+<rect x="820" y="115" width="340" height="61" rx="14" fill="#7e22ce"/>
+<text x="840" y="154" font-size="23" font-weight="650" fill="white">03 联合执行</text>
+<text x="840" y="211" font-size="19" font-weight="600" fill="#7e22ce">误差不止是分箱精度</text>
+<circle cx="843" cy="252" r="4" fill="#7e22ce"/>
+<text x="858" y="258" font-size="18" fill="#1e293b">各维动作组合</text>
+<circle cx="843" cy="295" r="4" fill="#7e22ce"/>
+<text x="858" y="301" font-size="18" fill="#1e293b">前后时刻动作关联</text>
+<circle cx="843" cy="338" r="4" fill="#7e22ce"/>
+<text x="858" y="344" font-size="18" fill="#1e293b">生成步数与延迟</text>
+<circle cx="843" cy="381" r="4" fill="#7e22ce"/>
+<text x="858" y="387" font-size="18" fill="#1e293b">同控制周期闭环</text>
+<rect x="40" y="468" width="1120" height="89" rx="12" fill="#e2e8f0"/>
+<text x="61" y="503" font-size="20" font-weight="600" fill="#0f172a">例：先夹紧再抬升具有时序关系，逐维数值接近仍可能拼成错误动作</text>
+<text x="61" y="535" font-size="18" fill="#334155">分别检查：量化误差 / 联合动作规律 / 块间连续性 / 任务结果</text>
+</g></svg>
