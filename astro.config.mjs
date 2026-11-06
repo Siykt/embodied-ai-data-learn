@@ -121,6 +121,7 @@ export default defineConfig({
 					items: [
 						{ label: '2026 年 9 月论文知识点索引', slug: 'reference/2026-09-paper-knowledge-map' },
 						{ label: '2026 年 10 月论文知识点索引', slug: 'reference/2026-10-paper-knowledge-map' },
+						{ label: 'Hugging Face 具身世界模型快照（2026-11）', slug: 'reference/hf-embodied-world-model-snapshot' },
 						{ label: '具身智能数据术语表', slug: 'reference/terms' },
 					],
 				},
